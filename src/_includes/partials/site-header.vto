@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="content-wrapper | cluster">
+    <a href="/">Home</a>
+    <nav>
+      <ul class="cluster" role="list">
+        {{ for item of navigation.main }}
+        <li>
+          <a class="nav-link" href="{{ item.path }}">{{ item.name }}</a>
+        </li>
+        {{ /for }}
+      </ul>
+    </nav>
+  </div>
+</header>

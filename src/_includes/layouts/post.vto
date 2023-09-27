@@ -1,0 +1,232 @@
+---
+layout: layouts/base.vto
+page_css: post.css
+---
+
+<article class="content-wrapper | has-sidebar">
+  <div class="paragraph-measure">
+    <header>
+      <h1>{{ title }}</h1>
+      <div class="post-info | cluster">
+        <div class="cluster with-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M4.75 8.75C4.75 7.64543 5.64543 6.75 6.75 6.75H17.25C18.3546 6.75 19.25 7.64543 19.25 8.75V17.25C19.25 18.3546 18.3546 19.25 17.25 19.25H6.75C5.64543 19.25 4.75 18.3546 4.75 17.25V8.75Z"
+            ></path>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M8 4.75V8.25"
+            ></path>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M16 4.75V8.25"
+            ></path>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M7.75 10.75H16.25"
+            ></path>
+          </svg>
+          <time>{{ date |> readableDate }}</time>
+        </div>
+        <div class="cluster with-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M19.25 17.25V9.75C19.25 8.64543 18.3546 7.75 17.25 7.75H4.75V17.25C4.75 18.3546 5.64543 19.25 6.75 19.25H17.25C18.3546 19.25 19.25 18.3546 19.25 17.25Z"
+            ></path>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M13.5 7.5L12.5685 5.7923C12.2181 5.14977 11.5446 4.75 10.8127 4.75H6.75C5.64543 4.75 4.75 5.64543 4.75 6.75V11"
+            ></path>
+          </svg>
+
+          <a href="/posts/{{ category }}/">{{ category |> capitalizeFirst }}</a>
+        </div>
+        <div class="cluster with-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <circle
+              cx="12"
+              cy="12"
+              r="7.25"
+              stroke="currentColor"
+              stroke-width="1.5"
+            ></circle>
+            <path
+              stroke="currentColor"
+              stroke-width="1.5"
+              d="M12 8V12L14 14"
+            ></path>
+          </svg>
+          <p>{{ content |> readingTime }}</p>
+        </div>
+      </div>
+      <p>{{ it.summary }}</p>
+    </header>
+    <figure class="featured-img">
+      <img src="../{{ image.src }}" alt="{{ image.alt }}" width="800" />
+      {{ if image.attribution }}
+      <figcaption>Source: {{ image.attribution }}</figcaption>
+      {{ /if }}
+    </figure>
+    <div id="content" class="rich-content with-intro-text">{{ content }}</div>
+  </div>
+  <div class="sidebar | flow">
+    <div class="return | cluster">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M10.25 6.75L4.75 12L10.25 17.25"
+        ></path>
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M19.25 12H5"
+        ></path>
+      </svg>
+
+      <a href="/posts/">Return to posts</a>
+    </div>
+    <div>
+      <div class="cluster with-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <circle cx="15" cy="9" r="1" fill="currentColor"></circle>
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M12 4.75H19.25V12L12.5535 18.6708C11.7544 19.4668 10.4556 19.445 9.68369 18.6226L5.28993 13.941C4.54041 13.1424 4.57265 11.8895 5.36226 11.1305L12 4.75Z"
+          ></path>
+        </svg>
+        <div class="small-title">Tags</div>
+      </div>
+      <ul class="tag-list | cluster" role="list">
+        {{ for tag of tags }}
+        <li>
+          <a class="tag" href="/tag/{{ tag |> slugifyTag }}/">{{ tag }}</a>
+        </li>
+        {{ /for }}
+      </ul>
+    </div>
+    {{ if toc.length > 0 }}
+    <nav class="toc-nav | sticky">
+      <div class="cluster with-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M7.25 9.25v-3.5l-1.5.5m1.5 3h-1.5m1.5 0h1m3.5-1.5h6.5m-6.5 8.5h6.5m-10 2h-2.5l2.227-2.038a.841.841 0 0 0-.568-1.462H6.25a.5.5 0 0 0-.5.5"
+          ></path>
+        </svg>
+        <div class="small-title">Table of Contents</div>
+      </div>
+      <ul class="level-2" role="list">
+        <li><a class="toc-link" href="#content">Prelude</a></li>
+        {{ for heading of toc }}
+        <li>
+          <a class="toc-link" href="#{{ heading.slug }}">{{ heading.text }}</a>
+          {{ if heading.children.length > 0 }}
+          <ul class="level-3" role="list">
+            {{ for child of heading.children }}
+            <li>
+              <a class="toc-link" href="#{{ child.slug }}">{{ child.text }}</a>
+            </li>
+            {{ /for }}
+          </ul>
+          {{ /if }}
+        </li>
+        {{ /for }}
+      </ul>
+    </nav>
+    {{ /if }}
+  </div>
+</article>
+<footer class="post-navigation | content-wrapper">
+  {{ set previousPost = search.previousPage(url, "type=posts") }}
+  <div>
+    {{ if previousPost }}
+    <div>
+      <div class="nav-heading | cluster">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.75 12L14.25 7.75V16.25L8.75 12Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        <span>Previous post</span>
+      </div>
+      <a class="link" href="{{ previousPost.url }}" rel="prev"
+        >{{ previousPost.title }}</a
+      >
+    </div>
+    {{ /if }}
+  </div>
+  {{ set nextPost = search.nextPage(url, "type=posts") }}
+  <div>
+    {{ if nextPost }}
+    <div>
+      <div class="nav-heading | cluster">
+        <span>Next post</span>
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14.25 12L8.75 7.75V16.25L14.25 12Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </div>
+      <a class="link" href="{{ nextPost.url }}">{{ nextPost.title }}</a>
+    </div>
+    {{ /if }}
+  </div>
+</footer>
+<script src="/js/tocObserver.js" inline></script>

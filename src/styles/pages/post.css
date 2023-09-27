@@ -1,0 +1,157 @@
+article {
+  margin-block-start: var(--space-3xl);
+  margin-block-end: var(--space-xl);
+
+  & h1 {
+    text-wrap: balance;
+    line-height: 1.1;
+    margin-block-end: var(--space-m);
+  }
+
+  & header {
+    & > p:last-of-type {
+      font-style: italic;
+      margin-block-start: var(--space-m);
+    }
+  }
+}
+
+.featured-img {
+  margin-block: var(--space-l);
+}
+
+.has-sidebar {
+  --sidebar-gap: var(--space-2xl);
+}
+
+.post-info {
+  font-size: var(--step--1);
+
+  &.cluster {
+    --cluster-space: 1.25rem;
+  }
+}
+
+.sidebar {
+  &.flow {
+    --flow-space: var(--space-xl);
+  }
+
+  & .small-title {
+    font-weight: 900;
+  }
+
+  .return {
+    &.cluster {
+      --cluster-space: 0.5rem;
+    }
+  }
+
+  & ul {
+    margin-block-start: var(--space-2xs);
+  }
+
+  & .tag-list {
+    &.cluster {
+      --cluster-space: 0.7rem;
+    }
+  }
+
+  & .toc-nav {
+    &.sticky {
+      top: var(--space-l);
+      place-self: flex-start;
+    }
+
+    /*
+    & ul {
+      & > * + * {
+        margin-block-start: 0.25rem;
+      }
+    }
+    */
+
+    & ul.level-3 {
+      margin-block: 0;
+      padding-inline-start: 0.5rem;
+    }
+
+    & .toc-link {
+      font-size: var(--step--1);
+      display: block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      text-decoration-color: transparent;
+      transition: all 0.2s ease;
+
+      &:hover {
+        text-decoration-color: inherit;
+      }
+
+      &.active {
+        background: var(--color-background-shade);
+      }
+    }
+  }
+}
+
+.header-anchor {
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: "#";
+    color: var(--color-text-emphasis-light);
+    margin-left: 0.5rem;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+}
+
+:is(#content, #content :is(h2, h3)) {
+  scroll-margin: 2rem;
+}
+
+.post-navigation {
+  border-top: 1px solid var(--color-light-border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--space-2xl);
+  row-gap: var(--space-m);
+
+  & > * {
+    max-width: 35ch;
+  }
+
+  & > :last-child {
+    --cluster-justify: flex-end;
+    place-self: end;
+    text-align: right;
+  }
+
+  & .cluster {
+    --cluster-space: 0.25rem;
+  }
+
+  & svg {
+    color: var(--color-text-emphasis);
+  }
+
+  & .nav-heading {
+    font-size: var(--step--1);
+    color: var(--color-text-body-shade);
+  }
+
+  & .link {
+    text-wrap: balance;
+    margin-block-start: 0.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    text-decoration-color: transparent;
+    display: inline-block;
+  }
+}

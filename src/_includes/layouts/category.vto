@@ -1,0 +1,8 @@
+---
+layout: layouts/base.vto
+---
+
+<h1>Posts categorized {{ title }}</h1>
+{{ set postlist = search.pages(`type=posts category=${title.toLowerCase()}`,
+"date=desc") }}
+<div>{{ include "partials/post-list.vto" }}</div>

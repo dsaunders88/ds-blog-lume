@@ -1,0 +1,29 @@
+<ul class="post-list | flow" role="list">
+  {{ for post of postlist }}
+  <li>
+    <article class="post-item">
+      <a href="{{ post.url }}"
+        ><img
+          src="{{ post.image.src }}"
+          alt="{{ post.image.alt }}"
+          width="800" />
+        <div class="link-background"></div
+      ></a>
+      <div class="flow">
+        <div>
+          <div class="eyebrow | cluster">
+            <time>{{ post.date |> readableDate }}</time> in
+            <a href="/posts/{{ post.category }}/"
+              >{{ post.category |> capitalizeFirst }}</a
+            >
+          </div>
+          <h3 class="mt-2">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h3>
+        </div>
+        <p class="line-clamp">{{ post.summary }}</p>
+      </div>
+    </article>
+  </li>
+  {{ /for }}
+</ul>

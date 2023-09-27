@@ -1,0 +1,26 @@
+---
+layout: layouts/base.vto
+---
+
+<h1>Archive</h1>
+<ul>
+  {{ set archivedPosts = search.pages("type=posts", "date=desc") |> groupby("archiveYear") }} 
+  {{ for year of archivedPosts }}
+  <li>
+    <h2>{{ year.type }}</h2>
+    <ul>
+      {{ for entry of year.entries }}
+      <li>
+        <h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+        <p>{{ entry.date |> readableDate }}</p>
+        <div>Category: {{ entry.category }}</div>
+        <div>
+          Tags: {{ for tag of entry.tags }}
+          <a href="/tag/{{ tag |> slugifyTag }}">{{ tag }}</a> {{ /for }}
+        </div>
+      </li>
+      {{ /for }}
+    </ul>
+  </li>
+  {{ /for }}
+</ul>

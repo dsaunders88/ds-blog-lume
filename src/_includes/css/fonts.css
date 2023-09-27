@@ -1,0 +1,51 @@
+/* @font-face rules */
+@font-face {
+  font-family: "Brix Sans";
+  src: url("/fonts/Brix-Sans-Web-Regular.woff2") format("woff2"),
+    url("/fonts/Brix-Sans-Web-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brix Sans";
+  src: url("/fonts/Brix-Sans-Web-Regular-Italic.woff2") format("woff2"),
+    url("/fonts/Brix-Sans-Web-Regular-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brix Sans";
+  src: url("/fonts/Brix-Sans-Web-Black.woff2") format("woff2"),
+    url("/fonts/Brix-Sans-Web-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}

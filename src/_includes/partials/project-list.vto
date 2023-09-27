@@ -1,0 +1,20 @@
+<ul class="project-list | responsive-grid" role="list">
+  {{ for project of projectlist }}
+  <li>
+    <a class="img-wrapper" href="{{ project.url }}"
+      ><div class="summary"><p>{{ project.summary }}</p></div>
+      <img
+        src="{{ project.image.src }}"
+        alt="{{ project.image.alt }}"
+        width="600"
+        loading="lazy"
+        decoding="async" />
+      <div class="link-background"></div
+    ></a>
+    <h3 class="title | cluster">
+      <span>{{ project.client }}</span><span class="dot">•</span
+      ><a href="{{ project.url }}">{{ project.category |> capitalizeFirst }}</a>
+    </h3>
+  </li>
+  {{ /for }}
+</ul>

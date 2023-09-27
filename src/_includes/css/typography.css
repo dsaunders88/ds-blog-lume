@@ -1,0 +1,138 @@
+/* Headers & titles */
+h1,
+.h1 {
+  font-size: var(--step-4);
+  line-height: var(--leading-tight);
+}
+
+h2,
+.h2 {
+  font-size: var(--step-3);
+  line-height: var(--leading-tight);
+}
+
+h3,
+.h3 {
+  font-size: var(--step-2);
+  line-height: var(--leading-tight);
+}
+
+.small-title {
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.with-icon {
+  &.cluster {
+    --cluster-space: 0.5rem;
+  }
+
+  & svg {
+    color: var(--color-text-emphasis);
+  }
+
+  & .small-title {
+    color: var(--color-text-body-shade);
+  }
+}
+
+/* Links */
+a {
+  color: var(--color-accent-red-600);
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--lines, 3);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.external-link + svg {
+  position: relative;
+  top: 1px;
+  transition: all 0.2s ease;
+}
+
+.external-link:hover + svg {
+  color: var(--color-text-emphasis);
+  transform: translate(2px, -2px);
+}
+
+.paragraph-measure {
+  max-width: var(--paragraph-measure);
+}
+
+.rich-content {
+  & * {
+    margin-block: 0;
+  }
+
+  & :is(h2, h3) {
+    margin-block-start: var(--space-xl);
+  }
+
+  & :is(p, ul, blockquote) {
+    margin-block-start: var(--space-m);
+  }
+
+  & :is(li) {
+    margin-block-start: var(--space-xs);
+  }
+
+  & h2 {
+    font-size: var(--step-2);
+  }
+
+  & h3 {
+    font-size: var(--step-1);
+  }
+
+  &.with-intro-text > p:first-of-type {
+    font-size: var(--step-1);
+  }
+
+  & blockquote {
+    position: relative;
+    border-left: 2px solid var(--color-text-emphasis-light);
+    padding-block: var(--space-m);
+    padding-inline-start: var(--space-l);
+    padding-inline-end: var(--space-m);
+    font-style: italic;
+
+    & p {
+      margin-block: 0;
+    }
+
+    &::after {
+      content: "";
+      background: url("/geometric-bg.svg") left/cover no-repeat;
+      opacity: var(--background-element-opacity);
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      z-index: -1;
+      mask-image: linear-gradient(to right, black, transparent);
+    }
+  }
+
+  & li {
+    &::marker {
+      color: var(--color-text-emphasis);
+    }
+  }
+}
+
+.tag {
+  padding: 0.25rem 0.55rem 0.35rem;
+  background: var(--color-background-shade);
+  line-height: 1.15;
+  text-decoration: none;
+  font-size: var(--step--1);
+  border-radius: var(--rounded-corners-small);
+
+  &:hover {
+    background: var(--color-light-border);
+  }
+}

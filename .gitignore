@@ -1,0 +1,4 @@
+_site
+.vscode
+src/_cache
+.env

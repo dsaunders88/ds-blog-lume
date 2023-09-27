@@ -1,0 +1,16 @@
+<ul class="">
+  {{ for post of search.pages("type=posts", "date=desc") }}
+  <li>
+    <div>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <img src="{{ post.image.src }}" alt="" width="800" />
+      <p>{{ post.date |> readableDate }}</p>
+      <div>Category: {{ post.category }}</div>
+      <div class="cluster">
+        Tags: {{ for tag of post.tags }}
+        <a href="/tag/{{ tag |> slugifyTag }}">{{ tag }}</a> {{ /for }}
+      </div>
+    </div>
+  </li>
+  {{ /for }}
+</ul>

@@ -1,0 +1,129 @@
+:root {
+  /* Fonts */
+  --font-primary: "Brix Sans", system-ui, "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  --font-code: "JetBrains Mono", "Consolas", "Monaco", "Andale Mono",
+    "Ubuntu Mono", monospace;
+  --leading-normal: 1.35;
+  --leading-tight: 1.15;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-neutral-50: lch(98.2% 0 0);
+  --color-neutral-100: lch(93.95% 0.3 199.3);
+  --color-neutral-150: lch(90% 0.6 255);
+  --color-neutral-200: lch(85.1% 1.2 255.6);
+  --color-neutral-300: lch(76.5% 1.9 255.7);
+  --color-neutral-400: lch(67.65% 2.4 241.3);
+  --color-neutral-500: lch(57.8% 3.8 246.8);
+  --color-neutral-600: lch(47.6% 4.6 248.6);
+  --color-neutral-700: lch(40.4% 5.3 242.4);
+  --color-neutral-800: lch(32.4% 6 237.6);
+  /*--color-neutral-900: lch(23.55% 7.2 238.8);*/
+  --color-neutral-900: lch(23.55% 10.9 277.6);
+  /*--color-neutral-950: lch(7.9% 14.4 283.2);*/
+  --color-neutral-950: lch(16.3% 13 274.6);
+  --color-neutral-1000: lch(12% 14 272);
+  --color-red-50: lch(98.2% 2.6 357.2);
+  --color-red-100: lch(93.95% 8.6 2.7);
+  --color-red-200: lch(85.1% 22.1 4.8);
+  --color-red-300: lch(76.5% 36.6 7.1);
+  --color-red-400: lch(67.65% 54 9.4);
+  --color-red-500: lch(57.8% 76.4 17);
+  --color-red-600: lch(46.7% 77.8 23.8);
+  --color-red-700: lch(40.4% 68.2 23.3);
+  --color-red-800: lch(32.4% 57.5 22.3);
+  --color-red-900: lch(23.55% 45.7 20.9);
+
+  /* Fluid type sizes */
+  /* @link https://utopia.fyi/type/calculator?c=320,17,1.25,1240,21,1.25,7,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|s-m&g=s,l,xl,12 */
+
+  --step--2: clamp(0.68rem, 0.62rem + 0.28vw, 0.84rem);
+  --step--1: clamp(0.85rem, 0.78rem + 0.35vw, 1.05rem);
+  --step-0: clamp(1.06rem, 0.98rem + 0.43vw, 1.31rem);
+  --step-1: clamp(1.33rem, 1.22rem + 0.54vw, 1.64rem);
+  --step-2: clamp(1.66rem, 1.52rem + 0.68vw, 2.05rem);
+  --step-3: clamp(2.08rem, 1.91rem + 0.85vw, 2.56rem);
+  --step-4: clamp(2.59rem, 2.38rem + 1.06vw, 3.2rem);
+  --step-5: clamp(3.24rem, 2.98rem + 1.33vw, 4.01rem);
+  --step-6: clamp(4.05rem, 3.72rem + 1.66vw, 5.01rem);
+  --step-7: clamp(5.07rem, 4.65rem + 2.07vw, 6.26rem);
+
+  /* Fluid spacing */
+  /* @link https://utopia.fyi/space/calculator?c=320,17,1.25,1240,21,1.25,7,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|s-m&g=s,l,xl,12 */
+
+  --space-3xs: clamp(0.25rem, 0.23rem + 0.11vw, 0.31rem);
+  --space-2xs: clamp(0.56rem, 0.52rem + 0.22vw, 0.69rem);
+  --space-xs: clamp(0.81rem, 0.75rem + 0.33vw, 1rem);
+  --space-s: clamp(1.06rem, 0.98rem + 0.43vw, 1.31rem);
+  --space-m: clamp(1.63rem, 1.49rem + 0.65vw, 2rem);
+  --space-l: clamp(2.13rem, 1.95rem + 0.87vw, 2.63rem);
+  --space-xl: clamp(3.19rem, 2.93rem + 1.3vw, 3.94rem);
+  --space-2xl: clamp(4.25rem, 3.9rem + 1.74vw, 5.25rem);
+  --space-3xl: clamp(6.38rem, 5.85rem + 2.61vw, 7.88rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.25rem, 0.1rem + 0.76vw, 0.69rem);
+  --space-2xs-xs: clamp(0.56rem, 0.41rem + 0.76vw, 1rem);
+  --space-xs-s: clamp(0.81rem, 0.64rem + 0.87vw, 1.31rem);
+  --space-s-m: clamp(1.06rem, 0.74rem + 1.63vw, 2rem);
+  --space-m-l: clamp(1.63rem, 1.28rem + 1.74vw, 2.63rem);
+  --space-l-xl: clamp(2.13rem, 1.49rem + 3.15vw, 3.94rem);
+  --space-xl-2xl: clamp(3.19rem, 2.47rem + 3.59vw, 5.25rem);
+  --space-2xl-3xl: clamp(4.25rem, 2.99rem + 6.3vw, 7.88rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1.06rem, 0.52rem + 2.72vw, 2.63rem);
+  --space-s-m: clamp(1.06rem, 0.74rem + 1.63vw, 2rem);
+
+  /* Layouts */
+  --gutter: var(--space-s-m, 1rem);
+  --wrapper-max-width: 1366px;
+
+  /* Animations */
+  --bezier-transition-1: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  --bezier-transition-2: cubic-bezier(1, 0, 0, 1);
+
+  /* Other */
+  --rounded-corners: 0.5rem;
+  --rounded-corners-small: 0.25rem;
+  --shadow-none: 0px 8px 42px -8px rgba(8, 13, 26, 0);
+  --shadow-light: 0px 8px 22px -12px rgba(8, 13, 26, 0.7);
+  --shadow-full: 0px 8px 42px -8px rgba(8, 13, 26, 0.8);
+  --paragraph-measure: 66ch;
+  --paragraph-measure-short: 53ch;
+}
+
+/* Light theme */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-text-heading: var(--color-neutral-900);
+  --color-text-body: var(--color-neutral-800);
+  --color-text-body-shade: var(--color-neutral-700);
+  --color-text-link: var(--color-red-600);
+  --color-text-emphasis: var(--color-red-500);
+  --color-text-emphasis-light: var(--color-red-300);
+  --color-light-border: var(--color-neutral-150);
+  --color-background-1: var(--color-neutral-50);
+  --color-background-shade: var(--color-neutral-100);
+  --color-background-2: var(--color-neutral-500);
+  --color-background-3: var(--color-neutral-800);
+  --background-element-opacity: 1;
+}
+
+/* Dark theme */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-text-heading: var(--color-neutral-100);
+  --color-text-body: var(--color-neutral-300);
+  --color-text-body-shade: var(--color-neutral-400);
+  --color-text-link: var(--color-red-400);
+  --color-text-emphasis: var(--color-red-300);
+  --color-text-emphasis-light: var(--color-red-600);
+  --color-light-border: var(--color-neutral-900);
+  --color-background-1: var(--color-neutral-1000);
+  --color-background-shade: var(--color-netural-900);
+  --color-background-2: var(--color-neutral-500);
+  --color-background-3: var(--color-neutral-50);
+  --background-element-opacity: 0.35;
+}

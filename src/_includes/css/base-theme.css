@@ -1,0 +1,25 @@
+/* Base theme */
+body {
+  background: var(--color-background-1);
+  color: var(--color-text-body);
+  font-family: var(--font-primary);
+  font-size: var(--step-0);
+  line-height: var(--leading-normal);
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  color: var(--color-text-heading);
+}
+
+a:not(.btn, .logo) {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-decoration-color: currentColor;
+  transition: all 0.2s ease-in-out;
+}
+
+a:not(.btn, .logo):hover {
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-text-emphasis);
+  color: var(--color-text-link);
+}
