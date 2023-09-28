@@ -24,12 +24,6 @@ jobs:
         with:
           deno-version: v1.37
 
-      - name: Log env
-        run: |
-          echo $AIRTABLE_ACCESS_TOKEN
-          echo $LASTFM_API_KEY
-          echo $FATHOM_ACCESS_TOKEN
-
       - name: Build site
         run: deno task build
 

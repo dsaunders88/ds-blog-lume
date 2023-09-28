@@ -1,5 +1,6 @@
 ---
 layout: layouts/base.vto
+page_css: post-index.css
 ---
 
 <div class="content-wrapper">
@@ -7,8 +8,8 @@ layout: layouts/base.vto
   <div class="has-sidebar">
     {{ set postlist = results }}
     <section>{{ include "partials/post-list.vto" }}</section>
-    <div class="sidebar">
-      <div>
+    <div class="sidebar | flow">
+      <div class="categories">
         <div class="cluster with-icon">
           <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
             <path
@@ -29,18 +30,21 @@ layout: layouts/base.vto
           <h2 class="small-title">Categories</h2>
         </div>
         <ul class="tag-list | cluster" role="list">
-          <li><a href="/posts">All</a></li>
+          <li><a data-selected-page="selected" href="/posts">All</a></li>
           {{ set allCategories = search.values("category", "type=posts") }} {{
           for category of allCategories |> sortTags }}
           <li>
-            <a href="/posts/{{ category }}"
+            <a data-selected-page="" href="/posts/{{ category }}"
               >{{ category |> capitalizeFirst }}</a
             >
           </li>
           {{ /for }}
+          <li>
+            <a data-selected-page="" href="/posts/archive">Archive</a>
+          </li>
         </ul>
       </div>
-      <div>
+      <div class="tags">
         <div class="cluster with-icon">
           <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
             <circle cx="15" cy="9" r="1" fill="currentColor"></circle>
@@ -58,12 +62,17 @@ layout: layouts/base.vto
           {{ set allTags = search.values("tags", "type=posts") }} {{ for tag of
           allTags |> sortTags }}
           <li>
-            <a class="tag" href="/tag/{{ tag |> slugifyTag }}">{{ tag }}</a>
+            <a
+              data-selected-page=""
+              class="tag"
+              href="/tag/{{ tag |> slugifyTag }}"
+              >{{ tag }}</a
+            >
           </li>
           {{ /for }}
         </ul>
       </div>
-      <div>
+      <div class="trending">
         <div class="cluster | with-icon">
           <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
             <path
@@ -104,7 +113,7 @@ layout: layouts/base.vto
           </svg>
           <h2 class="small-title">Trending Posts</h2>
         </div>
-        <ol>
+        <ol class="flow">
           {{ for fetchedPost of trendingPosts.list }} {{ set foundPost =
           search.page(`url=${fetchedPost.pathname}`) }}
           <li><a href="{{ foundPost.url }}">{{ foundPost.title }}</a></li>
@@ -113,9 +122,9 @@ layout: layouts/base.vto
       </div>
     </div>
   </div>
-  <div class="cluster">
-    <a href="{{ pagination.previous }}">Previous</a
+  <div class="pagination | cluster">
+    <a href="{{ pagination.previous }}">Newer</a
     ><span>{{ pagination.page }} of {{ pagination.totalPages }}</span
-    ><a href="{{ pagination.next }}">Next</a>
+    ><a href="{{ pagination.next }}">Older</a>
   </div>
 </div>

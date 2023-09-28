@@ -1,16 +1,17 @@
-<ul class="">
-  {{ for post of search.pages("type=posts", "date=desc") }}
+<ul class="post-list-simple | flow" role="list">
+  {{ for post of entry }}
   <li>
-    <div>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <img src="{{ post.image.src }}" alt="" width="800" />
-      <p>{{ post.date |> readableDate }}</p>
-      <div>Category: {{ post.category }}</div>
-      <div class="cluster">
-        Tags: {{ for tag of post.tags }}
-        <a href="/tag/{{ tag |> slugifyTag }}">{{ tag }}</a> {{ /for }}
+    <article class="flow">
+      <div class="eyebrow | cluster">
+        <time>{{ post.date |> readableDate }}</time> in
+        <a href="/posts/{{ post.category }}/"
+          >{{ post.category |> capitalizeFirst }}</a
+        >
       </div>
-    </div>
+      <h3 class="mt-2">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h3>
+    </article>
   </li>
   {{ /for }}
 </ul>

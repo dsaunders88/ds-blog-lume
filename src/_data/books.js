@@ -37,7 +37,7 @@ async function getBookData() {
 }
 
 const data = await getBookData();
-console.log(data);
+// console.log(data);
 export const list = data.records.map((record) => {
   const fields = record.fields;
   return {

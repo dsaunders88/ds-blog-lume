@@ -52,5 +52,5 @@ async function getFathomData() {
 }
 
 const trendingPosts = await getFathomData();
-console.log(trendingPosts);
+// console.log(trendingPosts);
 export const list = trendingPosts;

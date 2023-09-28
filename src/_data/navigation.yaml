@@ -6,7 +6,7 @@ main:
   - name: Blog
     path: /posts
   - name: Links
-    path: links
+    path: /links
 posts:
   - name: Latest
     path: /posts
