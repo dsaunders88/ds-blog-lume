@@ -85,6 +85,10 @@ article {
       padding-inline-start: 0.5rem;
     }
 
+    & a[aria-current="true"] {
+      background: var(--color-background-shade);
+    }
+
     & .toc-link {
       font-size: var(--step--1);
       display: block;
