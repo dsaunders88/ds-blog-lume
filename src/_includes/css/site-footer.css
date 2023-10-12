@@ -43,7 +43,8 @@ footer {
 }
 
 .cluster.social {
-  --cluster-space: 0.5rem;
+  --cluster-space: 0.75rem;
+
   & a {
     display: inline-flex;
     justify-content: center;

@@ -6,7 +6,7 @@ page_css: post-index.css
 <div class="content-wrapper">
   <h1>{{ title }}</h1>
   <div class="has-sidebar">
-    {{ set postlist = results }} {{> console.log(pagination) }}
+    {{ set postlist = results }}
     <section>{{ include "partials/post-list.vto" }}</section>
     <!-- prettier-ignore -->
     {{ include "partials/posts-sidebar.vto" }}

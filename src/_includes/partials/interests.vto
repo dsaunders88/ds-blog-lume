@@ -1,0 +1,184 @@
+<div class="interests">
+  <div class="grid">
+    <div hx-indicator="#indicator">
+      <p>Some things I’m currently into:</p>
+      <button
+        id="generateInterests"
+        hx-get="/api/interests"
+        hx-swap="outerHTML swap:0.2s settle:0.2s"
+        hx-target="#thoughts"
+      >
+        <span>Refresh</span>
+        <svg
+          id="indicator"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          class=""
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.25 14.75L8.75 17M8.75 17L11.25 19.25M8.75 17H13.25C16.5637 17 19.25 14.3137 19.25 11V10.75"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M15.25 7H10.75C7.43629 7 4.75 9.68629 4.75 13V13.25M15.25 7L12.75 9.25M15.25 7L12.75 4.75"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div class="flow">
+      <svg
+        class="interest-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M5.75 10.25v-.583A2.917 2.917 0 0 1 8.667 6.75H8.8a2.5 2.5 0 0 1 2.45-2H12m-4.75 5c-1.38 0-2.5 1.231-2.5 2.75 0 .788.301 1.499.784 2 .076.079.157.153.242.221m1.974.529h-.5a2.341 2.341 0 0 1-1.474-.529m0 0a2.917 2.917 0 0 0 2.89 2.529H8.8a2.5 2.5 0 0 0 2.45 2H12m0-14.5h.75a2.5 2.5 0 0 1 2.45 2h.133a2.917 2.917 0 0 1 2.917 2.917v.583M12 4.75V8m0 11.25h.75a2.5 2.5 0 0 0 2.45-2h.133a2.917 2.917 0 0 0 2.891-2.529M12 19.25V15m4.75-5.25c1.38 0 2.5 1.231 2.5 2.75 0 .788-.301 1.499-.784 2a2.594 2.594 0 0 1-.242.221m-1.974.529h.5c.551 0 1.061-.196 1.474-.529M12 15c0-1.6 1.333-2.25 2-2.25h.25M12 15V8m0 0c0 1.2-1 3-2.25 3.25"
+        ></path>
+      </svg>
+      <p class="bold">Thinking about</p>
+      {{ set randomThought = thoughts.list |> getRandomItem }}
+      <p id="thoughts" class="animate-response">{{ randomThought }}</p>
+    </div>
+    <div class="flow">
+      <svg
+        class="interest-icon"
+        width="32"
+        height="32"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M19.25 16V12.25C19.25 8.24594 16.0041 5 12 5V5C7.99594 5 4.75 8.24594 4.75 12.25V16"
+        ></path>
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M4.75 15.45C4.75 13.9588 5.95883 12.75 7.45 12.75V12.75C8.44411 12.75 9.25 13.5559 9.25 14.55V17.45C9.25 18.4441 8.44411 19.25 7.45 19.25V19.25C5.95883 19.25 4.75 18.0412 4.75 16.55V15.45Z"
+        ></path>
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M14.75 14.55C14.75 13.5559 15.5559 12.75 16.55 12.75V12.75C18.0412 12.75 19.25 13.9588 19.25 15.45V16.55C19.25 18.0412 18.0412 19.25 16.55 19.25V19.25C15.5559 19.25 14.75 18.4441 14.75 17.45V14.55Z"
+        ></path>
+      </svg>
+      <p class="bold">Listening to</p>
+      {{ set randomAlbum = music.albums |> getRandomItem }}
+      <p id="albums" class="animate-response">
+        <span class="cluster"
+          ><a class="external-link" href="{{ randomAlbum.url }}" target="_blank"
+            >{{ randomAlbum.name }}</a
+          ><svg width="14" height="14" fill="none" viewBox="0 0 24 24">
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M17.25 15.25V6.75H8.75"
+            ></path>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M17 7L6.75 17.25"
+            ></path>
+          </svg> </span
+        >, by {{ randomAlbum.artist }}
+      </p>
+    </div>
+    <div class="flow">
+      <svg
+        class="interest-icon"
+        width="32"
+        height="32"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M4.75 8L12 4.75L19.25 8L12 11.25L4.75 8Z"
+        ></path>
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M4.75 16L12 19.25L19.25 16"
+        ></path>
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M19.25 8V16"
+        ></path>
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M4.75 8V16"
+        ></path>
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M12 11.5V19"
+        ></path>
+      </svg>
+      <p class="bold">Tinkering with</p>
+      {{ set randomTool = tools.list |> getRandomItem }}
+      <p id="tools" class="animate-response">
+        <span class="cluster"
+          ><a class="external-link" href="{{ randomTool.url }}" target="_blank"
+            >{{ randomTool.name }}</a
+          >
+          <!-- prettier-ignore -->
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24">
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M17.25 15.25V6.75H8.75"
+                ></path>
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M17 7L6.75 17.25"></path></svg>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>

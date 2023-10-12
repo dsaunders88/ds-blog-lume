@@ -90,16 +90,19 @@ headshot: ../../img/avatar/ds-headshot.webp
   </svg>
 </div>
 <div class="content-wrapper">
-  <section class="intro | has-sidebar">
+  <section class="intro">
     <div class="flow">
       <div class="flow">
         <div>{{ include "partials/avatar.vto" }}</div>
-        <h1 class="text-step-2">{{ intro.tagline }}</h1>
+        <h1 class="text-step-3">{{ intro.tagline }}</h1>
         <p>{{ intro.description }}</p>
       </div>
       <div>{{ include "partials/social-list.vto" }}</div>
     </div>
-    <div class="sidebar">
+    <!-- prettier-ignore -->
+    {{ include "partials/interests.vto" }} 
+    {{#
+    <div class="interests | sidebar">
       <div class="grid">
         <div hx-indicator="#indicator">
           <button
@@ -288,6 +291,7 @@ headshot: ../../img/avatar/ds-headshot.webp
         </div>
       </div>
     </div>
+    #}}
   </section>
   <div class="home-sidebar">
     <div class="sticky | flow">
