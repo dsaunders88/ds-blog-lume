@@ -9,6 +9,9 @@ page_css: post-index.css
     {{ set postlist = search.pages(`type=posts category=${title.toLowerCase()}`,
     "date=desc"); }}
     <section>{{ include "partials/post-list.vto" }}</section>
+    <!-- prettier-ignore -->
+    {{ include "partials/posts-sidebar.vto" }} 
+    {{#
     <div class="sidebar | flow">
       <div class="categories">
         <div class="cluster with-icon">
@@ -124,5 +127,6 @@ page_css: post-index.css
         </ol>
       </div>
     </div>
+    #}}
   </div>
 </div>

@@ -19,6 +19,9 @@ page_css: post-index.css
       </li>
       {{ /for }}
     </ul>
+    <!-- prettier-ignore -->
+    {{ include "partials/posts-sidebar.vto" }} 
+    {{#
     <div class="sidebar | flow">
       <div class="categories">
         <div class="cluster with-icon">
@@ -132,5 +135,6 @@ page_css: post-index.css
         </ol>
       </div>
     </div>
+    #}}
   </div>
 </div>

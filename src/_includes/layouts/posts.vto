@@ -6,8 +6,11 @@ page_css: post-index.css
 <div class="content-wrapper">
   <h1>{{ title }}</h1>
   <div class="has-sidebar">
-    {{ set postlist = results }}
+    {{ set postlist = results }} {{> console.log(pagination) }}
     <section>{{ include "partials/post-list.vto" }}</section>
+    <!-- prettier-ignore -->
+    {{ include "partials/posts-sidebar.vto" }}
+    {{#
     <div class="sidebar | flow">
       <div class="categories">
         <div class="cluster with-icon">
@@ -59,8 +62,9 @@ page_css: post-index.css
           <h2 class="small-title">Tags</h2>
         </div>
         <ul class="tag-list | cluster" role="list">
-          {{ set allTags = search.values("tags", "type=posts") }} {{ for tag of
-          allTags |> sortTags }}
+          <!-- prettier-ignore -->
+          {{ set allTags = search.values("tags", "type=posts") }} 
+          {{ for tag of allTags |> sortTags }}
           <li>
             <a
               data-selected-page=""
@@ -121,6 +125,7 @@ page_css: post-index.css
         </ol>
       </div>
     </div>
+    #}}
   </div>
   <div class="pagination | cluster">
     <a href="{{ pagination.previous }}">Newer</a
