@@ -1,0 +1,154 @@
+---
+layout: layouts/base.vto
+page_css: project.css
+---
+
+<article class="content-wrapper">
+  <div class="intro | has-sidebar">
+    <div class="flow">
+      <header class="cluster">
+        <h1 class="small-title">{{ title }}</h1>
+        <div class="categories | cluster">
+          {{ for tag of tags }}
+          <span>
+            {{ if tag === 'design' }}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M10.25 8.75h-5.5m13.5 4.5s-.589-3.534-4.55-4.338m-3.4 0c-3.961.804-4.55 4.338-4.55 4.338m13.5-4.5h-5.5m-.5.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm-6 6a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm12 0a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Z"
+              ></path>
+            </svg>
+            Design {{ else if tag === 'development' }}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="m15.75 8.75 3.5 3.25-3.5 3.25m-7.5-6.5L4.75 12l3.5 3.25m5-9.5-2.5 12.5"
+              ></path>
+            </svg>
+            Development {{ /if }}
+          </span>
+          {{ /for }}
+        </div>
+      </header>
+      <img
+        class="featured-img"
+        src="../../../img/projects/{{ image.src }}-large.webp"
+        alt="{{ image.alt }}"
+        width="2000"
+      />
+      <div class="content | rich-content">{{ content }}</div>
+    </div>
+    <div>
+      {{#
+      <p class="summary">{{ summary }}</p>
+      #}}
+      <div class="info | flow">
+        <div class="flow">
+          <p class="bold">Client</p>
+          <p>{{ client }}</p>
+        </div>
+        <div class="flow">
+          <p class="bold">Year</p>
+          <p>{{ year }}</p>
+        </div>
+        <div class="flow">
+          <p class="bold">Scope</p>
+          <p>{{ scope.join(', ') |> capitalizeFirst }}</p>
+        </div>
+      </div>
+      <div class="return | cluster">
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M10.25 6.75L4.75 12L10.25 17.25"
+          ></path>
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M19.25 12H5"
+          ></path>
+        </svg>
+        <a href="/projects/">Return to projects</a>
+      </div>
+    </div>
+  </div>
+  <footer class="project-navigation">
+    {{ set previousProject = search.previousPage(url, "type=projects") }}
+    <div>
+      {{ if previousProject }}
+      <div>
+        <div class="nav-heading | cluster">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.75 12L14.25 7.75V16.25L8.75 12Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <span>Previous project</span>
+        </div>
+        <a href="{{ previousProject.url }}" rel="prev"
+          >{{previousProject.client }}</a
+        >
+      </div>
+      {{ /if }}
+    </div>
+    {{ set nextProject = search.nextPage(url, "type=projects") }}
+    <div>
+      {{ if nextProject }}
+      <div>
+        <div class="nav-heading | cluster">
+          <span>Next project</span>
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.25 12L8.75 7.75V16.25L14.25 12Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </div>
+        <a href="{{ nextProject.url }}">{{ nextProject.title }}</a>
+      </div>
+      {{ /if }}
+    </div>
+  </footer>
+</article>

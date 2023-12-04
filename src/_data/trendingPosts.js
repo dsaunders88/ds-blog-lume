@@ -45,12 +45,32 @@ async function getFathomData() {
   const headers = new Headers();
   headers.append("Authorization", `Bearer ${apiToken}`);
 
-  const res = await fetch(`${url}?${params.toString()}`, {
-    headers: headers,
-  });
-  return res.json();
+  try {
+    const res = await fetch(`${url}?${params.toString()}`, {
+      headers: headers,
+    });
+    return res.json();
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-const trendingPosts = await getFathomData();
-// console.log(trendingPosts);
+let trendingPosts = await getFathomData();
+console.log(trendingPosts);
+
+if (!trendingPosts) {
+  trendingPosts = [
+    { pathname: "/posts/notes/using-airtable-as-a-jamstack-cms/" },
+    {
+      pathname:
+        "/posts/notes/building-myself-a-reading-tracker-app-with-airtable-and-deno-fresh-part-2/",
+    },
+    {
+      pathname:
+        "/posts/notes/building-myself-a-reading-tracker-app-with-airtable-and-deno-fresh-part-1/",
+    },
+  ];
+}
+
+console.log(trendingPosts);
 export const list = trendingPosts;

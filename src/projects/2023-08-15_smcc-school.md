@@ -1,15 +1,28 @@
 ---
 title: Content Website
 image:
-  src: ../../img/projects/smcc-nursery-school-featured.webp
+  src: smcc-nursery-school-featured
   alt: Image alt
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 year: 2023
 client: San Marino Community Church Nursery School
-category: website
+category:
+  - design
+  - development
+tags:
+  - design
+  - development
 scope:
   - web design
   - web development
+  - cms
+images:
+  - src: smcc-nursery-school-featured
+    alt: Image alt
+  - src: smcc-nursery-school-featured
+    alt: Image alt
+  - src: smcc-nursery-school-featured
+    alt: Image alt
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

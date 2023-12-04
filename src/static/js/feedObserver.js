@@ -13,6 +13,11 @@ function updateText(sectionID) {
   }`;
 }
 
+// const observerOptions = {
+//   rootMargin: "-100px 0% -66%",
+//   threshold: 1,
+// };
+
 const feedObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     // console.log(entry);

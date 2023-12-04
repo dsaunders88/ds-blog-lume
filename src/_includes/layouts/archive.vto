@@ -8,13 +8,30 @@ page_css: post-index.css
   <div class="has-sidebar">
     {{ set archivedPosts = search.pages("type=posts", "date=desc") |>
     groupby("archiveYear") }}
-    <ul class="archive" role="list">
+    <ul class="archive | flow" role="list">
       {{ for year of archivedPosts }}
       <li>
+      {{ if year.type === 2023 }}
+        <details open="">
+      {{ else }}
         <details>
-          <summary><h2>{{ year.type }}</h2></summary>
+      {{ /if }}
+          <summary>
+            <h2>{{ year.type }} Posts</h2>
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M10.75 8.75L14.25 12L10.75 15.25"
+              ></path>
+            </svg>
+          </summary>
           {{ set entry = year.entries }}
-          <section>{{ include "partials/post-list-simple.vto" }}</section>
+          <section class="expanded-posts">
+            {{ include "partials/post-list-simple.vto" }}
+          </section>
         </details>
       </li>
       {{ /for }}

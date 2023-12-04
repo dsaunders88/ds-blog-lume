@@ -15,7 +15,9 @@ async function getBookData() {
     ["maxRecords", "8"],
     ["view", "viwQYvgMewlWBBqe2"],
     ["fields", "fldlmF45gCYW23PLI"],
+    ["fields", "fldIVAy1LGdKLaxbw"],
     ["fields", "fldKlpKfwoCqCJbVM"],
+    ["fields", "fldIwqgbD7kf7N8qD"],
     ["fields", "fldCEvxZzmoChJ5Dh"],
     ["fields", "fldC7XcQ4urRb4fQV"],
     ["fields", "fldEtqJkG0cSKP8dK"],
@@ -40,15 +42,22 @@ const data = await getBookData();
 // console.log(data);
 export const list = data.records.map((record) => {
   const fields = record.fields;
+  const dateStarted =
+    fields.fldIVAy1LGdKLaxbw && new Date(fields.fldIVAy1LGdKLaxbw);
+  const dateFinished =
+    fields.fldIwqgbD7kf7N8qD && new Date(fields.fldIwqgbD7kf7N8qD);
+  const airtableLastUpdated = new Date(fields.fld75vdT7jzbx0ptV);
+  const dateUpdated = dateFinished || dateStarted || airtableLastUpdated;
+  const completed =
+    fields.fldCEvxZzmoChJ5Dh === "Have Read" && fields.fldKM2VLezO00lQHI === 1;
+
   return {
     id: fields.fldlmF45gCYW23PLI.toString(),
     title: fields.fldKlpKfwoCqCJbVM.toString(),
     status: fields.fldCEvxZzmoChJ5Dh,
     authors: fields.fldC7XcQ4urRb4fQV,
-    percentRead: new Intl.NumberFormat("en-US", { style: "percent" }).format(
-      fields.fldKM2VLezO00lQHI
-    ),
+    completed: completed,
     cover: fields.fldEtqJkG0cSKP8dK[0].thumbnails.large.url,
-    lastModified: fields.fld75vdT7jzbx0ptV,
+    date: dateUpdated,
   };
 });

@@ -1,14 +1,25 @@
 ---
 title: Marketing Website
 image:
-  src: ../../img/projects/whittier-featured.webp
+  src: whittier-featured
   alt: Image alt
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 year: 2023
 client: Whittier College Graphic Design Program
-category: website
+category:
+  - development
+tags:
+  - development
 scope:
   - web development
+  - cms
+images:
+  - src: whittier-featured
+    alt: Image alt
+  - src: whittier-featured
+    alt: Image alt
+  - src: whittier-featured
+    alt: Image alt
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

@@ -1,17 +1,19 @@
-<ul class="post-list-simple | flow" role="list">
+<table class="post-list-simple | flow" role="list">
   {{ for post of entry }}
-  <li>
-    <article class="flow">
-      <div class="eyebrow | cluster">
-        <time>{{ post.date |> readableDate }}</time> in
-        <a href="/posts/{{ post.category }}/"
-          >{{ post.category |> capitalizeFirst }}</a
-        >
-      </div>
-      <h3 class="mt-2">
+  <tr>
+    <td>
+      <time datetime="{{ post.date }}">{{ post.date |> shortDate }}</time>
+    </td>
+    <td>
+      <h3>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </h3>
-    </article>
-  </li>
+    </td>
+    <td>
+      <a href="/posts/{{ post.category }}/"
+        >{{ post.category |> capitalizeFirst }}</a
+      >
+    </td>
+  </tr>
   {{ /for }}
-</ul>
+</table>

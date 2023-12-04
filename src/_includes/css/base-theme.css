@@ -1,6 +1,6 @@
 /* Base theme */
 body {
-  background: var(--color-background-1);
+  background: var(--color-background-0);
   color: var(--color-text-body);
   font-family: var(--font-primary);
   font-size: var(--step-0);
@@ -9,12 +9,14 @@ body {
 
 :where(h1, h2, h3, h4, h5, h6) {
   color: var(--color-text-heading);
+  font-family: var(--font-headings);
+  font-weight: var(--font-headings-weight);
 }
 
 a:not(.btn, .logo) {
   color: inherit;
-  text-decoration-thickness: 1px;
-  text-decoration-color: currentColor;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-text-link-underline);
   transition: all 0.2s ease-in-out;
 }
 

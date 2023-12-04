@@ -1,5 +1,22 @@
+main {
+  margin-block-end: calc(var(--space-xl) * -1);
+}
+
 #feed.flow {
   --flow-space: var(--space-xl);
+  padding-block-end: var(--space-2xl);
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 1px;
+    background: var(--color-light-border);
+    left: calc(var(--space-xl) * -1);
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+  }
 
   & section {
     & header {
@@ -14,6 +31,12 @@
       &.cluster {
         --cluster-space: 0.25rem;
       }
+    }
+  }
+
+  & #books {
+    & footer {
+      border-bottom: unset;
     }
   }
 }
@@ -174,23 +197,43 @@
 .intro {
   padding-block-start: var(--space-3xl);
 
-  &.has-sidebar {
+  /*&.has-sidebar {
     --sidebar-min-width: 35rem;
     --main-min-width: 40%;
     --sidebar-gap: 3rem;
+  }*/
+
+  & .has-sidebar {
+    --sidebar-gap: var(--l);
   }
 
   & > :first-child p {
-    max-width: var(--paragraph-measure);
+    max-width: var(--paragraph-measure-short);
     font-size: var(--step-1);
   }
 
   & .interests {
+    --accent-gradient: linear-gradient(
+      to bottom right,
+      color-mix(in lch, var(--color-text-emphasis), white 85%),
+      color-mix(in lch, var(--color-text-emphasis-light), white 80%)
+    );
+    --border-color: var(--color-light-border);
     position: relative;
     margin-block-start: var(--space-2xl);
-    padding: var(--space-l);
+    margin-inline: calc((var(--gutter) * -1) - 0.5px);
+    /*padding: var(--space-l);*/
     border-radius: var(--rounded-corners);
-    background: var(--color-background-1);
+    /*background: var(--color-background-1);*/
+    background: linear-gradient(
+        to right,
+        color-mix(in lch, var(--color-background-0), transparent 80%),
+        color-mix(in lch, var(--color-background-0), transparent 10%)
+      ),
+      url("/geometric-bg.svg") no-repeat center / cover,
+      var(--color-background-0);
+    box-shadow: 0 9px 32px
+      color-mix(in lch, var(--color-text-emphasis), transparent 97%);
 
     &::after {
       content: "";
@@ -199,17 +242,32 @@
       margin: -1px;
       border-radius: var(--rounded-corners);
       z-index: -1;
-      background: linear-gradient(
-        to bottom right,
-        var(--color-background-shade),
-        var(--color-light-border)
-      );
+      background: var(--border-color);
     }
+
+    & h2 {
+      margin-top: 0.5rem;
+    }
+
+    /*& h2 {
+      position: absolute;
+      top: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--color-background-3);
+      color: var(--color-background-1);
+      font-size: var(--step--2);
+      border-radius: var(--rounded-corners-small);
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      padding-inline: 1rem;
+      padding-block: 0.5rem;
+    }*/
   }
 
   & .grid {
     display: grid;
-    grid-template-columns: 2fr repeat(3, 1fr); /*auto 10rem 11rem 10rem;*/
+    grid-template-columns: 1.5fr repeat(3, 1fr); /*auto 10rem 11rem 10rem;*/
     gap: 2rem;
 
     /* Generate button */
@@ -222,13 +280,48 @@
       padding-inline-start: 0.5rem;
     }*/
 
+    & > :first-child {
+      padding: var(--space-m);
+    }
+
     & > .flow {
       --flow-space: 3px;
-      place-self: start;
+      /*place-self: start;*/
+      position: relative;
+      padding-block: var(--space-m);
+      padding-inline: var(--space-m);
+      margin-inline-start: calc(var(--space-m) * -1);
+      border-left: 1px solid var(--border-color);
+      transition: all 0.2s ease;
+
+      &:hover {
+        /*background: color-mix(
+          in lch,
+          var(--color-text-emphasis),
+          transparent 92%
+        );*/
+        border-left-color: color-mix(
+          in lch,
+          var(--color-text-emphasis),
+          white 60%
+        );
+      }
 
       &:hover .interest-icon {
         color: var(--color-text-emphasis);
       }
+
+      /*
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        height: 100%;
+        left: -2rem;
+        background: var(--accent-gradient);
+      }*/
 
       & .cluster {
         --cluster-space: 0.25rem;
@@ -257,7 +350,7 @@
     align-items: center;
     gap: 0.5rem;
     width: fit-content;
-    margin-block-start: 1rem;
+    margin-block-start: 1.25rem;
     padding: 0.75rem 1rem;
     color: white;
     background-color: var(--color-text-emphasis);
@@ -374,7 +467,7 @@
       margin-block-start: 0.5rem;
 
       &:hover {
-        text-decoration-color: inherit;
+        text-decoration-color: var(--color-text-emphasis);
       }
     }
   }
@@ -413,10 +506,22 @@
     --row-gap: var(--space-l);
   }
 
+  .img-link:hover img {
+    transform: translateY(-0.5rem);
+    box-shadow: var(--shadow-light);
+  }
+
+  .img-link:hover + div .title a {
+    text-decoration-color: var(--color-text-emphasis);
+    color: var(--color-text-link);
+  }
+
   & img {
     aspect-ratio: 6/9;
     object-fit: cover;
+    box-shadow: var(--shadow-none);
     border-radius: var(--rounded-corners-small);
+    transition: transform 0.2s ease, box-shadow 0.4s ease;
   }
 
   & .flow {
@@ -440,19 +545,41 @@
   }
 
   & .title {
-    margin-block-start: var(--space-xs);
     font-weight: 900;
     line-height: var(--leading-tight);
+    font-size: var(--step-0);
+    margin-block-start: var(--space-2xs);
+
+    & a {
+      text-decoration-color: transparent;
+    }
+
+    & a:hover {
+      text-decoration-color: var(--color-text-emphasis);
+    }
   }
 
   & .info {
     font-size: var(--step--1);
     line-height: var(--leading-tight);
 
-    & > :last-child {
-      font-size: var(--step--2);
-      font-style: italic;
-      margin-top: 0.125rem;
+    & > .status-tag {
+      font-size: 12px;
+      margin-top: 0.75rem;
+      color: var(--color-text-body-shade);
+      font-family: var(--font-code);
+
+      &.cluster {
+        --cluster-space: 4px;
+      }
+
+      & svg[data-color="completed"] {
+        color: #22c55e;
+      }
+
+      & svg[data-color="reading"] {
+        color: var(--color-text-emphasis);
+      }
     }
   }
 }

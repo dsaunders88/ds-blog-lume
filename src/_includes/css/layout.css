@@ -154,7 +154,7 @@ figure {
           text-decoration-color: transparent;
 
           &:hover {
-            text-decoration-color: inherit;
+            text-decoration-color: var(--color-text-emphasis);
           }
         }
       }
@@ -222,7 +222,7 @@ figure {
       border-radius: var(--rounded-corners);
       background: linear-gradient(
         to top,
-        var(--color-background-3),
+        var(--color-text-emphasis),
         transparent
       );
       overflow: hidden;
@@ -263,19 +263,36 @@ figure {
   /* Title cluster */
   & .cluster {
     --cluster-space: 0.5rem;
+    --cluster-justify: space-between;
   }
 
   & .title {
     margin-block-start: 0.75rem;
     font-weight: 400;
+    line-height: var(--leading-tight);
     font-size: var(--step--1);
 
     & > :first-child {
       font-weight: 900;
     }
 
+    & > :last-child {
+      font-family: var(--font-primary);
+    }
+
     & .dot {
       color: var(--color-text-emphasis);
+    }
+
+    & .categories {
+      &.cluster {
+        --cluster-space: 6px;
+        --cluster-justify: flex-start;
+      }
+
+      & svg {
+        color: var(--color-text-emphasis);
+      }
     }
   }
 }

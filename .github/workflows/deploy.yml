@@ -3,6 +3,8 @@ name: Publish on Deno Deploy
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: "0 6 * * *"
 
 jobs:
   build:

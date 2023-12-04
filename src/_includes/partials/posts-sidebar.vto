@@ -22,6 +22,7 @@
     <ul class="tag-list | cluster" role="list">
       <li>
         <a
+          class="category"
           data-selected-page="{{ url === `/posts/` && 'selected' }}"
           href="/posts"
           >All</a
@@ -29,9 +30,10 @@
       </li>
       <!-- prettier-ignore -->
       {{ set allCategories = search.values("category", "type=posts") }} 
-          {{ for category of allCategories |> sortTags }}
+          {{ for category of allCategories }}
       <li>
         <a
+          class="category"
           data-selected-page="{{ url === `/posts/${category}/` && 'selected' }}"
           href="/posts/{{ category }}"
           >{{ category |> capitalizeFirst }}</a
@@ -40,6 +42,7 @@
       {{ /for }}
       <li>
         <a
+          class="category"
           data-selected-page="{{ url === `/posts/archive/` && 'selected' }}"
           href="/posts/archive"
           >Archive</a
@@ -66,8 +69,12 @@
       {{ set allTags = search.values("tags", "type=posts") }} 
       {{ for tag of allTags |> sortTags }}
       <li>
-        <a data-selected-page="" class="tag" href="/tag/{{ tag |> slugifyTag }}"
-          >{{ tag }}</a
+        {{ set slugified = tag |> slugifyTag }}
+        <a
+          data-selected-page="{{ url === `/tag/${slugified}/` && 'selected' }}"
+          class="tag"
+          href="{{ `/tag/${slugified}` }}"
+          >{{ tag |> capitalizeFirst }}</a
         >
       </li>
       {{ /for }}
@@ -116,7 +123,7 @@
     </div>
     <ol class="flow">
       <!-- prettier-ignore -->
-      {{ for fetchedPost of trendingPosts.list }} 
+      {{ for fetchedPost of trendingPosts.list }}
       {{ set foundPost = search.page(`url=${fetchedPost.pathname}`) }}
       <li><a href="{{ foundPost.url }}">{{ foundPost.title }}</a></li>
       {{ /for }}

@@ -1,4 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 /* @font-face rules */
+@font-face {
+  font-family: "Lumin";
+  src: url("/fonts/LuminxsTRIAL-Bld.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zico";
+  src: url("/fonts/ZicoxsTRIAL-Hea.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fedra Sans Display";
+  src: url("/fonts/FeSaDisHeavyxsTRIAL.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brix Slab";
+  src: url("/fonts/BrixSlab-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
   font-family: "Brix Sans";
   src: url("/fonts/Brix-Sans-Web-Regular.woff2") format("woff2"),
@@ -46,6 +79,14 @@
   font-family: "JetBrains Mono";
   src: url("/fonts/JetBrainsMono-ExtraBold.woff2") format("woff2");
   font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gimlet Sans";
+  src: url("/fonts/GimletSansDisplay-Black.woff2") format("woff2");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }

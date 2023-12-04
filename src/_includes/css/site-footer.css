@@ -1,8 +1,17 @@
-footer {
+.site-footer {
+  border-top: 1px solid var(--color-light-border);
   position: relative;
   margin-block-start: var(--space-xl);
   padding-block-start: var(--space-xl);
   padding-block-end: var(--space-m);
+
+  & a:not(.subfooter a) {
+    text-decoration-color: transparent;
+
+    &:hover {
+      text-decoration-color: var(--color-text-emphasis);
+    }
+  }
 
   & .small-title {
     font-weight: 900;
@@ -17,6 +26,10 @@ footer {
     display: grid;
     grid-template-columns: 2fr repeat(3, 1fr);
     margin-block-end: var(--space-2xl);
+
+    & > :first-child {
+      justify-self: center;
+    }
   }
 
   & .subfooter {

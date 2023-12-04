@@ -19,8 +19,11 @@ h3,
 
 .small-title {
   font-size: var(--step--1);
+  font-family: var(--font-code);
+  font-weight: 400;
+  color: var(--color-text-heading);
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem; /* 0.15rem*/
 }
 
 .with-icon {
@@ -32,14 +35,50 @@ h3,
     color: var(--color-text-emphasis);
   }
 
-  & .small-title {
+  /*& .small-title {
     color: var(--color-text-body-shade);
-  }
+  }*/
 }
 
 /* Links */
 a {
   color: var(--color-accent-red-600);
+}
+
+a.button-link {
+  color: #fff;
+  background-color: var(--color-text-emphasis);
+  border-radius: var(--rounded-corners);
+  cursor: pointer;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  margin-block-start: 1.25rem;
+  padding: 0.75rem 1rem;
+  font-weight: 900;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  text-decoration: none;
+
+  &:hover {
+    background-color: color-mix(in lch, var(--color-text-emphasis) 90%, black);
+    color: #fff;
+  }
+
+  & span {
+    position: relative;
+    top: -1px;
+  }
+
+  &.animate-arrow svg {
+    transition: all 0.2s ease;
+  }
+
+  &.animate-arrow:hover svg {
+    transform: translateX(2px);
+  }
 }
 
 .line-clamp {
@@ -73,12 +112,12 @@ a {
     margin-block-start: var(--space-xl);
   }
 
-  & :is(p, ul, blockquote) {
+  & :is(p, ul, blockquote, pre code) {
     margin-block-start: var(--space-m);
   }
 
   & :is(li) {
-    margin-block-start: var(--space-xs);
+    margin-block-start: var(--space-s);
   }
 
   & h2 {
@@ -100,24 +139,41 @@ a {
   & blockquote {
     position: relative;
     border-left: 2px solid var(--color-text-emphasis-light);
-    padding-block: var(--space-m);
-    padding-inline-start: var(--space-l);
+    padding-block: var(--space-s);
+    padding-inline-start: var(--gutter);
     padding-inline-end: var(--space-m);
-    font-style: italic;
+    color: var(--color-text-link);
+    background-color: var(--color-light-accent);
+    border-top-right-radius: var(--rounded-corners-small);
+    border-bottom-right-radius: var(--rounded-corners-small);
 
     & p {
       margin-block: 0;
     }
 
-    &::after {
-      content: "";
-      background: url("/geometric-bg.svg") left/cover no-repeat;
-      opacity: var(--background-element-opacity);
+    & a {
+      text-decoration-color: var(--color-text-emphasis-light);
+    }
+
+    &::before {
+      color: var(--color-light-accent);
+      content: "“";
+      background: var(--color-background-0);
+      left: calc((var(--gutter) * 0.5) * -1);
+      background-color: var(--color-text-emphasis);
+      border-radius: 999px;
+      width: 32px;
+      height: 32px;
+      padding: 2px;
+      font-style: normal;
+      display: inline-flex;
       position: absolute;
-      inset: 0;
-      width: 100%;
-      z-index: -1;
-      mask-image: linear-gradient(to right, black, transparent);
+      font-family: "Georgia", serif;
+      line-height: 0.45;
+      align-items: flex-end;
+      justify-content: center;
+      font-size: 32px;
+      overflow: hidden;
     }
   }
 
@@ -128,15 +184,18 @@ a {
   }
 }
 
-.tag {
+.tag,
+.category {
   padding: 0.25rem 0.55rem 0.35rem;
   background: var(--color-background-shade);
   line-height: 1.15;
   text-decoration: none;
   font-size: var(--step--1);
+  border: 1px solid transparent;
   border-radius: var(--rounded-corners-small);
 
   &:hover {
-    background: var(--color-light-border);
+    background: var(--color-background-1);
+    border-color: var(--color-light-border);
   }
 }

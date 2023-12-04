@@ -5,7 +5,12 @@
       <ul class="cluster" role="list">
         {{ for item of navigation.main }}
         <li>
-          <a class="nav-link" href="{{ item.path }}">{{ item.name }}</a>
+          <a
+            class="nav-link"
+            href="{{ item.path }}"
+            data-selected-page="{{ item.path |> isActive(url, item.path) }}"
+            >{{ item.name }}</a
+          >
         </li>
         {{ /for }}
       </ul>

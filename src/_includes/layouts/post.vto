@@ -135,7 +135,6 @@ page_css: post.css
           d="M19.25 12H5"
         ></path>
       </svg>
-
       <a href="/posts/">Return to posts</a>
     </div>
     <div>
@@ -155,7 +154,9 @@ page_css: post.css
       <ul class="tag-list | cluster" role="list">
         {{ for tag of tags }}
         <li>
-          <a class="tag" href="/tag/{{ tag |> slugifyTag }}/">{{ tag }}</a>
+          <a class="tag" href="/tag/{{ tag |> slugifyTag }}/"
+            >{{ tag |> capitalizeFirst }}</a
+          >
         </li>
         {{ /for }}
       </ul>
@@ -180,7 +181,33 @@ page_css: post.css
         </svg>
         <div class="small-title">Table of Contents</div>
       </div>
-      <ul class="level-2" role="list">
+      <toc-observer>
+        <ul class="toc level-2" role="list">
+          <li>
+            <a class="toc-link" href="#content">Prelude</a>
+          </li>
+          {{ for heading of toc }}
+          <li>
+            <a class="toc-link" href="#{{ heading.slug }}"
+              >{{ heading.text }}</a
+            >
+            {{ if heading.children.length > 0 }}
+            <ul class="level-3" role="list">
+              {{ for child of heading.children }}
+              <li>
+                <a class="toc-link" href="#{{ child.slug }}"
+                  >{{ child.text }}</a
+                >
+              </li>
+              {{ /for }}
+            </ul>
+            {{ /if }}
+          </li>
+          {{ /for }}
+        </ul>
+      </toc-observer>
+      {{#
+      <ul class="toc level-2" role="list">
         <li><a class="toc-link" href="#content">Prelude</a></li>
         {{ for heading of toc }}
         <li>
@@ -197,6 +224,7 @@ page_css: post.css
         </li>
         {{ /for }}
       </ul>
+      #}}
     </nav>
     {{ /if }}
   </div>
@@ -257,4 +285,12 @@ page_css: post.css
     {{ /if }}
   </div>
 </footer>
+{{#
 <script src="/js/tocObserver.js" inline></script>
+#}} {{#
+<script src="/components/preact-toc.jsx" type="module"></script>
+#}}
+<script src="/components/toc-observer.js" type="module"></script>
+{{#
+<script src="/components/starlight-toc.js" type="module"></script>
+#}}

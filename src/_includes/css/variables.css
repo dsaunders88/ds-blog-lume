@@ -2,15 +2,18 @@
   /* Fonts */
   --font-primary: "Brix Sans", system-ui, "Segoe UI", Tahoma, Geneva, Verdana,
     sans-serif;
+  --font-headings: "Lumin", serif;
+  --font-headings-weight: 700;
   --font-code: "JetBrains Mono", "Consolas", "Monaco", "Andale Mono",
     "Ubuntu Mono", monospace;
-  --leading-normal: 1.4;
+  --leading-normal: 1.45;
   --leading-tight: 1.15;
 
   /* Colors */
   --color-white: #fff;
+  --color-neutral-0: lch(100% 0 0);
   --color-neutral-50: lch(98.2% 0 0);
-  --color-neutral-100: lch(93.95% 0.3 199.3);
+  --color-neutral-100: lch(96% 0.3 200);
   --color-neutral-150: lch(90% 0.6 255);
   --color-neutral-200: lch(85.1% 1.2 255.6);
   --color-neutral-300: lch(76.5% 1.9 255.7);
@@ -103,12 +106,15 @@
   --color-text-link: var(--color-red-600);
   --color-text-emphasis: var(--color-red-500);
   --color-text-emphasis-light: var(--color-red-300);
+  --color-text-link-underline: var(--color-neutral-300);
+  --color-light-accent: var(--color-red-50);
   --color-light-border: var(--color-neutral-150);
+  --color-background-0: var(--color-neutral-0);
   --color-background-1: var(--color-neutral-50);
   --color-background-shade: var(--color-neutral-100);
   --color-background-2: var(--color-neutral-500);
   --color-background-3: var(--color-neutral-800);
-  --background-element-opacity: 1;
+  --background-element-opacity: 0.5;
 }
 
 /* Dark theme */
@@ -120,8 +126,10 @@
   --color-text-link: var(--color-red-400);
   --color-text-emphasis: var(--color-red-300);
   --color-text-emphasis-light: var(--color-red-600);
+  --color-text-link-underline: var(--color-netural-800);
   --color-light-border: var(--color-neutral-900);
-  --color-background-1: var(--color-neutral-1000);
+  --color-background-0: var(--color-neutral-1000);
+  --color-background-1: var(--color-neutral-950);
   --color-background-shade: var(--color-netural-900);
   --color-background-2: var(--color-neutral-500);
   --color-background-3: var(--color-neutral-50);
