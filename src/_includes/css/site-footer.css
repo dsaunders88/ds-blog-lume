@@ -1,5 +1,5 @@
 .site-footer {
-  border-top: 1px solid var(--color-light-border);
+  border-top: 1px solid var(--color-border);
   position: relative;
   margin-block-start: var(--space-xl);
   padding-block-start: var(--space-xl);
@@ -9,7 +9,7 @@
     text-decoration-color: transparent;
 
     &:hover {
-      text-decoration-color: var(--color-text-emphasis);
+      text-decoration-color: var(--color-link-underline-hover);
     }
   }
 
@@ -67,13 +67,19 @@
     transition: background-color 0.2s ease;
 
     &:hover {
-      background-color: var(--color-background-shade);
-      color: var(--color-text-emphasis);
+      background-color: var(--color-button-utility-background);
+      color: var(--color-button-utility-text);
     }
   }
 }
 
-.theme-buttons {
+.settings {
+  & .small-title:last-of-type {
+    margin-block-start: var(--space-m);
+  }
+}
+
+:is(.theme-buttons, .accent-buttons) {
   &.cluster {
     --cluster-space: 0.5rem;
   }
@@ -89,14 +95,60 @@
     border-radius: var(--rounded-corners-small);
     border: none;
     transition: all 0.2s ease;
+  }
+}
 
+.theme-buttons {
+  & button {
     &:hover {
-      background-color: var(--color-background-shade);
-      color: var(--color-text-emphasis);
+      background-color: var(--color-button-utility-background);
+      color: var(--color-button-utility-text);
     }
 
     &.active {
-      background-color: var(--color-background-shade);
+      background-color: var(--color-button-utility-background);
+    }
+  }
+}
+
+.accent-buttons {
+  & button {
+    &[title="Printer's Red Accent"] {
+      border: 1px solid var(--color-red-500);
+      color: var(--color-red-500);
+
+      &:hover {
+        background-color: var(--color-red-500);
+        color: var(--color-red-100);
+      }
+
+      &.active {
+        background-color: var(--color-red-500);
+        color: var(--color-red-100);
+
+        &:hover {
+          background-color: color-mix(in lch, var(--color-red-500), black 10%);
+        }
+      }
+    }
+
+    &[title="Dodger Blue Accent"] {
+      border: 1px solid var(--color-blue-500);
+      color: var(--color-blue-500);
+
+      &:hover {
+        background-color: var(--color-blue-500);
+        color: var(--color-blue-100);
+      }
+
+      &.active {
+        background-color: var(--color-blue-500);
+        color: var(--color-blue-100);
+
+        &:hover {
+          background-color: color-mix(in lch, var(--color-blue-500), black 10%);
+        }
+      }
     }
   }
 }

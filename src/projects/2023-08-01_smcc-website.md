@@ -13,10 +13,11 @@ tags:
   - design
   - development
 scope:
-  - web design
-  - web development
-  - cms
-  - branding
+  - Web Design
+  - Web Development
+  - CMS
+  - Branding
+link: https://sanmarinocommunitychurch.com/
 images:
   - src: smcc-featured
     alt: Image alt

@@ -11,8 +11,9 @@ category:
 tags:
   - development
 scope:
-  - web development
-  - cms
+  - Web Development
+  - CMS
+link: https://design.whittier.edu/
 images:
   - src: whittier-featured
     alt: Image alt

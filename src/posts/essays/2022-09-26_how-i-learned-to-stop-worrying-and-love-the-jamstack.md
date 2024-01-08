@@ -1,7 +1,7 @@
 ---
 title: How I Learned to Stop Worrying and Love the Jamstack
 image:
-  src: ../../img/posts/screenshot-3-diffusion-featured.webp
+  src: html-workshop
   alt: Image alt
 archiveYear: 2022
 ---

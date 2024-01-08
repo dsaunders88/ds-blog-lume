@@ -1,7 +1,7 @@
 ---
 title: The Christ of Nikos Kazantzakis
 image:
-  src: ../../img/posts/kazantzakis-featured.webp
+  src: kazantzakis-featured
   alt: Nikos Kazantzakis in his study.
   attribution: <a href="https://www.kazantzaki.gr/gr/life-and-work/apodimia-kai-anagnorisi-193">Kazantzakis Museum</a>
 summary: Nikos Kazantzakis’ towering literary output reflects a lifelong effort to articulate both spiritual and political radicalisms, for which the figure of Christ is often the embodiment.

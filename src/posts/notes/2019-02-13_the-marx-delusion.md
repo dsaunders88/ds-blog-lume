@@ -1,7 +1,7 @@
 ---
 title: The Marx Delusion
 image:
-  src: ../../img/posts/screenshot-3-diffusion-featured.webp
+  src: marx-engels-berlin-3d
   alt: Image alt
 summary: “Materialism for Marx meant starting from what human beings actually were, rather than from some shadowy ideal to which we could aspire,” writes Eagleton, a statement which ought to reassure any conservative wary of social planning and progressivism. Marx’s materialism, in fact, is one of his most misunderstood ideas—which is unfortunate, given that it forms the bedrock of his thought.
 post_intro: Terry Eagleton’s witty <em>Why Marx Was Right</em> might more accurately be called something like <em>Marxism Is Not What Most People (viz. Those Who Have Strong Opinions on Marx but Have Probably Never Read Him) Think It Is</em>.

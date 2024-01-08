@@ -32,7 +32,7 @@ h3,
   }
 
   & svg {
-    color: var(--color-text-emphasis);
+    color: var(--color-icon);
   }
 
   /*& .small-title {
@@ -42,12 +42,12 @@ h3,
 
 /* Links */
 a {
-  color: var(--color-accent-red-600);
+  color: var(--color-link-text);
 }
 
 a.button-link {
-  color: #fff;
-  background-color: var(--color-text-emphasis);
+  color: var(--color-button-main-text);
+  background-color: var(--color-button-main-background);
   border-radius: var(--rounded-corners);
   cursor: pointer;
   border: none;
@@ -63,8 +63,12 @@ a.button-link {
   text-decoration: none;
 
   &:hover {
-    background-color: color-mix(in lch, var(--color-text-emphasis) 90%, black);
-    color: #fff;
+    background-color: color-mix(
+      in lch,
+      var(--color-button-main-background) 90%,
+      black
+    );
+    color: var(--color-button-main-text);
   }
 
   & span {
@@ -95,7 +99,7 @@ a.button-link {
 }
 
 .external-link:hover + svg {
-  color: var(--color-text-emphasis);
+  color: var(--color-icon);
   transform: translate(2px, -2px);
 }
 
@@ -138,12 +142,12 @@ a.button-link {
 
   & blockquote {
     position: relative;
-    border-left: 2px solid var(--color-text-emphasis-light);
+    border-left: 2px solid var(--color-border-accent-light);
     padding-block: var(--space-s);
     padding-inline-start: var(--gutter);
     padding-inline-end: var(--space-m);
-    color: var(--color-text-link);
-    background-color: var(--color-light-accent);
+    color: var(--color-text-body-accent);
+    background-color: var(--color-background-accent-light);
     border-top-right-radius: var(--rounded-corners-small);
     border-bottom-right-radius: var(--rounded-corners-small);
 
@@ -152,15 +156,14 @@ a.button-link {
     }
 
     & a {
-      text-decoration-color: var(--color-text-emphasis-light);
+      text-decoration-color: var(--color-link-underline-hover);
     }
 
     &::before {
-      color: var(--color-light-accent);
+      color: var(--color-background-accent-light);
       content: "“";
-      background: var(--color-background-0);
       left: calc((var(--gutter) * 0.5) * -1);
-      background-color: var(--color-text-emphasis);
+      background-color: var(--color-background-accent-dark);
       border-radius: 999px;
       width: 32px;
       height: 32px;
@@ -179,7 +182,7 @@ a.button-link {
 
   & li {
     &::marker {
-      color: var(--color-text-emphasis);
+      color: var(--color-icon);
     }
   }
 }
@@ -187,15 +190,15 @@ a.button-link {
 .tag,
 .category {
   padding: 0.25rem 0.55rem 0.35rem;
-  background: var(--color-background-shade);
+  background: var(--color-tag-background);
   line-height: 1.15;
   text-decoration: none;
   font-size: var(--step--1);
-  border: 1px solid transparent;
+  border: 1px solid var(--color-tag-border);
   border-radius: var(--rounded-corners-small);
 
   &:hover {
-    background: var(--color-background-1);
-    border-color: var(--color-light-border);
+    background: var(--color-tag-background-hover);
+    border-color: var(--color-tag-border-hover);
   }
 }

@@ -13,9 +13,10 @@ tags:
   - design
   - development
 scope:
-  - web design
-  - web development
-  - branding
+  - Web Design
+  - Web Development
+  - Branding
+link: https://movewithcait.com/
 stack:
   - Astro
 images:

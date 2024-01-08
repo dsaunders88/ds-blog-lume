@@ -3,11 +3,11 @@
   position: relative;
   z-index: 1;
   backdrop-filter: blur(6px);
-  background: color-mix(in lch, var(--color-background-0), transparent 45%);
+  background: color-mix(in lch, var(--color-background-body), transparent 45%);
 
   &::after {
     content: "";
-    background: var(--color-light-border);
+    background: var(--color-border);
     /*background: linear-gradient(
       to left,
       var(--color-light-border),
@@ -42,12 +42,12 @@
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      border-bottom: 1px solid var(--color-text-emphasis);
-      color: var(--color-text-emphasis);
+      border-bottom: 1px solid var(--color-border-accent);
+      color: var(--color-link-text-hover);
     }
 
     &[data-selected-page="selected"] {
-      border-bottom: 1px solid var(--color-text-emphasis);
+      border-bottom: 1px solid var(--color-border-accent);
     }
   }
 }

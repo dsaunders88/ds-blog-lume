@@ -1,7 +1,7 @@
 ---
 title: The Last Christian
 image:
-  src: ../../img/posts/reading-featured.webp
+  src: francis-of-assisi
   alt: Image alt
 summary: "“In the person of Francis the premodern world, so to speak, gathered itself together before coming to an end. For one last time, before the forces of progress thundered off on their triumphant path, one man looked into the motivating thrust behind the whole thing and decisively rejected it: Francis of Assisi, the last Christian.”"
 archiveYear: 2017

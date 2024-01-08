@@ -1,7 +1,7 @@
 ---
 title: My PC Apostasy—On Converting to the Cult of MacOS
 image:
-  src: ../../img/posts/trent-featured.webp
+  src: trent-featured
   alt: Opening session of the Council of Trent in 1545, depicted by Nicolò Dorigati, 1711, with runner from Apple's 1984 commercial superimposed over the altar.
   attribution: <a href="https://www.britannica.com/event/Council-of-Trent">Brittanica</a>
 summary: It is, I admit, something like a Puritan's envy for that cheerful and conciliatory user experience of the Mac that finally led me to forsake the dour Northern lands of PC-dom and to cross the operating-system Tiber.

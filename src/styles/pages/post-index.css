@@ -4,7 +4,7 @@ h1 {
   font-size: var(--step-4);
 
   & > span {
-    color: var(--color-text-emphasis);
+    color: var(--color-text-heading-accent);
   }
 }
 
@@ -28,18 +28,24 @@ h1 {
 
 .sidebar {
   position: sticky;
+  overflow: hidden;
   place-self: flex-start;
   top: var(--space-m);
-  border: 1px solid var(--color-light-border);
+  border: 1px solid var(--color-border);
   border-radius: var(--rounded-corners-small);
   padding: var(--space-s);
 
   &.flow {
-    --flow-space: var(--space-l);
+    --flow-space: var(--space-m);
   }
 
   & .small-title {
     font-size: var(--step--2);
+  }
+
+  & > *:not(:last-child, div:last-of-type) {
+    border-block-end: 1px solid var(--color-border);
+    padding-block-end: calc(var(--space-m) + 0.25rem);
   }
 }
 
@@ -50,13 +56,14 @@ h1 {
     }
 
     & a[data-selected-page="selected"] {
-      color: white;
-      background-color: var(--color-text-emphasis);
+      color: var(--color-tag-text-active);
+      background-color: var(--color-tag-background-active);
+      border-color: var(--color-tag-border-active);
 
       &:hover {
         background-color: color-mix(
           in lch,
-          var(--color-text-emphasis) 80%,
+          var(--color-tag-background-active) 80%,
           black
         );
       }
@@ -70,13 +77,14 @@ h1 {
 .tags {
   & .tag-list {
     & a[data-selected-page="selected"] {
-      color: white;
-      background-color: var(--color-text-emphasis);
+      color: var(--color-tag-text-active);
+      background-color: var(--color-tag-background-active);
+      border-color: var(--color-tag-border-active);
 
       &:hover {
         background-color: color-mix(
           in lch,
-          var(--color-text-emphasis) 80%,
+          var(--color-tag-background-active) 80%,
           black
         );
       }
@@ -99,7 +107,7 @@ h1 {
 
     &::marker {
       font-weight: 900;
-      color: var(--color-text-emphasis);
+      color: var(--color-icon);
       font-size: 0.85em;
     }
   }
@@ -112,8 +120,20 @@ h1 {
     text-decoration-color: transparent;
 
     &:hover {
-      text-decoration-color: var(--color-text-emphasis);
+      text-decoration-color: var(--color-link-underline-hover);
     }
+  }
+}
+
+.pagination {
+  margin-block-start: var(--space-l);
+
+  & > span {
+    font-size: var(--step--1);
+  }
+
+  & .tag.cluster {
+    --cluster-space: 4px;
   }
 }
 
@@ -123,11 +143,18 @@ h1 {
 
   & details[open] {
     & summary {
-      background-color: var(--color-background-1);
+      border-left: 1px solid var(--color-border-accent);
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      /*background-color: var(--color-button-main-background);
+
+      & h2 {
+        color: var(--color-button-main-text);
+      }*/
     }
 
     & svg {
-      color: var(--color-text-emphasis);
+      color: var(--color-icon);
       transform: rotate(90deg);
     }
   }
@@ -135,7 +162,7 @@ h1 {
   & details:not([open]) {
     & summary {
       &:hover svg {
-        color: var(--color-text-emphasis);
+        color: var(--color-icon);
         transform: translateX(3px);
       }
     }
@@ -149,10 +176,10 @@ h1 {
     padding-inline: 0.75rem;
     padding-block: 0.5rem;
     border-radius: var(--rounded-corners-small);
-    transition: background-color 0.2s ease;
+    transition: all 0.2s ease;
 
     &:hover {
-      background-color: var(--color-background-1);
+      background-color: var(--color-tag-background);
     }
 
     /*&:hover svg {
@@ -172,9 +199,9 @@ h1 {
   }
 
   & .expanded-posts {
+    position: relative;
     padding: var(--space-s);
-    border-radius: var(--rounded-corners-small);
-    background-color: var(--color-background-1);
+    border-left: 1px solid var(--color-border-accent);
   }
 }
 
@@ -184,15 +211,21 @@ h1 {
 
   & tr {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 0.75fr 3.25fr 1fr;
     padding-block: 0.75rem 1rem;
     padding-inline: 0.5rem;
     border-radius: var(--rounded-corners-small);
 
     & h3 {
+      font-family: var(--font-primary);
       font-size: var(--step-0);
       position: relative;
       top: 3px;
+      padding-right: 2rem;
+    }
+
+    & > *:not(h3) {
+      font-size: var(--step--1);
     }
 
     & td {
@@ -200,7 +233,7 @@ h1 {
     }
 
     &:hover {
-      background-color: var(--color-background-0);
+      background-color: var(--color-background-accent-light);
     }
   }
 }

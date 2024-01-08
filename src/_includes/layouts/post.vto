@@ -82,7 +82,11 @@ page_css: post.css
       <p>{{ it.summary }}</p>
     </header>
     <figure class="featured-img">
-      <img src="../{{ image.src }}" alt="{{ image.alt }}" width="800" />
+      <img
+        src="../../../img/posts/{{ image.src }}-large.webp"
+        alt="{{ image.alt }}"
+        width="2000"
+      />
       {{ if image.attribution }}
       <figcaption>Source: {{ image.attribution }}</figcaption>
       {{ /if }}

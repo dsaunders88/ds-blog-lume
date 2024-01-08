@@ -27,6 +27,7 @@
   /*--color-neutral-950: lch(7.9% 14.4 283.2);*/
   --color-neutral-950: lch(16.3% 13 274.6);
   --color-neutral-1000: lch(12% 14 272);
+
   --color-red-50: lch(98.2% 2.6 357.2);
   --color-red-100: lch(93.95% 8.6 2.7);
   --color-red-200: lch(85.1% 22.1 4.8);
@@ -37,6 +38,17 @@
   --color-red-700: lch(40.4% 68.2 23.3);
   --color-red-800: lch(32.4% 57.5 22.3);
   --color-red-900: lch(23.55% 45.7 20.9);
+
+  --color-blue-50: lch(60.65% 52.72 259.03);
+  --color-blue-100: lch(60.65% 52.72 259.03);
+  --color-blue-200: lch(60.65% 52.72 259.03);
+  --color-blue-300: lch(60.65% 52.72 259.03);
+  --color-blue-400: lch(60.65% 52.72 259.03);
+  --color-blue-500: lch(60.65% 52.72 259.03);
+  --color-blue-600: lch(60.65% 52.72 259.03);
+  --color-blue-700: lch(60.65% 52.72 259.03);
+  --color-blue-800: lch(60.65% 52.72 259.03);
+  --color-blue-900: lch(60.65% 52.72 259.03);
 
   /* Fluid type sizes */
   /* @link https://utopia.fyi/type/calculator?c=320,17,1.25,1240,21,1.25,7,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|s-m&g=s,l,xl,12 */
@@ -100,7 +112,61 @@
 /* Light theme */
 :root[data-theme="light"] {
   color-scheme: light;
+
   --color-text-heading: var(--color-neutral-900);
+  --color-text-heading-accent: var(--color-accent-500);
+  --color-text-body: var(--color-neutral-800);
+  --color-text-body-shade: var(--color-neutral-600);
+  --color-text-body-accent: var(--color-accent-600);
+
+  --color-background-body: var(--color-neutral-0);
+  --color-background-shade: var(--color-neutral-50);
+  --color-background-accent-light: var(--color-accent-50);
+  --color-background-accent-dark: var(--color-accent-500);
+  --color-background-svg-1: var(--color-neutral-0);
+  --color-background-svg-2: var(--color-neutral-50);
+  --color-background-svg-3: var(--color-neutral-100);
+
+  --color-button-main-background: var(--color-accent-500);
+  --color-button-main-text: var(--color-accent-50);
+  --color-button-utility-background: var(--color-neutral-100);
+  --color-button-utility-text: var(--color-accent-500);
+
+  --color-link-text: inherit;
+  --color-link-text-hover: var(--color-accent-600);
+  --color-link-underline: var(--color-neutral-300);
+  --color-link-underline-hover: var(--color-accent-500);
+
+  --color-tag-background: var(--color-neutral-100);
+  --color-tag-background-hover: var(--color-neutral-50);
+  --color-tag-background-active: var(--color-accent-500);
+  --color-tag-text: inherit;
+  --color-tag-text-hover: var(--color-accent-600);
+  --color-tag-text-active: var(--color-accent-50);
+  --color-tag-border: transparent;
+  --color-tag-border-hover: var(--color-neutral-150);
+  --color-tag-border-active: transparent;
+
+  --color-selection-active: color-mix(
+    in lch,
+    var(--color-accent-100),
+    transparent 30%
+  );
+
+  --color-overlay-1: var(--color-accent-500);
+  --color-overlay-2: var(--color-accent-300);
+  --color-overlay-text: var(--color-neutral-0);
+
+  --color-border: var(--color-neutral-150);
+  --color-border-accent: var(--color-accent-500);
+  --color-border-accent-light: var(--color-accent-300);
+
+  --color-code-background: var(--color-neutral-50);
+  --background-element-opacity: 60%;
+
+  --color-icon: var(--color-accent-500);
+
+  /*--color-text-heading: var(--color-neutral-900);
   --color-text-body: var(--color-neutral-800);
   --color-text-body-shade: var(--color-neutral-700);
   --color-text-link: var(--color-red-600);
@@ -114,17 +180,71 @@
   --color-background-shade: var(--color-neutral-100);
   --color-background-2: var(--color-neutral-500);
   --color-background-3: var(--color-neutral-800);
-  --background-element-opacity: 0.5;
+  --background-element-opacity: 0.5;*/
 }
 
 /* Dark theme */
 :root[data-theme="dark"] {
   color-scheme: dark;
+
   --color-text-heading: var(--color-neutral-100);
+  --color-text-heading-accent: var(--color-accent-400);
+  --color-text-body: var(--color-neutral-300);
+  --color-text-body-shade: var(--color-neutral-400);
+  --color-text-body-accent: var(--color-accent-600);
+
+  --color-background-body: var(--color-neutral-1000);
+  --color-background-shade: var(--color-neutral-900);
+  --color-background-accent-light: var(--color-accent-50);
+  --color-background-accent-dark: var(--color-accent-500);
+  --color-background-svg-1: var(--color-neutral-1000);
+  --color-background-svg-2: var(--color-neutral-950);
+  --color-background-svg-3: var(--color-neutral-900);
+
+  --color-button-main-background: var(--color-accent-500);
+  --color-button-main-text: var(--color-accent-50);
+  --color-button-utility-background: var(--color-neutral-100);
+  --color-button-utility-text: var(--color-accent-500);
+
+  --color-link-text: inherit;
+  --color-link-text-hover: var(--color-accent-600);
+  --color-link-underline: var(--color-neutral-300);
+  --color-link-underline-hover: var(--color-accent-500);
+
+  --color-tag-background: var(--color-neutral-100);
+  --color-tag-background-hover: var(--color-neutral-50);
+  --color-tag-background-active: var(--color-accent-500);
+  --color-tag-text: inherit;
+  --color-tag-text-hover: var(--color-accent-600);
+  --color-tag-text-active: ;
+  --color-tag-border: transparent;
+  --color-tag-border-hover: var(--color-neutral-150);
+  --color-tag-border-active: transparent;
+
+  --color-selection-active: color-mix(
+    in lch,
+    var(--color-accent-100),
+    transparent 30%
+  );
+
+  --color-overlay-1: var(--color-accent-500);
+  --color-overlay-2: var(--color-accent-300);
+  --color-overlay-text: var(--color-neutral-0);
+
+  --color-border: var(--color-neutral-150);
+  --color-border-accent: var(--color-accent-500);
+  --color-border-accent-light: var(--color-accent-300);
+
+  --color-code-background: var(--color-neutral-950);
+  --background-element-opacity: 10%;
+
+  --color-icon: var(--color-accent-500);
+
+  /*--color-text-heading: var(--color-neutral-100);
   --color-text-body: var(--color-neutral-300);
   --color-text-body-shade: var(--color-neutral-400);
   --color-text-link: var(--color-red-400);
-  --color-text-emphasis: var(--color-red-300);
+  --color-text-emphasis: var(--color-red-400);
   --color-text-emphasis-light: var(--color-red-600);
   --color-text-link-underline: var(--color-netural-800);
   --color-light-border: var(--color-neutral-900);
@@ -133,5 +253,32 @@
   --color-background-shade: var(--color-netural-900);
   --color-background-2: var(--color-neutral-500);
   --color-background-3: var(--color-neutral-50);
-  --background-element-opacity: 0.35;
+  --background-element-opacity: 0.35;*/
+}
+
+/* Accent themes */
+:root[data-accent="printers-red"] {
+  --color-accent-50: var(--color-red-50);
+  --color-accent-100: var(--color-red-100);
+  --color-accent-200: var(--color-red-200);
+  --color-accent-300: var(--color-red-300);
+  --color-accent-400: var(--color-red-400);
+  --color-accent-500: var(--color-red-500);
+  --color-accent-600: var(--color-red-600);
+  --color-accent-700: var(--color-red-700);
+  --color-accent-800: var(--color-red-800);
+  --color-accent-900: var(--color-red-900);
+}
+
+:root[data-accent="dodger-blue"] {
+  --color-accent-50: var(--color-blue-50);
+  --color-accent-100: var(--color-blue-100);
+  --color-accent-200: var(--color-blue-200);
+  --color-accent-300: var(--color-blue-300);
+  --color-accent-400: var(--color-blue-400);
+  --color-accent-500: var(--color-blue-500);
+  --color-accent-600: var(--color-blue-600);
+  --color-accent-700: var(--color-blue-700);
+  --color-accent-800: var(--color-blue-800);
+  --color-accent-900: var(--color-blue-900);
 }

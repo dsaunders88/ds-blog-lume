@@ -11,9 +11,9 @@ category:
 tags:
   - design
 scope:
-  - typography
-  - art direction
-  - layout design
+  - Typography
+  - Art Direction
+  - Layout Design
 images:
   - src: haymarket-featured
     alt: Image alt

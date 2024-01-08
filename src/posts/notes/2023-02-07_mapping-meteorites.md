@@ -1,7 +1,7 @@
 ---
 title: Mapping Meteorites
 image:
-  src: ../../img/posts/meteorite-map-2-featured.webp
+  src: meteorite-map-2-featured
   alt: Map of the United States showing meteorite falls.
 summary: Playing around with the Mapbox GL JS API and plotting observed meteorite falls.
 archiveYear: 2023

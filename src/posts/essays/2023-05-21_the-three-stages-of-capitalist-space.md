@@ -1,7 +1,7 @@
 ---
 title: The Three Stages of Capitalist Space
 image:
-  src: ../../img/posts/bonaventure-featured.webp
+  src: bonaventure-featured
   alt: Exterior of the Westin Bonvanture Hotel in Los Angeles, discussed by Jameson as an example of postmodern architecture.
   attribution: <a href="https://commons.wikimedia.org/wiki/File:Westin_Bonaventure_Hotel_%286801556011%29.jpg">Wikimedia</a>
 summary: Getting at the heart of what and why postmodernism is remains a challenge that few thinkers have been able to face with as much brilliance and perspicacity as Fredric Jameson, notably in his Postmodernism, or, the Cultural Logic of Late Capitalism (1991).

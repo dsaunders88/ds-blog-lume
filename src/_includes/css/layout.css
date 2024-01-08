@@ -89,8 +89,8 @@ figure {
 
       /* Link hover effects */
       &:hover + * :where(h2 a, h3 a) {
-        text-decoration-color: var(--color-text-emphasis);
-        color: var(--color-text-link);
+        text-decoration-color: var(--color-link-underline-hover);
+        color: var(--color-link-text-hover);
         text-decoration-thickness: 2px;
       }
 
@@ -116,8 +116,8 @@ figure {
         position: absolute;
         background: linear-gradient(
           to bottom right,
-          var(--color-text-emphasis),
-          var(--color-text-emphasis-light)
+          var(--color-overlay-1),
+          var(--color-overlay-2)
         );
         inset: -0.25rem;
         border-radius: 6px;
@@ -154,7 +154,7 @@ figure {
           text-decoration-color: transparent;
 
           &:hover {
-            text-decoration-color: var(--color-text-emphasis);
+            text-decoration-color: var(--color-link-underline-hover);
           }
         }
       }
@@ -217,14 +217,10 @@ figure {
       font-size: var(--step-1);
       line-height: var(--leading-tight);
       opacity: 0;
-      color: var(--color-background-1);
+      color: var(--color-overlay-text);
       height: 100%;
       border-radius: var(--rounded-corners);
-      background: linear-gradient(
-        to top,
-        var(--color-text-emphasis),
-        transparent
-      );
+      background: linear-gradient(to top, var(--color-overlay-1), transparent);
       overflow: hidden;
       transition: opacity 0.3s ease;
     }
@@ -247,8 +243,8 @@ figure {
       content: "";
       background: linear-gradient(
         to bottom right,
-        var(--color-text-emphasis),
-        var(--color-text-emphasis-light)
+        var(--color-overlay-1),
+        var(--color-overlay-2)
       );
       z-index: -1;
       opacity: 0;
@@ -281,7 +277,7 @@ figure {
     }
 
     & .dot {
-      color: var(--color-text-emphasis);
+      color: var(--color-icon);
     }
 
     & .categories {
@@ -291,7 +287,7 @@ figure {
       }
 
       & svg {
-        color: var(--color-text-emphasis);
+        color: var(--color-icon);
       }
     }
   }
@@ -328,7 +324,7 @@ figure {
 
   &:hover + svg {
     transform: translateX(2px);
-    color: var(--color-text-emphasis);
+    color: var(--color-icon);
   }
 }
 

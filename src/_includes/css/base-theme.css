@@ -1,6 +1,6 @@
 /* Base theme */
 body {
-  background: var(--color-background-0);
+  background: var(--color-background-body);
   color: var(--color-text-body);
   font-family: var(--font-primary);
   font-size: var(--step-0);
@@ -14,14 +14,14 @@ body {
 }
 
 a:not(.btn, .logo) {
-  color: inherit;
+  color: var(--color-link-text);
   text-decoration-thickness: 2px;
-  text-decoration-color: var(--color-text-link-underline);
+  text-decoration-color: var(--color-link-underline);
   transition: all 0.2s ease-in-out;
 }
 
 a:not(.btn, .logo):hover {
   text-decoration-thickness: 2px;
-  text-decoration-color: var(--color-text-emphasis);
-  color: var(--color-text-link);
+  text-decoration-color: var(--color-link-underline-hover);
+  color: var(--color-link-text-hover);
 }

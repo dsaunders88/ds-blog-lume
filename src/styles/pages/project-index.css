@@ -5,7 +5,7 @@ h1 {
   text-align: center;
 
   & span {
-    color: var(--color-text-emphasis);
+    color: var(--color-text-heading-accent);
   }
 }
 
@@ -21,13 +21,14 @@ h1 {
     }
 
     &[data-selected-page="selected"] {
-      color: var(--color-background-0);
-      background-color: var(--color-text-emphasis);
+      color: var(--color-tag-text-active);
+      background-color: var(--color-tag-background-active);
+      border-color: var(--color-tag-border-active);
 
       &:hover {
         background-color: color-mix(
           in lch,
-          var(--color-text-emphasis) 80%,
+          var(--color-tag-background-active) 80%,
           black
         );
       }

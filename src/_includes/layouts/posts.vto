@@ -128,8 +128,48 @@ page_css: post-index.css
     #}}
   </div>
   <div class="pagination | cluster">
-    <a href="{{ pagination.previous }}">Newer</a
-    ><span>{{ pagination.page }} of {{ pagination.totalPages }}</span
-    ><a href="{{ pagination.next }}">Older</a>
+    <!-- prettier-ignore -->
+    {{ if it.pagination.page > 1 }}
+    <a class="tag | cluster" rel="prev" href="{{ pagination.previous }}"
+      ><svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.75 12L14.25 7.75V16.25L8.75 12Z"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path></svg
+      ><span>Previous</span>
+    </a>
+    {{ /if }}
+    <span>Page {{ pagination.page }} of {{ pagination.totalPages }}</span>
+    {{ if it.pagination.page < pagination.totalPages }}
+    <a class="tag | cluster" rel="next" href="{{ pagination.next }}"
+      ><span>Next</span>
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M14.25 12L8.75 7.75V16.25L14.25 12Z"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </svg>
+    </a>
+    {{ /if }}
   </div>
 </div>
