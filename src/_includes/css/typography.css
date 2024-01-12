@@ -24,7 +24,7 @@ h3,
   font-weight: 400;
   color: var(--color-text-heading);
   text-transform: uppercase;
-  letter-spacing: 0.1rem; /* 0.15rem*/
+  letter-spacing: 0.06em; /* 0.15rem*/
 }
 
 .with-icon {
@@ -109,16 +109,35 @@ a.button-link {
 }
 
 .rich-content {
+  --element-spacing: var(--space-m);
+  --heading-spacing: var(--space-xl);
+  --color-link-underline: var(--color-accent-300);
+
   & * {
     margin-block: 0;
   }
 
   & :is(h2, h3) {
-    margin-block-start: var(--space-xl);
+    margin-block-start: var(--heading-spacing);
   }
 
-  & :is(p, ul, blockquote, pre code) {
-    margin-block-start: var(--space-m);
+  & :is(p, section, ul, blockquote, pre code) {
+    margin-block-start: var(--element-spacing);
+  }
+
+  /* Headings that follow an image */
+  & :is(figure, image) + :is(h2, h3) {
+    margin-block-start: var(--element-spacing);
+  }
+
+  /* Default image spacing, assuming a heading follows it */
+  & :is(figure, image) {
+    margin-block-start: var(--heading-spacing);
+  }
+
+  /* All other image spacing, where image is not followed by a heading */
+  & :is(figure, image):not(:has(+ :is(h2, h3))) {
+    margin-block-start: var(--element-spacing);
   }
 
   & :is(li) {
@@ -146,7 +165,7 @@ a.button-link {
     border-left: 2px solid var(--color-border-accent-light);
     padding-block: var(--space-s);
     padding-inline-start: var(--gutter);
-    padding-inline-end: var(--space-m);
+    padding-inline-end: var(--element-spacing);
     color: var(--color-text-body-accent);
     background-color: var(--color-background-accent-light);
     border-top-right-radius: var(--rounded-corners-small);

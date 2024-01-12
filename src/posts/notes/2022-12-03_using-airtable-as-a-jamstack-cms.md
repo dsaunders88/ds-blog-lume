@@ -7,7 +7,7 @@ summary: Using the Airtable hybrid spreadsheet-database app as a CMS "back-end" 
 archiveYear: 2022
 tags:
   - design
-  - "web development"
+  - web development
 ---
 
 text

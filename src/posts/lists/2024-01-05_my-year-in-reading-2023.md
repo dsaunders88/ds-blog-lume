@@ -1,7 +1,7 @@
 ---
 title: My Year in Reading, 2023
 image:
-  src: screenshot-3-diffusion-featured
+  src: reading-saint
   alt: Image alt
 archiveYear: 2024
 summary: This year I devoted almost as much time to building a custom reading tracker app as I did to reading, but I’m still pleased with the quantity and quality of what I read.
@@ -15,12 +15,11 @@ This year I devoted almost as much time to building a [custom reading tracker ap
 
 These were some of my favorite books of the year (because I simply can’t write about all of them, I’m limiting myself to a few):
 
-<!--
-<figure class="featured-book">
-<a href="https://www.goodreads.com/en/book/show/204011" target="_blank">
-{% inlineImage "./src/assets/reading-postmodernism.jpeg", "Book cover of Postmodernism by Fredric Jameson", "100vw" %}
-</a>
-</figure> -->
+<figure class="book-list featured">
+    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
+        <img src="../../../img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="" />
+    </a>
+</figure>
 
 ### Postmodernism
 
@@ -30,11 +29,11 @@ _Postmodernism, or, the Cultural Logic of Late Capitalism_, by Fredric Jameson �
 
 All I could say about this masterpiece I tried to say in [my review essay here](/posts/essays/the-three-stages-of-capitalist-space). Moving on!
 
-<!-- <figure class="featured-book">
-<a href="https://www.goodreads.com/en/book/show/77504" target="_blank">
-{% inlineImage "./src/assets/reading-blue-mars.jpeg", "Book cover of Blue Mars by Kim Stanley Robinson", "100vw" %}
-</a>
-</figure> -->
+<figure class="book-list featured">
+    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
+        <img src="../../../img/posts/reading-blue-mars-regular.webp" width="400" height="600" alt="Blue Mars cover" />
+    </a>
+</figure>
 
 ### The Mars Trilogy
 
@@ -52,11 +51,11 @@ This maximalism and philosophical depth is what makes Robinson such a joy to rea
 
 The trilogy’s utopian form is not a reductive portrait of a simplistic or blindly “optimistic” future. Rather, its vision is more in line with how Marx characterized a post-capitalist future—a future that has _real history_ precisely because it operates from the realm of post-capitalist and post-feudal class relations, when the associations of people, biospheres, and planets are finally—although still ambiguously—linked together in freedom in place of necessity.
 
-<!-- <figure class="featured-book">
-<a href="https://www.goodreads.com/book/show/28293" target="_blank">
-{% inlineImage "./src/assets/reading-perec.jpeg", "Book cover of Life: A User's Manual by Georges Perec", "100vw" %}
-</a>
-</figure> -->
+<figure class="book-list featured">
+    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
+        <img src="../../../img/posts/reading-perec-regular.webp" width="400" height="600" alt="" />
+    </a>
+</figure>
 
 ### Life: A User’s Manual
 
@@ -78,11 +77,11 @@ Nowhere is this more evident than in the novel’s cryptic main story, a tragi-c
 
 Whether out of resentment or mischief, the puzzle-maker Winckler starts to mess with Bartlebooth, making the puzzles too clever and enigmatic for Bartlebooth to keep up with. The only “plot” in the present time of the novel is that Bartlebooth fails to complete his puzzle quest and dies, a wrong puzzle piece in his hand at the very end. Given the novel’s postmodernist outlook, I doubt if there is some deeper message here, but the totality of scenes leaves a poignant sense of the playful futility of all our effort, especially artistic, and that we might as well find or make puzzles out of the stuff of life while we can.
 
-<!-- <figure class="featured-book">
-<a href="https://www.goodreads.com/en/book/show/62919785" target="_blank">
-{% inlineImage "./src/assets/reading-shakespeare.jpeg", "Book cover of Shakespeare Was a Woman and Other Heresies by Elizabeth Winkler", "100vw" %}
-</a>
-</figure> -->
+<figure class="book-list featured">
+    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
+        <img src="../../../img/posts/reading-shakespeare-regular.webp" width="400" height="600" alt="" />
+    </a>
+</figure>
 
 ### Shakespeare Was a Woman and Other Heresies
 
@@ -104,11 +103,11 @@ At the heart of the authorship question revolves a bigger philosophical problem:
 
 At the very least, exploring these questions opens up new avenues for the present experience and performance of the texts. After all, Winkler points out, even the scholars make up imagined details when there is a lack of evidence; how else do we square the mute historical record with these works of genius?
 
-<!-- <figure class="featured-book">
-<a href="https://www.goodreads.com/en/book/show/56170825" target="_blank">
-{% inlineImage "./src/assets/reading-lem.jpeg", "Book cover of The Truth and Other Stories by Stanislaw Lem", "100vw" %}
-</a>
-</figure> -->
+<figure class="book-list featured">
+    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
+        <img src="../../../img/posts/reading-lem-regular.webp" width="400" height="600" alt="" />
+    </a>
+</figure>
 
 ### The Truth and Other Stories
 
@@ -122,12 +121,11 @@ The best of the stories (“The Friend,” “The Journal,” “One Hundred and
 
 In an age of Elon Musk and trashy AI spam, Lem is vindicated as a prophet who skewers the charlatans and slick technological veneers of our time, offering instead a critical and ironic standpoint that out-rationalizes rationalism itself. But this irony evinces less bitterness than a tempered humanism, one that has to shake its head and chuckle at the wonder and enigma of the cosmos and our repeatedly failed efforts to understand it.
 
-<!--
-<figure class="featured-book">
-<a href="https://www.goodreads.com/en/book/show/58744902" target="_blank">
-{% inlineImage "./src/assets/reading-revolution.jpeg", "Book cover of Revolution by Enzo Traverso", "100vw" %}
-</a>
-</figure> -->
+<figure class="book-list featured">
+    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
+        <img src="../../../img/posts/reading-revolution-regular.webp" width="400" height="600" alt="" />
+    </a>
+</figure>
 
 ### Revolution
 
@@ -148,6 +146,25 @@ One particularly profound theme concerns the “realms of memory” which revolu
 These are some of the main themes, currents, and genres I read this year, which also gives me a chance to highlight other great books:
 
 ### Utopian Horizons in Sci-Fi
+
+<section class="book-list | responsive-grid">
+    <div>
+        <img src="../../../img/posts/reading-left-hand-regular.webp" width="400" height="600" alt="" />
+        <p class="title">Title</p>
+    </div>
+    <div>
+        <img src="../../../img/posts/reading-word-for-world-regular.webp" width="400" height="600" alt="" />
+        <p class="title">Title</p>
+    </div>
+    <div>
+        <img src="../../../img/posts/reading-red-mars-regular.webp" width="400" height="600" alt="" />
+          <p class="title">Title</p>
+    </div>
+    <div>
+        <img src="../../../img/posts/reading-green-mars-regular.webp" width="400" height="600" alt="" />
+        <p class="title">Title</p>
+    </div>
+</section>
 
 <!-- <div class="book-grid">
   <div class="book-grid-item">

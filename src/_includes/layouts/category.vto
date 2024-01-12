@@ -4,7 +4,7 @@ page_css: post-index.css
 ---
 
 <div class="content-wrapper">
-  <h1>Categorized: <span>{{ title }}</span></h1>
+  <h1>Posts Categorized: <span>{{ title }}</span></h1>
   <div class="has-sidebar">
     {{ set postlist = search.pages(`type=posts category=${title.toLowerCase()}`,
     "date=desc") }}

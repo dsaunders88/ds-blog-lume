@@ -209,7 +209,7 @@
 
   --color-link-text: inherit;
   --color-link-text-hover: var(--color-accent-600);
-  --color-link-underline: var(--color-neutral-300);
+  --color-link-underline: var(--color-accent-400);
   --color-link-underline-hover: var(--color-accent-500);
 
   --color-tag-background: var(--color-neutral-100);

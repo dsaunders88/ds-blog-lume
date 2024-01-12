@@ -56,7 +56,7 @@ async function getFathomData() {
 }
 
 let trendingPosts = await getFathomData();
-console.log(trendingPosts);
+// console.log(trendingPosts);
 
 if (!trendingPosts) {
   trendingPosts = [
@@ -72,5 +72,5 @@ if (!trendingPosts) {
   ];
 }
 
-console.log(trendingPosts);
+// console.log(trendingPosts);
 export const list = trendingPosts;

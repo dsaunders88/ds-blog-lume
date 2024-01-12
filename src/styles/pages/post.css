@@ -222,6 +222,16 @@ article {
   border-bottom: 1px solid var(--color-border);
 }
 
+.book-list {
+  &.featured {
+    display: inline-block;
+
+    & img {
+      max-width: 16rem;
+    }
+  }
+}
+
 @media (max-width: 999px) {
   .mobile-toc {
     display: block;

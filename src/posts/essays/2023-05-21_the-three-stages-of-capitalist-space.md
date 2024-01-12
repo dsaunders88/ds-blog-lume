@@ -9,11 +9,16 @@ archiveYear: 2023
 tags:
   - reading
   - theory
-  - capitalism
   - philosophy
 ---
 
 What is postmodernism? By now, we all know that we're in it and that there's no getting out of it—even if, like all periods as they're being experienced, we can't exactly define it from the inside, without the benefit of hindsight (nor can we tell if we haven't indeed progressed to something beyond, like "post-postmodernism").
+
+<figure class="book-list featured">
+    <a class="img-link" href="#" target="_blank">
+        <img src="../../../img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="" />
+    </a>
+</figure>
 
 Getting at the heart of _what_ and _why_ postmodernism is remains a challenge that few thinkers have been able to face with as much brilliance and perspicacity as Fredric Jameson, notably in his [_Postmodernism, or, the Cultural Logic of Late Capitalism_ (1991)](https://www.dukeupress.edu/postmodernism-or-the-cultural-logic-of-late-capitalism), which still reads as timely over 30 years later. Part of what makes this book great is that Jameson tackles not only postmodernism itself but also postmodernism _theory_—the two have become largely synonmyous, and not without reason, but there is a wealth of insight to be gained from questioning not only the form but also _how_ we think about the form.
 
@@ -59,59 +64,36 @@ _Or, a journey toward reification._
 
 ### Secularization (Grid)
 
-**Stage of capitalism**<br>
-Classical (market) capitalism—the emergence of world markets and a system of production based on wage labor. "Exchange value" supersedes "use value" as the "goal" of production, leading to the inscription of universality and equivalence into the cycle of production, exchange, and distribution.
+<figure>
+    <img src="../../../img/posts/paris-haussmann-plan-regular.webp" width="600" height="400" alt="" loading="lazy" decoding="async" />
+</figure>
 
-**Spatial logic**<br>
-_Grid_—the reorganization of sacred/primordial space into "geometric, Cartesian homogeneity." Into this "space of infinite equivalence" is born the bourgeois subject and the ideological ideals of property and juridical rights—what Marx derided as "Freedom, Equality, Property, and Bentham." In other words, the universal logic of the market begins to erode the uneven spaces of pre-modern and religious history; in its place, it sets up the ideals of freedom and equality, which are mirror images of the commodity form.
-
-**Historical/cultural period**<br>
-Enlightenment modernity, pre-modernism (mid-18th to late-19th century)
-
-**Cultural production**<br>
-The Enlightenment theme of demystification/desacralization; the "gap" left by the replacement of older ways of life by capital; the impulse to depict "real life" in the face of the ravages of industrialization and proletarianization, as expressed in the great realist artists (Zola, Balzac, Ibsen).
-
-**Aporia**<br>
-"Problems of figuration" in reconciling with the new spatial logic that only become apparent later; how socialism (as a triumph of Enlightenment ideals) is to be born in a world in the grip of capital.
+- **Stage of capitalism**: Classical (market) capitalism—the emergence of world markets and a system of production based on wage labor. "Exchange value" supersedes "use value" as the "goal" of production, leading to the inscription of universality and equivalence into the cycle of production, exchange, and distribution
+- **Spatial logic**: _Grid_—the reorganization of sacred/primordial space into "geometric, Cartesian homogeneity." Into this "space of infinite equivalence" is born the bourgeois subject and the ideological ideals of property and juridical rights—what Marx derided as "Freedom, Equality, Property, and Bentham." In other words, the universal logic of the market begins to erode the uneven spaces of pre-modern and religious history; in its place, it sets up the ideals of freedom and equality, which are mirror images of the commodity form.
+- **Historical/cultural period**: Enlightenment modernity, pre-modernism (mid-18th to late-19th century)
+- **Cultural production**: The Enlightenment theme of demystification/desacralization; the "gap" left by the replacement of older ways of life by capital; the impulse to depict "real life" in the face of the ravages of industrialization and proletarianization, as expressed in the great realist artists (Zola, Balzac, Ibsen)
+- **Aporia**: "Problems of figuration" in reconciling with the new spatial logic that only become apparent later; how socialism (as a triumph of Enlightenment ideals) is to be born in a world in the grip of capital.
 
 ### Structuration (Network)
 
-**Stage of capitalism**<br>
-The transition from market to monopoly capitalism—what Lenin called the imperialist stage of development. Capital extends over the globe at the same time that it is concentrated in the hands of a few national powers, leading to a vast interconnection of value chains.
+<figure>
+    <img src="../../../img/posts/paris-le-corbusier-regular.webp" width="600" height="400" alt="" loading="lazy" decoding="async" />
+</figure>
 
-**Spatial logic**<br>
-_Network_—The ever-expanding "new colonial network" of the market and the media creates a contradiction between the lived experience of the individual and the massive structures that are emerging as subterannean drivers of social reality (and which are now revealed to have been there the whole time). This is a time of fracturing, of explosion, of the "[age of the crisis of man](https://press.princeton.edu/books/hardcover/9780691146393/the-age-of-the-crisis-of-man)," of the old existing alongside the new, and of the global "uneven development" which reinforces colonial dependencies.
-
-This dizzying parallax of experience prompts intellectual responses that seek to make sense of systemic complexity—Freudianism, existentialism, structuralism—but all of these still focus on the bourgeois individual and the subject's misplacement in these structures (alienation). The Althusserian branch of Marxism attempts its own critique of these responses, but also remains indelibly tied to the framing of structuralism.
-
-**Historical/cultural period**<br>
-High modernism (early to mid-20th century)
-
-**Cultural production**<br>
-Simultaneous existence or overlap of multiple temporalities ([feudalism in the countryside, modernism in the cities](/posts/notes/the-age-of-extremes/)), an unprecedented situation which leads to an emphasis on the _Novum_, a completely new way of being; Utopia as a literally realizable ideal in architectonic artistic "works," which are suffused with an authorial will; figuration based on the dissolution of the "privatized middle-class life," as bourgeois subjectivity is confronted with the strucutral complexity of the world system. From Joyce in literature to Le Corbusier in architecture to Picasso in painting; Pound's exhortation to "make it new".
-
-**Aporia**<br>
-Utopia as ultimately unrepresentable in art, which is the counterpart of the failure of 20th century state socialist projects; the paradox of "monadic relativism," which Jameson describes thus—"a representation of the social totality now must take the (impossible) form of a coexistence of those sealed subjective worlds and their peculiar interaction, which is in reality a passage of ships in the night, a centrifugal movement of lines and planes that can never intersect" (in other words, art in the "in-between" land of ironic detachment, where no resolution of paradox is possible, a mood and technique perfected by masters like Thomas Mann).
+- **Stage of capitalism**: The transition from market to monopoly capitalism—what Lenin called the imperialist stage of development. Capital extends over the globe at the same time that it is concentrated in the hands of a few national powers, leading to a vast interconnection of value chains.
+- **Spatial logic**: _Network_—The ever-expanding "new colonial network" of the market and the media creates a contradiction between the lived experience of the individual and the massive structures that are emerging as subterannean drivers of social reality (and which are now revealed to have been there the whole time). This is a time of fracturing, of explosion, of the "[age of the crisis of man](https://press.princeton.edu/books/hardcover/9780691146393/the-age-of-the-crisis-of-man)," of the old existing alongside the new, and of the global "uneven development" which reinforces colonial dependencies. <br><br>This dizzying parallax of experience prompts intellectual responses that seek to make sense of systemic complexity—Freudianism, existentialism, structuralism—but all of these still focus on the bourgeois individual and the subject's misplacement in these structures (alienation). The Althusserian branch of Marxism attempts its own critique of these responses, but also remains indelibly tied to the framing of structuralism.
+- **Historical/cultural period**: High modernism (early to mid-20th century)
+- **Cultural production**: Simultaneous existence or overlap of multiple temporalities ([feudalism in the countryside, modernism in the cities](/posts/notes/the-age-of-extremes/)), an unprecedented situation which leads to an emphasis on the _Novum_, a completely new way of being; Utopia as a literally realizable ideal in architectonic artistic "works," which are suffused with an authorial will; figuration based on the dissolution of the "privatized middle-class life," as bourgeois subjectivity is confronted with the strucutral complexity of the world system. From Joyce in literature to Le Corbusier in architecture to Picasso in painting; Pound's exhortation to "make it new".
+- **Aporia**: Utopia as ultimately unrepresentable in art, which is the counterpart of the failure of 20th century state socialist projects; the paradox of "monadic relativism," which Jameson describes thus—"a representation of the social totality now must take the (impossible) form of a coexistence of those sealed subjective worlds and their peculiar interaction, which is in reality a passage of ships in the night, a centrifugal movement of lines and planes that can never intersect" (in other words, art in the "in-between" land of ironic detachment, where no resolution of paradox is possible, a mood and technique perfected by masters like Thomas Mann).
 
 ### Saturation (Quantum Field)
 
-**Stage of capitalism**<br>
-Late or neoliberal capitalism—the triumph of consumer society; capital in perpetual crisis and motion; the invasion of capital into all economic, social, and personal spheres (akin to what David Harvey calls the "spatial fix"); market capture of political governance; capital as subject of history.
+<figure>
+    <img src="../../../img/posts/paris-disneyland-regular.webp" width="600" height="400" alt="" loading="lazy" decoding="async" />
+</figure>
 
-**Spatial logic**<br>
-_Quantum Field_—Jameson doesn't use this term and I'm not confident I'm using it correctly either, but quantum theory is the closest analogy I could come up with for what Jameson describes as a "multidimensional set of radically discontinuous realities, whose frames range from the still surviving spaces of bourgeois life all the way to the unimaginable decentering of global capital itself...not even Einsteinian relativity...is capable of giving any kind of adequate figuration to this process" (412). Elsewhere in the book, Jameson describes this "hyerspace" as "smooth," "reflective", "saturated" (think glossy magazine photos or the Westin Bonaventure Hotel); it "suppresses distance" and maintains a multiplicity of overlapping and nested contexts that occupy the same space (think the Internet).
-
-Like a quantum phenomeon, there is seemingly no external basis for its form; rather, it is in the fundamentally contradictory situation of creating its own ground of being. The effect of all this is to obliterate the formerly solid boundaries of the bourgeois subject and the diachronic sense of history; what emerges now is a fragmented subjectivity that knows only the immediacy of incompatible synchronicities, or in other words, the [Deleuzian schizophrenic](https://www.penguinrandomhouse.com/books/305132/anti-oedipus-by-gilles-deleuze-and-felix-guattari-preface-by-michel-foucault-introduction-by-mark-seem-translated-by-robert-hurley-mark-seem-and-helen-r-lane/). The tools of structuralism appear to be no longer useful, because the foundation on which they stood no longer exists.
-
-**Historical/cultural period**<br>
-Postmodernism (mid-20th to 21st century)
-
-**Cultural production**<br>
-The bulk of Jameson's book is dedicated to exploring the characteristics of postmodernist cultural production, so I can only give a few brief highlights here. Besides the more well-known features or techniques of postmodernist art—pastiche, bricolage, play, imitation, deconstruction, relativism—Jameson focuses primarily on the concept of intertextuality (although he doesn't like the term). In postmodernism, "works" have been replaced by "texts" (of any medium); unlike the terrible authorial burden of modernist works, the production of texts offers relief, because everything now is simply a comment on something else, rather than a radically new insertion into the stream of history.
-
-In contrast to modernism's obsession with temporality and Utopia, the brute force of the _spatial itself_ here wins out: texts exist all at once in relation to all other texts; hiearchy gives way to precedence in an interminable series of which any element might be the starting point for a new series. There is no escape from the self-reflexivity of texts; everything ends up as an advertisement.
-
-But this last concept of "wrapping" is probably the most interesting and potentially radical technique of postmodernist art. Jameson's primary example here is of [Frank Gehry's house in Santa Monia](https://archeyes.com/frank-gehry-house-santa-monica/), an "attempt to think a material thought," in which a wall of hodgepodge materials literally wraps around a modernist suburban home. Regardless of the medium, successful wrapping pushes the boundaries of postmodern cliches at the same time that it recapitulates them—wrapping dissolves unities, opens up new vantages, and renews perception in potentially radical ways.
-
-**Aporia**<br>
-To think the unthinkable thought, to systemize the unsystemizable, to renew historical analysis, to break out of "capitalist realism" with a renewal of revolutionary politics—goals shared by Marxist critique, science fiction novels, and other radical experiments challenging the boundaries of capitalism.
+- **Stage of capitalism**: Late or neoliberal capitalism—the triumph of consumer society; capital in perpetual crisis and motion; the invasion of capital into all economic, social, and personal spheres (akin to what David Harvey calls the "spatial fix"); market capture of political governance; capital as subject of history.
+- **Spatial logic**: _Quantum Field_—Jameson doesn't use this term and I'm not confident I'm using it correctly either, but quantum theory is the closest analogy I could come up with for what Jameson describes as a "multidimensional set of radically discontinuous realities, whose frames range from the still surviving spaces of bourgeois life all the way to the unimaginable decentering of global capital itself...not even Einsteinian relativity...is capable of giving any kind of adequate figuration to this process" (412). Elsewhere in the book, Jameson describes this "hyerspace" as "smooth," "reflective", "saturated" (think glossy magazine photos or the Westin Bonaventure Hotel); it "suppresses distance" and maintains a multiplicity of overlapping and nested contexts that occupy the same space (think the Internet). <br><br>Like a quantum phenomeon, there is seemingly no external basis for its form; rather, it is in the fundamentally contradictory situation of creating its own ground of being. The effect of all this is to obliterate the formerly solid boundaries of the bourgeois subject and the diachronic sense of history; what emerges now is a fragmented subjectivity that knows only the immediacy of incompatible synchronicities, or in other words, the [Deleuzian schizophrenic](https://www.penguinrandomhouse.com/books/305132/anti-oedipus-by-gilles-deleuze-and-felix-guattari-preface-by-michel-foucault-introduction-by-mark-seem-translated-by-robert-hurley-mark-seem-and-helen-r-lane/). The tools of structuralism appear to be no longer useful, because the foundation on which they stood no longer exists.
+- **Historical/cultural period**: Postmodernism (mid-20th to 21st century)
+- **Cultural production**: The bulk of Jameson's book is dedicated to exploring the characteristics of postmodernist cultural production, so I can only give a few brief highlights here. Besides the more well-known features or techniques of postmodernist art—pastiche, bricolage, play, imitation, deconstruction, relativism—Jameson focuses primarily on the concept of intertextuality (although he doesn't like the term). In postmodernism, "works" have been replaced by "texts" (of any medium); unlike the terrible authorial burden of modernist works, the production of texts offers relief, because everything now is simply a comment on something else, rather than a radically new insertion into the stream of history. <br><br>In contrast to modernism's obsession with temporality and Utopia, the brute force of the _spatial itself_ here wins out: texts exist all at once in relation to all other texts; hiearchy gives way to precedence in an interminable series of which any element might be the starting point for a new series. There is no escape from the self-reflexivity of texts; everything ends up as an advertisement. <br><br>But this last concept of "wrapping" is probably the most interesting and potentially radical technique of postmodernist art. Jameson's primary example here is of [Frank Gehry's house in Santa Monia](https://archeyes.com/frank-gehry-house-santa-monica/), an "attempt to think a material thought," in which a wall of hodgepodge materials literally wraps around a modernist suburban home. Regardless of the medium, successful wrapping pushes the boundaries of postmodern cliches at the same time that it recapitulates them—wrapping dissolves unities, opens up new vantages, and renews perception in potentially radical ways.
+- **Aporia**: To think the unthinkable thought, to systemize the unsystemizable, to renew historical analysis, to break out of "capitalist realism" with a renewal of revolutionary politics—goals shared by Marxist critique, science fiction novels, and other radical experiments challenging the boundaries of capitalism.

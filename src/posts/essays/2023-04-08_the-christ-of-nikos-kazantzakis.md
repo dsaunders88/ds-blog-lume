@@ -9,7 +9,7 @@ archiveYear: 2023
 tags:
   - literature
   - religion
-  - socialism
+  - politics
   - philosophy
 ---
 
@@ -32,6 +32,17 @@ Such dangerous chauvinism attested to the belief that the modern soul was caught
 ## Literature as Contradiction and Cry
 
 Kazantzakis' life was an _agon_, the journey of an unsettled radical through the many contradictions of politics, religion, and the artistic life. His great value as a writer is that he enshrined these contradictions in his own narratives. These remain a profound source of reflection for contemporary religious faith at the intersection of social and political transformation.
+
+<section class="book-list | responsive-grid">
+    <div>
+        <img src="../../../img/posts/kazantzakis-christ-recrucified-regular.webp" width="400" height="600" alt="" />
+        <p class="title">Christ Recrucified</p>
+    </div>
+    <div>
+        <img src="../../../img/posts/kazantzakis-fratricides-regular.webp" width="400" height="600" alt="" />
+        <p class="title">The Fratricides</p>
+    </div>
+</section>
 
 Two novels in particular, both written in view of the Nazi occupation of Greece and the subsequent Greek Civil War (1943–1949), use Christ and Christian imagery to explore these themes, and it is on these that I want to focus rather than the more popular _Last Temptation_ (whose Jesus is more concerned with religious belief as such and its corresponding psychological questions than with political questions). _Christ Recrucified_ (composed in 1948, translated as _The Greek Passion_ in English) and _The Fratricides_ (composed in 1949) are mirrors of each other, the former wrapped in a mythical shell and the latter reduced to the bare elements of realism (a genre Kazantzakis otherwise detested), but both encompassing Kazantzakis' political and spiritual preoccupations. Both feature Christ-like protagonists caught in the middle of a web of destruction: brother devouring brother, Greek fighting Greek, communists, nationalists, and apolitical bystanders all bent on self-annihilation. In these two novels, character and plot bring together all of Kazantzakis' previous experiences and political fluctuations.
 

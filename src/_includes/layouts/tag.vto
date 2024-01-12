@@ -4,7 +4,7 @@ page_css: post-index.css
 ---
 
 <div class="content-wrapper">
-  <h1>Tagged: <span>{{ tag |> capitalizeFirst }}</span></h1>
+  <h1>Posts Tagged: <span>{{ tag |> capitalizeFirst }}</span></h1>
   <div class="has-sidebar">
     {{# {{ set postlist = search.pages(`'${tag}' type=posts`, 'date=desc')}} #}}
     <section>{{ include 'partials/post-list.vto' }}</section>

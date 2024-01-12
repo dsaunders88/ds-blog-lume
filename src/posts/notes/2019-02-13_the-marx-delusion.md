@@ -8,7 +8,7 @@ post_intro: Terry Eagleton’s witty <em>Why Marx Was Right</em> might more accu
 archiveYear: 2019
 tags:
   - theory
-  - socialism
+  - politics
   - reading
 ---
 

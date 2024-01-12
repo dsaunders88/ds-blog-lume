@@ -1,7 +1,7 @@
 h1 {
   margin-block-start: var(--space-2xl);
   margin-block-end: var(--space-xl);
-  font-size: var(--step-4);
+  font-size: var(--step-3);
 
   & > span {
     color: var(--color-text-heading-accent);

@@ -1,13 +1,14 @@
 import lume from "lume/mod.ts";
 import jsx from "lume/plugins/jsx.ts";
-import vento from "lume/plugins/vento.ts";
+// import vento from "lume/plugins/vento.ts";
 import attributes from "lume/plugins/attributes.ts";
 import base_path from "lume/plugins/base_path.ts";
 import code_highlight from "lume/plugins/code_highlight.ts";
 import lang_javascript from "npm:highlight.js/lib/languages/javascript";
 import feed from "lume/plugins/feed.ts";
-import filter_pages from "lume/plugins/filter_pages.ts";
-import imagick from "lume/plugins/imagick.ts";
+// import filter_pages from "lume/plugins/filter_pages.ts";
+import transformImages from "lume/plugins/transform_images.ts";
+// import imagick from "lume/plugins/imagick.ts";
 import inline from "lume/plugins/inline.ts";
 import lightningCss from "lume/plugins/lightningcss.ts";
 // import postcss from "lume/plugins/postcss.ts";
@@ -22,8 +23,8 @@ import sourceMaps from "lume/plugins/source_maps.ts";
 // import relative_urls from "lume/plugins/relative_urls.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import slugify_urls from "lume/plugins/slugify_urls.ts";
-import toc from "https://deno.land/x/lume_markdown_plugins/toc.ts";
-import footnotes from "https://deno.land/x/lume_markdown_plugins/footnotes.ts";
+import toc from "https://deno.land/x/lume_markdown_plugins@v0.5.1/toc.ts";
+import footnotes from "https://deno.land/x/lume_markdown_plugins@v0.5.1/footnotes.ts";
 
 import {
   groupTypes,
@@ -32,20 +33,21 @@ import {
 } from "./src/utils/groupTypes.js";
 import { readingTime } from "./src/utils/readingTime.js";
 
-const search = { returnPageData: true };
+// const search = { returnPageData: true };
 
-const site = lume(
-  {
-    src: "./src",
+const markdown = {
+  options: {
+    typographer: true,
   },
-  { search }
-);
+};
+
+const site = lume({ src: "./src" }, { markdown });
 
 site.copy("static", ".").copy("_redirects");
 site.use(toc()); // Markdown plugin
 site.use(footnotes()); // Markdown plugin
 site.use(jsx()); // Required for MDX
-site.use(vento());
+// site.use(vento());
 site.use(esbuild());
 site.use(attributes());
 site.use(base_path());
@@ -101,8 +103,9 @@ site.helper(
   { type: "tag" }
 );
 site.use(feed());
-site.use(filter_pages());
-site.use(imagick());
+// site.use(filter_pages());
+// site.use(imagick());
+site.use(transformImages());
 site.use(lightningCss());
 // site.use(postcss());
 site.use(mdx());
@@ -112,7 +115,11 @@ site.use(nav());
 // site.use(relative_urls());
 site.use(sitemap());
 site.use(sourceMaps());
-site.use(slugify_urls());
+site.use(
+  slugify_urls({
+    extensions: [".html"], // To slugify only HTML pages
+  })
+);
 // site.hooks.addPostcssPlugin(nano);
 
 export default site;
