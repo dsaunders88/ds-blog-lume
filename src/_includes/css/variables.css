@@ -2,12 +2,13 @@
   /* Fonts */
   --font-primary: "Brix Sans", system-ui, "Segoe UI", Tahoma, Geneva, Verdana,
     sans-serif;
-  --font-headings: "Lumin", serif;
-  --font-headings-weight: 700;
+  --font-headings: "Fjalla One", sans-serif;
+  --font-headings-weight: 700; /* 700 */
   --font-code: "JetBrains Mono", "Consolas", "Monaco", "Andale Mono",
     "Ubuntu Mono", monospace;
   --leading-normal: 1.45;
-  --leading-tight: 1.15;
+  --leading-medium: 1.35;
+  --leading-tight: 1.15; /* 1.15 */
 
   /* Colors */
   --color-white: #fff;

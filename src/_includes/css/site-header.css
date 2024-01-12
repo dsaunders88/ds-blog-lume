@@ -32,6 +32,20 @@
     --cluster-space: 1.5rem;
   }
 
+  & .header-logo {
+    border-radius: 9999px;
+    width: 3rem;
+    height: 3rem;
+    outline: 1px solid var(--color-accent-500);
+    transition: all 0.2s ease;
+  }
+
+  & a:has(.header-logo):hover .header-logo {
+    outline-width: 2px;
+    outline-offset: 3px;
+    opacity: 0.85;
+  }
+
   & .nav-link {
     display: inline-block;
     text-decoration: none;

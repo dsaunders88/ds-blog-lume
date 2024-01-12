@@ -1,6 +1,9 @@
 article {
-  padding-block-start: var(--space-3xl);
   padding-block-end: var(--space-xl);
+
+  & > * {
+    padding-block-start: var(--space-3xl);
+  }
 
   &.content-wrapper {
     --wrapper-max-width: 1280px;
@@ -23,7 +26,7 @@ article {
 
   & h1 {
     text-wrap: balance;
-    line-height: 1.1;
+    line-height: var(--leading-medium);
     margin-block-end: var(--space-m);
   }
 
@@ -105,7 +108,7 @@ article {
     }
 
     & a[aria-current="true"] {
-      background: var(--color-selection-active);
+      background: var(--color-tag-background);
     }
 
     & .toc-link {
@@ -121,7 +124,7 @@ article {
       }
 
       &.active {
-        background: var(--color-selection-active);
+        background: var(--color-tag-background);
       }
     }
   }

@@ -148,7 +148,7 @@ figure {
 
       & :where(h2, h3) {
         font-size: var(--step-1);
-        text-wrap: balance;
+        text-wrap: pretty;
 
         & a {
           text-decoration-color: transparent;

@@ -3,7 +3,7 @@
   position: relative;
   margin-block-start: var(--space-xl);
   padding-block-start: var(--space-xl);
-  padding-block-end: var(--space-m);
+  padding-block-end: var(--space-s);
 
   & a:not(.subfooter a) {
     text-decoration-color: transparent;

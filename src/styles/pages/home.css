@@ -435,7 +435,7 @@ main {
     place-self: flex-start;
 
     & h2 {
-      line-height: 1.05;
+      line-height: var(--leading-tight);
     }
 
     & #sectionName {
