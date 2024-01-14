@@ -87,8 +87,12 @@ page_css: post.css
         alt="{{ image.alt }}"
         width="2000"
       />
-      {{ if image.attribution }}
-      <figcaption>Source: {{ image.attribution }}</figcaption>
+      {{ if image.caption }}
+      <figcaption>
+        {{ image.caption }} {{ if image.attribution }}
+        <span class="accent-color" style="padding-inline: 0.25rem">•</span> {{
+        image.attribution }} {{ /if }}
+      </figcaption>
       {{ /if }}
     </figure>
     {{ if toc.length > 0 }}

@@ -26,6 +26,10 @@ Before I jump into the background and details of the implementation, here is an 
 
 **Check out the [working model of the site here](https://deep-pheasant-69.deno.dev/)!** (Caveat: this is a work-in-progress and may be buggy, and, because I'm lazy, is not currently optimized for small screen sizes. But I hope it's interesting to peruse!)
 
+<figure>
+    <img src="../../../img/posts/reading-app-shelves-regular.webp" alt="A view of the reading tracker shelves page, showing the Fiction shelf with titles like '2312', 'At the Mountains of Madness', and 'Blue Mars', and the German Literature shelf, showing titles like 'Atheism in Christinaity', 'Doctor Faustus', and 'On Marx'." width="600" loading="lazy" decoding="async" />
+</figure>
+
 ## Design
 
 For the design of the site, I took a lot of inspiration from other tracker sites like [literal.club](https://literal.club/), as well as publisher sites like [Verso](https://www.versobooks.com/products/2783-revolution) and [Princeton University Press](https://press.princeton.edu/books). I wanted a minimalist feel with a focus on typography, and I think I achieved this pretty well with the fantastic serif typeface [Garalda](https://www.type-together.com/garalda-font) for the headings and one of the absolute best typefaces for user interfaces, [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans), for everything else. These two typefaces strike a very neat balance between "literariness" and practical readability/typographic versatility, and I think they work pretty well together.

@@ -2,9 +2,11 @@
 title: My Year in Reading, 2023
 image:
   src: reading-saint
-  alt: Image alt
-archiveYear: 2024
+  alt: Bartolomeo Vivarini, painting of a saint reading ca. 1470.
+  caption: Bartolomeo Vivarini, painting of a saint reading ca. 1470.
+  attribution: <a href="https://commons.wikimedia.org/wiki/File:A_Saint_(Mark%3F)_Reading_MET_DP256393.jpg">Wikimedia Commons</a>
 summary: This year I devoted almost as much time to building a custom reading tracker app as I did to reading, but I’m still pleased with the quantity and quality of what I read.
+archiveYear: 2024
 tags:
   - reading
   - literature
@@ -16,31 +18,31 @@ This year I devoted almost as much time to building a [custom reading tracker ap
 
 These were some of my favorite books of the year (because I simply can’t write about all of them, I’m limiting myself to a few):
 
+### Postmodernism
+
 <figure class="book-list featured">
-    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
-        <img src="../../../img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="" />
+    <a class="img-link" href="https://long-wasp-15.deno.dev/books/recJSxTLJxRnVeXpr">
+        <img src="../../../img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="Postmodernism, by Fredric Jameson" loading="lazy" decoding="async" />
     </a>
 </figure>
-
-### Postmodernism
 
 _Postmodernism, or, the Cultural Logic of Late Capitalism_, by Fredric Jameson • Duke University Press, 1991
 
-> For fans of: Postmodern critiques of postmodernism theory; literary criticism and media studies; the avant-garde; sentences that must be read a minimum of 3 times to fully comprehend
+> _For fans of:_ Postmodern critiques of postmodernism theory; literary criticism and media studies; the avant-garde; sentences that must be read a minimum of 3 times to fully comprehend
 
 All I could say about this masterpiece I tried to say in [my review essay here](/posts/essays/the-three-stages-of-capitalist-space). Moving on!
 
+### The Mars Trilogy
+
 <figure class="book-list featured">
-    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
-        <img src="../../../img/posts/reading-blue-mars-regular.webp" width="400" height="600" alt="Blue Mars cover" />
+    <a class="img-link" href="https://long-wasp-15.deno.dev/books/recGXoonOB53egYa4">
+        <img src="../../../img/posts/reading-blue-mars-regular.webp" width="400" height="600" alt="Blue Mars, by Kim Stanley Robinson" loading="lazy" decoding="async" />
     </a>
 </figure>
 
-### The Mars Trilogy
-
 _Red Mars_ (1993), _Green Mars_ (1994), and _Blue Mars_ (1997), by Kim Stanley Robinson • 2021, Del Rey
 
-> For fans of: Science fiction that has tons of actual science; planets; terraforming and ecology; sprawling narratives that span hundreds of years; revolution and evolution
+> _For fans of:_ Science fiction that has tons of actual science; planets; terraforming and ecology; sprawling narratives that span hundreds of years; revolution and evolution
 
 I had been dancing around Kim Stanley Robinson for a while before this year, both because of Fredric Jameson (who discusses his former advisee’s work in a number of places) and because of recommendations from my friend Christopher and others. So this was the year I decided to take on the 2,000+ pages of Robinson’s Mars Trilogy, his _magnum opus_.
 
@@ -52,17 +54,17 @@ This maximalism and philosophical depth is what makes Robinson such a joy to rea
 
 The trilogy’s utopian form is not a reductive portrait of a simplistic or blindly “optimistic” future. Rather, its vision is more in line with how Marx characterized a post-capitalist future—a future that has _real history_ precisely because it operates from the realm of post-capitalist and post-feudal class relations, when the associations of people, biospheres, and planets are finally—although still ambiguously—linked together in freedom in place of necessity.
 
+### Life: A User’s Manual
+
 <figure class="book-list featured">
-    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
-        <img src="../../../img/posts/reading-perec-regular.webp" width="400" height="600" alt="" />
+    <a class="img-link" href="https://long-wasp-15.deno.dev/books/recjeWIBTFNcffbWx">
+        <img src="../../../img/posts/reading-perec-regular.webp" width="400" height="600" alt="Life: A User's Manual, by Georges Perec" loading="lazy" decoding="async" />
     </a>
 </figure>
 
-### Life: A User’s Manual
-
 _Life: A User’s Manual_ (1978), by Georges Perec • Verba Mundi, 2009
 
-> For fans of: Nested stories, novels within novels; puzzles; lists and catalogues; pictorial writing
+> _For fans of:_ Nested stories, novels within novels; puzzles; lists and catalogues; pictorial writing
 
 The manner in which I received this fabulous novel could be a vignette straight from its pages: in the early days of the pandemic, I purchased a [curated book bundle](https://www.lastbookstorela.com/shop-books/Book-Bundles-p213551816) from the Last Bookstore, one of L.A.’s greatest bookstores. After submitting an online form listing my genre and author preferences, I was sent a package of a half-dozen books selected for me by the staff. It was a wonderful idea in a pretty bleak time. The package took so long to arrive (no shade, things were like that then) that I forgot about it, and the surprise, consideration, and randomness of the books I received have earned them a special place on my shelf.
 
@@ -78,17 +80,17 @@ Nowhere is this more evident than in the novel’s cryptic main story, a tragi-c
 
 Whether out of resentment or mischief, the puzzle-maker Winckler starts to mess with Bartlebooth, making the puzzles too clever and enigmatic for Bartlebooth to keep up with. The only “plot” in the present time of the novel is that Bartlebooth fails to complete his puzzle quest and dies, a wrong puzzle piece in his hand at the very end. Given the novel’s postmodernist outlook, I doubt if there is some deeper message here, but the totality of scenes leaves a poignant sense of the playful futility of all our effort, especially artistic, and that we might as well find or make puzzles out of the stuff of life while we can.
 
+### Shakespeare Was a Woman and Other Heresies
+
 <figure class="book-list featured">
-    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
-        <img src="../../../img/posts/reading-shakespeare-regular.webp" width="400" height="600" alt="" />
+    <a class="img-link" href="https://long-wasp-15.deno.dev/books/recHdoG8inuk0wv4V">
+        <img src="../../../img/posts/reading-shakespeare-regular.webp" width="400" height="600" alt="Shakespeare Was a Woman and Other Heresies, by Elizabeth Winkler" loading="lazy" decoding="async" />
     </a>
 </figure>
 
-### Shakespeare Was a Woman and Other Heresies
-
 _Shakespeare Was a Woman and Other Heresies: How Doubting the Bard Became the Biggest Taboo in Literature_, by Elizabeth Winkler • Simon & Schuster, 2023
 
-> For fans of: The sonnets and the plays; committed Stratfordians; committed anti-Stratfordians; going down the rabbit hole
+> _For fans of:_ The sonnets and the plays; committed Stratfordians; committed anti-Stratfordians; going down the rabbit hole
 
 If you had asked me about the puzzle surrounding the “Shakespeare authorship question” before December, I would have given the bemused reaction that apparently most people do. But that is why a new, exhaustive book on the topic by journalist Elizabeth Winkler (how about that name coincidence!) is so enjoyable. She expertly, entertainingly, and, it turns out, convincingly, leads the questioning reader through the centuries of debate on whether the “man from Stratford” (the man we know as William Shakespeare) actually wrote the plays _attributed_ to him. (The book builds on a [brilliant essay](https://www.theatlantic.com/magazine/archive/2019/06/who-is-shakespeare-emilia-bassano/588076/) she wrote in _The Atlantic_, for which she was unfairly personally attacked by certain experts).
 
@@ -104,17 +106,17 @@ At the heart of the authorship question revolves a bigger philosophical problem:
 
 At the very least, exploring these questions opens up new avenues for the present experience and performance of the texts. After all, Winkler points out, even the scholars make up imagined details when there is a lack of evidence; how else do we square the mute historical record with these works of genius?
 
+### The Truth and Other Stories
+
 <figure class="book-list featured">
-    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
-        <img src="../../../img/posts/reading-lem-regular.webp" width="400" height="600" alt="" />
+    <a class="img-link" href="https://long-wasp-15.deno.dev/books/recr1YkRQp75h6pGs">
+        <img src="../../../img/posts/reading-lem-regular.webp" width="400" height="600" alt="The Truth and Other Stories, by Stanisław Lem" loading="lazy" decoding="async" />
     </a>
 </figure>
 
-### The Truth and Other Stories
-
 _The Truth and Other Stories_ (1950s-1970s), by Stanisław Lem • MIT Press, 2022
 
-> For fans of: Mind-bending philosophical sci-fi; mad scientists; rogue artificial intelligence; short stories that hit like a shot of vodka
+> _For fans of:_ Mind-bending philosophical sci-fi; mad scientists; rogue artificial intelligence; short stories that hit like a shot of vodka
 
 I would have written here about Lem’s excellent novel _Solaris_, which I read early in the year, had I not then gone on to read this collection of simply perfect short stories. These stories are the minimalist counterparts to Perec’s and Robinson’s maximalism; like the Big Bang, each one starts from nothing, with perhaps only a few scraps of conversation between two unknown characters in an unknown place to give the reader any sense of what is going on. Pages later, details start to emerge that change the entire tenor of the narrative, every sentence a revelation that necessitates a re-reading up until that point. (I must have read each of these stories three times because of this.)
 
@@ -122,17 +124,17 @@ The best of the stories (“The Friend,” “The Journal,” “One Hundred and
 
 In an age of Elon Musk and trashy AI spam, Lem is vindicated as a prophet who skewers the charlatans and slick technological veneers of our time, offering instead a critical and ironic standpoint that out-rationalizes rationalism itself. But this irony evinces less bitterness than a tempered humanism, one that has to shake its head and chuckle at the wonder and enigma of the cosmos and our repeatedly failed efforts to understand it.
 
+### Revolution
+
 <figure class="book-list featured">
-    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
-        <img src="../../../img/posts/reading-revolution-regular.webp" width="400" height="600" alt="" />
+    <a class="img-link" href="https://long-wasp-15.deno.dev/books/recmV06sHmTUdfbGL">
+        <img src="../../../img/posts/reading-revolution-regular.webp" width="400" height="600" alt="Revolution, by Enzo Traverso" loading="lazy" decoding="async" />
     </a>
 </figure>
 
-### Revolution
-
 _Revolution: An Intellectual History_, by Enzo Traverso • Verso, 2021
 
-> For fans of: Intellectual history; socialist and communist movements; art history; nuanced historiography; “theoretical polyamory” (Wendy Brown)
+> _For fans of:_ Intellectual history; socialist and communist movements; art history; nuanced historiography; “theoretical polyamory” (Wendy Brown)
 
 I was turned on to this magisterial book by my friend and comrade Ben, who read it with the guys at the [Regrettable Century podcast](https://patreon.com/theregrettablecentury). Traverso authoritatively examines the multifaceted intellectual, cultural, and symbolic legacies of historical acts of revolutionary rupture; although he prioritizes the grand-daddies of them all, the French (1789) and Russian (1917) Revolutions, his work extrapolates from these origins into the twentieth century and around the world. (And it case it wasn’t clear, we’re talking pretty exclusively here about socialism and the utopian dreams and failures of militant, state-directed communism.)
 
@@ -150,20 +152,28 @@ These are some of the main themes, currents, and genres I read this year, which 
 
 <section class="book-list | responsive-grid">
     <div>
-        <img src="../../../img/posts/reading-left-hand-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recFd1Tla7u58LMpy">
+            <img src="../../../img/posts/reading-left-hand-regular.webp" width="400" height="600" alt="The Left Hand of Darkness, by Ursula K. Le Guin" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">The Left Hand of Darkness</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-word-for-world-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recJBpp0sV8tfutRe">
+            <img src="../../../img/posts/reading-word-for-world-regular.webp" width="400" height="600" alt="The Word for World Is Forest, by Ursula K. Le Guin" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">The Word for World Is Forest</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-red-mars-regular.webp" width="400" height="600" alt="" />
-          <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recIVxkZRnIEdoc72">
+            <img src="../../../img/posts/reading-red-mars-regular.webp" width="400" height="600" alt="Red Mars, by Kim Stanley Robinson" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Red Mars</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-green-mars-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recSV3gcH88lJ5sY6">
+            <img src="../../../img/posts/reading-green-mars-regular.webp" width="400" height="600" alt="Green Mars, by Kim Stanley Robinson" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Green Mars</p>
     </div>
 </section>
 
@@ -171,9 +181,57 @@ Echoing Fredric Jameson’s conception of the utopian, these speculative books c
 
 ### Earthbound Politics
 
+<section class="book-list | responsive-grid">
+    <div>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recJ2XZwCGcs5lZom">
+            <img src="../../../img/posts/reading-latour-regular.webp" width="400" height="600" alt="Down to Earth, by Bruno Latour" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Down to Earth</p>
+    </div>
+    <div>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recPAfpNCqmbgeOlh">
+            <img src="../../../img/posts/reading-haraway-regular.webp" width="400" height="600" alt="Staying with the Trouble, by Donna J. Haraway" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Staying with the Trouble</p>
+    </div>
+    <div>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recyLzc11DLVUrdR2">
+            <img src="../../../img/posts/reading-red-deal-regular.webp" width="400" height="600" alt="The Red Deal, by the Red Nation" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">The Red Deal</p>
+    </div>
+</section>
+
 Coming “down to earth” is an evocative image shared by the post-Catholic, environmentally minded writers Haraway and Latour (although [only one of them](https://www.vatican.va/content/francesco/en/apost_exhortations/documents/20231004-laudate-deum.html#_ftnref41) was quoted in one of the pope’s latest apostolic exhortations; sorry Bruno!). For both it means a paradigm shift in response to climate change, but it really touches on all aspects of interconnected life—the imperative to abandon the destructive path of capitalism and imperialism, and to adopt a capacious, earth-minded approach to science, knowledge, and culture. One practical political expression of this might be the Red Deal, an indigenous-led critique and expansion of the Green New Deal that prioritizes land-back and tribal self-determination in the action to save our common home.
 
 ### Radicalisms
+
+<section class="book-list | responsive-grid">
+    <div>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recvvixBoLNkIMNc3">
+            <img src="../../../img/posts/reading-kleist-regular.webp" width="400" height="600" alt="The Marquise of O—, by Heinrich von Kleist" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">The Marquise of O—</p>
+    </div>
+    <div>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recfxtYWvJxRmhxua">
+            <img src="../../../img/posts/reading-bloch-regular.webp" width="400" height="600" alt="Atheism in Christianity, by Ernst Bloch" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Atheism in Christianity</p>
+    </div>
+    <div>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recNQowd6B9k1jRjU">
+            <img src="../../../img/posts/reading-greco-regular.webp" width="400" height="600" alt="Report to Greco, Nikos Kazantzakis" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Report to Greco</p>
+    </div>
+    <div>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recIG2XGygzjXv9Hk">
+            <img src="../../../img/posts/reading-fisher-regular.webp" width="400" height="600" alt="Capitalist Realism, by Mark Fisher" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Capitalist Realism</p>
+    </div>
+</section>
 
 These books embody the essence of radicalism—whether literary, spiritual, political, or all of the above—as grasping at the root of the matter at hand. Part of me identifies in some way with the spirit of these writers, who challenged convention and forged a singular path in their understanding of the world; their works are fiery beacons which surprise and sharpen the soul.
 

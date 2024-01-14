@@ -2,7 +2,9 @@
 title: Notes from the History of Laughter
 image:
   src: feastoffools
-  alt: Image alt
+  alt: Pieter Bruegel’s illustration of the Festival of Fools, circa 1570.
+  caption: Pieter Bruegel’s illustration of the Festival of Fools, circa 1570.
+  attribution: <a href="https://www.metmuseum.org/art/collection/search/371790">The Met</a>
 summary: In <em>Rabelais and His World</em>, the Russian critic Mikhail Bakhtin argues that Rabelais is the culminating literary expression of the carnival or grotesque idiom of folk humor, an idiom which had developed for over a thousand years (starting with the Roman Saturnalia) as an “unofficial” or subversive culture in the West, complete with its own rites, rules, and symbols.
 archiveYear: 2016
 tags:

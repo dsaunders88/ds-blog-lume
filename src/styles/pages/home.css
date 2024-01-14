@@ -482,8 +482,9 @@ main {
       display: inline-block;
       color: var(--color-text-heading);
       text-wrap: balance;
-      font-weight: 900;
-      line-height: 1.2;
+      font-family: var(--font-headings);
+      line-height: var(--leading-medium);
+      font-weight: var(--font-headings-weight);
       text-decoration-color: transparent;
       margin-block-start: 0.5rem;
 

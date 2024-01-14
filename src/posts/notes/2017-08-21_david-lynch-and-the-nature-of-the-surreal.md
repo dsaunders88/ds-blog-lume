@@ -2,7 +2,9 @@
 title: David Lynch and the Nature of the Surreal
 image:
   src: eraserhead
-  alt: Image alt
+  alt: Eraserhead (1977) still.
+  caption: Eraserhead (1977) still.
+  attribution: <a href="https://film-grab.com/2013/02/01/eraserhead/">Film Grab</a>
 summary: The cinema of David Lynch, true to the spirit of its Surrealist predecessors in art and film, has always resisted conventional characterization or description.
 archiveYear: 2017
 tags:

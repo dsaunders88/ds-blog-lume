@@ -24,7 +24,7 @@ h3,
   font-weight: 400;
   color: var(--color-text-heading);
   text-transform: uppercase;
-  letter-spacing: 0.06em; /* 0.15rem*/
+  letter-spacing: var(--title-letter-spacing); /* 0.15rem*/
 }
 
 .with-icon {
@@ -121,24 +121,24 @@ a.button-link {
     margin-block-start: var(--heading-spacing);
   }
 
-  & :is(p, section, ul, blockquote, iframe, pre code) {
+  & :is(p, section, figure, img, ul, blockquote, iframe, pre code) {
     margin-block-start: var(--element-spacing);
   }
 
   /* Headings that follow an image */
-  & :is(figure, image) + :is(h2, h3) {
+  /* & :is(figure, image) + :is(h2, h3) {
     margin-block-start: var(--element-spacing);
-  }
+  } */
 
   /* Default image spacing, assuming a heading follows it */
-  & :is(figure, image) {
+  /* & :is(figure, image) {
     margin-block-start: var(--heading-spacing);
-  }
+  } */
 
   /* All other image spacing, where image is not followed by a heading */
-  & :is(figure, image):not(:has(+ :is(h2, h3))) {
+  /* & :is(figure, image):not(:has(+ :is(h2, h3))) {
     margin-block-start: var(--element-spacing);
-  }
+  } */
 
   & :is(li) {
     margin-block-start: var(--space-s);
@@ -156,8 +156,41 @@ a.button-link {
     padding-inline-start: 1rem;
   }
 
+  & img {
+    border-radius: var(--rounded-corners);
+  }
+
   &.with-intro-text > p:first-of-type {
     font-size: var(--step-1);
+  }
+
+  & figcaption {
+    margin-block-start: var(--space-2xs);
+  }
+
+  /* Inline code */
+  & p code {
+    position: relative;
+    top: -1px;
+    font-family: var(--font-code);
+    font-size: 15px;
+    background-color: var(--color-button-utility-background);
+    padding: 0.15rem 0.35rem;
+    border-radius: var(--rounded-corners-small);
+  }
+
+  /* Code block captions */
+  & figure:has(pre code) {
+    & figcaption {
+      font-family: var(--font-headings);
+      font-style: normal;
+      margin-block-start: 0;
+      margin-block-end: calc(var(--space-s) * -1);
+      color: var(--color-text-heading-accent);
+      text-align: right;
+      text-transform: uppercase;
+      letter-spacing: var(--title-letter-spacing);
+    }
   }
 
   & blockquote {

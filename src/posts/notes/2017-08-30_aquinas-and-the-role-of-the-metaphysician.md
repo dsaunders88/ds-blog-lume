@@ -2,7 +2,9 @@
 title: Aquinas and the Role of the Metaphysician
 image:
   src: universum
-  alt: Image alt
+  alt: "Wood engraving from Camille Flammarion's <em>L'atmosphère: météorologie populaire</em> (1888)."
+  caption: "Wood engraving from Camille Flammarion's <em>L'atmosphère: météorologie populaire</em> (1888)."
+  attribution: <a href="https://commons.wikimedia.org/wiki/File:Universum.jpg#/media/File:FlammarionWoodcut.jpg">Wikimedia Commons</a>
 summary: Thomas’ “metaphysics,” if indeed it can be called that, is neither an overarching rationalist system nor a purely sense-oriented empiricism. Perhaps it is ultimately closer to the dialectical materialism of Karl Marx—a philosophy engaged with the flux of material, historical change and humanity’s common interaction with itself and nature—than it is to any Enlightenment idealism.
 archiveYear: 2017
 tags:

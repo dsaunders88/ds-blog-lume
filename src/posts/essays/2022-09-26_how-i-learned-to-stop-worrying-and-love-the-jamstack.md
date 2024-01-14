@@ -2,7 +2,9 @@
 title: How I Learned to Stop Worrying and Love the Jamstack
 image:
   src: html-workshop
-  alt: alt.
+  alt: HTML Workshop Page, 1996.
+  caption: HTML Workshop Page, 1996.
+  attribution: <a href="https://www.webdesignmuseum.org/gallery/html-workshop-page-1996">Web Design Museum</a>
 summary: How I came to build (a previous version of) this site on the Jamstack.
 archiveYear: 2022
 tags:

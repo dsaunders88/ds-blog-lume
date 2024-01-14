@@ -2,7 +2,9 @@
 title: On Sorting Books
 image:
   src: reading-featured
-  alt: Image alt
+  alt: “Everywhere there is the Sun there is Communism,” Chinese Communist woodcut.
+  caption: “Everywhere there is the Sun there is Communism,” Chinese Communist woodcut.
+  attribution: <a href="https://www.nytimes.com/2021/07/01/opinion/china-communist-party-100-years-anniversary.html">NY Times</a>
 summary: Shelving books is, in fact, a dialectical art. Against the rigid, metaphysical hierarchies of the Dewey Decimal System, the dialectical approach begins not with stale Platonic categories (“Philosophy,” “Art,” “Religion”) but with the understanding of the varied internal relations among books.
 archiveYear: 2020
 tags:

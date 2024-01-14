@@ -3,6 +3,7 @@ title: The Christ of Nikos Kazantzakis
 image:
   src: kazantzakis-featured
   alt: Nikos Kazantzakis in his study.
+  caption: Nikos Kazantzakis in his study.
   attribution: <a href="https://www.kazantzaki.gr/gr/life-and-work/apodimia-kai-anagnorisi-193">Kazantzakis Museum</a>
 summary: Nikos Kazantzakis’ towering literary output reflects a lifelong effort to articulate both spiritual and political radicalisms, for which the figure of Christ is often the embodiment.
 archiveYear: 2023
@@ -35,11 +36,11 @@ Kazantzakis' life was an _agon_, the journey of an unsettled radical through the
 
 <section class="book-list | responsive-grid">
     <div>
-        <img src="../../../img/posts/kazantzakis-christ-recrucified-regular.webp" width="400" height="600" alt="" />
+        <img src="../../../img/posts/kazantzakis-christ-recrucified-regular.webp" width="400" height="600" alt="Christ Recrucified, by Nikos Kazantzakis" loading="lazy" decoding="async" />
         <p class="title">Christ Recrucified</p>
     </div>
     <div>
-        <img src="../../../img/posts/kazantzakis-fratricides-regular.webp" width="400" height="600" alt="" />
+        <img src="../../../img/posts/kazantzakis-fratricides-regular.webp" width="400" height="600" alt="The Fratricides, by Nikos Kazantzakis" loading="lazy" decoding="async" />
         <p class="title">The Fratricides</p>
     </div>
 </section>

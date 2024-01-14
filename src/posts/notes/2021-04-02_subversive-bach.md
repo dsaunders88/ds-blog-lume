@@ -2,7 +2,9 @@
 title: Subversive Bach
 image:
   src: leipzig_nikolaikirche
-  alt: Image alt
+  alt: Copperplate print showing perspective view of Nikolaikirche, Leipzig.
+  caption: Copperplate print showing perspective view of Nikolaikirche, Leipzig.
+  attribution: <a href="https://commons.wikimedia.org/wiki/File:Leipzig_Nikolaikirche_18_Jh.jpg">Wikimedia Commons</a>
 summary: The music brings out this sense of inexorableness that the text signals with words like bestimmen (designate, determine, appoint) and the clipped, forceful, almost untranslatable Not (destitution, misery, dire need).
 archiveYear: 2021
 tags:
@@ -25,4 +27,4 @@ In light of contemporary theologies of liberation, the _Johannes-Passion_ takes 
 
 Here is my (very loose, hopefully accurate) translation of this verse:
 
-> Rest well, O thou hallowed bones,<br>Ruht wohl, ihr heiligen Gebeine,<br><br>Which I never more shall mourn,<br>Die ich nun weiter nicht beweine,<br><br>Rest well and bring me also peace!<br>Ruht wohl und bringt auch mich zur Ruh!<br><br>The grave, thus for you ordained<br>Das Grab, so euch bestimmt ist<br><br>No more embraces fated ruin,<br>Und ferner keine Not umschließt,<br><br>But opens Heaven, walls off Hell for me.<br>Macht mir den Himmel auf und schließt die Hölle zu.
+> Rest well, O thou hallowed bones,<br>_Ruht wohl, ihr heiligen Gebeine,_<br><br>Which I never more shall mourn,<br>_Die ich nun weiter nicht beweine,_<br><br>Rest well and bring me also peace!<br>_Ruht wohl und bringt auch mich zur Ruh!_<br><br>The grave, thus for you ordained<br>_Das Grab, so euch bestimmt ist_<br><br>No more embraces fated ruin,<br>_Und ferner keine Not umschließt,_<br><br>But opens Heaven, walls off Hell for me.<br>_Macht mir den Himmel auf und schließt die Hölle zu._

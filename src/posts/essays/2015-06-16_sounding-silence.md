@@ -2,7 +2,8 @@
 title: Sounding Silence
 image:
   src: arvo-part
-  alt: alt.
+  alt: Composer Arvo Pärt holding a bell.
+  caption: Composer Arvo Pärt.
 summary: "In the introduction to <em>Arvo Pärt: Out of Silence</em>, theologian and musician Peter Bouteneff notes that the tendency to describe first encounters with Pärt grows out of his music’s singular, transformative quality—an evocative spirituality that has captivated believer and non-believer alike."
 archiveYear: 2015
 tags:

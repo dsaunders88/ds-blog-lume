@@ -2,7 +2,9 @@
 title: The Tricontinental Conference & Latin American Liberationist Christianity
 image:
   src: mederos-nixon-indochina
-  alt: alt.
+  alt: “Nixon Tearing the Heart out of Indochina,” artwork by René Mederos (1971).
+  caption: “Nixon Tearing the Heart out of Indochina,” artwork by René Mederos (1971).
+  attribution: <a href="https://daily.jstor.org/anti-imperialist-propaganda-posters-ospaaal/">OSPAAAL Collection</a>
 summary: In 1966, the Tricontinental Conference convened in Havana, Cuba, bringing together over 500 delegates from 82 countries in Asia, Africa, and Latin America under the banner of anti-colonial, anti-imperialist solidarity and national self-determination.
 archiveYear: 2021
 tags:

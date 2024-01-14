@@ -153,6 +153,11 @@ map.addLayer({
 
 A big part of the problem I had with this is that, as an American, I have a terrible sense of metric system values (I hate to admit it, but I had to triple check that the incoming meteorite mass values were indeed in grams 😅). There's also just a massive range of mass values for these meteorites—and figuring out how to display that visually was part of the fun of building this map! It's obviously very challenging to show the drastic difference between 10 and 10,000,000 on the same map, while retaining readability. So again, it was a lot of trial and error.
 
+<figure>
+    <img src="../../../img/posts/meteorite-map-3-regular.webp" alt="Dark theme map closeup of China, showing meteorite falls as orange circles, with larger mass meteorites as larger circles." width="600" loading="lazy" decoding="async" />
+    <figcaption>Are they meteorites or planet-sized asteroids...?</figcaption>
+</figure>
+
 I also had to have a unit converter up constantly (because dumb American), but I really wanted to get a sense for what these meteorites actually weighed in relative terms. After all, grapsing details like this is part of the whole point of the map. So, with the help of [weightofstuff.com](https://weightofstuff.com), here's my little conversion chart (and I really do want you to imagine these items hurling down at you from outer space at terminal velocity):
 
 - **1 kg:** Quart of milk
@@ -218,6 +223,16 @@ map.addLayer({
 
 The combined effects of all of these styles renders a layer that shows us at a glance _how much meteorite mass_ has fallen on a given area. That's a lot of fire trucks.
 
+<figure>
+    <img src="../../../img/posts/meteorite-map-earth-regular.webp" alt="Dark theme map of entire earth, showing orange heatmap of meteorite falls by mass." width="600" loading="lazy" decoding="async" />
+    <figcaption>Heatmap layer</figcaption>
+</figure>
+
 ### Popups
 
 Finally, we still have all of that metadata to display for each meteorite. So I used Mapbox's `Popup` component to add custom info cards to each meteorite point when the view is showing the circle layer. (The code is too long and messy but you can check it out in the [Codesandbox](https://codesandbox.io/s/mapbox-meteorites-z4q4to?fontsize=14&hidenavigation=1&theme=dark).)
+
+<figure>
+    <img src="../../../img/posts/meteorite-map-1-regular.webp" alt="Map closeup of France and Switzerland, showing the Ensisheim fall of 1492." width="600" loading="lazy" decoding="async" />
+    <figcaption>1492!</figcaption>
+</figure>

@@ -2,7 +2,9 @@
 title: Il Campanilismo
 image:
   src: italy_1494_shepherd
-  alt: alt.
+  alt: “Italy about 1494,” illustration by William R. Shepherd.
+  caption: “Italy about 1494,” illustration by William R. Shepherd.
+  attribution: <a href="https://maps.lib.utexas.edu/maps/historical/history_shepherd_1923.html">U Texas Libraries</a>
 summary: It existed once before the nineteenth century, briefly, as part of the vast imperial structure of the Roman Empire. Before that it had been a vague idea from myth—the notion of <em>Italia</em>.
 archiveYear: 2016
 tags:

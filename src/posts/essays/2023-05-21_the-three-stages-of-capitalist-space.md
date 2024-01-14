@@ -3,7 +3,8 @@ title: The Three Stages of Capitalist Space
 image:
   src: bonaventure-featured
   alt: Exterior of the Westin Bonvanture Hotel in Los Angeles, discussed by Jameson as an example of postmodern architecture.
-  attribution: <a href="https://commons.wikimedia.org/wiki/File:Westin_Bonaventure_Hotel_%286801556011%29.jpg">Wikimedia</a>
+  caption: Exterior of the Westin Bonvanture Hotel in Los Angeles, discussed by Jameson as an example of postmodern architecture.
+  attribution: <a href="https://commons.wikimedia.org/wiki/File:Westin_Bonaventure_Hotel_%286801556011%29.jpg">Wikimedia Commons</a>
 summary: Getting at the heart of what and why postmodernism is remains a challenge that few thinkers have been able to face with as much brilliance and perspicacity as Fredric Jameson, notably in his Postmodernism, or, the Cultural Logic of Late Capitalism (1991).
 archiveYear: 2023
 tags:
@@ -15,8 +16,8 @@ tags:
 What is postmodernism? By now, we all know that we're in it and that there's no getting out of it—even if, like all periods as they're being experienced, we can't exactly define it from the inside, without the benefit of hindsight (nor can we tell if we haven't indeed progressed to something beyond, like "post-postmodernism").
 
 <figure class="book-list featured">
-    <a class="img-link" href="#" target="_blank">
-        <img src="../../../img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="" />
+    <a class="img-link" href="https://long-wasp-15.deno.dev/books/recJSxTLJxRnVeXpr">
+        <img src="../../../img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="Postmodernism, by Fredric Jameson" loading="lazy" decoding="async" />
     </a>
 </figure>
 
@@ -65,7 +66,8 @@ _Or, a journey toward reification._
 ### Secularization (Grid)
 
 <figure>
-    <img src="../../../img/posts/paris-haussmann-plan-regular.webp" width="600" height="400" alt="" loading="lazy" decoding="async" />
+    <img src="../../../img/posts/paris-haussmann-plan-regular.webp" width="600" height="400" alt="1867 Ledot Pocket Map of Paris, France" loading="lazy" decoding="async" />
+    <figcaption>1867 Ledot Pocket Map of Paris, France</figcaption>
 </figure>
 
 - **Stage of capitalism**: Classical (market) capitalism—the emergence of world markets and a system of production based on wage labor. "Exchange value" supersedes "use value" as the "goal" of production, leading to the inscription of universality and equivalence into the cycle of production, exchange, and distribution
@@ -77,7 +79,8 @@ _Or, a journey toward reification._
 ### Structuration (Network)
 
 <figure>
-    <img src="../../../img/posts/paris-le-corbusier-regular.webp" width="600" height="400" alt="" loading="lazy" decoding="async" />
+    <img src="../../../img/posts/paris-le-corbusier-regular.webp" width="600" height="400" alt="Plan Voisin in Paris, Le Corbusier" loading="lazy" decoding="async" />
+    <figcaption>Plan Voisin in Paris, Le Corbusier</figcaption>
 </figure>
 
 - **Stage of capitalism**: The transition from market to monopoly capitalism—what Lenin called the imperialist stage of development. Capital extends over the globe at the same time that it is concentrated in the hands of a few national powers, leading to a vast interconnection of value chains.
@@ -89,7 +92,8 @@ _Or, a journey toward reification._
 ### Saturation (Quantum Field)
 
 <figure>
-    <img src="../../../img/posts/paris-disneyland-regular.webp" width="600" height="400" alt="" loading="lazy" decoding="async" />
+    <img src="../../../img/posts/paris-disneyland-regular.webp" width="600" height="400" alt="Disneyland Hotel, Paris" loading="lazy" decoding="async" />
+    <figcaption>Disneyland Hotel, Paris</figcaption>
 </figure>
 
 - **Stage of capitalism**: Late or neoliberal capitalism—the triumph of consumer society; capital in perpetual crisis and motion; the invasion of capital into all economic, social, and personal spheres (akin to what David Harvey calls the "spatial fix"); market capture of political governance; capital as subject of history.

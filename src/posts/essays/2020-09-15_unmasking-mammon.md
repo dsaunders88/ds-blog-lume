@@ -2,7 +2,9 @@
 title: Unmasking Mammon
 image:
   src: worship-of-mammon
-  alt: alt.
+  alt: “The worship of Mammon,” painting circa 1909.
+  caption: “The worship of Mammon,” painting circa 1909.
+  attribution: <a href="https://commons.wikimedia.org/wiki/File:The_worship_of_Mammon.jpg">Wikimedia Commons</a>
 summary: "My review of Haymarket’s <em>A People’s Guide to Capitalism: An Introduction to Marxist Economics</em>, for <em>The Bias</em> magazine."
 archiveYear: 2020
 tags:

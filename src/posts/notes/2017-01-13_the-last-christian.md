@@ -2,7 +2,8 @@
 title: The Last Christian
 image:
   src: francis-of-assisi
-  alt: Image alt
+  alt: “St. Francis Preaching to the Birds,” painting by Giotto, circa 1300.
+  caption: “St. Francis Preaching to the Birds,” painting by Giotto, circa 1300.
 summary: "“In the person of Francis the premodern world, so to speak, gathered itself together before coming to an end. For one last time, before the forces of progress thundered off on their triumphant path, one man looked into the motivating thrust behind the whole thing and decisively rejected it: Francis of Assisi, the last Christian.”"
 archiveYear: 2017
 tags:

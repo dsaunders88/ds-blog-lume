@@ -2,7 +2,9 @@
 title: A Philosophy of Walking
 image:
   src: wander-above-the-sea-of-fog
-  alt: Image alt
+  alt: “Der Wanderer über dem Nebelmeer,” painting by Caspar David Friedrich (1818).
+  caption: “Der Wanderer über dem Nebelmeer,” painting by Caspar David Friedrich (1818).
+  attribution: <a href="https://en.wikipedia.org/wiki/Wanderer_above_the_Sea_of_Fog#/media/File:Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg">Wikimedia Commons</a>
 summary: Walking is a mode of living that embraces freedom, but this freedom is of a vastly different sort than that offered by the plethora of choices and dependencies that entangle us in the web of our consumerist lives.
 archiveYear: 2017
 tags:

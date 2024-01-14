@@ -328,6 +328,12 @@ figure {
   }
 }
 
+.rich-content {
+  & .book-list {
+    --item-max-width: 13rem;
+  }
+}
+
 .book-list {
   &.responsive-grid {
     --item-min-width: 12rem;

@@ -2,7 +2,9 @@
 title: The Age of Extremes
 image:
   src: soviet-emblem
-  alt: Image alt
+  alt: Black and white photo of a Soviet woman looking at fallen hammer and sickle emblem.
+  caption: The Fall.
+  attribution: <a href="https://www.theatlantic.com/photo/2011/12/20-years-since-the-fall-of-the-soviet-union/100214/">The Atlantic</a>
 summary: As tempting as it is to fantasize on what could have been, the historian’s task, Hobsbawm quips, is to analyze what was. And so despite his sympathies and disappointments, Hobsbawm does what no ideological historian can do, but which only the best Marxist thinkers are capable of.
 archiveYear: 2021
 tags:

@@ -2,7 +2,9 @@
 title: Two World Views of the Russian Revolution
 image:
   src: new-planet-yuon
-  alt: Image alt
+  alt: “New Planet,” symbolist painting by Konstantin Yuon (1921).
+  caption: “New Planet,” symbolist painting by Konstantin Yuon (1921).
+  attribution: <a href="https://www.wikiart.org/en/konstantin-yuon/new-planet-1921">Wikiart</a>
 summary: Walter Rodney’s rejection of rigid models of historical interpretation and “necessary” trajectories of socialist development transcends Cold War limitations. Instead, his authentic use of Marxist historical materialism impels him to begin, per Lenin, with the “concrete analysis of concrete conditions.”
 archiveYear: 2020
 tags:

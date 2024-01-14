@@ -2,7 +2,7 @@ article {
   padding-block-end: var(--space-xl);
 
   & > * {
-    padding-block-start: var(--space-3xl);
+    padding-block-start: var(--space-2xl);
   }
 
   &.content-wrapper {
@@ -204,8 +204,9 @@ article {
   & .link {
     text-wrap: balance;
     margin-block-start: 0.5rem;
-    font-weight: 900;
-    line-height: 1.2;
+    font-family: var(--font-headings);
+    font-weight: var(--font-headings-weight);
+    line-height: var(--leading-medium);
     text-decoration-color: transparent;
     display: inline-block;
   }

@@ -2,9 +2,11 @@
 title: My Year in Reading, 2022
 image:
   src: dante
-  alt: alt.
-archiveYear: 2022
+  alt: Domenico di Michelino's “La commedia illumina Firenze” on the wall of Florence Cathedral.
+  caption: Domenico di Michelino's “La commedia illumina Firenze” on the wall of Florence Cathedral.
+  attribution: <a href="https://en.wikipedia.org/wiki/Domenico_di_Michelino#/media/File:Dante_Domenico_di_Michelino_Duomo_Florence.jpg">Wikimedia Commons</a>
 summary: My entirely not-of-the-moment, provisional list of favorite reads from 2022, the books that most shaped my thinking this year.
+archiveYear: 2022
 tags:
   - reading
   - literature
@@ -18,17 +20,17 @@ So as the year closes, here is my entirely not-of-the-moment, provisional list o
 
 My favorite reads of the year, ones that prompted prolonged or critical reflection (in no particular order):
 
+### Wagnerism
+
 <figure class="book-list featured">
-    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
-        <img src="../../../img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="" />
+    <a class="img-link" href="https://long-wasp-15.deno.dev/books/rec2kPSKqLhQvIuX7">
+        <img src="../../../img/posts/reading-wagnerism-regular.webp" width="400" height="600" alt="Wagnerism by Alex Ross" loading="lazy" decoding="async" />
     </a>
 </figure>
 
-### Wagnerism
-
 _Wagnerism: Art and Politics in the Shadow of Music_, by Alex Ross • 2020, Farrar, Straus and Giroux
 
-> For fans of: Wagner who know he’s problematic, opera/music history that isn't gossipy, “histories of influence,” miniature biographies of artists, the concept of decadence, the occult
+> _For fans of:_ Wagner who know he’s problematic, opera/music history that isn't gossipy, “histories of influence,” miniature biographies of artists, the concept of decadence, the occult
 
 I confess that, as an avid classical music listener with a penchant for the baroque and early Romantic, I considered myself to be above Wagner for the longest time. I half-blame Nietzsche's tortured but compelling diatribe in _The Case of Wagner_: "_The artist of decadence_. That is the word ... All that the world most needs to-day, is combined in the most seductive manner in his art—the three great stimulants of exhausted people: brutality, artificiality and innocence (idiocy)." (Now _that's_ a hot take.) But this book, accompanied by a deep-dive in listening, has changed that earlier opinion. (I've now listened to the full Ring Cycle multiple times.)
 
@@ -40,17 +42,17 @@ Along the way, Ross attempts to assess the nebulous political undertones of Wagn
 
 As [Nathan Shields writes](https://thebaffler.com/salvos/wagnermania-shields) in an excellent critical rejoinder, Ross ironically fails to plumb the depths and contradictions of the _music itself_: "This is the idea that music shows us something far grander, and more dangerous, than our own reflection. It shows us the world as it could be." The music, so full of the apocalyptic attitude of the _fin-de-siècle_, seems to foreground a more compelling, and more ominous, political question, oscillating between the twin collective visions of utopia and fascism: what is it in Wagner that simultaneously promises both liberation and annihilation, decadence and transcendence? And why does that abyss hold such power over us? Maybe Nietzsche was onto something after all.
 
+### Ulysses _and_ Ulysses
+
 <figure class="book-list featured">
-    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
-        <img src="../../../img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="" />
+    <a class="img-link" href="https://long-wasp-15.deno.dev/books/recyEioDb2o7g000h">
+        <img src="../../../img/posts/reading-ulysses-regular.webp" width="400" height="600" alt="Ulysses by Hugh Kenner" loading="lazy" decoding="async" />
     </a>
 </figure>
 
-### Ulysses _and_ Ulysses
-
 _Ulysses_, by James Joyce • 2013, Vintage Classics & _Ulysses_, by Hugh Kenner • 1987, Johns Hopkins University Press
 
-> For fans of: The greatest novel ever written, stories about wandering cuckolds, the sheer delight of language
+> _For fans of:_ The greatest novel ever written, stories about wandering cuckolds, the sheer delight of language
 
 Wagner was a luminary for the Modernist movement, whose greatest representatives were Eliot and Joyce. In _Ulysses_, Ross reads the ghostly ship that appears to Stephen Dedalus early in the novel as a reference to the Flying Dutchman, a legend about an eternally doomed mariner that was also the source for an early Wagner opera. The legend in turn reinforces another of the book's _leitmotifs_, that of the Wandering Jew, cursed to roam the earth forever. As Ross notes, the novel delights in ironically playing up the dread of a dark, vampiric, conspiratorial specter looming at the edge of Stephen's consciousness (descriptors redolent of the era's anti-Semitism), before abruptly pivoting to the dry ordinariness of Leopold Bloom's daily life (which is now amusingly vampiric): "Mr Leopold Bloom ate with relish the inner organs of beasts and fowls."
 
@@ -66,17 +68,17 @@ It is as though Joyce, in his act of creation, had also given birth to a brazen 
 
 The effect of the Arranger on the reader is to cause us to become aware of both the limitations and the unboundedness of art, and of language in general. Above all we realize that there is far more here than meets the eye: "There has been a look of autonomy for the initial style to serve and transcribe, but under close inspection this autonomy is compromised" (70). Just like in our physical cosmos, there is, contrary to seeming appearances, no great Artificer in the sky, no static Book of Nature from which all can read. And there is no single identity that holds us together. Instead, there are a multiplicity of voices, manifold viewpoints constructing the determined chaos of reality (a truth of quantum physics, which has playfully recognized its affinity with Joyce by borrowing his term _quark_). This is the _parallax_ that _Ulysses_ achieves in both form and content—an over-layering of visions, encompassing both specter and living presence.
 
+### Marx's Inferno
+
 <figure class="book-list featured">
-    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
-        <img src="../../../img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="" />
+    <a class="img-link" href="https://long-wasp-15.deno.dev/books/recsBACDunKvwKbIu">
+        <img src="../../../img/posts/reading-marxs-inferno-regular.webp" width="400" height="600" alt="Marx's Inferno by William Clare Roberts" loading="lazy" decoding="async" />
     </a>
 </figure>
 
-### Marx's Inferno
-
 _Marx's Inferno: The Political Theory of Capital_, by William Clare Roberts • 2016, Princeton University Press
 
-> For fans of:Fresh takes on Marxist thought, creative uses of the Divine Comedy, not terrible political theory, hating on anarchists
+> _For fans of:_ Fresh takes on Marxist thought, creative uses of the Divine Comedy, not terrible political theory, hating on anarchists
 
 As Marx well knew, the true specter haunting Europe in the mid-19th century (and us now) was the harrowing reality wrought by the capitalist mode of production, from environmental degradation to extreme poverty to the obliteration of traditional social ties. The resulting "social hell," as William Clare Roberts advances in this book, was a popular topic for utopians, communists, anarchists, and reformists of the day; it was a trope for thinkers to frame the struggle for a better world in terms of salvation from this social hell by means of a democratically enacted social republic (which of course varied widely in form). It is on this and other specifics that Roberts bases his proposal to read _Capital: Volume I_ through the lens of Dante's _Inferno_, as both an entry in and critique of this long line of commentators on the social hell—a provocative and fruitful reading that has changed many aspects of how I understand Marx's project.
 
@@ -90,17 +92,17 @@ The impersonal domination of the market compels not only workers but also _capit
 
 This is how Roberts arrives at his view of Marx as a radical republican, concerned above all with freedom from the tyrannical and impersonal structure of capitalism. It is a Marx who certainly has much to say to our current moment, especially after the [failure of so many state socialist projects](/posts/notes/the-age-of-extremes/). Moreover, it is a Marx who returns the focus to the laboring classes themselves, who, "if they want to free themselves from this domination ... must get to the bottom of political economy itself, and destroy the social basis of its existence as a scientific discourse" (17).
 
+### Archaeologies of the Future
+
 <figure class="book-list featured">
-    <a class="img-link" href="https://www.goodreads.com/en/book/show/204011" target="_blank">
-        <img src="../../../img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="" />
+    <a class="img-link" href="https://long-wasp-15.deno.dev/books/recmpq6x25WVaiYm0">
+        <img src="../../../img/posts/reading-jameson-scifi-regular.webp" width="400" height="600" alt="Archaeologies of the Future by Fredric Jameson" loading="lazy" decoding="async" />
     </a>
 </figure>
 
-### Archaeologies of the Future
-
 _Archaeologies of the Future: The Desire Called Utopia and Other Science Fictions_, by Frederic Jameson • 2007, Verso
 
-> For fans of: Tour de force literary theory, Greimas squares (so many of them), utopia/dystopia, Kim Stanley Robinson/Ursula Le Guin, pithy off-hand remarks that cause you to rethink entire movements or individuals
+> _For fans of:_ Tour de force literary theory, Greimas squares (so many of them), utopia/dystopia, Kim Stanley Robinson/Ursula Le Guin, pithy off-hand remarks that cause you to rethink entire movements or individuals
 
 Having gone through the social hell, what then _does_ the longed-for social republic on the other side look like, exactly? As everyone knows, it is far easier to critique the world-as-it-is than to imagine the world-as-it-might-be. But the impulse to think the unthinkable, to carve out an "enclave" from the "nightmare of history" (Stephen Dedalus in _Ulysses_), is an act which generates the kind of text which is not quite wholly fiction, not quite wholly social/political theory, but an explosive, protean thing filled with the unique social desires that attend each particular era (and here we're back to Wagner). Following its grand inaugural iteration by Thomas More, this is the kind of text we call the Utopian.
 
@@ -122,93 +124,119 @@ Even amid such interesting details, the book's overarching theme is also one tha
 
 In addition to my favorite books, these themes formed some of the main currents of what I read this year:
 
-### Science fiction
+### Science Fiction Classics
 
 <section class="book-list | responsive-grid">
     <div>
-        <img src="../../../img/posts/reading-left-hand-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recWD9qNrgwEawbZJ">
+            <img src="../../../img/posts/reading-parable-of-sower-regular.webp" width="400" height="600" alt="Parable of the Sower, by Octavia Butler" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Parable of the Sower</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-word-for-world-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
-    </div>
-    <div>
-        <img src="../../../img/posts/reading-red-mars-regular.webp" width="400" height="600" alt="" />
-          <p class="title">Title</p>
-    </div>
-    <div>
-        <img src="../../../img/posts/reading-green-mars-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recikplkRLx0IEHoH">
+            <img src="../../../img/posts/reading-roadside-picnic-regular.webp" width="400" height="600" alt="Roadside Picnic, by Arkady and Boris Strugatsk" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Roadside Picnic</p>
     </div>
 </section>
 
 I've been a casual reader of sci-fi for a long time, but partly because of the Jameson book above, I made a resolution to deep dive into the classics this year. In addition to the fraught utopian ruminations of these two masterpieces, I also have Stanisław Lem's _Solaris_ and Marge Piercy’s _Woman on the Edge of Time_ in the queue.
 
-### Natural world
+### Natural World
 
 <section class="book-list | responsive-grid">
     <div>
-        <img src="../../../img/posts/reading-left-hand-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recD79EU1sxtz5HOv">
+            <img src="../../../img/posts/reading-control-of-nature-regular.webp" width="400" height="600" alt="The Control of Nature, by John McPhee" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">The Control of Nature</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-word-for-world-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recXuFgpzxJw7CBGf">
+            <img src="../../../img/posts/reading-braiding-sweetgrass-regular.webp" width="400" height="600" alt="Braiding Sweetgrass, by Robin Wall Kimmerer" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Braiding Sweetgrass</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-red-mars-regular.webp" width="400" height="600" alt="" />
-          <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recYFiccT5wpaiamN">
+            <img src="../../../img/posts/reading-mind-on-plants-regular.webp" width="400" height="600" alt="This Is Your Mind On Plants, by Michael Pollan" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">This Is Your Mind On Plants</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-green-mars-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/rec3YVreu5aZ8AWCq">
+            <img src="../../../img/posts/reading-urchin-in-storm-regular.webp" width="400" height="600" alt="An Urchin in the Storm, by Stephen Jay Gould" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">An Urchin in the Storm</p>
     </div>
 </section>
 
 I [continued my trend](/posts/essays/dialectical-ecology) of exploring the confluence of the social and natural worlds with these excellent titles. McPhee’s classic essays on precarious human attempts to flaunt natural processes were especially stimulating, as was Michael Pollan’s knowledgeable stroll through the psychoactive properties of opium, caffeine, and mescaline.
 
-### Politics as worldmaking
+### Politics as Worldmaking
 
 <section class="book-list | responsive-grid">
     <div>
-        <img src="../../../img/posts/reading-left-hand-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class='img-link' href="https://long-wasp-15.deno.dev/books/recPO42hNcCmxOTPs">
+            <img src="../../../img/posts/reading-reconsidering-reparations-regular.webp" width="400" height="600" alt="Reconsidering Reparations, by Olúfẹ́mi O. Táíwò" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Reconsidering Reparations</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-word-for-world-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class='img-link' href="https://long-wasp-15.deno.dev/books/recP6WLYDuyqRLRju">
+            <img src="../../../img/posts/reading-elite-capture-regular.webp" width="400" height="600" alt="Elite Capture, by Olúfẹ́mi O. Táíwò" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Elite Capture</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-red-mars-regular.webp" width="400" height="600" alt="" />
-          <p class="title">Title</p>
+        <a class='img-link' href="https://long-wasp-15.deno.dev/books/rec67vUFWOLBpv8bq">
+            <img src="../../../img/posts/reading-world-to-win-regular.webp" width="400" height="600" alt="A World to Win, by Sven-Eric Liedman" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">A World to Win</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-green-mars-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class='img-link' href="https://long-wasp-15.deno.dev/books/recUbL30a6S7e0h6X">
+            <img src="../../../img/posts/reading-spectre-haunting-regular.webp" width="400" height="600" alt="A Spectre, Haunting, by China Miéville" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">A Spectre, Haunting</p>
+    </div>
+    <div>
+        <a class='img-link' href="https://long-wasp-15.deno.dev/books/recaqDUjA1W0YF5c5">
+            <img src="../../../img/posts/reading-emergent-strategy-regular.webp" width="400" height="600" alt="Emergent Strategy, by Adrienne Maree Brown" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Emergent Strategy</p>
     </div>
 </section>
 
 “Politics as worldmaking” is a concept from Olúfẹ́mi O. Táíwò’s incredible book _Reconsidering Reparations_ (I would have written more about it above, but I have a longer essay about it forthcoming soon), and it aptly characterizes how these books and/or their subjects approach social change. Rather than drowning in the endless back-and-forth of sanctimonious, identity-driven liberal politics, worldmaking aims first to understand history so it can more effectively change the complex systemic problems we have been given. (It’s right there in [the eleventh thesis on Feuerbach](https://www.marxists.org/archive/marx/works/1845/theses).) It’s about taking out the hammers—to tear down _and_ build up something new.
 
-### Existentialist / absurdist / postmodernist fiction
+### Existentialist / Absurdist / Postmodernist Fiction
 
 <section class="book-list | responsive-grid">
     <div>
-        <img src="../../../img/posts/reading-left-hand-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recLhQzLKlAoe2yaR">
+            <img src="../../../img/posts/kazantzakis-fratricides-regular.webp" width="400" height="600" alt="The Fratricides, by Nikos Kazantzakis" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">The Fratricides</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-word-for-world-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="#existentialist-%2F-absurdist-%2F-postmodernist-fiction">
+            <img src="../../../img/posts/kazantzakis-christ-recrucified-regular.webp" width="400" height="600" alt="Christ Recrucified, by Nikos Kazantzakis" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Christ Recrucified</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-red-mars-regular.webp" width="400" height="600" alt="" />
-          <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recanTI1sjRPkz90L">
+            <img src="../../../img/posts/reading-by-night-in-chile-regular.webp" width="400" height="600" alt="By Night in Chile, by Roberto Bolaño" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">By Night in Chile</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-green-mars-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recsosidIO4CbTgKD">
+            <img src="../../../img/posts/reading-satantango-regular.webp" width="400" height="600" alt="Satantango, by László Krasznahorkai" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Satantango</p>
     </div>
 </section>
 
@@ -220,19 +248,33 @@ Finally, these are good books I read that I have less to say about/didn't finish
 
 <section class="book-list | responsive-grid">
     <div>
-        <img src="../../../img/posts/reading-left-hand-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recf9T26GJV7ffgkt">
+            <img src="../../../img/posts/reading-matrix-regular.webp" width="400" height="600" alt="Matrix, by Lauren Groff" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Matrix</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-word-for-world-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/reca8Oh0FrFZhEBmM">
+            <img src="../../../img/posts/reading-parables-as-subversive-regular.webp" width="400" height="600" alt="Parables as Subversive Speech, by William R. Herzog II" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Parables as Subversive Speech</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-red-mars-regular.webp" width="400" height="600" alt="" />
-          <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/rec4IMevnkKxUOYVh">
+            <img src="../../../img/posts/reading-tao-te-ching-regular.webp" width="400" height="600" alt="Tao Te Ching, translated by Stephen Mitchell" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Tao Te Ching</p>
     </div>
     <div>
-        <img src="../../../img/posts/reading-green-mars-regular.webp" width="400" height="600" alt="" />
-        <p class="title">Title</p>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/reckBMw4BwcAo6h6N">
+            <img src="../../../img/posts/reading-reaganland-regular.webp" width="400" height="600" alt="Reaganland, by Rick Perlstein" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Reaganland</p>
+    </div>
+    <div>
+        <a class="img-link" href="https://long-wasp-15.deno.dev/books/recj5EmkYO5Fie5XG">
+            <img src="../../../img/posts/reading-postcapitalist-desire-regular.webp" width="400" height="600" alt="Postcapitalist Desire, by Mark Fisher" loading="lazy" decoding="async" />
+        </a>
+        <p class="title">Postcapitalist Desire</p>
     </div>
 </section>

@@ -2,7 +2,9 @@
 title: The Origin of Capitalism
 image:
   src: reeve_and_serfs
-  alt: Image alt
+  alt: Medieval illustration of men harvesting wheat with reaping-hooks.
+  caption: Medieval illustration of men harvesting wheat with reaping-hooks.
+  attribution: <a href="https://en.wikipedia.org/wiki/Enclosure#/media/File:Reeve_and_Serfs.jpg">Wikimedia Commons</a>
 summary: "There is a story told about capitalism—mostly by its proponents: classical liberals, American conservatives, libertarians, and the like; but also sometimes inadvertently by its Marxist critics—that sees this system as synonymous with human nature in all times and all places."
 archiveYear: 2019
 tags:

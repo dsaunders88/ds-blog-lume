@@ -29,6 +29,11 @@ Luckily, I have a paid Airtable plan that I use for other work-related bases, an
 
 All that said, Airtable works really well as a database for tracking reading activity. Within the base, I have a number of tables set up for each type of data I want to track; this granular approach means that a record in any table can be associated in various ways with any the others. Book records can be a part of author and shelf records, but they also are a part of reading activity records.
 
+<figure>
+    <img src="../../../img/posts/reading-app-airtable-backend-2-regular.webp" alt="A visualization of the Airtable base schema relationships, showing each table and its associated fields and how they are connected to other tables and fields." width="600" loading="lazy" decoding="async" />
+    <figcaption>The interconnections between all of the tables in the base.</figcaption>
+</figure>
+
 Here is a breakdown of tables in the base:
 
 - **Books.** As might be expected, this is the core building block of the reading tracker—everything starts with a book. Fields include basic book information like title, cover, and publisher, as well as other metadata like page count, format, series, ISBN number, edition notes, etc. (more on getting those below). Connected fields linked to other tables include authors, shelves, and reading activity instances. This allows for some other interesting metadata to be calculated using [Airtable’s “rollup” fields](https://support.airtable.com/docs/rollup-field-overview), like “belongs to (x) number of shelves” and “(x) times read”.
@@ -37,6 +42,11 @@ Here is a breakdown of tables in the base:
 - **Reading Activity.** A reading activity record marks every “instance” of an interaction with a book, so one book can have many activities on it. This is one of the secrets of working with relational data; it might make sense at first to track this information directly on book records themselves. But separating out a new table with distinct fields gives you much more control and flexibility when dealing with the data. Fields on a reading activity record include status (read next, currently reading, have read), date started/finished, and pages read. Because this table can “look into” fields on the associated book records, I can also calculate other items like “percentage read” to see whether or not a book was finished (if percentage read equals 100%) or just “read” in any form (if percentage read is less than 100%).
 - **Reviews.** Reviews are linked to reading activity instances and not books themselves, with the reasoning that thoughts and reactions to a book are highly specific to the time and place the book was encountered. This lets reviews be a snapshot in time, with the ability to add new or updated views on the book on subsequent reading instances.
 - **Reading Paths.** Finally, there is the reading paths table, which, as I mentioned [in the first post](/posts/notes/building-myself-a-reading-tracker-app-with-airtable-and-deno-fresh-part-1), is my favorite table because it opens up really exciting connections between the books I’m reading. Each record in a reading path is like a “meta shelf,” a broad theme that either was set in an intentional reading plan or has emerged organically from the reading of the books themselves. The paths not only group books together, like a shelf does, but they also track the dates of interaction as linked from the activity instances. A path then becomes a chronological journal of how and when books have influenced the reading of other books—a shelf through time, as it were. Some examples of paths I have identified and named include “Utopian Horizons” ([philosophical investigations of utopia](/posts/lists/my-year-in-reading-2022/#archaeologies-of-the-future-the-desire-called-utopia-and-other-science-fictions) and its possibilities in sci-fi and other literature) and “Smog City” (radical histories and stories of Los Angeles).
+
+<figure>
+    <img src="../../../img/posts/reading-app-airtable-backend-regular.webp" alt="View of a 'Reading Paths' table in Airtable, showing a list of reading records with fields for name, description, and book covers. Some of the entry names are 'Utopian Horizons', 'The Weird and the Eerie', and 'Anti-imperialism from the Third World'." width="600" loading="lazy" decoding="async" />
+    <figcaption>The Reading Paths table.</figcaption>
+</figure>
 
 ## Getting Public Book Data
 
@@ -133,6 +143,11 @@ const book = await getBookData();
 
 This works pretty well and usually provides enough of a start for getting all the fields I want—especially the book covers, which saves some time having to look them up.
 
+<figure>
+    <img src="../../../img/posts/reading-app-fetch-regular.webp" alt="Airtable scripting interface showing the code from this post on the left side and the results of running the code on the right." width="600" loading="lazy" decoding="async" />
+    <figcaption>The Airtable scripting interface and sample test run of the fetch code above.</figcaption>
+</figure>
+
 The second part of the script takes the returned data and maps it onto the appropriate fields in the Books table, using some of Airtable’s helper methods.
 
 <figure>
@@ -169,6 +184,11 @@ if (!book || Object.keys(book).length === 0) {
 }
 ```
 
+</figure>
+
+<figure>
+    <img src="../../../img/posts/reading-app-airtable-backend-3-regular.webp" alt="Book record screen in Airtable showing the results of the fetch call applied to the record's fields." width="600" loading="lazy" decoding="async" />
+    <figcaption>Mapping the returned fetch results to the record’s fields.</figcaption>
 </figure>
 
 ## To the Front-End

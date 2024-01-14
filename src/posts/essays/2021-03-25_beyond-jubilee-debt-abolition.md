@@ -1,9 +1,10 @@
 ---
 title: Beyond Jubilee
 image:
-  src: jesus-moneychangers
-  alt: alt.
-  attribution: <a href="https://www.kazantzaki.gr/gr/life-and-work/apodimia-kai-anagnorisi-193">Kazantzakis Museum</a>
+  src: jubilee
+  alt: “The Year of Jubilee,” by Henry Le Jeune.
+  caption: “The Year of Jubilee,” by Henry Le Jeune.
+  attribution: <a href="https://commons.wikimedia.org/wiki/File:Le_Jeune_The_Year_of_Jubilee.jpg">Wikimedia Commons</a>
 summary: "My review of Haymarket’s <em>Can’t Pay, Won’t Pay: The Case for Economic Disobedience and Debt Abolition</em>, for The Bias magazine."
 archiveYear: 2021
 tags:

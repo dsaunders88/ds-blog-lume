@@ -2,7 +2,9 @@
 title: Cardboard Darwinism & Double Transference
 image:
   src: stephen-jay-gould
-  alt: Image alt
+  alt: Stephen Jay Gould in his office.
+  caption: Stephen Jay Gould in his office.
+  attribution: <a href="https://speakola.com/ideas/stephen-jay-gould-on-evolution-1995">Speakola</a>
 summary: “Cardboard Darwinism,” writes biologist Stephen Jay Gould in an essay of the same name, “is a reductionist, one-way theory about the grafting of information from environment upon organism,” or what amounts to a form of biological determinism.
 archiveYear: 2020
 tags:

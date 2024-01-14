@@ -2,7 +2,9 @@
 title: The Marx Delusion
 image:
   src: marx-engels-berlin-3d
-  alt: Image alt
+  alt: Karl Marx & Friedrich Engels Monument Berlin 3D.
+  caption: Karl Marx & Friedrich Engels Monument Berlin 3D.
+  attribution: <a href="https://www.flickr.com/photos/hoppenbrouwers/34792812685">Flickr</a>
 summary: If Marx focused so much on the material, it was because he found it integral to collective human flourishing in a sense similar to the Aristotelian <em>eudamonia</em>—physical, mental, and spiritual well-being achieved through practical activity.
 archiveYear: 2019
 tags:

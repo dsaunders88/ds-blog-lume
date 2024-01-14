@@ -44,6 +44,10 @@
   text-align: center;
 }
 
+.accent-color {
+  color: var(--color-accent-500);
+}
+
 .w-fit {
   width: fit-content;
 }

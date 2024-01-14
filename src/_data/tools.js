@@ -4,8 +4,24 @@ export const list = [
     url: "https://fresh.deno.dev/",
   },
   {
+    name: "Deno Lume",
+    url: "https://lume.land/",
+  },
+  {
     name: "Reasonable Colors",
     url: "https://reasonable.work/colors/",
+  },
+  {
+    name: "HTMX",
+    url: "https://htmx.org/",
+  },
+  {
+    name: "Statamic",
+    url: "https://statamic.com/",
+  },
+  {
+    name: "Laravel",
+    url: "https://laravel.com/",
   },
   {
     name: "Airtable",
@@ -16,7 +32,7 @@ export const list = [
     url: "https://affinity.serif.com/en-us/",
   },
   {
-    name: "Astro 3.0",
+    name: "Astro 4.0",
     url: "https://astro.build/",
   },
   {

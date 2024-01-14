@@ -30,7 +30,11 @@ page_css: post-index.css
           </summary>
           {{ set entry = year.entries }}
           <section class="expanded-posts">
-            <p class="count">{{ year.entries.length }} posts</p>
+            {{ if year.entries.length === 1 }}
+              <p class="count">{{ year.entries.length }} post</p>
+            {{ else }}
+              <p class="count">{{ year.entries.length }} posts</p>
+            {{ /if }}
             {{ include "partials/post-list-simple.vto" }}
           </section>
         </details>

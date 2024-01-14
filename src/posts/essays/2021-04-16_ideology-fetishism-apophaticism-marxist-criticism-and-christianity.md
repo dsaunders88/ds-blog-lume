@@ -2,8 +2,8 @@
 title: Marxist Criticism and Christianity
 image:
   src: jesus-moneychangers
-  alt: alt.
-  attribution: <a href="https://www.kazantzaki.gr/gr/life-and-work/apodimia-kai-anagnorisi-193">Kazantzakis Museum</a>
+  alt: Communist Jesus driving idolatrous bankers out of the temple.
+  caption: Communist Jesus driving idolatrous bankers out of the temple.
 summary: Christianity retains the impetus to anti‐fetishism, provided it unites with the Marxist science of critical perception.
 archiveYear: 2021
 tags:

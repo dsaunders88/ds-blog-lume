@@ -3,7 +3,7 @@ title: My PC Apostasy—On Converting to the Cult of MacOS
 image:
   src: trent-featured
   alt: Opening session of the Council of Trent in 1545, depicted by Nicolò Dorigati, 1711, with runner from Apple's 1984 commercial superimposed over the altar.
-  attribution: <a href="https://www.britannica.com/event/Council-of-Trent">Brittanica</a>
+  caption: Opening session of the Council of Trent in 1545, depicted by Nicolò Dorigati, 1711, with runner from Apple's 1984 commercial superimposed over the altar.
 summary: It is, I admit, something like a Puritan's envy for that cheerful and conciliatory user experience of the Mac that finally led me to forsake the dour Northern lands of PC-dom and to cross the operating-system Tiber.
 archiveYear: 2023
 tags:
@@ -16,6 +16,11 @@ It finally came to pass—I am now the owner of an Apple product (an insanely pe
 During that intervening time, I maintained the stubborn attitude of a PC dogmatist. After all, PCs could be custom-built and endlessly modified (something I did in high school, with the help of a family member), they were better for games (except for that Spiderman game I dropped $50 on in 2006, which never worked on my graphics card), and they were always just more intuitive to me (speaking for Windows, anyway, whose folder/file system I still prefer to MacOS).
 
 Of course, there was always also the perverse pride in not giving in to the hype, of decrying the decadence and thoughtlessness of both the masses and "creative types" who gave up their free choice of software and hardware to a marketing-savvy corporate giant, of feeling like one of the true holdouts to defend...what? A Windows user-interface that hasn't established a good or even consistent design in 30 years? A bland aesthetic redolent of bureaucratic senescence? An operating system whose frequent crashes and bugs caused an untold number of desperate hours trying to troubleshoot fixes? A chaotic ecosystem and knowledge base where there was never less than 10 different ways to do something relatively simple?
+
+<figure>
+    <img src="../../../img/posts/windows-menu-regular.webp" alt="Various Windows context menus." width="600" loading="lazy" decoding="async" />
+    <figcaption>Windows context menu hell, via <a href="https://www.reddit.com/r/Windows10/comments/l5ohwj/all_different_default_windows_10_context_menu/">Reddit</a></figcaption>
+</figure>
 
 This pietistic streak on my part, a "Here I stand, I can do no other" mentality, if you will, was an unwitting embodiment of a [canny and insightful comment](https://www.simongrant.org/web/eco.html) made by semiotician and novelist Umberto Eco all the way back in 1994—that "the Macintosh is Catholic and that <abbr title="(Microsoft) Disk Operating System">DOS</abbr> is Protestant" (and I, for my part, was as Protestant as Luther or Calvin):
 

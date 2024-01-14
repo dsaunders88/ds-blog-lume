@@ -2,7 +2,9 @@
 title: Red Star Over the Third World
 image:
   src: red-star
-  alt: Image alt
+  alt: “Literacy is the path to communism,” Soviet poster (1920).
+  caption: “Literacy is the path to communism,” Soviet poster (1920).
+  attribution: <a href="https://twitter.com/sovietvisuals/status/1483138046501404676">Twitter</a>
 summary: Nothing could be the same in the world after 1917, for “what should never have been became real”—a society where the oppressed masses had overthrown the oppressing classes and where “a total change in the life of the people” was being made.
 archiveYear: 2020
 tags:
