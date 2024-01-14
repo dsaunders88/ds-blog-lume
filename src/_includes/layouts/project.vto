@@ -7,7 +7,7 @@ page_css: project.css
   <div class="intro | has-sidebar">
     <div class="flow">
       <header class="cluster">
-        <h1 class="small-title">{{ title }}</h1>
+        <p class="small-title">{{ title }}</p>
         <div class="categories | cluster">
           {{ for tag of tags }}
           <span>
@@ -48,6 +48,7 @@ page_css: project.css
           {{ /for }}
         </div>
       </header>
+      <h1 class="summary">{{ summary }}</h1>
       <img
         class="featured-img"
         src="../../../img/projects/{{ image.src }}-large.webp"
@@ -57,9 +58,25 @@ page_css: project.css
       <div class="content | rich-content">{{ content }}</div>
     </div>
     <div>
-      {{#
-      <p class="summary">{{ summary }}</p>
-      #}}
+      <div class="return | cluster">
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M10.25 6.75L4.75 12L10.25 17.25"
+          ></path>
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M19.25 12H5"
+          ></path>
+        </svg>
+        <a href="/projects">All projects</a>
+      </div>
       <div class="info | flow">
         <div class="flow">
           <p class="bold">Client</p>
@@ -164,25 +181,6 @@ page_css: project.css
             />
           </g>
         </svg>
-      </div>
-      <div class="return | cluster">
-        <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-            d="M10.25 6.75L4.75 12L10.25 17.25"
-          ></path>
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-            d="M19.25 12H5"
-          ></path>
-        </svg>
-        <a href="/projects/">Return to projects</a>
       </div>
     </div>
   </div>

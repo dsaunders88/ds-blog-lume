@@ -2937,7 +2937,8 @@
     "https://deno.land/x/lume_markdown_plugins/toc.ts": "https://deno.land/x/lume_markdown_plugins@v0.5.1/toc.ts",
     "https://esm.sh/htm": "https://esm.sh/htm@3.1.1",
     "https://esm.sh/preact": "https://esm.sh/preact@10.18.1",
-    "https://esm.sh/preact-custom-element": "https://esm.sh/preact-custom-element@4.3.0"
+    "https://esm.sh/preact-custom-element": "https://esm.sh/preact-custom-element@4.3.0",
+    "https://esm.sh/v128/@types/react@~18.2/jsx-runtime~.d.ts": "https://esm.sh/v128/@types/react@18.2.38/jsx-runtime~.d.ts"
   },
   "remote": {
     "https://cdn.jsdelivr.net/gh/lumeland/lume@513220bcdab0172e7b0a0c2dd66b928ce907190c/cli.ts": "552479ab40efa790c21975633ed26716f0074e9872fabb701069ba9458f7a544",

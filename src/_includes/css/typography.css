@@ -121,7 +121,7 @@ a.button-link {
     margin-block-start: var(--heading-spacing);
   }
 
-  & :is(p, section, ul, blockquote, pre code) {
+  & :is(p, section, ul, blockquote, iframe, pre code) {
     margin-block-start: var(--element-spacing);
   }
 

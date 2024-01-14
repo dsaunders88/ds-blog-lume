@@ -5,7 +5,6 @@ image:
   alt: Map of the United States showing meteorite falls.
 summary: Playing around with the Mapbox GL JS API and plotting observed meteorite falls.
 archiveYear: 2023
-stylesheet: code.css
 tags:
   - design
   - web development
@@ -13,17 +12,17 @@ tags:
 
 I’ve been playing around with the Mapbox GL mapping library, both as a way to practice my JavaScript and because maps are just dang cool. Building a complex map can be a little bit of a learning curve, but with the help of some examples, I was able to create a few that I think are pretty interesting.
 
-<a href="https://z4q4to.csb.app/" target="_blank">See the map</a> 🗺️
+[See the map here!](https://z4q4to.csb.app) 🗺️
 
 ## The Dataset
 
-<a href="https://docs.mapbox.com/help/glossary/mapbox-gl/" target="_blank">Mapbox GL</a> is a set of open-source libraries for creating client-side maps. It's a fantastic alternative to Google Maps, both because it is incredibly comprehensive and customizable, and because, well, it's not Google.
+[Mapbox GL](https://docs.mapbox.com/help/glossary/mapbox-gl) is a set of open-source libraries for creating client-side maps. It's a fantastic alternative to Google Maps, both because it is incredibly comprehensive and customizable, and because, well, it's not Google.
 
-As I was exploring Mapbox, I started thinking about a potential dataset that would be fun to display. Many of the Mapbox examples use earthquake data, so I did some research on a few sites and pretty quickly found a perfect candidate that I thought would be super interesting—a set of observed meteorite landings (going back to the fifteenth century!) which is available on NASA's <a href="https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh/data" target="_blank">Open Data Portal</a>. This dataset includes a <a hrefe="https://data.nasa.gov/resource/gh4g-9sfh.json" target="_blank">public API endpoint</a> that allows the data to be fetched with a JavaScript data fetching method.
+As I was exploring Mapbox, I started thinking about a potential dataset that would be fun to display. Many of the Mapbox examples use earthquake data, so I did some research on a few sites and pretty quickly found a perfect candidate that I thought would be super interesting—a set of observed meteorite landings (going back to the fifteenth century!) which is available on NASA's [Open Data Portal](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh/data). This dataset includes a [public API endpoint](https://data.nasa.gov/resource/gh4g-9sfh.json) that allows the data to be fetched with a JavaScript data fetching method.
 
-While it's great that the data is just there and ready to use, I had to do a number of transformations to get it into the shape I wanted. Mapbox accepts a few different source types to use for mapping points, lines, or vectors, but a common, versatile (and very comprehensible) type is the <a href="https://geojson.org/" target="_blank">GeoJSON</a> format. I set up a function to map (pun not intended) the NASA data onto a GeoJSON object; an array of these objects assembled later then comprise the source for the map.
+While it's great that the data is just there and ready to use, I had to do a number of transformations to get it into the shape I wanted. Mapbox accepts a few different source types to use for mapping points, lines, or vectors, but a common, versatile (and very comprehensible) type is the [GeoJSON format](https://geojson.org). I set up a function to map (pun not intended) the NASA data onto a GeoJSON object; an array of these objects assembled later then comprise the source for the map.
 
-```js
+```javascript
 // Function to create a GeoJSON object from fetched data,
 // where the data properties match those from the API endpoint
 function createGeoJSONObj(data) {
@@ -51,32 +50,15 @@ function createGeoJSONObj(data) {
 
 ## Meteorite Falls Heatmap
 
-<iframe class="w-full md:w-[110%] min-h-[80vh] mb-8" src="https://codesandbox.io/embed/mapbox-meteorites-z4q4to?fontsize=13&hidenavigation=1&module=%2Fscript.js&theme=dark&view=preview"
-     title="mapbox-meteorites"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
+<iframe src="https://codesandbox.io/embed/mapbox-meteorites-z4q4to?fontsize=13&hidenavigation=1&module=%2Fscript.js&theme=dark&view=preview" title="mapbox-meteorites" width="100%" height="500" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
 
-(Or check out <a href="https://z4q4to.csb.app/" target="_blank">the fullscreen version</a>)
+(Or check out [the fullscreen version here](https://z4q4to.csb.app))
 
 ### Building the Map
 
 It's straightforward to get the Mapbox map itself up and running. Mapbox is all client-side, so you just add a `div` with an id of "map" or whatever else you want, and then initialize it with a script somewhere on your page (and don't forget to add the CDN links to its script and css files). Voila!
 
-<figure>
-<figcaption class="code-caption">index.html</figcaption>
-
-```html
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
-<link
-  href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css"
-  rel="stylesheet"
-/>
-```
-
-</figure>
-
-```js
+```javascript
 mapboxgl.accessToken = YOUR_TOKEN;
 
 const map = new mapboxgl.Map({
@@ -93,7 +75,7 @@ const map = new mapboxgl.Map({
 
 Adding the source data is also pretty simple. The `addSource` method takes as arguments an `id`, here called "points", and a `source`, here a GeoJSON collection. First, I'm fetching the NASA data, then using our `createGeojsonObj` function to create objects for each piece of data, then assembling an array we can use in the GeoJSON collection.
 
-```js
+```javascript
 // The whole thing is wrapped in a self-invoking async function, which is called
 // immediately — it's asynchronous since we have to await the fetch results
 (async () => {
@@ -116,13 +98,13 @@ Adding the source data is also pretty simple. The `addSource` method takes as ar
 
 ### Styling Layers
 
-At this point, we have a source of about 1,000 meteorite coordinate points, each with associated metadata like title, mass, and year. Pretty cool! But nothing will show up on our map until we add a <a href="https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/" target="_blank">style layer</a> (or many) with the `addLayer` method. This is where the real fun—and the real headaches—start. The simplest solution is to plot the points using circles or symbols, and having everything be a uniform size.
+At this point, we have a source of about 1,000 meteorite coordinate points, each with associated metadata like title, mass, and year. Pretty cool! But nothing will show up on our map until we add a [style layer](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers) (or many) with the `addLayer` method. This is where the real fun—and the real headaches—start. The simplest solution is to plot the points using circles or symbols, and having everything be a uniform size.
 
-But I think that's pretty boring! So I decided (with _a lot_ of help from <a href="https://docs.mapbox.com/mapbox-gl-js/example/" target="_blank">the Mapbox examples</a>) to dynamically render the point sizes based on the mass of the meteorite—so heavier meteorites would show up as larger circles, while lighter meteorites would be smaller circles. After hours of trying to understand Mapbox's `interpolate` expression, and a lot of trial and error, I finally got something that I'm (mostly) happy with.
+But I think that's pretty boring! So I decided (with _a lot_ of help from [the Mapbox examples](https://docs.mapbox.com/mapbox-gl-js/example)) to dynamically render the point sizes based on the mass of the meteorite—so heavier meteorites would show up as larger circles, while lighter meteorites would be smaller circles. After hours of trying to understand Mapbox's `interpolate` expression, and a lot of trial and error, I finally got something that I'm (mostly) happy with.
 
 Essentially, `interpolate` lets you take in a value from a source (here, the mass of the meteorite, which is why we had to change it to a `number` type earlier), and then use that as a kind of index to generate "stops" that the output will fluctuate between (it's the same idea as gradient color stops, but with pure numbers—but Mapbox's documentation is pretty confusing on how it works). I wanted the circle radius to change based on each meteorite's mass, so I interpolated on the mass value. For an input of a mass of 10, the circle radius outputs to 1; for a mass of 100, 2; and so on, as you can see below.
 
-```js
+```javascript
 map.addLayer({
   id: "meteorites-point", // Name of the layer
   type: "circle",
@@ -171,12 +153,7 @@ map.addLayer({
 
 A big part of the problem I had with this is that, as an American, I have a terrible sense of metric system values (I hate to admit it, but I had to triple check that the incoming meteorite mass values were indeed in grams 😅). There's also just a massive range of mass values for these meteorites—and figuring out how to display that visually was part of the fun of building this map! It's obviously very challenging to show the drastic difference between 10 and 10,000,000 on the same map, while retaining readability. So again, it was a lot of trial and error.
 
-<figure>
-{% inlineImage "./src/assets/meteorite-map-3.jpg", "Dark theme map closeup of China, showing meteorite falls as orange circles, with larger mass meteorites as larger circles", "100vw" %}
-<figcaption>Are they meteorites or planet-sized asteroids...?</figcaption>
-</figure>
-
-I also had to have a unit converter up constantly (because dumb American), but I really wanted to get a sense for what these meteorites actually weighed in relative terms. After all, grapsing details like this is part of the whole point of the map! So, with the help of <a href="https://weightofstuff.com/" target="_blank">weightofstuff.com</a>, here's my little conversion chart (and I really do want you to imagine these items hurling down at you from outer space at terminal velocity):
+I also had to have a unit converter up constantly (because dumb American), but I really wanted to get a sense for what these meteorites actually weighed in relative terms. After all, grapsing details like this is part of the whole point of the map. So, with the help of [weightofstuff.com](https://weightofstuff.com), here's my little conversion chart (and I really do want you to imagine these items hurling down at you from outer space at terminal velocity):
 
 - **1 kg:** Quart of milk
 - **10 kg:** Sledgehammer
@@ -185,15 +162,15 @@ I also had to have a unit converter up constantly (because dumb American), but I
 - **500 kg:** Concert grand piano
 - **1,000 kg:** 2016 Chevy Spark
 - **5,000 kg:** Elephant
-- **20,000 kg:** Fire truck (yes, that iron meteorite in <a href="https://en.wikipedia.org/wiki/Sikhote-Alin_meteorite" target="_blank">Sikhote-Alin</a> is an absolute beast)
+- **20,000 kg:** Fire truck (yes, that iron meteorite in [Sikhote-Alin](https://en.wikipedia.org/wiki/Sikhote-Alin_meteorite) is an absolute beast)
 
 ### Heatmap Layer
 
-While the dynamic circle sizes were great, I wanted something a bit more, especially for the initial view of the entire earth at zoom level 0. At that view, the various sizes are too jumbled anyway to make visual sense of them. So I added an additional heatmap layer (I also could have gone with a <a href="https://docs.mapbox.com/mapbox-gl-js/example/cluster/" target="_blank">cluster layer</a>). I hadn't considered a heatmap initially as a way to show this data, but its definition as a technique that "shows magnitude of a phenomenon as color in two dimensions" was exactly what I was looking for.
+While the dynamic circle sizes were great, I wanted something a bit more, especially for the initial view of the entire earth at zoom level 0. At that view, the various sizes are too jumbled anyway to make visual sense of them. So I added an additional heatmap layer (I also could have gone with a [cluster layer](https://docs.mapbox.com/mapbox-gl-js/example/cluster)). I hadn't considered a heatmap initially as a way to show this data, but its definition as a technique that "shows magnitude of a phenomenon as color in two dimensions" was exactly what I was looking for.
 
 With another `addLayer` method, we can add a second map layer on top of the dynamically sized points. The `interpolate` expression for `"heatmap-weight"` works just as before, except here it is multiplied by a second `interpolate` on the `"heatmap-intensity"` property. Then, another `interpolate` handles the color gradient so that denser areas get dark/opaque colors, while less dense areas get lighter/transparent colors. Finally, a _fourth_ `interpolate` handles a smooth opacity transition between this layer and the dynamically sized points on a closer zoom.
 
-```js
+```javascript
 map.addLayer({
   id: "meteorites-heat",
   type: "heatmap",
@@ -241,15 +218,6 @@ map.addLayer({
 
 The combined effects of all of these styles renders a layer that shows us at a glance _how much meteorite mass_ has fallen on a given area. That's a lot of fire trucks.
 
-<figure>
-{% inlineImage "./src/assets/meteorite-map-earth.jpg", "Dark theme map of entire earth, showing orange heatmap of meteorite falls by mass", "100vw" %}
-</figure>
-
 ### Popups
 
-Finally, we still have all of that metadata to display for each meteorite. So I used Mapbox's `Popup` component to add custom info cards to each meteorite point when the view is showing the circle layer. (The code is too long and messy but you can check it out in the <a href="https://codesandbox.io/s/mapbox-meteorites-z4q4to?fontsize=14&hidenavigation=1&theme=dark" target="_blank">Codesandbox</a>.)
-
-<figure>
-{% inlineImage "./src/assets/meteorite-map-1.jpg", "Map closeup of France and Switzerland, showing the Ensisheim fall of 1492", "100vw" %}
-<figcaption><a href="https://en.wikipedia.org/wiki/Ensisheim_meteorite" target="_blank">1492!</a></figcaption>
-</figure>
+Finally, we still have all of that metadata to display for each meteorite. So I used Mapbox's `Popup` component to add custom info cards to each meteorite point when the view is showing the circle layer. (The code is too long and messy but you can check it out in the [Codesandbox](https://codesandbox.io/s/mapbox-meteorites-z4q4to?fontsize=14&hidenavigation=1&theme=dark).)

@@ -50,7 +50,7 @@ Let's take a look at a few examples. Below is the simplified directory structure
 <figure>
 <figcaption class="code-caption">Project Directory</figcaption>
 
-```editorconfig
+```yaml
 ├── _site/ # The 11ty build directory
 ├── src/
 │   ├── _includes/
@@ -107,7 +107,7 @@ Once you have a collection, you can render its data with a templating language�
 <figure>
 <figcaption class="code-caption">src/_includes/layouts/posts-index.njk</figcaption>
 
-```jinja2
+```jinja
 <ul class="post-list">
   {% for post in collections.posts %}
     <li class="card">
@@ -129,7 +129,7 @@ Then, on another template for the actual post view, I can render the front matte
 <figure>
 <figcaption class="code-caption">src/_includes/layouts/post-view.njk</figcaption>
 
-```jinja2
+```jinja
 <article>
   <h1>{{ title }}</h1>
   <p>{{ date | readableDate }}</p>

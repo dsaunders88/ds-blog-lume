@@ -5,7 +5,7 @@ image:
   alt: alt.
   attribution: <a href="https://www.kazantzaki.gr/gr/life-and-work/apodimia-kai-anagnorisi-193">Kazantzakis Museum</a>
 summary: Christianity retains the impetus to anti‐fetishism, provided it unites with the Marxist science of critical perception.
-archiveYear: 2022
+archiveYear: 2021
 tags:
   - religion
   - theory

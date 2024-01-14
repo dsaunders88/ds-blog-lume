@@ -5,6 +5,10 @@ import attributes from "lume/plugins/attributes.ts";
 import base_path from "lume/plugins/base_path.ts";
 import code_highlight from "lume/plugins/code_highlight.ts";
 import lang_javascript from "npm:highlight.js/lib/languages/javascript";
+import lang_typescript from "npm:highlight.js/lib/languages/typescript";
+import lang_django from "npm:highlight.js/lib/languages/django";
+import lang_yaml from "npm:highlight.js/lib/languages/yaml";
+import lang_json from "npm:highlight.js/lib/languages/json";
 import feed from "lume/plugins/feed.ts";
 // import filter_pages from "lume/plugins/filter_pages.ts";
 import transformImages from "lume/plugins/transform_images.ts";
@@ -55,6 +59,10 @@ site.use(
   code_highlight({
     languages: {
       javascript: lang_javascript,
+      typescript: lang_typescript,
+      jinja: lang_django,
+      yaml: lang_yaml,
+      json: lang_json,
     },
   })
 );

@@ -30,6 +30,7 @@ page_css: post-index.css
           </summary>
           {{ set entry = year.entries }}
           <section class="expanded-posts">
+            <p class="count">{{ year.entries.length }} posts</p>
             {{ include "partials/post-list-simple.vto" }}
           </section>
         </details>

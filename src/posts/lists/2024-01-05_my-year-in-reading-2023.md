@@ -7,6 +7,7 @@ archiveYear: 2024
 summary: This year I devoted almost as much time to building a custom reading tracker app as I did to reading, but I’m still pleased with the quantity and quality of what I read.
 tags:
   - reading
+  - literature
 ---
 
 This year I devoted almost as much time to building a [custom reading tracker app](/posts/notes/building-myself-a-reading-tracker-app-with-airtable-and-deno-fresh-part-1) as I did to reading, but I’m still pleased with the quantity and quality of what I read.
@@ -166,88 +167,13 @@ These are some of the main themes, currents, and genres I read this year, which 
     </div>
 </section>
 
-<!-- <div class="book-grid">
-  <div class="book-grid-item">
-    {% inlineImage "./src/assets/reading-left-hand.jpeg", "Book cover of The Left Hand of Darkness by Ursula K. Le Guin", "100vw" %}
-    <div class="book-overlay">
-      <p><em>The Left Hand of Darkness</em>, by Ursula K. Le Guin</p>
-    </div>
-  </div>
-  <div class="book-grid-item">
-    {% inlineImage "./src/assets/reading-word-for-world.jpeg", "Book cover of The Word for World is Forest by Ursula K. Le Guin", "100vw" %}
-    <div class="book-overlay">
-      <p><em>The Word for World is Forest</em>, by Ursula K. Le Guin</p>
-    </div>
-  </div>
-  <div class="book-grid-item">
-    {% inlineImage "./src/assets/reading-red-mars.jpeg", "Book cover of Red Mars by Kim Stanley Robinson", "100vw" %}
-    <div class="book-overlay">
-      <p><em>Red Mars</em>, by Kim Stanley Robinson</p>
-    </div>
-  </div>
-  <div class="book-grid-item">
-    {% inlineImage "./src/assets/reading-green-mars.jpeg", "Book cover of Green Mars by Kim Stanley Robinson", "100vw" %}
-    <div class="book-overlay">
-      <p><em>Green Mars</em>, by Kim Stanley Robinson</p>
-    </div>
-  </div>
-</div> -->
-
 Echoing Fredric Jameson’s conception of the utopian, these speculative books carve out imaginative spaces of possibility, which perform a double function: critique of our present, and the impetus to imagine how things could be otherwise.
 
 ### Earthbound Politics
 
-<!-- <div class="book-grid">
-  <div class="book-grid-item">
-    {% inlineImage "./src/assets/reading-latour.jpeg", "Book cover of Down to Earth by Bruno Latour", "100vw" %}
-    <div class="book-overlay">
-      <p><em>Down to Earth</em>, by Bruno Latour</p>
-    </div>
-  </div>
-  <div class="book-grid-item">
-    {% inlineImage "./src/assets/reading-haraway.jpeg", "Book cover of Staying with the Trouble by Donna Haraway", "100vw" %}
-    <div class="book-overlay">
-      <p><em>Staying with the Trouble</em>, by Donna Haraway</p>
-    </div>
-  </div>
-  <div class="book-grid-item">
-    {% inlineImage "./src/assets/reading-red-deal.jpeg", "Book cover of The Red Deal by The Red Nation", "100vw" %}
-    <div class="book-overlay">
-      <p><em>The Red Deal</em>, by The Red Nation</p>
-    </div>
-  </div>
-</div> -->
-
 Coming “down to earth” is an evocative image shared by the post-Catholic, environmentally minded writers Haraway and Latour (although [only one of them](https://www.vatican.va/content/francesco/en/apost_exhortations/documents/20231004-laudate-deum.html#_ftnref41) was quoted in one of the pope’s latest apostolic exhortations; sorry Bruno!). For both it means a paradigm shift in response to climate change, but it really touches on all aspects of interconnected life—the imperative to abandon the destructive path of capitalism and imperialism, and to adopt a capacious, earth-minded approach to science, knowledge, and culture. One practical political expression of this might be the Red Deal, an indigenous-led critique and expansion of the Green New Deal that prioritizes land-back and tribal self-determination in the action to save our common home.
 
 ### Radicalisms
-
-<!-- <div class="book-grid">
-  <div class="book-grid-item">
-    {% inlineImage "./src/assets/reading-kleist.jpeg", "Book cover of The Marquise of O— and Other Stories by Heinrich von Kleist", "100vw" %}
-    <div class="book-overlay">
-      <p><em>The Marquise of O— and Other Stories</em>, by Heinrich von Kleist</p>
-    </div>
-  </div>
-  <div class="book-grid-item">
-    {% inlineImage "./src/assets/reading-bloch.jpeg", "Book cover of Atheism in Christianity by Ernst Bloch", "100vw" %}
-    <div class="book-overlay">
-      <p><em>Atheism in Christianity</em>, by Ernst Bloch</p>
-    </div>
-  </div>
-  <div class="book-grid-item">
-    {% inlineImage "./src/assets/reading-greco.jpeg", "Book cover of Report to Greco by Nikos Kazantzakis", "100vw" %}
-    <div class="book-overlay">
-      <p><em>Report to Greco</em>, by Nikos Kazantzakis</p>
-    </div>
-  </div>
-  <div class="book-grid-item">
-    {% inlineImage "./src/assets/reading-fisher.jpeg", "Book cover of Capitalist Realism by Mark Fisher", "100vw" %}
-    <div class="book-overlay">
-      <p><em>Capitalist Realism</em>, by Mark Fisher</p>
-    </div>
-  </div>
-</div> -->
 
 These books embody the essence of radicalism—whether literary, spiritual, political, or all of the above—as grasping at the root of the matter at hand. Part of me identifies in some way with the spirit of these writers, who challenged convention and forged a singular path in their understanding of the world; their works are fiery beacons which surprise and sharpen the soul.
 
@@ -262,5 +188,4 @@ These books embody the essence of radicalism—whether literary, spiritual, poli
 
 Check out my Airtable table below for the full list:
 
-<br>
 <iframe class="airtable-embed" src="https://airtable.com/embed/appYm5Ud471pJY0w8/shrTXKCHbFSQIGfhC?backgroundColor=purpleDusty&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>

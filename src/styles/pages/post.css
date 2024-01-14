@@ -104,7 +104,7 @@ article {
 
     & ul.level-3 {
       margin-block: 0;
-      padding-inline-start: 0.5rem;
+      padding-inline-start: 0.75rem;
     }
 
     & a[aria-current="true"] {
