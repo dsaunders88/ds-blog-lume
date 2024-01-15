@@ -382,7 +382,7 @@ main {
 
     &:hover {
       background-color: color-mix(
-        in lch,
+        in srgb,
         var(--color-button-main-background) 90%,
         black
       );

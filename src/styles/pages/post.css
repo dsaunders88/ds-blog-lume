@@ -231,6 +231,13 @@ article {
       max-width: 16rem;
     }
   }
+
+  & .title {
+    font-family: var(--font-headings);
+    line-height: var(--leading-medium);
+    font-weight: var(--font-headings-weight);
+    font-size: var(--step--1);
+  }
 }
 
 @media (max-width: 999px) {

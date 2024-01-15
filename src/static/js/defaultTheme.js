@@ -29,6 +29,15 @@ switch (savedAccent) {
   case "dodgerBlue":
     document.documentElement.setAttribute("data-accent", "dodger-blue");
     break;
+  case "sunGold":
+    document.documentElement.setAttribute("data-accent", "sun-gold");
+    break;
+  case "malachiteGreen":
+    document.documentElement.setAttribute("data-accent", "malachite-green");
+    break;
+  case "mallowPurple":
+    document.documentElement.setAttribute("data-accent", "mallow-purple");
+    break;
   default:
     document.documentElement.setAttribute("data-accent", "printers-red");
 }

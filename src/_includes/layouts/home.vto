@@ -531,9 +531,10 @@ headshot: ../../img/avatar/ds-headshot.webp
                 href="https://long-wasp-15.deno.dev/books/{{ book.id }}"
               >
                 <img
-                  src="{{ book.cover }}"
+                  src="../../../img/books/{{ book.downloadedImage.id }}.webp"
                   alt="Book cover for {{ book.title }}"
-                  width="600"
+                  width="400"
+                  height="600"
                   loading="lazy"
                   decoding="async"
                 />

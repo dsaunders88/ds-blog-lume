@@ -111,7 +111,7 @@ a.button-link {
 .rich-content {
   --element-spacing: var(--space-m);
   --heading-spacing: var(--space-xl);
-  --color-link-underline: var(--color-accent-300);
+  --color-link-underline: var(--color-accent-400);
 
   & * {
     margin-block: 0;
@@ -121,7 +121,7 @@ a.button-link {
     margin-block-start: var(--heading-spacing);
   }
 
-  & :is(p, section, figure, img, ul, blockquote, iframe, pre code) {
+  & :is(p, section, figure, ul, blockquote, iframe, pre code) {
     margin-block-start: var(--element-spacing);
   }
 
@@ -213,10 +213,10 @@ a.button-link {
     }
 
     &::before {
-      color: var(--color-background-accent-light);
+      color: var(--color-background-body);
       content: "“";
       left: calc((var(--gutter) * 0.5) * -1);
-      background-color: var(--color-background-accent-dark);
+      background-color: var(--color-text-body-accent);
       border-radius: 999px;
       width: 32px;
       height: 32px;
@@ -253,5 +253,6 @@ a.button-link {
   &:hover {
     background: var(--color-tag-background-hover);
     border-color: var(--color-tag-border-hover);
+    color: var(--color-tag-text-hover);
   }
 }

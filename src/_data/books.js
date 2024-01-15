@@ -1,3 +1,4 @@
+import * as path from "https://deno.land/std@0.202.0/path/mod.ts";
 import { load } from "https://deno.land/std@0.202.0/dotenv/mod.ts";
 await load({ export: true });
 // const apiToken = env["AIRTABLE_ACCESS_TOKEN"];
@@ -38,9 +39,39 @@ async function getBookData() {
   }
 }
 
+async function downloadAndSaveImage(airtableImage) {
+  try {
+    const res = await fetch(airtableImage.url);
+    if (!res.ok) {
+      throw new Error("Failed to fetch remoted Airtable image.");
+    }
+
+    const imageBytes = new Uint8Array(await res.arrayBuffer());
+
+    const savePath = path.format({
+      root: ".",
+      dir: path.join("src", "img", "books"),
+      name: airtableImage.id,
+      ext: ".jpg",
+    });
+
+    console.log(`Downloading and saving book image to ${savePath}`);
+    await Deno.writeFile(savePath, imageBytes);
+
+    return {
+      id: airtableImage.id,
+      savePath: savePath,
+    };
+  } catch (e) {
+    console.log(`Error downloading image ${imageItem.id}: ${e}`);
+  }
+}
+
 const data = await getBookData();
+// const downloadedImages = await downloadAndSaveImages(data.records.)
 // console.log(data);
-export const list = data.records.map((record) => {
+
+const records = data.records.map(async (record) => {
   const fields = record.fields;
   const dateStarted =
     fields.fldIVAy1LGdKLaxbw && new Date(fields.fldIVAy1LGdKLaxbw);
@@ -50,6 +81,9 @@ export const list = data.records.map((record) => {
   const dateUpdated = dateFinished || dateStarted || airtableLastUpdated;
   const completed =
     fields.fldCEvxZzmoChJ5Dh === "Have Read" && fields.fldKM2VLezO00lQHI === 1;
+  const downloadedImage = await downloadAndSaveImage(
+    fields.fldEtqJkG0cSKP8dK[0]
+  );
 
   return {
     id: fields.fldlmF45gCYW23PLI.toString(),
@@ -59,5 +93,10 @@ export const list = data.records.map((record) => {
     completed: completed,
     cover: fields.fldEtqJkG0cSKP8dK[0].thumbnails.large.url,
     date: dateUpdated,
+    downloadedImage: downloadedImage,
   };
 });
+
+// console.log(await Promise.all(records));
+
+export const list = await Promise.all(records);

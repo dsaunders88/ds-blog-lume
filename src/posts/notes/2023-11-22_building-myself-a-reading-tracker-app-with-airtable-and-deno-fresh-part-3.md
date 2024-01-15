@@ -24,7 +24,7 @@ Before I jump into the background and details of the implementation, here is an 
 - The whole site is designed to make it intuitive to jump between activity entries, shelves, book details, and reviews, while keeping the books themselves at the center of focus
 - The best part is that new, uncached data from Airtable is fetched on every request, so any updates I make on the back-end will be immediately viewable on the front-end 💯
 
-**Check out the [working model of the site here](https://deep-pheasant-69.deno.dev/)!** (Caveat: this is a work-in-progress and may be buggy, and, because I'm lazy, is not currently optimized for small screen sizes. But I hope it's interesting to peruse!)
+**Check out the [working model of the site here](https://long-wasp-15.deno.dev/)!** (Caveat: this is a work-in-progress and may be buggy, and, because I'm lazy, is not currently optimized for small screen sizes. But I hope it's interesting to peruse!)
 
 <figure>
     <img src="../../../img/posts/reading-app-shelves-regular.webp" alt="A view of the reading tracker shelves page, showing the Fiction shelf with titles like '2312', 'At the Mountains of Madness', and 'Blue Mars', and the German Literature shelf, showing titles like 'Atheism in Christinaity', 'Doctor Faustus', and 'On Marx'." width="600" loading="lazy" decoding="async" />

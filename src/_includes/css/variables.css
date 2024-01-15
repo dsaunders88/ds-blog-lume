@@ -41,16 +41,49 @@
   --color-red-800: lch(32.4% 57.5 22.3);
   --color-red-900: lch(23.55% 45.7 20.9);
 
-  --color-blue-50: lch(60.65% 52.72 259.03);
-  --color-blue-100: lch(60.65% 52.72 259.03);
-  --color-blue-200: lch(60.65% 52.72 259.03);
-  --color-blue-300: lch(60.65% 52.72 259.03);
-  --color-blue-400: lch(60.65% 52.72 259.03);
-  --color-blue-500: lch(60.65% 52.72 259.03);
-  --color-blue-600: lch(60.65% 52.72 259.03);
-  --color-blue-700: lch(60.65% 52.72 259.03);
-  --color-blue-800: lch(60.65% 52.72 259.03);
-  --color-blue-900: lch(60.65% 52.72 259.03);
+  --color-blue-50: lch(98.2% 2.8 231.8);
+  --color-blue-100: lch(93.95% 59.2 236.9);
+  --color-blue-200: lch(85.1% 22.2 240.2);
+  --color-blue-300: lch(76.5% 33.5 244.7);
+  --color-blue-400: lch(67.65% 43.3 253.3);
+  --color-blue-500: lch(57.8% 46.9 263.2); /* #009DEC */
+  --color-blue-600: lch(47.6% 39.8 262.2);
+  --color-blue-700: lch(40.4% 34.5 260.7);
+  --color-blue-800: lch(32.4% 29.5 260.4);
+  --color-blue-900: lch(23.55% 23.2 257.9);
+
+  --color-gold-50: lch(98.2% 7.8 96.2);
+  --color-gold-100: lch(93.95% 27.4 94.1);
+  --color-gold-200: lch(85.1% 69.5 87.1);
+  --color-gold-300: lch(76.5% 63.5 86.3);
+  --color-gold-400: lch(67.65% 57.1 85.2);
+  --color-gold-500: lch(57.8% 49.6 84.5);
+  --color-gold-600: lch(47.56% 42 83.4);
+  --color-gold-700: lch(40.4% 36.6 83);
+  --color-gold-800: lch(32.4% 30.6 81.9);
+  --color-gold-900: lch(23.55% 23.6 80.7);
+
+  --color-green-50: lch(98.2% 4.7 151);
+  --color-green-100: lch(93.95% 16.9 154.2);
+  --color-green-200: lch(85.1% 43.6 157.1);
+  --color-green-300: lch(76.5% 67.9 156.8);
+  --color-green-400: lch(67.65% 60.3 158.4);
+  --color-green-500: lch(57.8% 49.8 162.3);
+  --color-green-600: lch(47.6% 39.9 167.3);
+  --color-green-700: lch(40.4% 33.3 172);
+  --color-green-800: lch(32.4% 26.7 178);
+  --color-green-900: lch(23.55% 20.9 183.1);
+
+  --color-purple-50: lch(98.2% 2.1 271.4);
+  --color-purple-100: lch(93.95% 7.3 277.2);
+  --color-purple-200: lch(85.1% 18.52 284.4);
+  --color-purple-300: lch(76.5% 29.5 290.9);
+  --color-purple-400: lch(67.65% 41 298.5);
+  --color-purple-500: lch(57.8% 54.8 308.6);
+  --color-purple-600: lch(47.6% 57.9 316.2);
+  --color-purple-700: lch(40.2% 50.1 320.7);
+  --color-purple-800: lch(32.4% 41.7 324.5);
+  --color-purple-900: lch(23.55% 32.6 328.3);
 
   /* Fluid type sizes */
   /* @link https://utopia.fyi/type/calculator?c=320,17,1.25,1240,21,1.25,7,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|s-m&g=s,l,xl,12 */
@@ -193,54 +226,58 @@
   --color-text-heading-accent: var(--color-accent-400);
   --color-text-body: var(--color-neutral-300);
   --color-text-body-shade: var(--color-neutral-400);
-  --color-text-body-accent: var(--color-accent-600);
+  --color-text-body-accent: var(--color-accent-300);
 
   --color-background-body: var(--color-neutral-1000);
   --color-background-shade: var(--color-neutral-900);
-  --color-background-accent-light: var(--color-accent-50);
-  --color-background-accent-dark: var(--color-accent-500);
+  --color-background-accent-light: color-mix(
+    in srgb,
+    var(--color-accent-900),
+    transparent 75%
+  );
+  --color-background-accent-dark: var(--color-accent-800);
   --color-background-svg-1: var(--color-neutral-1000);
   --color-background-svg-2: var(--color-neutral-950);
   --color-background-svg-3: var(--color-neutral-900);
 
-  --color-button-main-background: var(--color-accent-500);
-  --color-button-main-text: var(--color-accent-50);
-  --color-button-utility-background: var(--color-neutral-100);
-  --color-button-utility-text: var(--color-accent-500);
+  --color-button-main-background: var(--color-accent-800);
+  --color-button-main-text: var(--color-accent-200);
+  --color-button-utility-background: var(--color-neutral-900);
+  --color-button-utility-text: var(--color-accent-400);
 
   --color-link-text: inherit;
-  --color-link-text-hover: var(--color-accent-600);
-  --color-link-underline: var(--color-accent-400);
+  --color-link-text-hover: var(--color-accent-400);
+  --color-link-underline: var(--color-neutral-500);
   --color-link-underline-hover: var(--color-accent-500);
 
-  --color-tag-background: var(--color-neutral-100);
-  --color-tag-background-hover: var(--color-neutral-50);
-  --color-tag-background-active: var(--color-accent-500);
-  --color-tag-text: inherit;
-  --color-tag-text-hover: var(--color-accent-600);
-  --color-tag-text-active: ;
-  --color-tag-border: transparent;
-  --color-tag-border-hover: var(--color-neutral-150);
+  --color-tag-background: var(--color-neutral-950);
+  --color-tag-background-hover: var(--color-neutral-1000);
+  --color-tag-background-active: var(--color-accent-400);
+  --color-tag-text: var(--color-neutral-400);
+  --color-tag-text-hover: var(--color-neutral-200);
+  --color-tag-text-active: var(--color-accent-900);
+  --color-tag-border: var(--color-neutral-900);
+  --color-tag-border-hover: var(--color-neutral-900);
   --color-tag-border-active: transparent;
 
   --color-selection-active: color-mix(
     in lch,
-    var(--color-accent-100),
+    var(--color-accent-400),
     transparent 30%
   );
 
-  --color-overlay-1: var(--color-accent-500);
-  --color-overlay-2: var(--color-accent-300);
-  --color-overlay-text: var(--color-neutral-0);
+  --color-overlay-1: var(--color-accent-700);
+  --color-overlay-2: var(--color-accent-400);
+  --color-overlay-text: var(--color-neutral-200);
 
-  --color-border: var(--color-neutral-150);
-  --color-border-accent: var(--color-accent-500);
-  --color-border-accent-light: var(--color-accent-300);
+  --color-border: var(--color-neutral-900);
+  --color-border-accent: var(--color-accent-400);
+  --color-border-accent-light: var(--color-accent-800);
 
   --color-code-background: var(--color-neutral-950);
   --background-element-opacity: 10%;
 
-  --color-icon: var(--color-accent-500);
+  --color-icon: var(--color-accent-400);
 
   /*--color-text-heading: var(--color-neutral-100);
   --color-text-body: var(--color-neutral-300);
@@ -283,4 +320,43 @@
   --color-accent-700: var(--color-blue-700);
   --color-accent-800: var(--color-blue-800);
   --color-accent-900: var(--color-blue-900);
+}
+
+:root[data-accent="sun-gold"] {
+  --color-accent-50: var(--color-gold-50);
+  --color-accent-100: var(--color-gold-100);
+  --color-accent-200: var(--color-gold-200);
+  --color-accent-300: var(--color-gold-300);
+  --color-accent-400: var(--color-gold-400);
+  --color-accent-500: var(--color-gold-500);
+  --color-accent-600: var(--color-gold-600);
+  --color-accent-700: var(--color-gold-700);
+  --color-accent-800: var(--color-gold-800);
+  --color-accent-900: var(--color-gold-900);
+}
+
+:root[data-accent="malachite-green"] {
+  --color-accent-50: var(--color-green-50);
+  --color-accent-100: var(--color-green-100);
+  --color-accent-200: var(--color-green-200);
+  --color-accent-300: var(--color-green-300);
+  --color-accent-400: var(--color-green-400);
+  --color-accent-500: var(--color-green-500);
+  --color-accent-600: var(--color-green-600);
+  --color-accent-700: var(--color-green-700);
+  --color-accent-800: var(--color-green-800);
+  --color-accent-900: var(--color-green-900);
+}
+
+:root[data-accent="mallow-purple"] {
+  --color-accent-50: var(--color-purple-50);
+  --color-accent-100: var(--color-purple-100);
+  --color-accent-200: var(--color-purple-200);
+  --color-accent-300: var(--color-purple-300);
+  --color-accent-400: var(--color-purple-400);
+  --color-accent-500: var(--color-purple-500);
+  --color-accent-600: var(--color-purple-600);
+  --color-accent-700: var(--color-purple-700);
+  --color-accent-800: var(--color-purple-800);
+  --color-accent-900: var(--color-purple-900);
 }
