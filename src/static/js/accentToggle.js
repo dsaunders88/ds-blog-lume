@@ -1,6 +1,6 @@
 const redAccentToggle = document.querySelector("#printersRedAccentToggle");
 const blueAccentToggle = document.querySelector("#dodgerBlueAccentToggle");
-const goldAccentToggle = document.querySelector("#sunGoldAccentToggle");
+const goldAccentToggle = document.querySelector("#duneGoldAccentToggle");
 const greenAccentToggle = document.querySelector("#malachiteGreenAccentToggle");
 const purpleAccentToggle = document.querySelector("#mallowPurpleAccentToggle");
 const accentToggles = [
@@ -16,7 +16,7 @@ if (!("accent" in localStorage)) {
   redAccentToggle.classList.add("active");
 } else if (localStorage.accent === "dodgerBlue") {
   blueAccentToggle.classList.add("active");
-} else if (localStorage.accent === "sunGold") {
+} else if (localStorage.accent === "duneGold") {
   goldAccentToggle.classList.add("active");
 } else if (localStorage.accent === "malachiteGreen") {
   greenAccentToggle.classList.add("active");
@@ -47,11 +47,11 @@ accentToggles.forEach((button) => {
         document.documentElement.setAttribute("data-accent", "dodger-blue");
         console.log("new accent", localStorage.getItem("accent"));
         break;
-      case "sunGoldAccentToggle":
+      case "duneGoldAccentToggle":
         accentToggles.forEach((toggle) => toggle.classList.remove("active"));
         goldAccentToggle.classList.add("active");
-        localStorage.setItem("accent", "sunGold");
-        document.documentElement.setAttribute("data-accent", "sun-gold");
+        localStorage.setItem("accent", "duneGold");
+        document.documentElement.setAttribute("data-accent", "dune-gold");
         console.log("new accent", localStorage.getItem("accent"));
         break;
       case "malachiteGreenAccentToggle":

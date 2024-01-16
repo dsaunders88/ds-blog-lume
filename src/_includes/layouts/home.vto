@@ -1,129 +1,11 @@
 ---
 layout: layouts/base.vto
 page_css: home.css
-headshot: ../../img/avatar/ds-headshot.webp
+headshot: ../../img/avatar/ds-headshot-new.webp
 ---
 
 <div class="intro-background" aria-hidden="true">
-  <svg
-    id="visual"
-    viewBox="0 0 900 600"
-    width="900"
-    height="600"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    version="1.1"
-  >
-    <defs>
-      <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="BackgroundImageFix"
-          result="shape"
-        ></feBlend>
-        <feGaussianBlur
-          stdDeviation="161"
-          result="effect1_foregroundBlur"
-        ></feGaussianBlur>
-      </filter>
-    </defs>
-    <rect width="900" height="600" fill="#FAFAFA"></rect>
-    <g filter="url(#blur1)">
-      <circle cx="814" cy="24" fill="#FFE8ED" r="357"></circle>
-      <circle cx="850" cy="438" fill="#FAFAFA" r="357"></circle>
-      <circle cx="177" cy="463" fill="#FFE8ED" r="357"></circle>
-      <circle cx="359" cy="529" fill="#FFE8ED" r="357"></circle>
-      <circle cx="301" cy="223" fill="#FAFAFA" r="357"></circle>
-      <circle cx="649" cy="205" fill="#FFE8ED" r="357"></circle>
-    </g>
-  </svg>
-  {{#
-  <svg
-    width="1440"
-    height="426"
-    preserveAspectRatio="none"
-    viewBox="0 0 1440 426"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <g opacity="0.3">
-      <path
-        d="M508.8 220.1L944 202.35L457.6 -2.12612e-05L508.8 220.1Z"
-        fill="#DEDEDE"
-        stroke="white"
-        stroke-linejoin="bevel"
-      />
-      <path
-        d="M944 202.35L992 0L457.6 -2.33594e-05L944 202.35Z"
-        fill="#D5D5D5"
-        stroke="white"
-        stroke-linejoin="bevel"
-      />
-      <path
-        d="M457.6 -6.32732e-05L-0.000162519 227.2L508.8 220.1L457.6 -6.32732e-05Z"
-        fill="#EAEAEA"
-        stroke="white"
-        stroke-linejoin="bevel"
-      />
-      <path
-        d="M-0.000396729 -8.10375e-05L-0.00040666 227.2L457.6 -6.10352e-05L-0.000396729 -8.10375e-05Z"
-        fill="white"
-        stroke="white"
-        stroke-linejoin="bevel"
-      />
-      <path
-        d="M944 202.35L1440 0L992 -1.95827e-05L944 202.35Z"
-        fill="#F1F1F1"
-        stroke="white"
-        stroke-linejoin="bevel"
-      />
-      <path
-        d="M-0.000152898 227.2L444.8 426L508.8 220.1L-0.000152898 227.2Z"
-        fill="white"
-        stroke="white"
-        stroke-linejoin="bevel"
-      />
-      <path
-        d="M508.8 220.1L1001.6 426L944 202.35L508.8 220.1Z"
-        fill="#E4E4E4"
-        stroke="white"
-        stroke-linejoin="bevel"
-      />
-      <path
-        d="M944 202.35L1440 235.72L1440 0L944 202.35Z"
-        fill="#E4E4E4"
-        stroke="white"
-        stroke-linejoin="bevel"
-      />
-      <path
-        d="M444.8 426L1001.6 426L508.8 220.1L444.8 426Z"
-        fill="#DEDEDE"
-        stroke="white"
-        stroke-linejoin="bevel"
-      />
-      <path
-        d="M1001.6 426L1440 235.72L944 202.35L1001.6 426Z"
-        fill="#B5B5B5"
-        stroke="white"
-        stroke-linejoin="bevel"
-      />
-      <path
-        d="M-0.000213623 227.2L-0.000222313 426L444.8 426L-0.000213623 227.2Z"
-        fill="#E4E4E4"
-        stroke="white"
-        stroke-linejoin="bevel"
-      />
-      <path
-        d="M1001.6 426L1440 426L1440 235.72L1001.6 426Z"
-        fill="#EBEBEB"
-        stroke="white"
-        stroke-linejoin="bevel"
-      />
-    </g>
-  </svg>
-  #}}
+  {{ include "partials/home-illustration-blur.vto" }}
 </div>
 <div class="content-wrapper">
   <section class="intro">
@@ -136,7 +18,10 @@ headshot: ../../img/avatar/ds-headshot.webp
         </div>
         <div>{{ include "partials/social-list.vto" }}</div>
       </div>
-      <img src="/hero-illustration.svg" alt="" />
+      <div class="home-illustration">
+        {{ include "partials/home-illustration.vto" }}
+      </div>
+      {{# <img src="/hero-illustration.svg" alt="" /> #}}
     </div>
     <!-- prettier-ignore -->
     {{ include "partials/interests.vto" }} 

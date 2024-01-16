@@ -162,15 +162,15 @@ main {
 }
 
 .icon-1 {
-  color: dodgerblue;
+  color: var(--color-blue-500);
 }
 
 .icon-2 {
-  color: mediumaquamarine;
+  color: var(--color-green-500);
 }
 
 .icon-3 {
-  color: plum;
+  color: var(--color-red-500);
 }
 
 .avatar-wrapper:hover ~ .avatar-out.icon-1 {
@@ -276,6 +276,7 @@ main {
   & .backgroundSvg {
     height: auto;
     width: 100%;
+    opacity: var(--background-element-opacity);
   }
 
   /*& .backgroundSvg {
@@ -505,7 +506,7 @@ main {
 
   & svg {
     width: 100%;
-    opacity: var(--background-element-opacity);
+    /*opacity: var(--background-element-opacity);*/
   }
 }
 

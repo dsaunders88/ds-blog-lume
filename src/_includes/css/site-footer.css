@@ -55,6 +55,14 @@
   }
 }
 
+[data-theme="dark"] {
+  .site-footer {
+    & .background {
+      display: none;
+    }
+  }
+}
+
 .cluster.social {
   --cluster-space: 0.75rem;
 
@@ -155,7 +163,7 @@
       }
     }
 
-    &[title="Sun Gold Accent"] {
+    &[title="Dune Gold Accent"] {
       border: 1px solid var(--color-gold-500);
       color: var(--color-gold-500);
 

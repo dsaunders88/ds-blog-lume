@@ -197,25 +197,35 @@
   --color-border-accent-light: var(--color-accent-300);
 
   --color-code-background: var(--color-neutral-50);
-  --background-element-opacity: 60%;
+  --background-element-opacity: 0.7;
 
   --color-icon: var(--color-accent-500);
 
-  /*--color-text-heading: var(--color-neutral-900);
-  --color-text-body: var(--color-neutral-800);
-  --color-text-body-shade: var(--color-neutral-700);
-  --color-text-link: var(--color-red-600);
-  --color-text-emphasis: var(--color-red-500);
-  --color-text-emphasis-light: var(--color-red-300);
-  --color-text-link-underline: var(--color-neutral-300);
-  --color-light-accent: var(--color-red-50);
-  --color-light-border: var(--color-neutral-150);
-  --color-background-0: var(--color-neutral-0);
-  --color-background-1: var(--color-neutral-50);
-  --color-background-shade: var(--color-neutral-100);
-  --color-background-2: var(--color-neutral-500);
-  --color-background-3: var(--color-neutral-800);
-  --background-element-opacity: 0.5;*/
+  /* Home illustration svgs */
+  --color-illustration-gradient-accent-1: var(--color-accent-100);
+  --color-illustration-gradient-accent-2: var(--color-accent-200);
+  --color-illustration-gradient-accent-3: var(--color-accent-300);
+  --color-illustration-gradient-accent-4: var(--color-accent-400);
+  --color-illustration-gradient-neutral-1: var(--color-neutral-50);
+  --color-illustration-gradient-neutral-2: var(--color-neutral-100);
+  --color-illustration-background: var(--color-background-body);
+  --color-illustration-stroke: var(--color-accent-400);
+  --color-illustration-stroke-light: var(--color-accent-200);
+  --color-illustration-stroke-accent: var(--color-accent-400);
+  --color-illustration-element-shade: var(--color-accent-100);
+  --color-illustration-element-1: var(--color-accent-200);
+  --color-illustration-element-2: var(--color-accent-300);
+  --color-illustration-element-3: var(--color-accent-400);
+  --color-illustration-3-dots: var(--color-background-body);
+  --color-illustration-bright-accent: var(--color-accent-500);
+  --color-illustration-dark-accent: var(--color-accent-800);
+  --color-illustration-icon: var(--color-neutral-800);
+  --color-illustration-icon-outline: var(--color-neutral-200);
+  --color-illustration-fill-opacity: 0.6;
+  --color-illustration-stroke-opacity: 0.5;
+  --color-illustration-blur-background: var(--color-background-body);
+  --color-illustration-blur-accent: var(--color-accent-200);
+  --color-illustration-blur-opacity: 0.15;
 }
 
 /* Dark theme */
@@ -261,7 +271,7 @@
   --color-tag-border-active: transparent;
 
   --color-selection-active: color-mix(
-    in lch,
+    in srgb,
     var(--color-accent-400),
     transparent 30%
   );
@@ -275,24 +285,40 @@
   --color-border-accent-light: var(--color-accent-800);
 
   --color-code-background: var(--color-neutral-950);
-  --background-element-opacity: 10%;
+  --background-element-opacity: 0.3;
 
   --color-icon: var(--color-accent-400);
 
-  /*--color-text-heading: var(--color-neutral-100);
-  --color-text-body: var(--color-neutral-300);
-  --color-text-body-shade: var(--color-neutral-400);
-  --color-text-link: var(--color-red-400);
-  --color-text-emphasis: var(--color-red-400);
-  --color-text-emphasis-light: var(--color-red-600);
-  --color-text-link-underline: var(--color-netural-800);
-  --color-light-border: var(--color-neutral-900);
-  --color-background-0: var(--color-neutral-1000);
-  --color-background-1: var(--color-neutral-950);
-  --color-background-shade: var(--color-netural-900);
-  --color-background-2: var(--color-neutral-500);
-  --color-background-3: var(--color-neutral-50);
-  --background-element-opacity: 0.35;*/
+  /* Home illustration svgs */
+  --color-illustration-gradient-accent-1: var(--color-neutral-950);
+  --color-illustration-gradient-accent-2: var(--color-neutral-1000);
+  --color-illustration-gradient-accent-3: var(--color-accent-900);
+  --color-illustration-gradient-accent-4: var(--color-neutral-950);
+  --color-illustration-gradient-neutral-1: var(--color-neutral-950);
+  --color-illustration-gradient-neutral-2: var(--color-neutral-1000);
+  --color-illustration-background: var(--color-background-body);
+  --color-illustration-stroke: var(--color-neutral-900);
+  --color-illustration-stroke-light: var(--color-neutral-900);
+  --color-illustration-stroke-accent: var(--color-accent-900);
+  --color-illustration-element-shade: var(--color-accent-100);
+  --color-illustration-element-1: var(--color-neutral-900);
+  --color-illustration-element-2: var(--color-neutral-900);
+  --color-illustration-element-3: var(--color-neutral-900);
+  --color-illustration-3-dots: var(--color-accent-900);
+  --color-illustration-bright-accent: var(--color-neutral-1000);
+  --color-illustration-dark-accent: var(--color-accent-900);
+  --color-illustration-icon: var(--color-accent-600);
+  --color-illustration-icon-outline: var(--color-accent-900);
+  --color-illustration-fill-opacity: 0.7;
+  --color-illustration-stroke-opacity: 0.45;
+  --color-illustration-blur-background: var(--color-background-body);
+  --color-illustration-blur-accent: var(--color-accent-800);
+  --color-illustration-blur-opacity: 0.25;
+
+  /* Slightly darken all images in dark mode */
+  & img {
+    filter: brightness(0.9);
+  }
 }
 
 /* Accent themes */
@@ -322,7 +348,7 @@
   --color-accent-900: var(--color-blue-900);
 }
 
-:root[data-accent="sun-gold"] {
+:root[data-accent="dune-gold"] {
   --color-accent-50: var(--color-gold-50);
   --color-accent-100: var(--color-gold-100);
   --color-accent-200: var(--color-gold-200);
