@@ -35,6 +35,21 @@ const router = new Router();
 router.get("/api/interests", (ctx) => {
   ctx.response.body = htmxResponse();
 });
+
+router.redirect("/now", "/about");
+router.redirect("/writing", "/posts");
+router.redirect(
+  "/2021/07/20/tricontinental-conference-and-liberationist-christianity",
+  "/posts/essays/the-tricontinental-conference-and-latin-american-liberationist-christianity"
+);
+router.redirect(
+  "/2021/09/17/the-age-of-extremes",
+  "/posts/notes/the-age-of-extremes"
+);
+router.redirect(
+  "/2021/04/16/ideology-fetishism-apophaticism-marxist-criticism-and-christianity",
+  "/posts/essays/ideology-fetishism-apophaticism-marxist-criticism-and-christianity"
+);
 // router.get("/api/thoughts", (ctx) => {
 //   ctx.response.body = thoughtResponse(thoughtsList);
 // });

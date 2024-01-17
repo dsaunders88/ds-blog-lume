@@ -24,7 +24,11 @@ Drawing on recent scholarship of the Tricontinental, this paper examines its his
 
 A fundamental question emerges from this survey: what does Tricontinentalism mean for the Christian Left and its engagement with social movements today? Given the contemporary rise of chauvinist, right-wing Christianities around the world—and the softer but just as chauvinist liberal Christianities which tacitly support imperialism’s aims—Tricontinentalism offers a starting point for transnational solidarity along anti-racist, self-determining, and socialist lines. The Christian Left, especially within the imperial core, must reckon with this Tricontinentalist legacy as it comes alongside liberation movements.”
 
-_One of the most exciting remnants of this history are the incredible solidarity posters put out by OSPAAAL, some of which you can
-[see here](https://www.jstor.org/site/wofford/lindsay-webster-collection-of-cuban-posters/). Additionally, many of the Tricontinental journals are viewable online at [The Freedom Archives](https://search.freedomarchives.org/search.php?view_collection=1035)._
+## Presentation Slides
+
+I also had a lot of fun designing the slides I prepared for the presentation version of the paper I gave at the conference, "Reframing the Christian Left from the Legacy of Tricontinentalism: Anti-Imperialism and Transnational Solidarity." The slides feature one of the most exciting remnants of this history, which are the incredible solidarity posters put out by OSPAAAL, some of which you can
+[see here](https://www.jstor.org/site/wofford/lindsay-webster-collection-of-cuban-posters/). Additionally, many of the Tricontinental journals are viewable online at [The Freedom Archives](https://search.freedomarchives.org/search.php?view_collection=1035).
+
+<embed type="application/pdf" title="Reframing the Christian Left from the Legacy of Tricontinentalism: Anti-Imperialism and Transnational Solidarity" src='/documents/christian-left-presentation-21.pdf' width="100%" height="500" />
 
 _Read the full version of the [working paper here](https://drive.google.com/file/d/1IBc4PWb0JQlSmHHevPhRmgtoQozlykkt/view?usp=sharing)._

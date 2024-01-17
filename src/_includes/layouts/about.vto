@@ -1,0 +1,24 @@
+---
+layout: layouts/base.vto
+page_css: about.css
+---
+
+<article class="about | content-wrapper">
+  <div class="has-sidebar">
+    <div>
+      <h1>{{ title }}</h1>
+      <div class="rich-content with-intro-text">{{ content }}</div>
+    </div>
+    <div class="sidebar | flow">
+      <img
+        src="../../../img/avatar/{{ image }}.webp"
+        alt=""
+        width="600"
+        height="600"
+        loading="lazy"
+        decoding="async"
+      />
+      {{ include "partials/social-list.vto" }}
+    </div>
+  </div>
+</article>

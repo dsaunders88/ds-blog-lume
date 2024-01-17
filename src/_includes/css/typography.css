@@ -108,6 +108,23 @@ a.button-link {
   max-width: var(--paragraph-measure);
 }
 
+.header-anchor {
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: "#";
+    color: var(--color-icon);
+    margin-left: 0.5rem;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+}
+
 .rich-content {
   --element-spacing: var(--space-m);
   --heading-spacing: var(--space-xl);
@@ -121,7 +138,7 @@ a.button-link {
     margin-block-start: var(--heading-spacing);
   }
 
-  & :is(p, section, figure, ul, blockquote, iframe, pre code) {
+  & :is(p, section, figure, ul, blockquote, embed, iframe, pre code) {
     margin-block-start: var(--element-spacing);
   }
 
