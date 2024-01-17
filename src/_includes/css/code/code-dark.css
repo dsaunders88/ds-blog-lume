@@ -1,7 +1,7 @@
 pre code.hljs {
   font-family: var(--font-code);
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.7;
   background: var(--color-code-background);
   border: 1px solid var(--color-border);
   border-radius: var(--rounded-corners-small);

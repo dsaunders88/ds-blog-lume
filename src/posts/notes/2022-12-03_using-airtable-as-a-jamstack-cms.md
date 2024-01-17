@@ -132,7 +132,7 @@ To render the data, I call the function on a given page, making use of Astro's f
 <figure>
 <figcaption class="code-caption">src/pages/credits.astro</figcaption>
 
-```javascript
+```jsx
 ---
 import { getRecords } from "../utils/airtable";
 import { getCategoryStyle } from "../utils/helpers"
@@ -145,35 +145,34 @@ let tableId = 'Credits'; // Can be the name or unique ID of the Airtable table
 const credits = await getRecords(tableId, 'Year', 'desc');
 ---
 
+// When mapping over the credits array, first I'll use object
+// destructuring to make accessing the properties more easily accessible
+// Airtable's image field is an array, so to get the
+// image source we can access the first index of the array
+// Finally, I'll use a custom helper function that assigns unique CSS classes
+// based on an item's category input
 <h2>Credits</h2>
 <div class="slider">
     {credits.map((item) => {
-        // Use object destructuring to make accessing the properties more easily accessible
         const { fields } = item;
-        // Airtable's image field is an array, so to get the
-        // image source we can access the first index of the array
         const imageSrc = fields.Image[0].url;
-        // A custom helper function that assigns unique CSS classes
-        // based on an item's category input
-        const categoryStyle = getCategoryStyle(fields.Category);
         return (
-        <Credit
-            // props passed to the component
-            href={fields.Link}
-            imageSrc={imageSrc}
-            imageAlt={fields.ImageAlt}
-            categoryName={fields.Category}
-            categoryStyle={categoryStyle}
-        >
-          <h3>{fields.Name}</h3>
-          <div class="details">
-            <p class="cluster">
-              {[fields.Year, fields.Role].join(' • ')}
-            </p>
-            <p><em>{fields.Detail}</em></p>
-          </div>
-        </Credit>
-      );
+          <Credit
+              href={fields.Link}
+              imageSrc={imageSrc}
+              imageAlt={fields.ImageAlt}
+              categoryName={fields.Category}
+              categoryStyle={getCategoryStyle(fields.Category)}
+          >
+            <h3>{fields.Name}</h3>
+            <div class="details">
+              <p class="cluster">
+                {[fields.Year, fields.Role].join(' • ')}
+              </p>
+              <p><em>{fields.Detail}</em></p>
+            </div>
+          </Credit>
+        );
     })}
 </div>
 
@@ -195,7 +194,7 @@ Airtable [recently announced](https://support.airtable.com/docs/changes-to-airta
 <figure>
 <figcaption class="code-caption">src/components/Credit.astro</figcaption>
 
-```javascript
+```jsx
 ---
 import { Image } from "@astrojs/image/components";
 const { href, imageSrc, imageAlt, categoryName, categoryStyle } = Astro.props;

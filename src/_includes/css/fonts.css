@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"); */
 /* @font-face rules */
-@font-face {
+/* @font-face {
   font-family: "Lumin";
   src: url("/fonts/LuminxsTRIAL-Bld.otf") format("opentype");
   font-weight: 700;
@@ -30,7 +30,7 @@
   font-weight: 900;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 @font-face {
   font-family: "Brix Sans";
@@ -83,13 +83,13 @@
   font-display: swap;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Gimlet Sans";
   src: url("/fonts/GimletSansDisplay-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 @font-face {
   font-family: "Fjalla One";
