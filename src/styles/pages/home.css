@@ -552,6 +552,7 @@ main {
       & > .flow {
         margin-inline: 0;
         padding-block: var(--space-s);
+        border-left: 0;
       }
     }
 

@@ -1,11 +1,14 @@
 article {
-  padding-block-start: var(--space-3xl);
   padding-block-end: var(--space-xl);
   margin-block-end: calc(var(--space-xl) * -1);
 
   & h1 {
     line-height: var(--leading-medium);
     font-size: var(--step-3);
+  }
+
+  & > :first-child {
+    margin-block-start: var(--space-3xl);
   }
 }
 
@@ -239,5 +242,17 @@ article {
     &:hover img {
       opacity: 0.5;
     }
+  }
+}
+
+@container contentWrapper (max-width: 768px) {
+  article {
+    & > :first-child {
+      margin-block-start: var(--space-2xl);
+    }
+  }
+
+  .content {
+    padding-block-end: 0;
   }
 }

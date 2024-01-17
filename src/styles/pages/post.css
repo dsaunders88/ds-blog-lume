@@ -255,7 +255,29 @@ article {
   }
 }
 
-@media (max-width: 999px) {
+/* @media (max-width: 999px) {
+  .mobile-toc {
+    display: block;
+  }
+
+  .toc-nav {
+    display: none;
+  }
+
+  :is(#content, #content :is(h2, h3)) {
+    scroll-margin: 6rem;
+  }
+} */
+
+@container contentWrapper (max-width: 950px) {
+  article {
+    &.content-wrapper {
+      & > :first-child::after {
+        display: none;
+      }
+    }
+  }
+
   .mobile-toc {
     display: block;
   }
@@ -277,6 +299,14 @@ article {
   }
 
   article {
+    & .paragraph-measure {
+      max-width: none;
+
+      & .rich-content {
+        padding-inline: 0;
+      }
+    }
+
     & > :last-child {
       padding-block-start: 0;
     }

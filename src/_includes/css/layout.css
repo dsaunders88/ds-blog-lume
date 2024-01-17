@@ -452,7 +452,11 @@ figure {
 
   .book-list {
     & img {
-      max-width: 16rem;
+      max-width: 12rem;
+    }
+
+    & .title {
+      margin-block-start: var(--space-xs);
     }
   }
 }

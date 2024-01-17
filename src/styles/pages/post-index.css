@@ -9,7 +9,8 @@ h1 {
 }
 
 .has-sidebar {
-  --sidebar-gap: var(--space-xl);
+  --sidebar-gap: var(--space-l);
+  --main-min-width: 58%;
 
   & > :first-child {
     position: relative;
@@ -207,7 +208,7 @@ h1 {
       font-style: italic;
       padding-inline: 0.5rem;
       margin-block-end: var(--space-2xs);
-      color: var(--color-text-body-shade);
+      color: var(--color-text-heading-accent);
     }
   }
 }
@@ -219,12 +220,16 @@ h1 {
   & tr {
     display: grid;
     grid-template-columns: 0.75fr 3.25fr 1fr;
+    gap: var(--space-m);
     padding-block: 0.75rem 1rem;
     padding-inline: 0.5rem;
     border-radius: var(--rounded-corners-small);
+    align-items: baseline;
 
     & h3 {
-      font-family: var(--font-primary);
+      font-family: var(--font-headings);
+      font-weight: var(--font-headings-weight);
+      line-height: var(--leading-medium);
       font-size: var(--step-0);
       position: relative;
       top: 3px;
@@ -241,6 +246,19 @@ h1 {
 
     &:hover {
       background-color: var(--color-background-accent-light);
+    }
+  }
+}
+
+@container contentWrapper (max-width: 768px) {
+  .post-list-simple {
+    & tr {
+      grid-template-columns: 4fr 1fr;
+      gap: 3px;
+
+      & > :first-child {
+        grid-column: 1 / 3;
+      }
     }
   }
 }
