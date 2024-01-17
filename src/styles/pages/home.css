@@ -522,3 +522,62 @@ main {
     rgba(251, 113, 133, 0) 100%
   );
 }*/
+
+@container contentWrapper (max-width: 999px) {
+  .home-sidebar {
+    grid-template-columns: 1fr;
+
+    & .sticky {
+      background: var(--color-background-body);
+      z-index: 2;
+      width: 100%;
+      top: 0;
+      padding-block: var(--space-m);
+    }
+  }
+}
+
+@container contentWrapper (max-width: 768px) {
+  .intro {
+    padding-block-start: var(--space-2xl);
+
+    & .interests {
+      margin-inline: 0;
+    }
+
+    & .grid {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+
+      & > .flow {
+        margin-inline: 0;
+        padding-block: var(--space-s);
+      }
+    }
+
+    & .backgroundSvg {
+      width: auto;
+      height: 100%;
+    }
+
+    & .has-sidebar {
+      & > :last-child {
+        top: 0;
+      }
+    }
+  }
+
+  .home-illustration {
+    & svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .trending-posts {
+    & ol {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+}

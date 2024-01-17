@@ -1,4 +1,5 @@
 .content-wrapper {
+  container: contentWrapper / inline-size;
   position: relative;
   max-width: clamp(16rem, var(--wrapper-max-width, 100vw), 90rem);
   padding-inline: var(--gutter, 1rem);
@@ -431,3 +432,27 @@ figure {
   }
 }
 */
+
+@container contentWrapper (max-width: 768px) {
+  .post-list {
+    & article {
+      flex-direction: column;
+      gap: var(--space-s);
+
+      & > :first-child {
+        flex-basis: auto;
+      }
+
+      & > :last-child {
+        padding-block-start: 0;
+        width: auto;
+      }
+    }
+  }
+
+  .book-list {
+    & img {
+      max-width: 16rem;
+    }
+  }
+}

@@ -4,7 +4,7 @@ article {
   margin-block-end: calc(var(--space-xl) * -1);
 
   & h1 {
-    line-height: 1.1;
+    line-height: var(--leading-medium);
     font-size: var(--step-3);
   }
 }

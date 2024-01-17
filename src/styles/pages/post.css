@@ -217,10 +217,25 @@ article {
   padding-block: var(--space-m);
   position: sticky;
   top: 0;
-  font-weight: 900;
+  font-weight: var(--font-headings-weight);
   background: var(--color-background-body);
+  margin-inline: calc(var(--gutter) * -1);
+  padding-inline: var(--gutter);
   z-index: 50;
   border-bottom: 1px solid var(--color-border);
+
+  & ul {
+    padding-block-start: 1rem;
+    font-weight: 400;
+
+    &.flow {
+      --flow-space: 0.75rem;
+    }
+  }
+
+  & .level-3 {
+    padding-inline-start: 1rem;
+  }
 }
 
 .book-list {
@@ -251,5 +266,19 @@ article {
 
   :is(#content, #content :is(h2, h3)) {
     scroll-margin: 6rem;
+  }
+}
+
+@container contentWrapper (max-width: 768px) {
+  .post-info {
+    &.cluster {
+      --cluster-space: 0.75rem;
+    }
+  }
+
+  article {
+    & > :last-child {
+      padding-block-start: 0;
+    }
   }
 }

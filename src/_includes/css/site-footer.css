@@ -87,7 +87,7 @@
   }
 }
 
-:is(.theme-buttons, .accent-buttons) {
+/* :is(.theme-buttons, .accent-buttons) {
   &.cluster {
     --cluster-space: 0.5rem;
   }
@@ -230,6 +230,26 @@
           );
         }
       }
+    }
+  }
+} */
+
+@container contentWrapper (max-width: 768px) {
+  .site-footer {
+    & .grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+      justify-items: center;
+      text-align: center;
+    }
+
+    & .flow {
+      --flow-space: var(--space-s);
+    }
+
+    & .subfooter {
+      text-align: center;
+      justify-content: center;
     }
   }
 }

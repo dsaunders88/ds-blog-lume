@@ -32,10 +32,15 @@
     --cluster-space: 1.5rem;
   }
 
+  & .content-wrapper {
+    align-items: flex-end;
+  }
+
   & .header-logo {
     border-radius: 9999px;
     width: 3rem;
     height: 3rem;
+    margin-block: 1rem;
     outline: 1px solid var(--color-border-accent);
     transition: all 0.2s ease;
   }
@@ -62,6 +67,104 @@
 
     &[data-selected-page="selected"] {
       border-bottom: 1px solid var(--color-border-accent);
+    }
+  }
+
+  .toggles {
+    position: relative;
+    top: 2px;
+
+    &.cluster {
+      --cluster-space: 0.5rem;
+    }
+
+    & details {
+      position: relative;
+    }
+
+    & summary {
+      position: relative;
+      display: inline-flex;
+      gap: 0.5rem;
+      align-items: center;
+      font-family: var(--font-headings);
+      font-size: var(--step--2);
+      text-transform: uppercase;
+      letter-spacing: var(--title-letter-spacing);
+      font-weight: var(--font-headings-weight);
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+      border-radius: var(--rounded-corners-small);
+
+      & .indicator {
+        width: 16px;
+        height: 16px;
+        border-radius: 999px;
+        background: var(--indicator-background);
+        border: 1px solid var(--indicator-outline);
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        background-color: var(--color-button-utility-background);
+      }
+
+      & + div {
+        position: absolute;
+        padding: var(--space-xs);
+        background: var(--color-background-body);
+        border: 1px solid var(--color-border);
+        border-radius: var(--rounded-corners-small);
+        box-shadow: var(--shadow-light);
+        top: 2.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    & :is(.theme-buttons, .accent-buttons) {
+      --flow-space: 0.5rem;
+    }
+
+    .theme {
+      & summary {
+        --indicator-background: var(--color-background-body);
+        --indicator-outline: var(--color-border);
+      }
+    }
+
+    .accent {
+      & summary {
+        --indicator-background: var(--color-icon);
+        --indicator-outline: transparent;
+      }
+    }
+  }
+}
+
+@container contentWrapper (max-width: 768px) {
+  .site-header {
+    & .cluster {
+      --cluster-space: 0.75rem;
+    }
+
+    & .content-wrapper {
+      gap: 0px !important;
+    }
+
+    & .nav-link {
+      padding-block: 1rem;
+    }
+
+    & .content-wrapper {
+      &.cluster {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+
+    & .header-logo {
+      margin-block-end: 0;
     }
   }
 }

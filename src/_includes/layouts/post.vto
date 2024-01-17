@@ -99,7 +99,7 @@ page_css: post.css
     <div class="mobile-toc">
       <details>
         <summary class="small-title">Table of Contents</summary>
-        <ul role="list">
+        <ul class="flow" role="list">
           <li><a class="toc-link" href="#content">Prelude</a></li>
           {{ for heading of toc }}
           <li>
@@ -107,7 +107,7 @@ page_css: post.css
               >{{ heading.text }}</a
             >
             {{ if heading.children.length > 0 }}
-            <ul class="level-3" role="list">
+            <ul class="level-3 | flow" role="list">
               {{ for child of heading.children }}
               <li>
                 <a class="toc-link" href="#{{ child.slug }}"

@@ -25,3 +25,150 @@ a:not(.btn, .logo):hover {
   text-decoration-color: var(--color-link-underline-hover);
   color: var(--color-link-text-hover);
 }
+
+:is(.theme-buttons, .accent-buttons) {
+  &.cluster {
+    --cluster-space: 0.5rem;
+  }
+
+  & button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: var(--rounded-corners-small);
+    border: none;
+    transition: all 0.2s ease;
+  }
+}
+
+.theme-buttons {
+  & button {
+    &:hover {
+      background-color: var(--color-button-utility-background);
+      color: var(--color-button-utility-text);
+    }
+
+    &.active {
+      background-color: var(--color-button-utility-background);
+    }
+  }
+}
+
+.accent-buttons {
+  & button {
+    &[title="Printer's Red Accent"] {
+      border: 1px solid var(--color-red-500);
+      color: var(--color-red-500);
+
+      &:hover {
+        background-color: var(--color-red-500);
+        color: var(--color-red-100);
+      }
+
+      &.active {
+        background-color: var(--color-red-500);
+        color: var(--color-red-100);
+
+        &:hover {
+          background-color: color-mix(in srgb, var(--color-red-500), black 10%);
+        }
+      }
+    }
+
+    &[title="Dodger Blue Accent"] {
+      border: 1px solid var(--color-blue-500);
+      color: var(--color-blue-500);
+
+      &:hover {
+        background-color: var(--color-blue-500);
+        color: var(--color-blue-100);
+      }
+
+      &.active {
+        background-color: var(--color-blue-500);
+        color: var(--color-blue-100);
+
+        &:hover {
+          background-color: color-mix(
+            in srgb,
+            var(--color-blue-500),
+            black 10%
+          );
+        }
+      }
+    }
+
+    &[title="Dune Gold Accent"] {
+      border: 1px solid var(--color-gold-500);
+      color: var(--color-gold-500);
+
+      &:hover {
+        background-color: var(--color-gold-500);
+        color: var(--color-gold-100);
+      }
+
+      &.active {
+        background-color: var(--color-gold-500);
+        color: var(--color-gold-100);
+
+        &:hover {
+          background-color: color-mix(
+            in srgb,
+            var(--color-gold-500),
+            black 10%
+          );
+        }
+      }
+    }
+
+    &[title="Malachite Green Accent"] {
+      border: 1px solid var(--color-green-500);
+      color: var(--color-green-500);
+
+      &:hover {
+        background-color: var(--color-green-500);
+        color: var(--color-green-100);
+      }
+
+      &.active {
+        background-color: var(--color-green-500);
+        color: var(--color-green-100);
+
+        &:hover {
+          background-color: color-mix(
+            in srgb,
+            var(--color-green-500),
+            black 10%
+          );
+        }
+      }
+    }
+
+    &[title="Mallow Purple Accent"] {
+      border: 1px solid var(--color-purple-500);
+      color: var(--color-purple-500);
+
+      &:hover {
+        background-color: var(--color-purple-500);
+        color: var(--color-green-100);
+      }
+
+      &.active {
+        background-color: var(--color-purple-500);
+        color: var(--color-green-100);
+
+        &:hover {
+          background-color: color-mix(
+            in srgb,
+            var(--color-purple-500),
+            black 10%
+          );
+        }
+      }
+    }
+  }
+}

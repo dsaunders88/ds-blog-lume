@@ -9,19 +9,22 @@
         height="60"
       />
     </a>
-    <nav>
-      <ul class="cluster" role="list">
-        {{ for item of navigation.main }}
-        <li>
-          <a
-            class="nav-link"
-            href="{{ item.path }}"
-            data-selected-page="{{ item.path |> isActive(url, item.path) }}"
-            >{{ item.name }}</a
-          >
-        </li>
-        {{ /for }}
-      </ul>
-    </nav>
+    <div class="cluster">
+      {{ include "partials/header-theme-switch.vto" }}
+      <nav>
+        <ul class="cluster" role="list">
+          {{ for item of navigation.main }}
+          <li>
+            <a
+              class="nav-link"
+              href="{{ item.path }}"
+              data-selected-page="{{ item.path |> isActive(url, item.path) }}"
+              >{{ item.name }}</a
+            >
+          </li>
+          {{ /for }}
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
