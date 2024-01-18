@@ -26,6 +26,14 @@ a:not(.btn, .logo):hover {
   color: var(--color-link-text-hover);
 }
 
+img {
+  background: linear-gradient(
+    to bottom right,
+    var(--color-background-svg-3),
+    var(--color-background-shade)
+  );
+}
+
 :is(.theme-buttons, .accent-buttons) {
   &.cluster {
     --cluster-space: 0.5rem;

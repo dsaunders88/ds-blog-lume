@@ -79,20 +79,26 @@ page_css: project.css
       </div>
       <div class="info | flow">
         <div class="flow">
-          <p class="bold">Client</p>
+          <p class="small-title">Client</p>
           <p>{{ client }}</p>
         </div>
+        {{#
         <div class="flow">
-          <p class="bold">Year</p>
+          <p class="small-title">Year</p>
           <p>{{ year }}</p>
         </div>
+        #}}
         <div class="flow">
-          <p class="bold">Scope</p>
+          <p class="small-title">Scope</p>
           <p>{{ scope.join(', ') |> capitalizeFirst }}</p>
+        </div>
+        <div class="flow">
+          <p class="small-title">Tools</p>
+          <p>{{ tools.join(', ') |> capitalizeFirst }}</p>
         </div>
         {{ if it.link }}
         <div class="flow">
-          <p class="bold">View Site</p>
+          <p class="small-title">View Site</p>
           <p><a href="{{ link }}" target="_blank">{{ link }}</a></p>
         </div>
         {{ /if }}

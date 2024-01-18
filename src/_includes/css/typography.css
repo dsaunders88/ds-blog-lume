@@ -127,6 +127,7 @@ a.button-link {
 
 .rich-content {
   --element-spacing: var(--space-m);
+  --element-spacing-small: var(--space-xs);
   --heading-spacing: var(--space-xl);
   --color-link-underline: var(--color-accent-400);
 
@@ -140,6 +141,13 @@ a.button-link {
 
   & :is(p, section, figure, ul, blockquote, embed, iframe, pre code) {
     margin-block-start: var(--element-spacing);
+  }
+
+  /* Smaller spacing for elements immediately following headings */
+  &
+    :is(h2, h3)
+    + :is(p, section, figure, ul, blockquote, embed, iframe, pre code) {
+    margin-block-start: var(--element-spacing-small);
   }
 
   /* Headings that follow an image */
@@ -158,7 +166,7 @@ a.button-link {
   } */
 
   & :is(li) {
-    margin-block-start: var(--space-s);
+    margin-block-start: var(--space-xs);
   }
 
   & h2 {

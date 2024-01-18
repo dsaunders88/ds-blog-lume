@@ -27,8 +27,9 @@ article {
 
   & header {
     & > :first-child {
-      & .small-title {
-        margin-block-end: var(--space-2xs);
+      &.small-title {
+        color: var(--color-text-body-shade);
+        /* margin-block-end: var(--space-2xs); */
       }
 
       & span {
@@ -36,9 +37,9 @@ article {
       }
     }
 
-    &.cluster {
+    /* &.cluster {
       --cluster-justify: space-between;
-    }
+    } */
   }
 
   & .emphasis {
@@ -67,6 +68,11 @@ article {
 
     &.flow {
       gap: 1rem;
+    }
+
+    & .small-title {
+      font-size: var(--step--2);
+      font-weight: var(--font-headings-weight);
     }
 
     /*&::after {
@@ -105,7 +111,7 @@ article {
 .categories {
   font-size: var(--step--1);
   position: relative;
-  top: 3px;
+  top: -1px;
 
   &.cluster {
     --cluster-space: 0.75rem;
@@ -130,7 +136,8 @@ article {
 
 .summary {
   font-family: var(--font-headings);
-  margin-block: var(--space-m);
+  margin-block-start: var(--space-s);
+  margin-block-end: var(--space-2xs);
 }
 
 .content {
