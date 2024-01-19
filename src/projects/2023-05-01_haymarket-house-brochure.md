@@ -2,7 +2,7 @@
 title: Marketing Campaign
 image:
   src: haymarket-house-social
-  alt: Image alt
+  alt: A collage of many colors and images of community organizing and activism, with the main heading "A gathering place for change makers."
 summary: Spreading the word about a radical book publisher’s vibrant community space.
 client: Haymarket Books
 tags:

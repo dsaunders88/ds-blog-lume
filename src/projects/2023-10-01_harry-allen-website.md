@@ -2,7 +2,7 @@
 title: Consulting Website
 image:
   src: harry-allen-featured
-  alt: Image alt
+  alt: Home screen of Harry Allen Environmental Consulting. A color scheme of greens of oranges, and a main heading that says "Restoring and reclaiming our world."
 summary: Raising awareness and restoring microplastics-contaminated environments.
 client: Harry Allen
 tags:

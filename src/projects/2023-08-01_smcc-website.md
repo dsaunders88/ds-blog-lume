@@ -2,7 +2,7 @@
 title: Content Website
 image:
   src: smcc-featured
-  alt: Image alt
+  alt: Laptop and mobile screen views of San Marino Community Church, evincing a color palette of dark blues, oranges, and greens.
 summary: Expanding the image and online capabilities of a large and growing church.
 client: San Marino Community Church
 tags:
