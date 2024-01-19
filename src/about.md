@@ -1,10 +1,14 @@
 ---
 layout: layouts/about.vto
+docTitle: About Daniel Saunders
 title: About
 image: ds-headshot-new
+metas:
+  title: About Daniel Saunders • Designer & Developer in LA
+  description: I’m Daniel Saunders, a designer, front-end developer, reader, and writer with a wide range of interests.
 ---
 
-I’m Daniel Saunders, a designer, frontend developer, reader, and writer with a wide range of interests, as you might have gathered from looking around this site.
+I’m Daniel Saunders, a designer, front-end developer, reader, and writer with a wide range of interests, as you might have gathered from looking around this site.
 
 The throughline of this site is a chronicle of many years of transformations and transitions, whether in my thinking about existence, history, religion, design, or the world wide web. What I've learned from using this site as a real-time, sometimes messy space to work out these ideas is that I am someone who wants to explore boundaries, who disdains rigid orthodoxies, and who is always seeking where to enact that modernist injunction to "make it new". Maybe you'll find something here that sparks a feeling of exploration and discovery.
 
@@ -12,14 +16,16 @@ Subscribe to this site’s RSS feed or get in touch at [my email](mailto:daniel.
 
 ## Site Details
 
-- Site built with [Deno Lume](https://lume.land/), using [Vento](https://vento.js.org/) templates
+- Built with [Deno Lume](https://lume.land/), using [Vento](https://vento.js.org/) templates
 - Styled with vanilla CSS, optimized with [LightningCSS](https://lightningcss.dev/docs.html)
 - (Very minimal) client-side interactivity with vanilla JavaScript and web components
 - Code syntax highlighting with [Highlight.js](https://highlightjs.org/)
 - Client-server interaction with [HTMX](https://htmx.org/) and [Deno Oak](https://deno.land/x/oak@v12.6.2)
 - Privacy-focused analytics with [Fathom](https://usefathom.com/)
 - Content authored in Markdown
+- [Iconic](https://iconic.app/) icons
 - Deployed on [Deno Deploy](https://deno.com/deploy)
+- Average Lighthouse score: 💯 💯 💯 💯
 
 ### Colophon
 

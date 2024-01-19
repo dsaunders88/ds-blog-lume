@@ -1,5 +1,8 @@
 layout: layouts/home.vto
-title: Daniel Saunders
+docTitle: Daniel Saunders • Designer & Developer in LA
+title: Daniel Saunders • Designer & Developer in LA
 intro:
   tagline: Designer, reader & writer.
   description: "Hi, I’m Daniel, a web designer in Los Angeles. When I’m not obsessing over typography or divs, I’m usually reading a book somebody would have banned somewhere."
+metas:
+  title: Daniel Saunders • Designer & Developer in LA

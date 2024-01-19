@@ -1,2 +1,6 @@
 layout: layouts/post.vto
 type: posts
+metas:
+  title: "=title"
+  description: "=summary"
+  # image: "$.feed-image"

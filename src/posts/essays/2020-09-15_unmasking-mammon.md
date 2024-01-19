@@ -17,7 +17,7 @@ I had the privilege of reviewing Hadas Thier’s new book, _A People’s Guide t
 
 <figure class="book-list featured">
     <a class="img-link" href="#" target="_blank">
-        <img src="../../../img/posts/peoples-guide-to-capitalism-regular.webp" width="400" height="600" alt="" />
+        <img src="/img/posts/peoples-guide-to-capitalism-regular.webp" width="400" height="600" alt="" />
     </a>
 </figure>
 

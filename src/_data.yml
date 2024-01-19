@@ -1,0 +1,10 @@
+metas:
+  site: Daniel Saunders
+  description: The personal site of designer, front-end developer, reader, and writer Daniel Saunders.
+  generator: true
+  image: /ds-og-image.jpg
+  keywords:
+    - Design
+    - Frontend Development
+    - Reading
+    - Essays

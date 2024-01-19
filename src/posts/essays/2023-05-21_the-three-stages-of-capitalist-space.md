@@ -17,7 +17,7 @@ What is postmodernism? By now, we all know that we're in it and that there's no 
 
 <figure class="book-list featured">
     <a class="img-link" href="https://long-wasp-15.deno.dev/books/recJSxTLJxRnVeXpr">
-        <img src="../../../img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="Postmodernism, by Fredric Jameson" loading="lazy" decoding="async" />
+        <img src="/img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="Postmodernism, by Fredric Jameson" loading="lazy" decoding="async" />
     </a>
 </figure>
 
@@ -66,7 +66,7 @@ _Or, a journey toward reification._
 ### Secularization (Grid)
 
 <figure>
-    <img src="../../../img/posts/paris-haussmann-plan-regular.webp" width="600" height="400" alt="1867 Ledot Pocket Map of Paris, France" loading="lazy" decoding="async" />
+    <img src="/img/posts/paris-haussmann-plan-regular.webp" width="600" height="400" alt="1867 Ledot Pocket Map of Paris, France" loading="lazy" decoding="async" />
     <figcaption>1867 Ledot Pocket Map of Paris, France</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ _Or, a journey toward reification._
 ### Structuration (Network)
 
 <figure>
-    <img src="../../../img/posts/paris-le-corbusier-regular.webp" width="600" height="400" alt="Plan Voisin in Paris, Le Corbusier" loading="lazy" decoding="async" />
+    <img src="/img/posts/paris-le-corbusier-regular.webp" width="600" height="400" alt="Plan Voisin in Paris, Le Corbusier" loading="lazy" decoding="async" />
     <figcaption>Plan Voisin in Paris, Le Corbusier</figcaption>
 </figure>
 
@@ -92,7 +92,7 @@ _Or, a journey toward reification._
 ### Saturation (Quantum Field)
 
 <figure>
-    <img src="../../../img/posts/paris-disneyland-regular.webp" width="600" height="400" alt="Disneyland Hotel, Paris" loading="lazy" decoding="async" />
+    <img src="/img/posts/paris-disneyland-regular.webp" width="600" height="400" alt="Disneyland Hotel, Paris" loading="lazy" decoding="async" />
     <figcaption>Disneyland Hotel, Paris</figcaption>
 </figure>
 

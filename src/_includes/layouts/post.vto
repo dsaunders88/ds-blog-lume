@@ -4,7 +4,7 @@ page_css: post.css
 ---
 
 <article class="content-wrapper | has-sidebar">
-  <div class="paragraph-measure">
+  <div class="feed-content | paragraph-measure">
     <header>
       <h1>{{ title }}</h1>
       <div class="post-info | cluster">
@@ -85,9 +85,10 @@ page_css: post.css
     </header>
     <figure class="featured-img">
       <img
-        src="../../../img/posts/{{ image.src }}-large.webp"
+        class="feed-image"
+        src="/img/posts/{{ image.src }}-large.webp"
         alt="{{ image.alt }}"
-        width="2000"
+        width="1000"
       />
       {{ if image.caption }}
       <figcaption>

@@ -1,3 +1,6 @@
 layout: layouts/category.vto
 title: Notes
 url: /posts/notes/
+metas:
+  title: Note Posts • Daniel Saunders
+  description: A collection of shorter note and idea posts.

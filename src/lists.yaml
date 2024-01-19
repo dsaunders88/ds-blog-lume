@@ -1,3 +1,6 @@
 layout: layouts/category.vto
 title: Lists
 url: /posts/lists/
+metas:
+  title: List Posts • Daniel Saunders
+  description: A collection of list posts.

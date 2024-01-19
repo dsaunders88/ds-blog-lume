@@ -108,6 +108,8 @@
       border-radius: var(--rounded-corners-small);
 
       & .indicator {
+        position: relative;
+        top: -1px;
         width: 16px;
         height: 16px;
         border-radius: 999px;

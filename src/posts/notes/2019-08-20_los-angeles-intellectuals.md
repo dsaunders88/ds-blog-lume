@@ -24,7 +24,7 @@ But lurking beneath the sunny veneer of culture-capitalism exists a lineage of c
 
 Thus, to open this book on the social and material history of Los Angeles, Davis uses the “master dialectic” of _sunshine and noir_ to explore successive generations of intellectuals who shaped the regional ideologies that persist to this day. On one hand of this typology are the mythologizers themselves, those who sought to construct or deconstruct a particular image of the city.
 
-![The dialectical movement of sunshine and noir in Los Angeles.](../../../img/posts/sunshine-noir-regular.webp)
+![The dialectical movement of sunshine and noir in Los Angeles.](/img/posts/sunshine-noir-regular.webp)
 
 In this camp Davis places the following types, along with their chief representatives: “the Boosters,” the original fabricators of the (white) Southern California dream (Charles Fletcher Lummis); “the Noirs” and “the Exiles,” writers, artists, filmmakers, and European expatriates whose work showed how that dream had become nightmare (James M. Cain, Raymond Chandler, James Ellroy, numerous [Weimar exiles](https://www.ucpress.edu/book/9780520257955/weimar-on-the-pacific) from Brecht to Adorno and Horkheimer); and “the Mercenaries” and “the Sorcerers,” a relatively recent influx of architects, designers, theorists, and scientists allied to the interests of wealthy institutions and billionaire patrons (Reyner Banham, Frank Gehry, Robert A. Millikan, L. Ron Hubbard).
 

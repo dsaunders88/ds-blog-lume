@@ -13,10 +13,9 @@ function updateText(sectionID) {
   }`;
 }
 
-// const observerOptions = {
-//   rootMargin: "-100px 0% -66%",
-//   threshold: 1,
-// };
+const observerOptions = {
+  rootMargin: "-100px 0% -66%",
+};
 
 const feedObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -29,6 +28,6 @@ const feedObserver = new IntersectionObserver((entries) => {
       // console.log(sidebarText);
     }
   });
-});
+}, observerOptions);
 
 feed.forEach((section) => feedObserver.observe(section));

@@ -198,7 +198,7 @@ a.button-link {
     position: relative;
     top: -1px;
     font-family: var(--font-code);
-    font-size: 15px;
+    font-size: 0.75em;
     background-color: var(--color-button-utility-background);
     padding: 0.15rem 0.35rem;
     border-radius: var(--rounded-corners-small);

@@ -9,8 +9,16 @@ export default function* ({ search }) {
     yield {
       url: `/projects/${tag}/`,
       title: `${tag}`,
+      docTitle: `${
+        tag.charAt(0).toUpperCase() + tag.slice(1)
+      } Projects • Daniel Saunders`,
       type: "tag",
       projectlist: projects,
+      metas: {
+        title: `${tag} Projects`,
+        description: `A collection of projects tagged ${tag}.`,
+        // image: "$ img",
+      },
       tag,
     };
   }

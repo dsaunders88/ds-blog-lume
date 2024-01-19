@@ -19,13 +19,15 @@ posts:
   - name: Archive
     path: /posts/archive
 subfooter:
-  - name: RSS Feed
-    path: "#"
+  - name: Posts RSS Feed
+    path: "/posts.rss"
+  - name: Projects RSS Feed
+    path: "/projects.rss"
   - name: Sitemap
     path: /sitemap.xml
   - name: Web Studio
     path: https://www.ds-design.xyz
     external: true
-  - name: View Source
+  - name: View Source Code
     path: https://github.com/dsaunders88/ds-blog-lume
     external: true

@@ -36,11 +36,11 @@ Kazantzakis' life was an _agon_, the journey of an unsettled radical through the
 
 <section class="book-list | responsive-grid">
     <div>
-        <img src="../../../img/posts/kazantzakis-christ-recrucified-regular.webp" width="400" height="600" alt="Christ Recrucified, by Nikos Kazantzakis" loading="lazy" decoding="async" />
+        <img src="/img/posts/kazantzakis-christ-recrucified-regular.webp" width="400" height="600" alt="Christ Recrucified, by Nikos Kazantzakis" loading="lazy" decoding="async" />
         <p class="title">Christ Recrucified</p>
     </div>
     <div>
-        <img src="../../../img/posts/kazantzakis-fratricides-regular.webp" width="400" height="600" alt="The Fratricides, by Nikos Kazantzakis" loading="lazy" decoding="async" />
+        <img src="/img/posts/kazantzakis-fratricides-regular.webp" width="400" height="600" alt="The Fratricides, by Nikos Kazantzakis" loading="lazy" decoding="async" />
         <p class="title">The Fratricides</p>
     </div>
 </section>

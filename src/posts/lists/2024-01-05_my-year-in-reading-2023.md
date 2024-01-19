@@ -22,7 +22,7 @@ These were some of my favorite books of the year (because I simply can’t write
 
 <figure class="book-list featured">
     <a class="img-link" href="https://long-wasp-15.deno.dev/books/recJSxTLJxRnVeXpr">
-        <img src="../../../img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="Postmodernism, by Fredric Jameson" loading="lazy" decoding="async" />
+        <img src="/img/posts/reading-postmodernism-regular.webp" width="400" height="600" alt="Postmodernism, by Fredric Jameson" loading="lazy" decoding="async" />
     </a>
 </figure>
 
@@ -36,7 +36,7 @@ All I could say about this masterpiece I tried to say in [my review essay here](
 
 <figure class="book-list featured">
     <a class="img-link" href="https://long-wasp-15.deno.dev/books/recGXoonOB53egYa4">
-        <img src="../../../img/posts/reading-blue-mars-regular.webp" width="400" height="600" alt="Blue Mars, by Kim Stanley Robinson" loading="lazy" decoding="async" />
+        <img src="/img/posts/reading-blue-mars-regular.webp" width="400" height="600" alt="Blue Mars, by Kim Stanley Robinson" loading="lazy" decoding="async" />
     </a>
 </figure>
 
@@ -58,7 +58,7 @@ The trilogy’s utopian form is not a reductive portrait of a simplistic or blin
 
 <figure class="book-list featured">
     <a class="img-link" href="https://long-wasp-15.deno.dev/books/recjeWIBTFNcffbWx">
-        <img src="../../../img/posts/reading-perec-regular.webp" width="400" height="600" alt="Life: A User's Manual, by Georges Perec" loading="lazy" decoding="async" />
+        <img src="/img/posts/reading-perec-regular.webp" width="400" height="600" alt="Life: A User's Manual, by Georges Perec" loading="lazy" decoding="async" />
     </a>
 </figure>
 
@@ -84,7 +84,7 @@ Whether out of resentment or mischief, the puzzle-maker Winckler starts to mess 
 
 <figure class="book-list featured">
     <a class="img-link" href="https://long-wasp-15.deno.dev/books/recHdoG8inuk0wv4V">
-        <img src="../../../img/posts/reading-shakespeare-regular.webp" width="400" height="600" alt="Shakespeare Was a Woman and Other Heresies, by Elizabeth Winkler" loading="lazy" decoding="async" />
+        <img src="/img/posts/reading-shakespeare-regular.webp" width="400" height="600" alt="Shakespeare Was a Woman and Other Heresies, by Elizabeth Winkler" loading="lazy" decoding="async" />
     </a>
 </figure>
 
@@ -110,7 +110,7 @@ At the very least, exploring these questions opens up new avenues for the presen
 
 <figure class="book-list featured">
     <a class="img-link" href="https://long-wasp-15.deno.dev/books/recr1YkRQp75h6pGs">
-        <img src="../../../img/posts/reading-lem-regular.webp" width="400" height="600" alt="The Truth and Other Stories, by Stanisław Lem" loading="lazy" decoding="async" />
+        <img src="/img/posts/reading-lem-regular.webp" width="400" height="600" alt="The Truth and Other Stories, by Stanisław Lem" loading="lazy" decoding="async" />
     </a>
 </figure>
 
@@ -128,7 +128,7 @@ In an age of Elon Musk and trashy AI spam, Lem is vindicated as a prophet who sk
 
 <figure class="book-list featured">
     <a class="img-link" href="https://long-wasp-15.deno.dev/books/recmV06sHmTUdfbGL">
-        <img src="../../../img/posts/reading-revolution-regular.webp" width="400" height="600" alt="Revolution, by Enzo Traverso" loading="lazy" decoding="async" />
+        <img src="/img/posts/reading-revolution-regular.webp" width="400" height="600" alt="Revolution, by Enzo Traverso" loading="lazy" decoding="async" />
     </a>
 </figure>
 
@@ -153,25 +153,25 @@ These are some of the main themes, currents, and genres I read this year, which 
 <section class="book-list | responsive-grid">
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recFd1Tla7u58LMpy">
-            <img src="../../../img/posts/reading-left-hand-regular.webp" width="400" height="600" alt="The Left Hand of Darkness, by Ursula K. Le Guin" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-left-hand-regular.webp" width="400" height="600" alt="The Left Hand of Darkness, by Ursula K. Le Guin" loading="lazy" decoding="async" />
         </a>
         <p class="title">The Left Hand of Darkness</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recJBpp0sV8tfutRe">
-            <img src="../../../img/posts/reading-word-for-world-regular.webp" width="400" height="600" alt="The Word for World Is Forest, by Ursula K. Le Guin" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-word-for-world-regular.webp" width="400" height="600" alt="The Word for World Is Forest, by Ursula K. Le Guin" loading="lazy" decoding="async" />
         </a>
         <p class="title">The Word for World Is Forest</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recIVxkZRnIEdoc72">
-            <img src="../../../img/posts/reading-red-mars-regular.webp" width="400" height="600" alt="Red Mars, by Kim Stanley Robinson" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-red-mars-regular.webp" width="400" height="600" alt="Red Mars, by Kim Stanley Robinson" loading="lazy" decoding="async" />
         </a>
         <p class="title">Red Mars</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recSV3gcH88lJ5sY6">
-            <img src="../../../img/posts/reading-green-mars-regular.webp" width="400" height="600" alt="Green Mars, by Kim Stanley Robinson" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-green-mars-regular.webp" width="400" height="600" alt="Green Mars, by Kim Stanley Robinson" loading="lazy" decoding="async" />
         </a>
         <p class="title">Green Mars</p>
     </div>
@@ -184,19 +184,19 @@ Echoing Fredric Jameson’s conception of the utopian, these speculative books c
 <section class="book-list | responsive-grid">
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recJ2XZwCGcs5lZom">
-            <img src="../../../img/posts/reading-latour-regular.webp" width="400" height="600" alt="Down to Earth, by Bruno Latour" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-latour-regular.webp" width="400" height="600" alt="Down to Earth, by Bruno Latour" loading="lazy" decoding="async" />
         </a>
         <p class="title">Down to Earth</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recPAfpNCqmbgeOlh">
-            <img src="../../../img/posts/reading-haraway-regular.webp" width="400" height="600" alt="Staying with the Trouble, by Donna J. Haraway" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-haraway-regular.webp" width="400" height="600" alt="Staying with the Trouble, by Donna J. Haraway" loading="lazy" decoding="async" />
         </a>
         <p class="title">Staying with the Trouble</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recyLzc11DLVUrdR2">
-            <img src="../../../img/posts/reading-red-deal-regular.webp" width="400" height="600" alt="The Red Deal, by the Red Nation" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-red-deal-regular.webp" width="400" height="600" alt="The Red Deal, by the Red Nation" loading="lazy" decoding="async" />
         </a>
         <p class="title">The Red Deal</p>
     </div>
@@ -209,25 +209,25 @@ Coming “down to earth” is an evocative image shared by the post-Catholic, en
 <section class="book-list | responsive-grid">
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recvvixBoLNkIMNc3">
-            <img src="../../../img/posts/reading-kleist-regular.webp" width="400" height="600" alt="The Marquise of O—, by Heinrich von Kleist" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-kleist-regular.webp" width="400" height="600" alt="The Marquise of O—, by Heinrich von Kleist" loading="lazy" decoding="async" />
         </a>
         <p class="title">The Marquise of O—</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recfxtYWvJxRmhxua">
-            <img src="../../../img/posts/reading-bloch-regular.webp" width="400" height="600" alt="Atheism in Christianity, by Ernst Bloch" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-bloch-regular.webp" width="400" height="600" alt="Atheism in Christianity, by Ernst Bloch" loading="lazy" decoding="async" />
         </a>
         <p class="title">Atheism in Christianity</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recNQowd6B9k1jRjU">
-            <img src="../../../img/posts/reading-greco-regular.webp" width="400" height="600" alt="Report to Greco, Nikos Kazantzakis" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-greco-regular.webp" width="400" height="600" alt="Report to Greco, Nikos Kazantzakis" loading="lazy" decoding="async" />
         </a>
         <p class="title">Report to Greco</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recIG2XGygzjXv9Hk">
-            <img src="../../../img/posts/reading-fisher-regular.webp" width="400" height="600" alt="Capitalist Realism, by Mark Fisher" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-fisher-regular.webp" width="400" height="600" alt="Capitalist Realism, by Mark Fisher" loading="lazy" decoding="async" />
         </a>
         <p class="title">Capitalist Realism</p>
     </div>
@@ -246,4 +246,4 @@ These books embody the essence of radicalism—whether literary, spiritual, poli
 
 Check out my Airtable table below for the full list:
 
-<iframe class="airtable-embed" src="https://airtable.com/embed/appYm5Ud471pJY0w8/shrTXKCHbFSQIGfhC?backgroundColor=purpleDusty&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+<iframe title="Airtable 2023 Reading Activity interactive table" class="airtable-embed" src="https://airtable.com/embed/appYm5Ud471pJY0w8/shrTXKCHbFSQIGfhC?backgroundColor=purpleDusty&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>

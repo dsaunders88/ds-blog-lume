@@ -17,7 +17,7 @@ _Can’t Pay, Won’t Pay: The Case for Economic Disobedience and Debt Abolition
 
 <figure class="book-list featured">
     <a class="img-link" href="#" target="_blank">
-        <img src="../../../img/posts/cant-pay-wont-pay-regular.webp" width="400" height="600" alt="" />
+        <img src="/img/posts/cant-pay-wont-pay-regular.webp" width="400" height="600" alt="" />
     </a>
 </figure>
 

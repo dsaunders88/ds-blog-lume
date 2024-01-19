@@ -16,7 +16,7 @@ I’m a bit of a fanatic when it comes to my library of books. When I’m not re
 For me, an effective reading tracker would not only provide a chronological list of titles read, but would uncover the manifold associations of influence and interest that are constantly being formed from the books I read. Like all libraries, my library carries a unique personal signature that has developed out of such a web of connections, and part of the joy of reading is the continual rediscovery of how and where ideas and themes overlap, especially when such connections might not immediately be evident.
 
 <figure>
-    <img src="../../../img/posts/reading-app-left-hand-regular.webp" alt="Dark-themed app dashboard showing the cover, book information, and reading activity stats for the book Left Hand of Darkness by Ursula K. Le Guin." width="600" loading="lazy" decoding="async" />
+    <img src="/img/posts/reading-app-left-hand-regular.webp" alt="Dark-themed app dashboard showing the cover, book information, and reading activity stats for the book Left Hand of Darkness by Ursula K. Le Guin." width="600" loading="lazy" decoding="async" />
     <figcaption>A preview of what I’m building with Airtable and Deno Fresh.</figcaption>
 </figure>
 

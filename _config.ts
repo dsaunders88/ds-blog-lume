@@ -110,7 +110,41 @@ site.helper(
   },
   { type: "tag" }
 );
-site.use(feed());
+site.use(
+  feed({
+    output: ["/posts.rss"],
+    query: "type=posts",
+    info: {
+      title: "Daniel Saunders | Posts",
+      description: "Essays, notes, and lists by Daniel Saunders.",
+      lang: "en",
+    },
+    items: {
+      title: "=title",
+      description: "=summary",
+      published: "=date",
+      content: "$.feed-content",
+    },
+  })
+);
+site.use(
+  feed({
+    output: ["/projects.rss"],
+    query: "type=projects",
+    info: {
+      title: "Daniel Saunders | Projects",
+      description: "Design and development projects by Daniel Saunders.",
+      lang: "en",
+    },
+    items: {
+      title: "=title",
+      description: "=summary",
+      published: "=date",
+      content: "$.feed-content",
+    },
+  })
+);
+site.use(metas());
 // site.use(filter_pages());
 // site.use(imagick());
 site.use(transformImages());

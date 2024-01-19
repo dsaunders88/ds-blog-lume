@@ -1,3 +1,6 @@
 layout: layouts/category.vto
 title: Essays
 url: /posts/essays/
+metas:
+  title: Essay Posts • Daniel Saunders
+  description: A collection of longer-form articles.

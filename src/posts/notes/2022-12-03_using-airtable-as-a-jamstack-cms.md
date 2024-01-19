@@ -17,7 +17,7 @@ But early in the project I hit on a problem that ironically seems to crop up for
 This post is a brief overview of how I used Airtable to solve this problem for this specific kind of small portfolio website, which led to some interesting results.
 
 <figure>
-    <img src="../../../img/posts/a-blake-hero-regular.webp" alt="Screenshot of home page hero section on gradient background; web page title reads 'Alexander Lloyd Blake: Conductor, Vocal Contractor, Composer, Singer'." width="600" loading="lazy" decoding="async" />
+    <img src="/img/posts/a-blake-hero-regular.webp" alt="Screenshot of home page hero section on gradient background; web page title reads 'Alexander Lloyd Blake: Conductor, Vocal Contractor, Composer, Singer'." width="600" loading="lazy" decoding="async" />
     <figcaption>The site under consideration: <a href="https://alexanderlblake.com">https://alexanderlblake.com</a></figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ So here's how I set up an "Airtable back-end" for this personal portfolio siteâ€
 Getting set up in Airtable is quick and easy. First, I created a "base," which is the central hub for a project that can contain multiple tables and users related to that project (helpful because you can work in real-time on structuring and adding content with your client). From there, I added separate tables corresponding to each page or content collection type. For example, the "Pages" table has some recurring fields for each of the website's pages, like a title, subtitle, featured image, SEO description, etc., while the "Credits" table is structured to show a content collection with information like year, role, image, and <abbr title="Internet Movie Database">IMDb</abbr> link for movie and TV credits.
 
 <figure>
-    <img src="../../../img/posts/a-blake-table-regular.webp" alt="Screenshot of Airtable table on gradient background, showing various records under the title 'Credits'." width="600" loading="lazy" decoding="async" />
+    <img src="/img/posts/a-blake-table-regular.webp" alt="Screenshot of Airtable table on gradient background, showing various records under the title 'Credits'." width="600" loading="lazy" decoding="async" />
     <figcaption>Records in the Credits table.</figcaption>
 </figure>
 
@@ -183,7 +183,7 @@ const credits = await getRecords(tableId, 'Year', 'desc');
 On the live site, the rendered and styled output looks like this (using a somewhat outdated slider powered by [Flickity](https://flickity.metafizzy.co/)):
 
 <figure>
-    <img src="../../../img/posts/a-blake-credits-regular.webp" alt="Screenshot of web page section on gradient background; heading reads 'Credits' followed by images laid out in a slider-carousel format." width="600" loading="lazy" decoding="async" />
+    <img src="/img/posts/a-blake-credits-regular.webp" alt="Screenshot of web page section on gradient background; heading reads 'Credits' followed by images laid out in a slider-carousel format." width="600" loading="lazy" decoding="async" />
     <figcaption>Records in the Credits table.</figcaption>
 </figure>
 
@@ -216,12 +216,12 @@ Now this is the part where it gets really exciting. While it's possible to just 
 Back in Airtable, I set up an interface that breaks out the various tables into "content collections," which all show up on one dashboard. The records are shown as these nice little cards (with customizable preview fields), and editing a record is as easy as clicking into one and changing a field. It's even possible to use different visual widgets for different data types (i.e., a calendar widget for event recordsâ€”super cool!).
 
 <figure>
-    <img src="../../../img/posts/a-blake-interface-regular.webp" alt="Screenshot of Airtable interface view on gradient background; sections shown include 'Credits' and 'Press Items'." width="600" loading="lazy" decoding="async" />
+    <img src="/img/posts/a-blake-interface-regular.webp" alt="Screenshot of Airtable interface view on gradient background; sections shown include 'Credits' and 'Press Items'." width="600" loading="lazy" decoding="async" />
     <figcaption>Airtable interface structured by "content collections" and displayed as visual cards.</figcaption>
 </figure>
 
 <figure>
-    <img src="../../../img/posts/a-blake-calendar-regular.webp" alt="Screenshot of Airtable interface calendar widget on gradient background." width="600" loading="lazy" decoding="async" />
+    <img src="/img/posts/a-blake-calendar-regular.webp" alt="Screenshot of Airtable interface calendar widget on gradient background." width="600" loading="lazy" decoding="async" />
     <figcaption>Calendar widget for records that are event/date based.</figcaption>
 </figure>
 
@@ -232,7 +232,7 @@ Publishing the site from within the interface itself is the one drawback to this
 Here is how I set this site up to deploy to Netlify using a [custom build hook](https://docs.netlify.com/configure-builds/build-hooks/?_ga=2.101139012.412683381.1670093918-646861794.1654377013). I added a new table in my base called "Publish," where I have one record that uses the Airtable [scripting extension](https://airtable.com/developers/scripting) to run the hook when the "Publish Site" button is clicked.
 
 <figure>
-    <img src="../../../img/posts/a-blake-publish-regular.webp" alt="Screenshot of an Airtable table called 'Publish' on gradient background; fields in the table include 'Name', 'Last Published Date', and a 'Publish Site' scripting button." width="600" loading="lazy" decoding="async" />
+    <img src="/img/posts/a-blake-publish-regular.webp" alt="Screenshot of an Airtable table called 'Publish' on gradient background; fields in the table include 'Name', 'Last Published Date', and a 'Publish Site' scripting button." width="600" loading="lazy" decoding="async" />
     <figcaption>Publish to Netlify table in Airtable.</figcaption>
 </figure>
 

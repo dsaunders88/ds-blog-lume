@@ -9,8 +9,16 @@ export default function* ({ search }) {
     yield {
       url: `/tag/${tag}/`,
       title: `Posts tagged ${tag}`,
+      docTitle: `${
+        tag.charAt(0).toUpperCase() + tag.slice(1)
+      } Posts • Daniel Saunders`,
       type: "tag",
       postlist: posts,
+      metas: {
+        title: `${tag} Posts`,
+        description: `A collection of posts tagged ${tag}.`,
+        // image: "$ img",
+      },
       tag,
     };
   }

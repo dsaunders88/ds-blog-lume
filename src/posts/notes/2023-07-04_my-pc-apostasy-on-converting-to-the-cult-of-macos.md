@@ -18,7 +18,7 @@ During that intervening time, I maintained the stubborn attitude of a PC dogmati
 Of course, there was always also the perverse pride in not giving in to the hype, of decrying the decadence and thoughtlessness of both the masses and "creative types" who gave up their free choice of software and hardware to a marketing-savvy corporate giant, of feeling like one of the true holdouts to defend...what? A Windows user-interface that hasn't established a good or even consistent design in 30 years? A bland aesthetic redolent of bureaucratic senescence? An operating system whose frequent crashes and bugs caused an untold number of desperate hours trying to troubleshoot fixes? A chaotic ecosystem and knowledge base where there was never less than 10 different ways to do something relatively simple?
 
 <figure>
-    <img src="../../../img/posts/windows-menu-regular.webp" alt="Various Windows context menus." width="600" loading="lazy" decoding="async" />
+    <img src="/img/posts/windows-menu-regular.webp" alt="Various Windows context menus." width="600" loading="lazy" decoding="async" />
     <figcaption>Windows context menu hell, via <a href="https://www.reddit.com/r/Windows10/comments/l5ohwj/all_different_default_windows_10_context_menu/">Reddit</a></figcaption>
 </figure>
 

@@ -3,7 +3,7 @@ layout: layouts/base.vto
 page_css: project.css
 ---
 
-<article class="content-wrapper">
+<article class="feed-content | content-wrapper">
   <div class="intro | has-sidebar">
     <div class="flow">
       <header class="cluster">
@@ -51,7 +51,7 @@ page_css: project.css
       <h1 class="summary">{{ summary }}</h1>
       <img
         class="featured-img"
-        src="../../../img/projects/{{ image.src }}-large.webp"
+        src="/img/projects/{{ image.src }}-large.webp"
         alt="{{ image.alt }}"
         width="2000"
       />
@@ -217,7 +217,7 @@ page_css: project.css
           <p>{{ previousProject.title }}</p>
           <div class="img-wrapper">
             <img
-              src="../../../img/projects/{{ previousProject.image.src }}-thumb.webp"
+              src="/img/projects/{{ previousProject.image.src }}-thumb.webp"
               alt="{{ previousProject.image.alt }}"
               width="600"
             />
@@ -253,7 +253,7 @@ page_css: project.css
           <p>{{ nextProject.title }}</p>
           <div class="img-wrapper">
             <img
-              src="../../../img/projects/{{ nextProject.image.src }}-thumb.webp"
+              src="/img/projects/{{ nextProject.image.src }}-thumb.webp"
               alt="{{ nextProject.image.alt }}"
               width="600"
             />

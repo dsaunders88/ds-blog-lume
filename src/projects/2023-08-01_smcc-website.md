@@ -24,16 +24,16 @@ link: https://sanmarinocommunitychurch.com/
 
 San Marino Community Church had an outdated website on a private third-party platform, which made for difficulties in content customization and editing. The leadership team also felt that the site did not capture the spirit of the community, offerings, and life of the church. This presented an opportunity not only to rebrand the look and feel of the site, but to develop a customized content management solution that would meet the needs of this growing church community.
 
-![alt](../../../img/projects/smcc-screens-regular.webp)
+![alt](/img/projects/smcc-screens-regular.webp)
 
 Starting with a full content audit and brainstorming phase, I created a content strategy for San Marino Community Church and designed screen prototypes to explore how to present the church's large number of offerings and events in an easily navigable way. At the same time, I established a visual strategy for the site, updating the church's online branding to a more modern look and feel.
 
 Although they ultimately weren't used at this stage in the project, I also created a few logo ideas to accompany the site refresh.
 
-![alt](../../../img/projects/smcc-logos-regular.webp)
+![alt](/img/projects/smcc-logos-regular.webp)
 
 In the development phase, I built in a fully customized headless CMS integration with the [Sanity platform](https://www.sanity.io/) and API. This platform allowed for the creation of content types fitting the church's needs (staff members, sermons, events, ministries, etc.) and enabled editors to easily add and edit collections and pages.
 
-![alt](../../../img/projects/smcc-nav-regular.webp)
+![alt](/img/projects/smcc-nav-regular.webp)
 
 For the front-end of the site, I chose to utilize the [Astro](https://astro.build/) and [Svelte](https://svelte.dev/) frameworks to build an extremely fast, lightweight, performant, and interactive site. The live website contains over 100 pages and is highly optimized for speed, security, accessibility, and SEO.

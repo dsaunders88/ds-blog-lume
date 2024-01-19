@@ -1,7 +1,7 @@
 ---
 title: Dialectical Ecology
 image:
-  src: koyaanisqatsi
+  src: koyaanisqatsi-power
   alt: Still from Koyannisqatsi—power lines in the desert.
   caption: Still from Koyannisqatsi—power lines in the desert.
   attribution: <a href="https://www.atlasofplaces.com/cinema/koyaanisqatsi/">Atlas of Places</a>
@@ -25,7 +25,7 @@ But as the global climate crisis worsens, with more and more evidence linking ec
 
 _Koyaanisqatsi’s_ concerns, read in this way, overlap to a degree with the critical sociological project of John Bellamy Foster, Brett Clark, and Richard York—especially in their substantive compilation, _[The Ecological Rift: Capitalism’s War on the Earth](https://monthlyreview.org/product/ecological_rift/)_ (2010). Foster, Clark, and York (henceforth FCY) have been at the forefront of a compelling project of Marxist ecosocialism, which seeks to revitalize the dialectical-ecological ideas of Marx and Engels in order to develop a robust socialist theory encompassing history, nature, the biosphere, climate change, and the social relations of production.
 
-![Koyaanisqatsi still: city traffic](../../../img/posts/koyaanisqatsi-grid-regular.webp)
+![Koyaanisqatsi still: city traffic](/img/posts/koyaanisqatsi-grid-regular.webp)
 
 Many of FCY’s arguments critiquing capitalism as the instigator and sustainer of ecological destruction are becoming an integral feature of socialist discourse. These include their definition of capitalism as a “system of self-sustaining value,” a “treadmill of accumulation,” and (one of the most notable of Marx’s metaphors) a “metabolic rift” in the natural-social fabric of production. Capitalism is, as Marx wrote in the _Grundrisse_, an “endless and limitless drive to go beyond its limiting barriers,” including especially planetary boundaries. Following climate scientists, FCY identify seven such planetary boundaries which serve to maintain an overarching, regulating metabolism conducive to life, only one of which is climate change. To cross any one of these boundaries—and we have already crossed three—“signifies the onset of irreversible environmental degradation.”
 
@@ -51,7 +51,7 @@ For these scientists, the “organism is both subject and an object in the physi
 
 FCY’s argument here, following Marx, is that _nature has a specific history_. This is a history in which organic life, inclusive of humanity, acts on and changes the world, at the same time as the world acts on and changes organic life. The two are enmeshed in an ongoing, dialectical interplay, a “metabolic” relation that is never the same but that has a discernible historical contour. Thus, the best way to understand the world, in both social and scientific terms, is to look at not only social history but natural history, and to look at them _together_.
 
-![Koyaanisqatsi still: industrial pollution](../../../img/posts/koyaanisqatsi-pollution-regular.webp)
+![Koyaanisqatsi still: industrial pollution](/img/posts/koyaanisqatsi-pollution-regular.webp)
 
 This highlights an important feature of the metabolic rift theory, one that differentiates it from the powerful but ultimately less substantive ideas about the environment and human action put forth by Koyaanisqatsi. In centering modern technological development _itself_ as the underlying cause of humanity’s rupture with the natural world, _Koyaanisqatsi_ swings toward an unchanging, idealistic view of nature, one that sees the environment in terms of an “ideal, natural state”—a lost Eden which could be regained with the removal of industrial civilization. _Koyaanisqatsi_ shares this outlook with other trends in environmentalism like deep ecology and the [Gaia hypothesis](https://en.wikipedia.org/wiki/Gaia_hypothesis). The ultimate goal, for these proponents, is to achieve _a grand balance_ between humanity and nature.
 

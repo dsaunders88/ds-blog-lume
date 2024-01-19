@@ -250,6 +250,10 @@
     & .subfooter {
       text-align: center;
       justify-content: center;
+
+      & ul.cluster {
+        --cluster-justify: center;
+      }
     }
   }
 }

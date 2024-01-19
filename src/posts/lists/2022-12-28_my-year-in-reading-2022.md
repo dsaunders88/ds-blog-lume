@@ -24,7 +24,7 @@ My favorite reads of the year, ones that prompted prolonged or critical reflecti
 
 <figure class="book-list featured">
     <a class="img-link" href="https://long-wasp-15.deno.dev/books/rec2kPSKqLhQvIuX7">
-        <img src="../../../img/posts/reading-wagnerism-regular.webp" width="400" height="600" alt="Wagnerism by Alex Ross" loading="lazy" decoding="async" />
+        <img src="/img/posts/reading-wagnerism-regular.webp" width="400" height="600" alt="Wagnerism by Alex Ross" loading="lazy" decoding="async" />
     </a>
 </figure>
 
@@ -46,7 +46,7 @@ As [Nathan Shields writes](https://thebaffler.com/salvos/wagnermania-shields) in
 
 <figure class="book-list featured">
     <a class="img-link" href="https://long-wasp-15.deno.dev/books/recyEioDb2o7g000h">
-        <img src="../../../img/posts/reading-ulysses-regular.webp" width="400" height="600" alt="Ulysses by Hugh Kenner" loading="lazy" decoding="async" />
+        <img src="/img/posts/reading-ulysses-regular.webp" width="400" height="600" alt="Ulysses by Hugh Kenner" loading="lazy" decoding="async" />
     </a>
 </figure>
 
@@ -72,7 +72,7 @@ The effect of the Arranger on the reader is to cause us to become aware of both 
 
 <figure class="book-list featured">
     <a class="img-link" href="https://long-wasp-15.deno.dev/books/recsBACDunKvwKbIu">
-        <img src="../../../img/posts/reading-marxs-inferno-regular.webp" width="400" height="600" alt="Marx's Inferno by William Clare Roberts" loading="lazy" decoding="async" />
+        <img src="/img/posts/reading-marxs-inferno-regular.webp" width="400" height="600" alt="Marx's Inferno by William Clare Roberts" loading="lazy" decoding="async" />
     </a>
 </figure>
 
@@ -96,7 +96,7 @@ This is how Roberts arrives at his view of Marx as a radical republican, concern
 
 <figure class="book-list featured">
     <a class="img-link" href="https://long-wasp-15.deno.dev/books/recmpq6x25WVaiYm0">
-        <img src="../../../img/posts/reading-jameson-scifi-regular.webp" width="400" height="600" alt="Archaeologies of the Future by Fredric Jameson" loading="lazy" decoding="async" />
+        <img src="/img/posts/reading-jameson-scifi-regular.webp" width="400" height="600" alt="Archaeologies of the Future by Fredric Jameson" loading="lazy" decoding="async" />
     </a>
 </figure>
 
@@ -129,13 +129,13 @@ In addition to my favorite books, these themes formed some of the main currents 
 <section class="book-list | responsive-grid">
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recWD9qNrgwEawbZJ">
-            <img src="../../../img/posts/reading-parable-of-sower-regular.webp" width="400" height="600" alt="Parable of the Sower, by Octavia Butler" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-parable-of-sower-regular.webp" width="400" height="600" alt="Parable of the Sower, by Octavia Butler" loading="lazy" decoding="async" />
         </a>
         <p class="title">Parable of the Sower</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recikplkRLx0IEHoH">
-            <img src="../../../img/posts/reading-roadside-picnic-regular.webp" width="400" height="600" alt="Roadside Picnic, by Arkady and Boris Strugatsk" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-roadside-picnic-regular.webp" width="400" height="600" alt="Roadside Picnic, by Arkady and Boris Strugatsk" loading="lazy" decoding="async" />
         </a>
         <p class="title">Roadside Picnic</p>
     </div>
@@ -148,25 +148,25 @@ I've been a casual reader of sci-fi for a long time, but partly because of the J
 <section class="book-list | responsive-grid">
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recD79EU1sxtz5HOv">
-            <img src="../../../img/posts/reading-control-of-nature-regular.webp" width="400" height="600" alt="The Control of Nature, by John McPhee" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-control-of-nature-regular.webp" width="400" height="600" alt="The Control of Nature, by John McPhee" loading="lazy" decoding="async" />
         </a>
         <p class="title">The Control of Nature</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recXuFgpzxJw7CBGf">
-            <img src="../../../img/posts/reading-braiding-sweetgrass-regular.webp" width="400" height="600" alt="Braiding Sweetgrass, by Robin Wall Kimmerer" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-braiding-sweetgrass-regular.webp" width="400" height="600" alt="Braiding Sweetgrass, by Robin Wall Kimmerer" loading="lazy" decoding="async" />
         </a>
         <p class="title">Braiding Sweetgrass</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recYFiccT5wpaiamN">
-            <img src="../../../img/posts/reading-mind-on-plants-regular.webp" width="400" height="600" alt="This Is Your Mind On Plants, by Michael Pollan" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-mind-on-plants-regular.webp" width="400" height="600" alt="This Is Your Mind On Plants, by Michael Pollan" loading="lazy" decoding="async" />
         </a>
         <p class="title">This Is Your Mind On Plants</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/rec3YVreu5aZ8AWCq">
-            <img src="../../../img/posts/reading-urchin-in-storm-regular.webp" width="400" height="600" alt="An Urchin in the Storm, by Stephen Jay Gould" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-urchin-in-storm-regular.webp" width="400" height="600" alt="An Urchin in the Storm, by Stephen Jay Gould" loading="lazy" decoding="async" />
         </a>
         <p class="title">An Urchin in the Storm</p>
     </div>
@@ -179,31 +179,31 @@ I [continued my trend](/posts/essays/dialectical-ecology) of exploring the confl
 <section class="book-list | responsive-grid">
     <div>
         <a class='img-link' href="https://long-wasp-15.deno.dev/books/recPO42hNcCmxOTPs">
-            <img src="../../../img/posts/reading-reconsidering-reparations-regular.webp" width="400" height="600" alt="Reconsidering Reparations, by Olúfẹ́mi O. Táíwò" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-reconsidering-reparations-regular.webp" width="400" height="600" alt="Reconsidering Reparations, by Olúfẹ́mi O. Táíwò" loading="lazy" decoding="async" />
         </a>
         <p class="title">Reconsidering Reparations</p>
     </div>
     <div>
         <a class='img-link' href="https://long-wasp-15.deno.dev/books/recP6WLYDuyqRLRju">
-            <img src="../../../img/posts/reading-elite-capture-regular.webp" width="400" height="600" alt="Elite Capture, by Olúfẹ́mi O. Táíwò" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-elite-capture-regular.webp" width="400" height="600" alt="Elite Capture, by Olúfẹ́mi O. Táíwò" loading="lazy" decoding="async" />
         </a>
         <p class="title">Elite Capture</p>
     </div>
     <div>
         <a class='img-link' href="https://long-wasp-15.deno.dev/books/rec67vUFWOLBpv8bq">
-            <img src="../../../img/posts/reading-world-to-win-regular.webp" width="400" height="600" alt="A World to Win, by Sven-Eric Liedman" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-world-to-win-regular.webp" width="400" height="600" alt="A World to Win, by Sven-Eric Liedman" loading="lazy" decoding="async" />
         </a>
         <p class="title">A World to Win</p>
     </div>
     <div>
         <a class='img-link' href="https://long-wasp-15.deno.dev/books/recUbL30a6S7e0h6X">
-            <img src="../../../img/posts/reading-spectre-haunting-regular.webp" width="400" height="600" alt="A Spectre, Haunting, by China Miéville" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-spectre-haunting-regular.webp" width="400" height="600" alt="A Spectre, Haunting, by China Miéville" loading="lazy" decoding="async" />
         </a>
         <p class="title">A Spectre, Haunting</p>
     </div>
     <div>
         <a class='img-link' href="https://long-wasp-15.deno.dev/books/recaqDUjA1W0YF5c5">
-            <img src="../../../img/posts/reading-emergent-strategy-regular.webp" width="400" height="600" alt="Emergent Strategy, by Adrienne Maree Brown" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-emergent-strategy-regular.webp" width="400" height="600" alt="Emergent Strategy, by Adrienne Maree Brown" loading="lazy" decoding="async" />
         </a>
         <p class="title">Emergent Strategy</p>
     </div>
@@ -216,25 +216,25 @@ I [continued my trend](/posts/essays/dialectical-ecology) of exploring the confl
 <section class="book-list | responsive-grid">
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recLhQzLKlAoe2yaR">
-            <img src="../../../img/posts/kazantzakis-fratricides-regular.webp" width="400" height="600" alt="The Fratricides, by Nikos Kazantzakis" loading="lazy" decoding="async" />
+            <img src="/img/posts/kazantzakis-fratricides-regular.webp" width="400" height="600" alt="The Fratricides, by Nikos Kazantzakis" loading="lazy" decoding="async" />
         </a>
         <p class="title">The Fratricides</p>
     </div>
     <div>
         <a class="img-link" href="#existentialist-%2F-absurdist-%2F-postmodernist-fiction">
-            <img src="../../../img/posts/kazantzakis-christ-recrucified-regular.webp" width="400" height="600" alt="Christ Recrucified, by Nikos Kazantzakis" loading="lazy" decoding="async" />
+            <img src="/img/posts/kazantzakis-christ-recrucified-regular.webp" width="400" height="600" alt="Christ Recrucified, by Nikos Kazantzakis" loading="lazy" decoding="async" />
         </a>
         <p class="title">Christ Recrucified</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recanTI1sjRPkz90L">
-            <img src="../../../img/posts/reading-by-night-in-chile-regular.webp" width="400" height="600" alt="By Night in Chile, by Roberto Bolaño" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-by-night-in-chile-regular.webp" width="400" height="600" alt="By Night in Chile, by Roberto Bolaño" loading="lazy" decoding="async" />
         </a>
         <p class="title">By Night in Chile</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recsosidIO4CbTgKD">
-            <img src="../../../img/posts/reading-satantango-regular.webp" width="400" height="600" alt="Satantango, by László Krasznahorkai" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-satantango-regular.webp" width="400" height="600" alt="Satantango, by László Krasznahorkai" loading="lazy" decoding="async" />
         </a>
         <p class="title">Satantango</p>
     </div>
@@ -249,31 +249,31 @@ Finally, these are good books I read that I have less to say about/didn't finish
 <section class="book-list | responsive-grid">
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recf9T26GJV7ffgkt">
-            <img src="../../../img/posts/reading-matrix-regular.webp" width="400" height="600" alt="Matrix, by Lauren Groff" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-matrix-regular.webp" width="400" height="600" alt="Matrix, by Lauren Groff" loading="lazy" decoding="async" />
         </a>
         <p class="title">Matrix</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/reca8Oh0FrFZhEBmM">
-            <img src="../../../img/posts/reading-parables-as-subversive-regular.webp" width="400" height="600" alt="Parables as Subversive Speech, by William R. Herzog II" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-parables-as-subversive-regular.webp" width="400" height="600" alt="Parables as Subversive Speech, by William R. Herzog II" loading="lazy" decoding="async" />
         </a>
         <p class="title">Parables as Subversive Speech</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/rec4IMevnkKxUOYVh">
-            <img src="../../../img/posts/reading-tao-te-ching-regular.webp" width="400" height="600" alt="Tao Te Ching, translated by Stephen Mitchell" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-tao-te-ching-regular.webp" width="400" height="600" alt="Tao Te Ching, translated by Stephen Mitchell" loading="lazy" decoding="async" />
         </a>
         <p class="title">Tao Te Ching</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/reckBMw4BwcAo6h6N">
-            <img src="../../../img/posts/reading-reaganland-regular.webp" width="400" height="600" alt="Reaganland, by Rick Perlstein" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-reaganland-regular.webp" width="400" height="600" alt="Reaganland, by Rick Perlstein" loading="lazy" decoding="async" />
         </a>
         <p class="title">Reaganland</p>
     </div>
     <div>
         <a class="img-link" href="https://long-wasp-15.deno.dev/books/recj5EmkYO5Fie5XG">
-            <img src="../../../img/posts/reading-postcapitalist-desire-regular.webp" width="400" height="600" alt="Postcapitalist Desire, by Mark Fisher" loading="lazy" decoding="async" />
+            <img src="/img/posts/reading-postcapitalist-desire-regular.webp" width="400" height="600" alt="Postcapitalist Desire, by Mark Fisher" loading="lazy" decoding="async" />
         </a>
         <p class="title">Postcapitalist Desire</p>
     </div>

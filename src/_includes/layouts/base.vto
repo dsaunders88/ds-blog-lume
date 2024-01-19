@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title }}</title>
+    {{ if it.docTitle }}
+    <title>{{ docTitle }}</title>
+    {{ else }}
+    <title>{{ title |> capitalizeFirst }} • {{ metas.site }}</title>
+    {{ /if }}
     <link
       rel="preload"
       href="/fonts/Brix-Sans-Web-Regular.woff2"

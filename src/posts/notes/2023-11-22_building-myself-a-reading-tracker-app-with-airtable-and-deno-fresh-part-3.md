@@ -27,7 +27,7 @@ Before I jump into the background and details of the implementation, here is an 
 **Check out the [working model of the site here](https://long-wasp-15.deno.dev/)!** (Caveat: this is a work-in-progress and may be buggy, and, because I'm lazy, is not currently optimized for small screen sizes. But I hope it's interesting to peruse!)
 
 <figure>
-    <img src="../../../img/posts/reading-app-shelves-regular.webp" alt="A view of the reading tracker shelves page, showing the Fiction shelf with titles like '2312', 'At the Mountains of Madness', and 'Blue Mars', and the German Literature shelf, showing titles like 'Atheism in Christinaity', 'Doctor Faustus', and 'On Marx'." width="600" loading="lazy" decoding="async" />
+    <img src="/img/posts/reading-app-shelves-regular.webp" alt="A view of the reading tracker shelves page, showing the Fiction shelf with titles like '2312', 'At the Mountains of Madness', and 'Blue Mars', and the German Literature shelf, showing titles like 'Atheism in Christinaity', 'Doctor Faustus', and 'On Marx'." width="600" loading="lazy" decoding="async" />
 </figure>
 
 ## Design

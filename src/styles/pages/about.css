@@ -61,3 +61,11 @@
     }
   }
 }
+
+@container contentWrapper (max-width: 768px) {
+  :is(.about, .links) {
+    & .has-sidebar {
+      --sidebar-gap: var(--space-m);
+    }
+  }
+}

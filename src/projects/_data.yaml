@@ -1,2 +1,6 @@
 layout: layouts/project.vto
 type: projects
+metas:
+  title: "=title"
+  description: "=summary"
+  # image: "$ .featured-img"
