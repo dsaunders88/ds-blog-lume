@@ -53,7 +53,7 @@ const site = lume(
   { markdown }
 );
 
-site.copy("static", ".").copy("_redirects");
+site.copy("static", ".");
 site.use(toc()); // Markdown plugin
 site.use(footnotes()); // Markdown plugin
 site.use(jsx()); // Required for MDX
