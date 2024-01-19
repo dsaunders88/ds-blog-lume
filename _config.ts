@@ -45,7 +45,13 @@ const markdown = {
   },
 };
 
-const site = lume({ src: "./src" }, { markdown });
+const site = lume(
+  {
+    src: "./src",
+    location: new URL("https://daniel-saunders.com"),
+  },
+  { markdown }
+);
 
 site.copy("static", ".").copy("_redirects");
 site.use(toc()); // Markdown plugin

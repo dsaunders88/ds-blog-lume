@@ -38,6 +38,7 @@ router.get("/api/interests", (ctx) => {
 
 router.redirect("/now", "/about");
 router.redirect("/writing", "/posts");
+router.redirect("/posts/1", "/posts");
 router.redirect(
   "/2021/07/20/tricontinental-conference-and-liberationist-christianity",
   "/posts/essays/the-tricontinental-conference-and-latin-american-liberationist-christianity"
@@ -50,6 +51,17 @@ router.redirect(
   "/2021/04/16/ideology-fetishism-apophaticism-marxist-criticism-and-christianity",
   "/posts/essays/ideology-fetishism-apophaticism-marxist-criticism-and-christianity"
 );
+router.redirect("/tag/capitalism", "/tag/theory");
+router.redirect("/tag/socialism", "/tag/theory");
+router.redirect("/tag/2015", "/posts/archive");
+router.redirect("/tag/2016", "/posts/archive");
+router.redirect("/tag/2017", "/posts/archive");
+router.redirect("/tag/2018", "/posts/archive");
+router.redirect("/tag/2019", "/posts/archive");
+router.redirect("/tag/2020", "/posts/archive");
+router.redirect("/tag/2021", "/posts/archive");
+router.redirect("/tag/2022", "/posts/archive");
+router.redirect("/tag/2023", "/posts/archive");
 // router.get("/api/thoughts", (ctx) => {
 //   ctx.response.body = thoughtResponse(thoughtsList);
 // });
