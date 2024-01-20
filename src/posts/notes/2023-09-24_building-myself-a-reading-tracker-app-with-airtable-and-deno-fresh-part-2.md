@@ -9,6 +9,8 @@ tags:
   - design
   - reading
   - web development
+metas:
+  image: /img/posts/reading-tracker-post-2-large.webp
 ---
 
 As is evident from this blog, I’m a big fan of Airtable, and so as I set out to build myself a custom reading tracker, it was naturally my first choice for a hybrid back-end/administrative interface to use for [a custom reading tracker](/posts/notes/building-myself-a-reading-tracker-app-with-airtable-and-deno-fresh-part-1).

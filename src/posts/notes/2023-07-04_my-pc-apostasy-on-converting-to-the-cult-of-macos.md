@@ -9,6 +9,8 @@ archiveYear: 2023
 tags:
   - design
   - web development
+metas:
+  image: /img/posts/trent-featured-large.webp
 ---
 
 It finally came to pass—I am now the owner of an Apple product (an insanely performant, M2-chipped MacBook Pro) for the first time in almost two decades, when the iPod Classic brought my massive library of crappy Green Day and Metallica mp3s to the palm of my hand.

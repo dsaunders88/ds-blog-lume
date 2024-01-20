@@ -9,6 +9,8 @@ tags:
   - design
   - reading
   - web development
+metas:
+  image: /img/posts/reading-tracker-post-1-large.webp
 ---
 
 I’m a bit of a fanatic when it comes to my library of books. When I’m not reading, I’m obsessing over which editions are the best, what shelf organization method to employ on any given week, and how I can best keep track of what I read.

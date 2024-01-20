@@ -11,6 +11,8 @@ tags:
   - religion
   - reading
   - politics
+metas:
+  image: /img/posts/jubilee-large.webp
 ---
 
 _Can’t Pay, Won’t Pay: The Case for Economic Disobedience and Debt Abolition_ is an excellent new book from Haymarket that I have reviewed for _The Bias_ magazine.

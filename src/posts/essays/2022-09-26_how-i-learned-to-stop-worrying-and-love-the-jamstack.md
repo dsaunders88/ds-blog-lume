@@ -9,6 +9,8 @@ summary: How I came to build (a previous version of) this site on the Jamstack.
 archiveYear: 2022
 tags:
   - web development
+metas:
+  image: /img/posts/html-workshop-large.webp
 ---
 
 Since I started coding in earnest at the end of 2021, I've used this website as a testing ground for many of the tools I've encountered on an almost weekly basis. It's become a living embodiment of my long, exasperating, but genuinely exciting journey into front-end web development.

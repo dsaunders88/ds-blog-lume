@@ -12,6 +12,8 @@ tags:
   - religion
   - politics
   - philosophy
+metas:
+  image: /img/posts/kazantzakis-featured-large.webp
 ---
 
 Few atheists have been as Christ-haunted as Nikos Kazantzakis (1883–1957), the Greek writer perhaps best known as the author of _Zorba the Greek_ and _The Last Temptation of Christ_.

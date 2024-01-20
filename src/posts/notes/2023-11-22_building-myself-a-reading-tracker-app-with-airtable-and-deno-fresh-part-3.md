@@ -9,6 +9,8 @@ tags:
   - design
   - reading
   - web development
+metas:
+  image: /img/posts/reading-tracker-post-3-large.webp
 ---
 
 In [my last post](/posts/notes/building-myself-a-reading-tracker-app-with-airtable-and-deno-fresh-part-2), I looked at how to use Airtable to build out a back-end database for a reading tracker app. That works perfectly on its own to manage my reading data, but let's face it—I want to be able to show off this data, too. This is where Deno Fresh comes in as a framework to render my reading data in a dynamic website.

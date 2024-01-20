@@ -11,6 +11,8 @@ tags:
   - religion
   - theory
   - reading
+metas:
+  image: /img/posts/capitalist-pyramid-large.webp
 ---
 
 Max Weber famously argued for an “elective affinity” between a Calvinist work ethic and the economic requirements of industrial capitalism. In its insistence on secularized vocation and deferment of worldly pleasure, according to Weber, the Protestant work ethic gave religious sanction to certain kinds of economic activity, namely, the reinvestment of wealth as capital to build society’s productive forces.

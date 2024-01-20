@@ -13,6 +13,8 @@ tags:
   - theory
   - reading
   - science
+metas:
+  image: /img/posts/koyaanisqatsi-power-large.webp
 ---
 
 “If we dig precious things from the land, we will invite disaster.” Thus reads one of the Hopi prophecies which echo throughout Philip Glass’s [haunting soundtrack](https://youtu.be/OacVy8_nJi0) for _Koyaanisqatsi_ (1982).

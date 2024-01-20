@@ -10,6 +10,8 @@ tags:
   - religion
   - politics
   - reading
+metas:
+  image: /img/posts/francis-of-assisi-large.webp
 ---
 
 “In the person of Francis the premodern world, so to speak, gathered itself together before coming to an end. For one last time, before the forces of progress thundered off on their triumphant path, one man looked into the motivating thrust behind the whole thing and decisively rejected it: Francis of Assisi, the last Christian.”

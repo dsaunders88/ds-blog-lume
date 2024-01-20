@@ -10,6 +10,8 @@ archiveYear: 2017
 tags:
   - philosophy
   - reading
+metas:
+  image: /img/posts/wander-above-the-sea-of-fog-large.webp
 ---
 
 Walking is a mode of living that embraces freedom, but this freedom is of a vastly different sort than that offered by the plethora of choices and dependencies that entangle us in the web of our consumerist lives.

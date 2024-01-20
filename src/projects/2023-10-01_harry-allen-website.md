@@ -1,5 +1,6 @@
 ---
 title: Consulting Website
+docTitle: Harry Allen Consulting Website • Daniel Saunders
 image:
   src: harry-allen-featured
   alt: Home screen of Harry Allen Environmental Consulting. A color scheme of greens of oranges, and a main heading that says "Restoring and reclaiming our world."
@@ -18,6 +19,8 @@ tools:
   - Astro
   - Sanity
   - GSAP
+metas:
+  image: /img/projects/harry-allen-featured-large.webp
 ---
 
 Harry Allen is a seasoned environmental scientist with an extensive background in government agency work, teaching, and research (he's also a good musician; we sing together in choir). He came to me wanting a website that would serve as both a marketing platform for his independent consulting business and as a knowledge platform for sharing his wealth of articles, research, and insights on highly relevant issues relating to climate change and environmental restoration work. The end goal is a combination high-powered blog and marketing site geared toward Harry's unique expertise.

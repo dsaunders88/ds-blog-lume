@@ -9,6 +9,8 @@ archiveYear: 2021
 tags:
   - religion
   - theory
+metas:
+  image: /img/posts/jesus-moneychangers-large.webp
 ---
 
 I am very pleased to share my first article published in an academic journal, “Ideology, Fetishism, Apophaticism: Marxist Criticism and Christianity,” which is out in the Dominican journal _New Blackfriars_.

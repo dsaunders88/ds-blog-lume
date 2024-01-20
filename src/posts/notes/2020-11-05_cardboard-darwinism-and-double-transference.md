@@ -11,6 +11,8 @@ tags:
   - reading
   - science
   - politics
+metas:
+  image: /img/posts/stephen-jay-gould-large.webp
 ---
 
 “Cardboard Darwinism,” writes biologist Stephen Jay Gould in an essay of the same name, “is a reductionist, one-way theory about the grafting of information from environment upon organism,” or what amounts to a form of biological determinism.

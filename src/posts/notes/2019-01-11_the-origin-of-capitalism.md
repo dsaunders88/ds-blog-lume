@@ -11,6 +11,8 @@ tags:
   - theory
   - history
   - reading
+metas:
+  image: /img/posts/reeve_and_serfs-large.webp
 ---
 
 There is a story told about capitalism—mostly by its proponents: classical liberals, American conservatives, libertarians, and the like; but also sometimes inadvertently by its Marxist critics—that sees this system as synonymous with human nature in all times and all places, as the innate propensity of the human species to “truck, barter, and exchange,” in the words of one of its most famous theorists, Adam Smith.

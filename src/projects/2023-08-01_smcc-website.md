@@ -1,5 +1,6 @@
 ---
 title: Content Website
+docTitle: San Marino Community Church Content Website • Daniel Saunders
 image:
   src: smcc-featured
   alt: Laptop and mobile screen views of San Marino Community Church, evincing a color palette of dark blues, oranges, and greens.
@@ -19,7 +20,9 @@ tools:
   - Astro
   - Sanity
   - Svelte
-link: https://sanmarinocommunitychurch.com/
+link: https://sanmarinocommunitychurch.com
+metas:
+  image: /img/projects/smcc-featured-large.webp
 ---
 
 San Marino Community Church had an outdated website on a private third-party platform, which made for difficulties in content customization and editing. The leadership team also felt that the site did not capture the spirit of the community, offerings, and life of the church. This presented an opportunity not only to rebrand the look and feel of the site, but to develop a customized content management solution that would meet the needs of this growing church community.

@@ -11,6 +11,8 @@ tags:
   - history
   - politics
   - reading
+metas:
+  image: /img/posts/italy_1494_shepherd-large.webp
 ---
 
 It existed once before the nineteenth century, briefly, as part of the vast imperial structure of the Roman Empire. Before that it had been a vague idea from myth; later it was a clearer hope of statesmen and romantics, but still mostly unattainable and undesirable.

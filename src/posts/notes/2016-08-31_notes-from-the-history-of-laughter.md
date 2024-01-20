@@ -11,6 +11,8 @@ tags:
   - theory
   - reading
   - literature
+metas:
+  image: /img/posts/feastoffools-large.webp
 ---
 
 In [_Rabelais and His World_](https://books.google.com/books?id=SkswFyhqRIMC), the Russian critic Mikhail Bakhtin argues that Rabelais is the culminating literary expression of the carnival or grotesque idiom of folk humor, an idiom which had developed for over a thousand years (starting with the Roman Saturnalia) as an “unofficial” or subversive culture in the West, complete with its own rites, rules, and symbols.

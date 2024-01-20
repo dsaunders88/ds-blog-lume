@@ -10,6 +10,8 @@ archiveYear: 2022
 tags:
   - reading
   - literature
+metas:
+  image: /img/posts/dante-large.webp
 ---
 
 While my “books to read” list seems to grow ever greater than my “books finished” list, this year I still managed to complete some books that have been sitting on my shelf for a while. I also fell in love again with some old favorites and discovered some gems that had not been on my radar before.

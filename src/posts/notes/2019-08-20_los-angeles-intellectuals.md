@@ -10,6 +10,8 @@ tags:
   - reading
   - theory
   - politics
+metas:
+  image: /img/posts/city-of-quartz-large.webp
 ---
 
 As a guide to understanding the cultural mythology and socio-geographical history of the singular American city that represents both “the utopia and dystopia for advanced capitalism,” there is none more incisive than Mike Davis’ _City of Quartz_, a tour de force which offers perhaps the definitive account of the land “[south of the Tehachapis](https://www.zocalopublicsquare.org/2016/02/11/meet-the-toughest-mountains-in-california/ideas/connecting-california)” even 30 years after its first printing.

@@ -10,6 +10,8 @@ archiveYear: 2017
 tags:
   - philosophy
   - film
+metas:
+  image: /img/posts/eraserhead-large.webp
 ---
 
 The cinema of David Lynch, true to the spirit of its Surrealist predecessors in art and film, has always resisted conventional characterization or description.

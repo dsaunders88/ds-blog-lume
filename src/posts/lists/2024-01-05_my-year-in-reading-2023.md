@@ -10,6 +10,8 @@ archiveYear: 2024
 tags:
   - reading
   - literature
+metas:
+  image: /img/posts/reading-saint-large.webp
 ---
 
 This year I devoted almost as much time to building a [custom reading tracker app](/posts/notes/building-myself-a-reading-tracker-app-with-airtable-and-deno-fresh-part-1) as I did to reading, but I’m still pleased with the quantity and quality of what I read.

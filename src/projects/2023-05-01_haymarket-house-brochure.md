@@ -1,5 +1,6 @@
 ---
 title: Marketing Campaign
+docTitle: Haymarket Books Marketing Campaign • Daniel Saunders
 image:
   src: haymarket-house-social
   alt: A collage of many colors and images of community organizing and activism, with the main heading "A gathering place for change makers."
@@ -18,6 +19,8 @@ tools:
   - Photoshop
   - WordPress
 link: https://www.haymarkethouse.org/sustain
+metas:
+  image: /img/projects/haymarket-house-social-large.webp
 ---
 
 It was a thrill to get to work on this project with [Haymarket Books](https://www.haymarketbooks.org/), a radical Chicago publisher whose books take up about half of my shelves. In an effort to raise the visibility of and donor base for "Haymarket House," a community organizing and event space on the north side of Chicago, we developed a snazzy gate-fold brochure and associated digital marketing materials. For the launch of the campaign, I also developed a branded WordPress page with custom HTML/CSS for the house's website.

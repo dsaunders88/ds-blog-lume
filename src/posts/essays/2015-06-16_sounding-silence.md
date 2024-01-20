@@ -10,6 +10,8 @@ tags:
   - music
   - religion
   - reading
+metas:
+  image: /img/posts/arvo-part-large.webp
 ---
 
 It was the moment of the concert program that we all anticipated, one that would be sure to transfix the audience—the moment our college choir, each night on a trip through Europe, would sing Arvo Pärt’s radiant _Magnificat_ (1989).

@@ -7,6 +7,8 @@ summary: Choosing the right typeface for a website or project is an inexact scie
 archiveYear: 2023
 tags:
   - design
+metas:
+  image: /img/posts/brix-sans-featured-large.webp
 ---
 
 Choosing the right typeface for a website or project is an inexact science that often seems wholly subjective or arbitrary. For me, it’s a mostly intuitive process that involves a lot of trial and error. But sometimes things just click.

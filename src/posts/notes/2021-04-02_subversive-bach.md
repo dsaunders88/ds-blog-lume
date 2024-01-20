@@ -11,6 +11,8 @@ tags:
   - religion
   - music
   - reading
+metas:
+  image: /img/posts/leipzig_nikolaikirche-large.webp
 ---
 
 “Ruht wohl, ihr heiligen Gebeine” is the magisterial concluding chorus to Bach’s _Johannes-Passion_.

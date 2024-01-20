@@ -11,6 +11,8 @@ tags:
   - reading
   - theory
   - philosophy
+metas:
+  image: /img/posts/bonaventure-featured-large.webp
 ---
 
 What is postmodernism? By now, we all know that we're in it and that there's no getting out of it—even if, like all periods as they're being experienced, we can't exactly define it from the inside, without the benefit of hindsight (nor can we tell if we haven't indeed progressed to something beyond, like "post-postmodernism").

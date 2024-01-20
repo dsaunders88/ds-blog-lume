@@ -12,6 +12,8 @@ tags:
   - history
   - politics
   - theory
+metas:
+  image: /img/posts/new-planet-yuon-large.webp
 ---
 
 _The Russian Revolution: A View from the Third World_ (Verso, 2018) compiles a series of lectures given by Walter Rodney, the black Guyanese radical, at the University of Dar es Salaam in Tanzania.

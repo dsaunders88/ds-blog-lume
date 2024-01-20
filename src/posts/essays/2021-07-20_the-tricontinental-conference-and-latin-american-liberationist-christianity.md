@@ -10,6 +10,8 @@ archiveYear: 2021
 tags:
   - religion
   - history
+metas:
+  image: /img/posts/mederos-nixon-indochina-large.webp
 ---
 
 I am presenting a working paper at the Toronto Christian Left Conference (July 23-24), whose theme is _Rethinking the Christian Left from the Belly of Empire: Charting New Paths Beyond Colonization_.

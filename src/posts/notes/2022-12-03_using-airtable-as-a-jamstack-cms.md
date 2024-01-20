@@ -8,6 +8,8 @@ archiveYear: 2022
 tags:
   - design
   - web development
+metas:
+  image: /img/posts/airtable-jamstack-featured-large.webp
 ---
 
 Recently, I designed and built a personal portfolio site for a musician and composer ([check it out here!](https://alexanderlblake.com)). As a small "marketing" site, it was the perfect Jamstack project, and for that reason I used the phenomenal [Astro static site generator](https://astro.build) while pulling in some [Headless UI components](https://headlessui.com) for minimal interactivity.

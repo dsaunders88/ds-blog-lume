@@ -11,6 +11,8 @@ tags:
   - politics
   - theory
   - reading
+metas:
+  image: /img/posts/worship-of-mammon-large.webp
 ---
 
 I had the privilege of reviewing Hadas Thier’s new book, _A People’s Guide to Capitalism: An Introduction to Marxist Economics_ (Haymarket), for _The Bias_ magazine.

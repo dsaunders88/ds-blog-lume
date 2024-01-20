@@ -11,6 +11,8 @@ tags:
   - history
   - politics
   - reading
+metas:
+  image: /img/posts/soviet-emblem-large.webp
 ---
 
 Eric J. Hobsbawm’s _The Age of Extremes_ (1994) stands unequaled as a penetrating history of the “Short Twentieth Century”—the designation he gives the period from the First World War (itself the traumatic end of the “Long Nineteenth Century” of liberal progress) to the end of “really existing socialism” in the early 1990s.

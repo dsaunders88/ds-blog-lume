@@ -12,6 +12,8 @@ tags:
   - politics
   - religion
   - reading
+metas:
+  image: /img/posts/marx-engels-berlin-3d-large.webp
 ---
 
 Terry Eagleton’s witty _Why Marx Was Right_ might more accurately be called something like: _Marxism Is Not What Most People (viz. Those Who Have Strong Opinions on Marx but Have Probably Never Read Him) Think It Is_.

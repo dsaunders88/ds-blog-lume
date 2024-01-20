@@ -11,6 +11,8 @@ tags:
   - reading
   - history
   - politics
+metas:
+  image: /img/posts/red-star-large.webp
 ---
 
 Vijay Prashad’s _Red Star Over the Third World_ is an explosive little book that admirably conveys the profound impact of the October Revolution and its continued influence for communist movements in the Third World—with a focus here on Asia, the Middle East, and Latin America.

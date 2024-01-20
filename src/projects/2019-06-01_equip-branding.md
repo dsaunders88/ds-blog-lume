@@ -1,5 +1,6 @@
 ---
 title: Branding & Small Business Website
+docTitle: Equip Branding & Small Business Website • Daniel Saunders
 image:
   src: equip-web
   alt: Home screen of Equip website. A color scheme of gradient greens and brown, and a main heading that says "Skills and guidance to help him succeed."
@@ -17,7 +18,9 @@ tools:
   - Figma
   - Illustrator
   - Webflow
-link: https://www.equippsychology.com/
+link: https://www.equippsychology.com
+metas:
+  image: /img/projects/equip-web-large.webp
 ---
 
 Equip began as two psychologists planning to start a new, collaborative counseling service focused on providing therapy for boys and men. When they initially contacted me, they were looking to build a comprehensive brand from the ground up to accompany their new venture—from a logo and marketing materials to a fully customized website.

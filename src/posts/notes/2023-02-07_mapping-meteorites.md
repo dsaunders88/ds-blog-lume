@@ -8,6 +8,8 @@ archiveYear: 2023
 tags:
   - design
   - web development
+metas:
+  image: /img/posts/meteorite-map-2-featured-large.webp
 ---
 
 I’ve been playing around with the Mapbox GL mapping library, both as a way to practice my JavaScript and because maps are just dang cool. Building a complex map can be a little bit of a learning curve, but with the help of some examples, I was able to create a few that I think are pretty interesting.
