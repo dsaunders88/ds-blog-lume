@@ -3,7 +3,7 @@ title: Branding & Small Business Website
 docTitle: Equip Branding & Small Business Website • Daniel Saunders
 image:
   src: equip-web
-  alt: Home screen of Equip website. A color scheme of gradient greens and brown, and a main heading that says "Skills and guidance to help him succeed."
+  alt: "Home screen of Equip website. A color scheme of gradient greens and brown, and a main heading that says 'Skills and guidance to help him succeed.'"
 summary: Creating a small business’ identity and online presence from the ground up.
 client: Equip Psychology
 tags:

@@ -3,7 +3,7 @@ title: Marketing Campaign
 docTitle: Haymarket Books Marketing Campaign • Daniel Saunders
 image:
   src: haymarket-house-social
-  alt: A collage of many colors and images of community organizing and activism, with the main heading "A gathering place for change makers."
+  alt: "A collage of many colors and images of community organizing and activism, with the main heading 'A gathering place for change makers.'"
 summary: Spreading the word about a radical book publisher’s vibrant community space.
 client: Haymarket Books
 tags:
