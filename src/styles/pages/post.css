@@ -238,6 +238,32 @@ article {
   }
 }
 
+/* For post /posts/notes/new-site-design-for-2024 */
+#color-schemes {
+  --item-min-width: 6rem;
+  margin-top: var(--element-spacing);
+
+  & > * {
+    align-items: center;
+    text-align: center;
+    position: relative;
+    gap: 0.75rem;
+
+    &:hover::before {
+      background-color: color-mix(in srgb, var(--circle-color), black 15%);
+    }
+
+    &::before {
+      content: "";
+      position: relative;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: var(--circle-color);
+      border-radius: 999px;
+    }
+  }
+}
+
 /* @media (max-width: 999px) {
   .mobile-toc {
     display: block;

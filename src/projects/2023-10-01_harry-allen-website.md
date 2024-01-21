@@ -27,7 +27,7 @@ Harry Allen is a seasoned environmental scientist with an extensive background i
 
 ![alt](/img/projects/harry-allen-services-regular.webp)
 
-For the visual design, we chose a primary palette of oranges and greens, which signal both the boldness of environmental action and the beauty and resilience of our living planet, enhanced by vibrant complementary colors. The [Astro web framework](https://astro.build/), which positions itself as an ideal framework for building for content-focused websites, fit the bill perfectly for the development build of this project. Paired with the [Sanity](https://www.sanity.io/) headless CMS platform, the site delivers a fast, SEO-friendly experience with content that is a breeze to update and manage.
+For the visual design, we chose a primary palette of oranges and greens, which signal both the boldness of environmental action and the beauty and resilience of our living planet, enhanced by vibrant complementary colors. The [Astro web framework](https://astro.build/), which positions itself as an ideal framework for building content-focused websites, fit the bill perfectly for the development build of this project. Paired with the [Sanity](https://www.sanity.io/) headless CMS platform, the site delivers a fast, SEO-friendly experience with content that is a breeze to update and manage.
 
 ![alt](/img/projects/harry-allen-resources-regular.webp)
 

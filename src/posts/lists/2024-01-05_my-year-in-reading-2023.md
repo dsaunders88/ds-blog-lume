@@ -248,4 +248,4 @@ These books embody the essence of radicalism—whether literary, spiritual, poli
 
 Check out my Airtable table below for the full list:
 
-<iframe title="Airtable 2023 Reading Activity interactive table" class="airtable-embed" src="https://airtable.com/embed/appYm5Ud471pJY0w8/shrTXKCHbFSQIGfhC?backgroundColor=purpleDusty&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+<iframe loading="lazy" title="Airtable 2023 Reading Activity interactive table" class="airtable-embed" src="https://airtable.com/embed/appYm5Ud471pJY0w8/shrTXKCHbFSQIGfhC?backgroundColor=purpleDusty&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
