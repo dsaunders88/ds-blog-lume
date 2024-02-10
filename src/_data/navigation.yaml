@@ -25,9 +25,6 @@ subfooter:
     path: "/projects.rss"
   - name: Sitemap
     path: /sitemap.xml
-  - name: Web Studio
-    path: https://www.ds-design.xyz
-    external: true
   - name: View Source Code
-    path: https://github.com/dsaunders88/ds-blog-lume
+    path: https://github.com/HappyStinson/nordling.xyz
     external: true

@@ -1,6 +1,5 @@
 import { load } from "https://deno.land/std@0.202.0/dotenv/mod.ts";
 await load({ export: true });
-// const apiToken = env["FATHOM_ACCESS_TOKEN"];
 const apiToken = Deno.env.get("FATHOM_ACCESS_TOKEN");
 
 function threeMonthsAgo() {
@@ -9,6 +8,7 @@ function threeMonthsAgo() {
   return new Date(now - threeMonths).toISOString();
 }
 
+// Seems broken. SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
 async function _getFathomData() {
   const url = "https://api.usefathom.com/v1/aggregations";
   const filters = [
@@ -56,18 +56,18 @@ async function _getFathomData() {
 }
 
 let trendingPosts = null; //await getFathomData();
-// console.log(trendingPosts);
 
+// Manually set 3 trending posts
 if (!trendingPosts) {
   trendingPosts = [
-    { pathname: "/posts/notes/using-airtable-as-a-jamstack-cms/" },
     {
-      pathname:
-        "/posts/notes/building-myself-a-reading-tracker-app-with-airtable-and-deno-fresh-part-2/",
+      pathname: "/posts/notes/new-site-design-for-2024/"
     },
     {
-      pathname:
-        "/posts/notes/building-myself-a-reading-tracker-app-with-airtable-and-deno-fresh-part-1/",
+      pathname: "/posts/notes/new-site-design-for-2024/",
+    },
+    {
+      pathname: "/posts/notes/new-site-design-for-2024/",
     },
   ];
 }
