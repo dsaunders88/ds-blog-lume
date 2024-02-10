@@ -1,6 +1,10 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0cd9f528-2678-4158-9791-92ee95344ba1/deploy-status)](https://app.netlify.com/sites/denoblog/deploys)
+
 # About
 
-My personal site featuring essays, notes, and selected design and development projects.
+My personal site featuring a blog, about page, and projects page.
+
+It's time to replace my [old Jekyll site](https://github.com/HappyStinson/rasmusnordling.se) with something modern.
 
 - Built with [Deno Lume](https://lume.land/), using [Vento](https://vento.js.org/) templates
 - Styled with vanilla CSS, optimized with [LightningCSS](https://lightningcss.dev/docs.html)
@@ -10,5 +14,5 @@ My personal site featuring essays, notes, and selected design and development pr
 - Privacy-focused analytics with [Fathom](https://usefathom.com/)
 - Content authored in Markdown
 - [Iconic](https://iconic.app/) icons
-- Deployed on [Deno Deploy](https://deno.com/deploy)
+- Deployed on [Netlify](https://www.netlify.com/)
 - Average Lighthouse score: 💯 💯 💯 💯
