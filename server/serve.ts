@@ -1,6 +1,6 @@
 import { Application, Router } from "https://deno.land/x/oak@v10.2.0/mod.ts";
 import { list as thoughtsList } from "../src/_data/thoughts.js";
-import { albums } from "../src/_data/music.js";
+// import { albums } from "../src/_data/music.js";
 import { list as toolsList } from "../src/_data/tools.js";
 
 const app = new Application();
@@ -24,7 +24,7 @@ function getRandom(array) {
 
 function htmxResponse() {
   const randomThought = getRandom(thoughtsList);
-  const randomAlbum = getRandom(albums);
+  // const randomAlbum = getRandom(albums);
   const randomTool = getRandom(toolsList);
   return `<p id="thoughts" class="animate-response">${randomThought}</p><p id="albums" hx-swap-oob="true" class="animate-response"><span class="cluster"><a class="external-link" href="${randomAlbum.url}" target="_blank">${randomAlbum.name}</a><svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 15.25V6.75H8.75"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 7L6.75 17.25"></path></svg></span>, by ${randomAlbum.artist}</p><p id="tools" hx-swap-oob="true" class="animate-response"><span class="cluster"><a class="external-link" href="${randomTool.url}" target="_blank">${randomTool.name}</a><svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 15.25V6.75H8.75"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 7L6.75 17.25"></path></svg></span></p>`;
 }

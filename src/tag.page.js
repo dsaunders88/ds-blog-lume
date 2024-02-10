@@ -11,7 +11,7 @@ export default function* ({ search }) {
       title: `Posts tagged ${tag}`,
       docTitle: `${
         tag.charAt(0).toUpperCase() + tag.slice(1)
-      } Posts • Daniel Saunders`,
+      } Posts • Rasmus Nordling`,
       type: "tag",
       postlist: posts,
       metas: {

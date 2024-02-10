@@ -9,7 +9,7 @@ function threeMonthsAgo() {
   return new Date(now - threeMonths).toISOString();
 }
 
-async function getFathomData() {
+async function _getFathomData() {
   const url = "https://api.usefathom.com/v1/aggregations";
   const filters = [
     { property: "referrer_hostname", operator: "is not", value: "localhost" },
@@ -55,7 +55,7 @@ async function getFathomData() {
   }
 }
 
-let trendingPosts = await getFathomData();
+let trendingPosts = null; //await getFathomData();
 // console.log(trendingPosts);
 
 if (!trendingPosts) {

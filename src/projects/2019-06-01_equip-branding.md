@@ -1,6 +1,6 @@
 ---
 title: Branding & Small Business Website
-docTitle: Equip Branding & Small Business Website • Daniel Saunders
+docTitle: Equip Branding & Small Business Website • Rasmus Nordling
 image:
   src: equip-web
   alt: "Home screen of Equip website. A color scheme of gradient greens and brown, and a main heading that says 'Skills and guidance to help him succeed.'"

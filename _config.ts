@@ -48,7 +48,7 @@ const markdown = {
 const site = lume(
   {
     src: "./src",
-    location: new URL("https://daniel-saunders.com"),
+    location: new URL("https://nordling.xyz"),
   },
   { markdown }
 );
@@ -121,8 +121,8 @@ site.use(
     output: ["/posts.rss"],
     query: "type=posts",
     info: {
-      title: "Daniel Saunders | Posts",
-      description: "Essays, notes, and lists by Daniel Saunders.",
+      title: "Rasmus Nordling | Posts",
+      description: "Essays, notes, and lists by Rasmus Nordling.",
       lang: "en",
     },
     items: {
@@ -138,8 +138,8 @@ site.use(
     output: ["/projects.rss"],
     query: "type=projects",
     info: {
-      title: "Daniel Saunders | Projects",
-      description: "Design and development projects by Daniel Saunders.",
+      title: "Rasmus Nordling | Projects",
+      description: "Design and development projects by Rasmus Nordling.",
       lang: "en",
     },
     items: {

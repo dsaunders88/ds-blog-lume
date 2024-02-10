@@ -1,6 +1,6 @@
 ---
 title: Consulting Website
-docTitle: Harry Allen Consulting Website • Daniel Saunders
+docTitle: Harry Allen Consulting Website • Rasmus Nordling
 image:
   src: harry-allen-featured
   alt: "Home screen of Harry Allen Environmental Consulting. A color scheme of greens of oranges, and a main heading that says 'Restoring and reclaiming our world.'"

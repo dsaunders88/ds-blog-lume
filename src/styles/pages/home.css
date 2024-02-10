@@ -33,12 +33,6 @@ main {
       }
     }
   }
-
-  & #books {
-    & footer {
-      border-bottom: unset;
-    }
-  }
 }
 
 /* Avatar animation */

@@ -11,7 +11,7 @@ export default function* ({ search }) {
       title: `${tag}`,
       docTitle: `${
         tag.charAt(0).toUpperCase() + tag.slice(1)
-      } Projects • Daniel Saunders`,
+      } Projects • Rasmus Nordling`,
       type: "tag",
       projectlist: projects,
       metas: {

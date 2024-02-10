@@ -1,6 +1,6 @@
 ---
 title: Marketing Campaign
-docTitle: Haymarket Books Marketing Campaign • Daniel Saunders
+docTitle: Haymarket Books Marketing Campaign • Rasmus Nordling
 image:
   src: haymarket-house-social
   alt: "A collage of many colors and images of community organizing and activism, with the main heading 'A gathering place for change makers.'"

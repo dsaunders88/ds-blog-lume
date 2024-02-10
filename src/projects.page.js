@@ -1,7 +1,7 @@
 export const layout = "layouts/projects.vto";
 export const title = "Featured Projects";
 export const metas = {
-  title: "All Projects • Daniel Saunders",
+  title: "All Projects • Rasmus Nordling",
   description: "A collection of featured design and development projects.",
   // image: "$ img",
 };
