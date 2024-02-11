@@ -2,56 +2,63 @@
 layout: layouts/about.vto
 docTitle: About Rasmus Nordling
 title: About
-image: ds-headshot-new
+image: ras-headshot
 metas:
   title: About Rasmus Nordling • Designer & Developer in LA
   description: I’m Rasmus Nordling, a designer, front-end developer, reader, and writer with a wide range of interests.
 ---
 
-I’m Rasmus Nordling, a designer, front-end developer, reader, and writer with a wide range of interests, as you might have gathered from looking around this site.
+I’m Rasmus Nordling, a programmer, musician, and content creator from Sweden who enjoy most creative endevaours, as you might have gathered from looking around this site.
 
-I've been freelancing for around 8 years, during which time I've worked on many different types of graphic design and web development projects. Check out the [projects page](/projects) for a select recent few that I'm particulary proud of, and take a look at my [web studio site](https://www.ds-design.xyz/) if you're interested in working together!
+Besides writing about my life, I'm also known for playing music and writing [songs](https://soundcloud.com/happystinson/sets/original-songs), making videos for [YouTube](https://youtube.com/@BangersNBiz), improving the world through code, [capturing the moment](https://www.flickr.com/people/ras-nordling/), and challenging my body and mind.
 
-The throughline of this site is a chronicle of many years of transformations and transitions, whether in my thinking about existence, history, religion, design, or the world wide web. What I've learned from using this site as a real-time, sometimes messy space to work out these ideas is that I am someone who wants to explore boundaries, who disdains rigid orthodoxies, and who is always seeking where to enact that modernist injunction to "make it new". Maybe you'll find something here that sparks a feeling of exploration and discovery.
+I also nurture my self-care through meditation, exploring new places, and being present in nature.
 
-Subscribe to this site’s [RSS feed](/posts.rss) or get in touch at [my email](mailto:daniel.thomas.saunders@gmail) if you want to say hello!
+I'm a Libra, [INTP](https://www.mbtionline.com/en-US/MBTI-Types/INTP), and a [Questioner](https://gretchenrubin.com/four-tendencies/).<br />
+I don't like staying in the same place for too long. Right now I'm calling Stockholm home, and here you can see all places [I've lived](/posts/notes/places-ive-lived/).
 
-- Figure out how to add images of me here!
+![Rasmus in 2020](/img/rasmus/rasmus-2020-regular.webp)
 
-## Site Details
+## Dream BIG
 
-- Built with [Deno Lume](https://lume.land/), using [Vento](https://vento.js.org/) templates
-- Styled with vanilla CSS, optimized with [LightningCSS](https://lightningcss.dev/docs.html)
-- (Very minimal) client-side interactivity with vanilla JavaScript and web components
-- Code syntax highlighting with [Highlight.js](https://highlightjs.org/)
-- Client-server interaction with [HTMX](https://htmx.org/) and [Deno Oak](https://deno.land/x/oak@v12.6.2)
-- Privacy-focused analytics with [Fathom](https://usefathom.com/)
-- Content authored in Markdown
-- [Iconic](https://iconic.app/) icons
-- Deployed on [Deno Deploy](https://deno.com/deploy)
-- Average Lighthouse score: 💯 💯 💯 💯
+**On a journey to accomplish my Dreams.**<br />
+This website is all about getting the most out of life. I began sharing my thoughts on achieving goals and life design in October 2016.
 
-### Colophon
+The purpose is to create a layer of accountability and hopefully inspire you to take action in an area where you'd like to see change.
+Perhaps you are just looking for motivation or different ideas and perspectives.
 
-- Headings set in [Fjalla One](https://fonts.google.com/specimen/Fjalla+One)
-- Body set in [Brix Sans](https://www.hvdfonts.com/fonts/brix-sans)
-- Code set in [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+I am doing this partly as a pet project, partly because writing is quite therapeutical. I'm also writing to inspire others to constantly improve their lives and achieving their **BIGGEST** goals and dreams. Nothing is to big, it all starts with a small step. **Today**.
+
+### Site Details
+
+- Forked from [Daniel Saunders'](https://daniel-saunders.com/) website.
+- It is built with modern web technologies such as [Deno Lume](https://lume.land/), using [Vento](https://vento.js.org/) templates. Absolutely no WordPress, lol.
+- The domain name _nordling.xyz_ is registered with [Porkbun](https://porkbun.com/) and I use [Netlify](https://netlify.com/) for deployments and hosting.
+- Everything (including this text) is open source on [GitHub](https://github.com/HappyStinson/nordling.xyz).
 
 ## Uses
 
-- MacBook Pro 14" (M2)
-- Samsung UR55 Series 28" IPS 4K UHD Monitor
-- Audio-Technica ATH-M50x Headphones
-- Keychron V5 QMK Mechanical Keyboard • Mint Switches, Matcha Keycaps
-- Leuchtturm1917 Notebook Planner
+- MacBook Pro 16".
+- Dell 2723QE 27” IPS 4K Monitor.
+- beyerdynamic DT 990 Pro 250 ohms Headphones.
+- HyperX Alloy Origins Mechanical Gaming Keyboard • Red - Linear Switches.
+- Focusrite Scarlett 2i4 Audio Interface.
+- KRK Rokit 5" Studio Monitors.
+- Gibson SG.
+- and a lot more... 😅
 
 ### Software
 
-- VSCode (Monokai Pro Theme) for programming
-- Figma and [Affinity](https://affinity.serif.com/en-us/) for design
-- [iA Writer](https://ia.net/writer) for writing
-- Airtable for project management
-- [Reflect](https://reflect.app/) for note taking
-- Todoist for tasks
-- YouTube Music for listening
-- Proton for email
+- Visual Studio Code for Programming.
+- Logic Pro for Music Production.
+- Final Cut Pro for Video Editing.
+- Canva for Graphics.
+- Todoist for Tasks.
+- Notion for Project Management.
+- Balance and Headspace for Meditation, Mindfulness, and Sleep.
+
+## Favourites
+
+- **Novel**: Stephen King - [The Eyes of the Dragon](https://www.goodreads.com/book/show/10611.The_Eyes_of_the_Dragon).  
+- **Non-fictional book**: James Clear - [Atomic Habits](https://www.goodreads.com/book/show/40121378-atomic-habits).<br />
+- **Music**: [topp 100](https://open.spotify.com/playlist/2iAyT4s1sacVz6mWCn700r?si=415c1be03c70491e).

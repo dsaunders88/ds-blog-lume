@@ -24,7 +24,7 @@ import nav from "lume/plugins/nav.ts";
 import metas from "lume/plugins/metas.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import sourceMaps from "lume/plugins/source_maps.ts";
-// import relative_urls from "lume/plugins/relative_urls.ts";
+import relative_urls from "lume/plugins/relative_urls.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import slugify_urls from "lume/plugins/slugify_urls.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.5.1/toc.ts";
@@ -160,7 +160,7 @@ site.use(mdx());
 site.use(inline());
 site.use(minify_html());
 site.use(nav());
-// site.use(relative_urls());
+site.use(relative_urls());
 site.use(sitemap());
 site.use(sourceMaps());
 site.use(
