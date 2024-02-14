@@ -1,9 +1,27 @@
-import { Application, Router } from "https://deno.land/x/oak@v10.2.0/mod.ts";
+import {
+  Application,
+  Router,
+  Context,
+} from "https://deno.land/x/oak@v10.2.0/mod.ts";
 import { list as thoughtsList } from "../src/_data/thoughts.js";
 import { albums } from "../src/_data/music.js";
 import { list as toolsList } from "../src/_data/tools.js";
+// import { htmxLikes } from "./likes.ts";
+import { resolve } from "https://deno.land/std@0.212.0/path/mod.ts";
+import { getQuery } from "https://deno.land/x/oak@v10.2.0/helpers.ts";
+// import { dbGetLikes, dbWriteLikes } from "./likes.ts";
+// import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const app = new Application();
+// const kv = await Deno.openKv();
+// const supabase = createClient(
+//   "https://dktuivrfnfjipbenfodp.supabase.co",
+//   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRrdHVpdnJmbmZqaXBiZW5mb2RwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDY1NDcyMTUsImV4cCI6MjAyMjEyMzIxNX0.sj-zrNHdvhqj-MhKdlglFu9cBYvWq80-4ff3SCSVC2M"
+// );
+
+// await kv.set(["likes", "notes", "new-site-design-for-2024"], 4);
+// const entry2 = await kv.get(["likes", "notes", "new-site-design-for-2024"]);
+// console.log("test before", entry2);
 
 // First we try to serve static files from the _site folder. If that fails, we
 // fall through to the router below.
@@ -14,7 +32,7 @@ app.use(async (ctx, next) => {
       index: "index.html",
     });
   } catch {
-    next();
+    await next();
   }
 });
 
@@ -32,9 +50,64 @@ function htmxResponse() {
 const router = new Router();
 
 // api endpoints from _data
-router.get("/api/interests", (ctx) => {
+router.get("/api/interests", (ctx: Context) => {
   ctx.response.body = htmxResponse();
 });
+
+// async function getLikes(postId: string) {
+//   // const supabaseRoute = `https://dktuivrfnfjipbenfodp.supabase.co/rest/v1/posts_with_total_likes?url=eq.${postId}&select=*&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRrdHVpdnJmbmZqaXBiZW5mb2RwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDY1NDcyMTUsImV4cCI6MjAyMjEyMzIxNX0.sj-zrNHdvhqj-MhKdlglFu9cBYvWq80-4ff3SCSVC2M`;
+//   // const res = await fetch(supabaseRoute);
+//   // const data = await res.json();
+//   // console.log(data);
+//   // const likes = data[0];
+//   const { data, error } = await supabase
+//     .from("posts_with_total_likes")
+//     .select()
+//     .eq("url", postId);
+//   console.log(data);
+
+//   return `${data[0].total_likes}`;
+// }
+
+// async function createLike(postUrl: string, reqInfo: Headers) {
+//   const { data: post, error: postError } = await supabase
+//     .from("posts")
+//     .select("id")
+//     .eq("url", postUrl)
+//     .single();
+
+//   const postId = post.id;
+
+//   const { data, error } = await supabase
+//     .from("post_likes")
+//     .insert([{ post_id: postId, user_info: reqInfo.get("sec-ch-ua") }]);
+
+//   return null;
+// }
+
+// router.put("/posts/:category/:postId/likes", (ctx) => {
+//   // console.log(ctx);
+//   // const res = htmxLikes(ctx.request);
+
+// });
+// router.get("/posts/:category/:postId/likes", async (ctx: Context) => {
+//   const { postId } = getQuery(ctx, { mergeParams: true });
+//   // const data = await getLikes(postId);
+//   ctx.response.body = await getLikes(postId);
+// });
+
+// router.post("/posts/:category/:postId/likes", async (ctx: Context) => {
+//   const { postId } = getQuery(ctx, { mergeParams: true });
+//   // const data = await getLikes(postId);
+//   // console.log(ctx.request.headers);
+//   await createLike(postId, ctx.request.headers);
+//   const likes = await getLikes(postId);
+//   ctx.response.body = `<button id="${ctx.request.headers.get(
+//     "hx-trigger"
+//   )}" hx-post="${ctx.request.headers.get(
+//     "hx-trigger"
+//   )}likes" hx-swap="outerHTML swap:0.2s settle:0.2s" hx-boost="true">${likes} Likes</button>`;
+// });
 
 router.redirect("/now", "/about");
 router.redirect("/writing", "/posts");

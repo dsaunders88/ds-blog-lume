@@ -37,7 +37,10 @@ Although they ultimately weren't used at this stage in the project, I also creat
 
 In the development phase, I built in a fully customized headless CMS integration with the [Sanity platform](https://www.sanity.io/) and API. This platform allowed for the creation of content types fitting the church's needs (staff members, sermons, events, ministries, etc.) and enabled editors to easily add and edit collections and pages.
 
-![Content management dashboard in Sanity.io showing dynamic content collections like resource posts.](/img/projects/smcc-sanity-regular.webp)
+<figure>
+<img src="/img/projects/smcc-sanity-regular.webp" alt="Content management dashboard in Sanity.io showing dynamic content collections like resource posts." width="600" loading="lazy" decoding="async" />
+<figcaption>Customized Sanity.io content management dashboard.</figcaption>
+</figure>
 
 For the front-end of the site, I chose to utilize the [Astro](https://astro.build/) and [Svelte](https://svelte.dev/) frameworks to build an extremely fast, lightweight, performant, and interactive site. The live website contains over 100 pages and is highly optimized for speed, security, accessibility, and SEO.
 

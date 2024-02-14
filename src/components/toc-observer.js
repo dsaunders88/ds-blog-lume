@@ -23,7 +23,7 @@ export class TOCObserver extends HTMLElement {
     const content = document.querySelectorAll(
       "#content > :first-child, #content :is(h2, h3)"
     );
-    console.log(content);
+    // console.log(content);
     const prelude = links[0];
     // console.log(prelude);
     this.highlightLink(prelude);

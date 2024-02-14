@@ -8,8 +8,8 @@ async function getLastfmData() {
   const params = new URLSearchParams({
     method: "user.gettopalbums",
     user: "dothedan",
-    period: "1month",
-    limit: 10,
+    period: "3month",
+    limit: 15,
     api_key: apiKey,
     format: "json",
   });

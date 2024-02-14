@@ -36,6 +36,7 @@ import {
   sortByProperty,
 } from "./src/utils/groupTypes.js";
 import { readingTime } from "./src/utils/readingTime.js";
+import { splitUrl } from "./src/utils/splitUrl.js";
 
 // const search = { returnPageData: true };
 
@@ -116,6 +117,11 @@ site.helper(
   },
   { type: "tag" }
 );
+site.filter("splitUrl", (url) => {
+  const segments = url.split("/").filter(Boolean);
+  return segments.pop();
+});
+// site.filter("getDefaultLikes", getDefaultLikes);
 site.use(
   feed({
     output: ["/posts.rss"],
