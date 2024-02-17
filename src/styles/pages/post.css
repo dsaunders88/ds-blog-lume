@@ -260,7 +260,7 @@ article {
   }
 
   &.htmx-added svg {
-    animation: 0.6s ease pop-in;
+    animation: 0.4s ease pop-in;
   }
 }
 

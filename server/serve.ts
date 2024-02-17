@@ -197,8 +197,8 @@ router.put("/posts/:category/:postId/like", async (ctx: Context) => {
     class="post-like-button active"
     aria-label="Unlike"
     hx-put="/posts/${category}/${postId}/unlike"
-    hx-trigger="click throttle:300ms"
-    hx-swap="outerHTML settle:600ms"
+    hx-trigger="click throttle:250ms"
+    hx-swap="outerHTML settle:400ms"
   >
   <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
     <path
@@ -229,8 +229,8 @@ router.put("/posts/:category/:postId/unlike", async (ctx: Context) => {
     class="post-like-button"
     aria-label="Like"
     hx-put="/posts/${category}/${postId}/like"
-    hx-trigger="click throttle:300ms"
-    hx-swap="outerHTML settle:600ms"
+    hx-trigger="click throttle:250ms"
+    hx-swap="outerHTML settle:400ms"
   >
   <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
     <path

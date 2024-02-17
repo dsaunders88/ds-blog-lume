@@ -441,6 +441,10 @@ figure {
 
       & > :first-child {
         flex-basis: auto;
+
+        & .link-background {
+          inset: 0;
+        }
       }
 
       & > :last-child {
