@@ -172,53 +172,82 @@ page_css: post.css
         {{ /for }}
       </ul>
     </div>
-    {{ if toc.length > 0 }}
-    <nav class="toc-nav | sticky">
-      <div class="cluster with-icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-            d="M7.25 9.25v-3.5l-1.5.5m1.5 3h-1.5m1.5 0h1m3.5-1.5h6.5m-6.5 8.5h6.5m-10 2h-2.5l2.227-2.038a.841.841 0 0 0-.568-1.462H6.25a.5.5 0 0 0-.5.5"
-          ></path>
-        </svg>
-        <div class="small-title">Table of Contents</div>
+    <div class="sticky">
+      {{ if toc.length > 0 }}
+      <nav class="toc-nav">
+        <div class="cluster with-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M7.25 9.25v-3.5l-1.5.5m1.5 3h-1.5m1.5 0h1m3.5-1.5h6.5m-6.5 8.5h6.5m-10 2h-2.5l2.227-2.038a.841.841 0 0 0-.568-1.462H6.25a.5.5 0 0 0-.5.5"
+            ></path>
+          </svg>
+          <div class="small-title">Table of Contents</div>
+        </div>
+        <toc-observer>
+          <ul class="toc level-2" role="list">
+            <li>
+              <a class="toc-link" href="#content">Prelude</a>
+            </li>
+            {{ for heading of toc }}
+            <li>
+              <a class="toc-link" href="#{{ heading.slug }}"
+                >{{ heading.text }}</a
+              >
+              {{ if heading.children.length > 0 }}
+              <ul class="level-3" role="list">
+                {{ for child of heading.children }}
+                <li>
+                  <a class="toc-link" href="#{{ child.slug }}"
+                    >{{ child.text }}</a
+                  >
+                </li>
+                {{ /for }}
+              </ul>
+              {{ /if }}
+            </li>
+            {{ /for }}
+          </ul>
+        </toc-observer>
+      </nav>
+      {{ /if }}
+      <div>
+        <post-like data-post-id="{{ url }}">
+          <div class="small-title">Like this post</div>
+          <button
+            id="likePost"
+            class="post-like-button"
+            aria-label="Like"
+            hx-put="{{ url }}like"
+            hx-trigger="click throttle:300ms"
+            hx-swap="outerHTML settle:600ms"
+          >
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path
+                fill-rule="evenodd"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span id="count"></span>
+          </button>
+          <p id="message"></p>
+        </post-like>
       </div>
-      <toc-observer>
-        <ul class="toc level-2" role="list">
-          <li>
-            <a class="toc-link" href="#content">Prelude</a>
-          </li>
-          {{ for heading of toc }}
-          <li>
-            <a class="toc-link" href="#{{ heading.slug }}"
-              >{{ heading.text }}</a
-            >
-            {{ if heading.children.length > 0 }}
-            <ul class="level-3" role="list">
-              {{ for child of heading.children }}
-              <li>
-                <a class="toc-link" href="#{{ child.slug }}"
-                  >{{ child.text }}</a
-                >
-              </li>
-              {{ /for }}
-            </ul>
-            {{ /if }}
-          </li>
-          {{ /for }}
-        </ul>
-      </toc-observer>
-    </nav>
-    {{ /if }}
+    </div>
   </div>
 </article>
 <footer class="post-navigation | content-wrapper">
@@ -283,8 +312,5 @@ page_css: post.css
 <script src="/components/preact-toc.jsx" type="module"></script>
 #}}
 <script src="/components/toc-observer.js" type="module"></script>
-{{#
+
 <script src="/components/post-like.js" type="module"></script>
-#}} {{#
-<script src="/components/starlight-toc.js" type="module"></script>
-#}}

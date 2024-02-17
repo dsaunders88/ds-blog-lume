@@ -7,21 +7,21 @@ import { list as thoughtsList } from "../src/_data/thoughts.js";
 import { albums } from "../src/_data/music.js";
 import { list as toolsList } from "../src/_data/tools.js";
 // import { htmxLikes } from "./likes.ts";
-import { resolve } from "https://deno.land/std@0.212.0/path/mod.ts";
 import { getQuery } from "https://deno.land/x/oak@v10.2.0/helpers.ts";
-// import { dbGetLikes, dbWriteLikes } from "./likes.ts";
-// import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import {
+  // allPostCounts,
+  // countPostsLikes,
+  // createPostLike,
+  // deletePostLike,
+  // updatePostLike,
+  addPostLike,
+  removePostLike,
+  getPostLikes,
+  getAllPostLikes,
+} from "./likes.ts";
+import type { Post } from "./likes.ts";
 
 const app = new Application();
-// const kv = await Deno.openKv();
-// const supabase = createClient(
-//   "https://dktuivrfnfjipbenfodp.supabase.co",
-//   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRrdHVpdnJmbmZqaXBiZW5mb2RwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDY1NDcyMTUsImV4cCI6MjAyMjEyMzIxNX0.sj-zrNHdvhqj-MhKdlglFu9cBYvWq80-4ff3SCSVC2M"
-// );
-
-// await kv.set(["likes", "notes", "new-site-design-for-2024"], 4);
-// const entry2 = await kv.get(["likes", "notes", "new-site-design-for-2024"]);
-// console.log("test before", entry2);
 
 // First we try to serve static files from the _site folder. If that fails, we
 // fall through to the router below.
@@ -54,37 +54,6 @@ router.get("/api/interests", (ctx: Context) => {
   ctx.response.body = htmxResponse();
 });
 
-// async function getLikes(postId: string) {
-//   // const supabaseRoute = `https://dktuivrfnfjipbenfodp.supabase.co/rest/v1/posts_with_total_likes?url=eq.${postId}&select=*&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRrdHVpdnJmbmZqaXBiZW5mb2RwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDY1NDcyMTUsImV4cCI6MjAyMjEyMzIxNX0.sj-zrNHdvhqj-MhKdlglFu9cBYvWq80-4ff3SCSVC2M`;
-//   // const res = await fetch(supabaseRoute);
-//   // const data = await res.json();
-//   // console.log(data);
-//   // const likes = data[0];
-//   const { data, error } = await supabase
-//     .from("posts_with_total_likes")
-//     .select()
-//     .eq("url", postId);
-//   console.log(data);
-
-//   return `${data[0].total_likes}`;
-// }
-
-// async function createLike(postUrl: string, reqInfo: Headers) {
-//   const { data: post, error: postError } = await supabase
-//     .from("posts")
-//     .select("id")
-//     .eq("url", postUrl)
-//     .single();
-
-//   const postId = post.id;
-
-//   const { data, error } = await supabase
-//     .from("post_likes")
-//     .insert([{ post_id: postId, user_info: reqInfo.get("sec-ch-ua") }]);
-
-//   return null;
-// }
-
 // router.put("/posts/:category/:postId/likes", (ctx) => {
 //   // console.log(ctx);
 //   // const res = htmxLikes(ctx.request);
@@ -108,6 +77,176 @@ router.get("/api/interests", (ctx: Context) => {
 //     "hx-trigger"
 //   )}likes" hx-swap="outerHTML swap:0.2s settle:0.2s" hx-boost="true">${likes} Likes</button>`;
 // });
+
+// let count = 0;
+// router.post("/posts/:category/:postId/likes", async (ctx: Context) => {
+//   // console.log("req context", ctx);
+//   const { category, postId } = getQuery(ctx, { mergeParams: true });
+
+//   let userId = "user_2";
+//   const newLike = await createPostLike(postId, userId);
+//   const allLikes = await countPostsLikes();
+//   let postLikes = allLikes[postId];
+
+//   ctx.response.body = `
+//     <button aria-label="Like" hx-delete="/posts/${category}/${postId}/likes" hx-swap="outerHTML">
+//       <svg width="24" height="24" fill="red" viewBox="0 0 24 24">
+//         <path
+//           fill-rule="evenodd"
+//           stroke="red"
+//           stroke-linecap="round"
+//           stroke-linejoin="round"
+//           stroke-width="1.5"
+//           d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+//           clip-rule="evenodd"
+//         ></path>
+//       </svg>
+//       <span>${postLikes}</span>
+//     </button>
+//   `;
+// });
+
+// router.put("/posts/:category/:postId/likes", async (ctx: Context) => {
+//   const { category, postId } = getQuery(ctx, { mergeParams: true });
+
+//   let userId = "user_4";
+//   const newPostCount = await updatePostLike(postId, userId);
+
+//   ctx.response.body = `${newPostCount ? newPostCount : 0}`;
+// });
+
+// router.delete("/posts/:category/:postId/likes", async (ctx: Context) => {
+//   // console.log("req context", ctx);
+//   const { category, postId } = getQuery(ctx, { mergeParams: true });
+
+//   let userId = "user_3";
+//   const deleteLike = await deletePostLike(postId, userId);
+//   const allLikes = await countPostsLikes();
+//   let postLikes = allLikes[postId];
+
+//   ctx.response.body = `
+//     <button aria-label="Like" hx-post="/posts/${category}/${postId}/likes" hx-swap="outerHTML">
+//       <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+//         <path
+//           fill-rule="evenodd"
+//           stroke="currentColor"
+//           stroke-linecap="round"
+//           stroke-linejoin="round"
+//           stroke-width="1.5"
+//           d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+//           clip-rule="evenodd"
+//         ></path>
+//       </svg>
+//       <span>${postLikes}</span>
+//     </button>
+//   `;
+// });
+
+router.get("/posts/totalLikes", async (ctx: Context) => {
+  const params = getQuery(ctx, { mergeParams: true });
+  console.log(params);
+  const postLikes = await getAllPostLikes();
+  const sortedLikes = postLikes.sort((a, b) => {
+    if (params.sort_by === "slug" && params.order_by === "asc") {
+      if (a.slug! < b.slug!) {
+        return -1;
+      }
+      if (a.slug! > b.slug!) {
+        return 1;
+      }
+      return 0;
+    } else if (params.sort_by === "slug" && params.order_by === "desc") {
+      if (b.slug! < a.slug!) {
+        return -1;
+      }
+      if (b.slug! > a.slug!) {
+        return 1;
+      }
+      return 0;
+    } else if (params.sort_by === "likes" && params.order_by === "asc") {
+      return a.likes! - b.likes!;
+    } else {
+      return b.likes! - a.likes!;
+    }
+  });
+
+  ctx.response.body = JSON.stringify({ posts: postLikes });
+});
+
+router.get("/posts/:category/:postId/totalLikes", async (ctx: Context) => {
+  const { category, postId } = getQuery(ctx, { mergeParams: true });
+  // console.log("post id", postId);
+  // console.log(allPostCounts);
+  const postLikes = await getPostLikes(postId);
+  // console.log(postLikes);
+
+  // const likes = allPosts[postId];
+  ctx.response.body = `${postLikes}`;
+});
+
+router.put("/posts/:category/:postId/like", async (ctx: Context) => {
+  const { category, postId } = getQuery(ctx, { mergeParams: true });
+
+  const postLikes = await addPostLike(postId);
+
+  // console.log("Hit like endpoint, returning ", postLikes);
+
+  ctx.response.body = `
+    <button
+    id="likePost"
+    class="post-like-button active"
+    aria-label="Unlike"
+    hx-put="/posts/${category}/${postId}/unlike"
+    hx-trigger="click throttle:300ms"
+    hx-swap="outerHTML settle:600ms"
+  >
+  <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <path
+      fill-rule="evenodd"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+      clip-rule="evenodd"
+    ></path>
+  </svg>
+  <span id="count">${postLikes}</span>
+  </button>
+  `;
+});
+
+router.put("/posts/:category/:postId/unlike", async (ctx: Context) => {
+  const { category, postId } = getQuery(ctx, { mergeParams: true });
+
+  const postLikes = await removePostLike(postId);
+
+  // console.log("Hit unlike endpoint, returning ", postLikes);
+
+  ctx.response.body = `
+  <button
+    id="likePost"
+    class="post-like-button"
+    aria-label="Like"
+    hx-put="/posts/${category}/${postId}/like"
+    hx-trigger="click throttle:300ms"
+    hx-swap="outerHTML settle:600ms"
+  >
+  <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <path
+      fill-rule="evenodd"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+      clip-rule="evenodd"
+    ></path>
+  </svg>
+  <span id="count">${postLikes}</span>
+  </button>
+`;
+});
 
 router.redirect("/now", "/about");
 router.redirect("/writing", "/posts");

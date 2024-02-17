@@ -51,6 +51,7 @@
       integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO"
       crossorigin="anonymous"
     ></script>
+    <meta name="htmx-config" content='{"selfRequestsOnly":"true"}' />
     {{# {{ /if }} #}} {{ if it.page_script }}
     <script src="/js/{{ page_script }}" type="module"></script>
     {{ /if }}
