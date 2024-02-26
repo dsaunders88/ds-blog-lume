@@ -8,6 +8,18 @@ page_css: about.css
     <div>
       <h1>{{ title }}</h1>
       <div class="rich-content with-intro-text">{{ content }}</div>
+      {{# {{ for link of bookmarks }}
+      <article>
+        <div class="small-title">{{ link.category }}</div>
+        <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+        <p>{{ link.description }}</p>
+        <div class="cluster">
+          {{ for tag of link.tags }}
+          <div class="tag">{{ tag }}</div>
+          {{ /for }}
+        </div>
+      </article>
+      {{ /for }} #}}
     </div>
     <div class="sidebar | flow"></div>
   </div>

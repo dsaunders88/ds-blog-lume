@@ -1,0 +1,22 @@
+- name: Root Simple
+  description: Blog of Erik Knutzen and Kelly Coyne
+  url: https://www.rootsimple.com/
+  category: website
+  tags: [blog]
+  date_added: 2024-02-26
+- name: Robin Rendle
+  description: Personal site for designer & writer Robin Rendle
+  url: https://robinrendle.com/
+  category: website
+  tags: [design, webdev, blog]
+  date_added: 2024-02-26
+- name: JS Bloat
+  url: https://tonsky.me/blog/js-bloat/
+  category: article
+  tags: [webdev]
+  date_added: 2024-02-26
+- name: What Is Utility First CSS?
+  url: https://heydonworks.com/article/what-is-utility-first-css/
+  category: article
+  tags: [webdev, design]
+  date_added: 2024-02-26

@@ -88,12 +88,14 @@ article {
     }
   }
 
-  &.sticky {
+  & .sticky {
     top: var(--space-l);
     place-self: flex-start;
   }
 
   & .toc-nav {
+    max-width: 20rem;
+
     & ul.level-3 {
       margin-block: 0;
       padding-inline-start: 0.75rem;
