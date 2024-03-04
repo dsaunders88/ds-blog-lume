@@ -1,22 +1,70 @@
 - name: Root Simple
-  description: Blog of Erik Knutzen and Kelly Coyne
+  description: Blog of Erik Knutzen and Kelly Coyne.
   url: https://www.rootsimple.com/
+  favicon: https://www.rootsimple.com/wp-content/themes/rootsimple/favicon.ico
   category: website
   tags: [blog]
   date_added: 2024-02-26
 - name: Robin Rendle
-  description: Personal site for designer & writer Robin Rendle
+  description: Personal site of designer & writer Robin Rendle.
   url: https://robinrendle.com/
+  favicon: https://robinrendle.com/images/favicons3/favicon-32x32.png
   category: website
   tags: [design, webdev, blog]
   date_added: 2024-02-26
+- name: Jon White Studio
+  description: The stunning portfolio of print and web designer Jon White.
+  url: https://jonwhitestudio.com/
+  favicon: https://jonwhitestudio.com/images/meta/favicon.svg?v=5
+  category: website
+  tags: [design, portfolio, webdev]
+  date_added: 2024-02-26
 - name: JS Bloat
+  description: A damning report on the massive amounts of JavaScript bogging down top websites/apps.
   url: https://tonsky.me/blog/js-bloat/
+  favicon: https://tonsky.me/i/favicon.png
   category: article
-  tags: [webdev]
+  tags: [webdev, js]
   date_added: 2024-02-26
+- name: Jonnie Hallman
+  description: Follow along as Jonnie builds the Cushion app for freelancers (which I use).
+  url: https://cushionapp.com/blog
+  favicon: https://cushionapp.com/favicon.ico
+  category: website
+  tags: [webdev, blog, design]
+  date_added: 2024-03-01
 - name: What Is Utility First CSS?
+  description: A spicy take on the "there are no best practices" CSS crowd.
   url: https://heydonworks.com/article/what-is-utility-first-css/
+  favicon: https://heydonworks.com/favicon-32x32.png
   category: article
-  tags: [webdev, design]
+  tags: [webdev, design, css]
   date_added: 2024-02-26
+- name: Neil Panchal
+  description: Aerospace engineer and type designer.
+  url: https://neil.computer/
+  favicon: https://neil.computer/content/images/2019/09/favicon.ico
+  category: website
+  tags: [design, webdev, blog]
+  date_added: 2024-02-27
+- name: Every Layout
+  description: Relearn CSS through algorithmic layouts.
+  url: https://every-layout.dev/
+  favicon: https://every-layout.dev/images/favicon.png
+  category: resource
+  tags: [design, webdev, css]
+  date_added: 2024-02-28
+- name: Piccalilli
+  description: Level up your front-end development skills.
+  url: https://piccalil.li/
+  favicon: https://piccalil.li/images/favicon.ico
+  category: resource
+  tags: [webdev, css]
+  date_added: 2024-03-01
+- name: Josh Collinsworth
+  description: Snappy personal site of designer/front-end developer Josh Collinsworth.
+  url: https://joshcollinsworth.com/
+  favicon: https://joshcollinsworth.com/2020-icon.svg
+  category: website
+  tags: [design, webdev, css, js, blog]
+  date_added: 2024-03-01

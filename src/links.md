@@ -6,4 +6,4 @@ metas:
   description: A collection of various links to sites and projects around the web.
 ---
 
-Coming soon!
+Articles, personal websites, resources, and other things around the web that I have found interesting or noteworthy.

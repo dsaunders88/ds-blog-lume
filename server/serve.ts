@@ -20,6 +20,7 @@ import {
   getAllPostLikes,
 } from "./likes.ts";
 import type { Post } from "./likes.ts";
+import { render } from "./bookmarks.ts";
 
 const app = new Application();
 
@@ -246,6 +247,23 @@ router.put("/posts/:category/:postId/unlike", async (ctx: Context) => {
   <span id="count">${postLikes}</span>
   </button>
 `;
+});
+
+router.get("/links/show", async (ctx: Context) => {
+  // const body = ctx.request.body();
+  // if (body.type === "form") {
+  //   const value = body.value;
+  //   const formData = await value;
+
+  //   for (const [key, value] of formData.entries()) {
+  //     console.log(`${key}: ${value}`);
+  //   }
+  // }
+  const params = getQuery(ctx);
+  console.log(params);
+
+  const html = await render(params);
+  ctx.response.body = html;
 });
 
 router.redirect("/now", "/about");

@@ -35,6 +35,7 @@ import {
   sortTypes,
   sortByProperty,
 } from "./src/utils/groupTypes.js";
+import type { Bookmark } from "./server/bookmarks.ts";
 import { readingTime } from "./src/utils/readingTime.js";
 import { splitUrl } from "./src/utils/splitUrl.js";
 
@@ -105,6 +106,13 @@ site.filter("readingTime", readingTime);
 site.filter("groupby", groupTypes);
 site.filter("sortby", sortTypes);
 site.filter("sortByProperty", sortByProperty);
+site.filter("sortByNewest", (arr: Bookmark[]) => {
+  return arr.sort((a, b) => {
+    const dateA = new Date(a.date_added!);
+    const dateB = new Date(b.date_added!);
+    return dateB.getTime() - dateA.getTime();
+  });
+});
 // site.use(prism({ extensions: [".html", ".vto", ".njk"] }));
 site.helper(
   "isActive",
