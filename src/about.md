@@ -48,8 +48,5 @@ Subscribe to this site’s [RSS feed](/posts.rss) or get in touch at [my email](
 - VSCode (Monokai Pro Theme) for programming
 - Figma and [Affinity](https://affinity.serif.com/en-us/) for design
 - [iA Writer](https://ia.net/writer) for writing
-- Airtable for project management
-- [Reflect](https://reflect.app/) for note taking
-- Todoist for tasks
 - YouTube Music for listening
 - Proton for email
