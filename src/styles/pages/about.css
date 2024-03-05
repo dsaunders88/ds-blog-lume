@@ -104,6 +104,7 @@
           margin: 0;
           font-size: var(--step--2);
           background: none;
+          border-color: transparent;
 
           & svg {
             color: var(--color-icon);
