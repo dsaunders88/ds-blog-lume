@@ -7,13 +7,20 @@
   hx-trigger="change"
   hx-target="#entries"
   hx-swap="outerHTML"
+  hx-on::after-request="window.scrollTo({top: 360, behavior: 'smooth'})"
 >
+  <section class="filter-sort">
+    <label for="sort" class="small-title">Sort</label>
+    <select name="sort" id="sort">
+      <option value="date">Latest</option>
+      <option value="alphabetical">A-Z</option>
+    </select>
+  </section>
   <section class="filter-categories">
     <div class="small-title">Categories</div>
     <div class="flex">
       <div class="form-check">
-        <label for="articles"
-          >Articles
+        <label for="articles">
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -57,12 +64,12 @@
               stroke-linejoin="round"
               stroke-width="1.5"
             ></path></svg
-        ></label>
+          >Articles</label
+        >
         <input type="checkbox" id="articles" name="article" />
       </div>
       <div class="form-check">
-        <label for="resources"
-          >Resources
+        <label for="resources">
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -78,12 +85,12 @@
               stroke-linejoin="round"
               stroke-width="1.5"
             ></path></svg
-        ></label>
+          >Resources</label
+        >
         <input type="checkbox" id="resources" name="resource" />
       </div>
       <div class="form-check">
-        <label for="websites"
-          >Websites
+        <label for="websites">
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -106,7 +113,8 @@
               stroke-linejoin="round"
               stroke-width="1.5"
             ></path></svg
-        ></label>
+          >Websites</label
+        >
         <input type="checkbox" id="websites" name="website" />
       </div>
     </div>
@@ -143,13 +151,6 @@
         <input type="checkbox" id="webdev" name="webdev" />
       </div>
     </div>
-  </section>
-  <section class="filter-sort">
-    <label for="sort" class="small-title">Sort</label>
-    <select name="sort" id="sort">
-      <option value="date">Latest</option>
-      <option value="alphabetical">A-Z</option>
-    </select>
   </section>
   {{# <input type="submit" /> #}}
 </form>

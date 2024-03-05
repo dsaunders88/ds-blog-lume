@@ -2,106 +2,119 @@
   {{ if bookmarkLinks.length !== 0 }} {{ for link of bookmarkLinks }}
   <article>
     <div class="text">
-      {{ if link.favicon }}
+      {{# {{ if link.favicon }}
       <img src="{{ link.favicon }}" alt="" width="32" height="32" />
-      {{ /if }}
+      {{ /if }} #}}
+      <div class="category small-title">
+        {{ if link.category === 'website'}}
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V17.25C19.25 18.3546 18.3546 19.25 17.25 19.25H6.75C5.64543 19.25 4.75 18.3546 4.75 17.25V6.75Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M5 8.25H19"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        {{ else if link.category === 'article' }}
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M17.25 19.25H5.75C5.19772 19.25 4.75 18.8023 4.75 18.25V5.75C4.75 5.19771 5.19772 4.75 5.75 4.75H14.25C14.8023 4.75 15.25 5.19772 15.25 5.75V10"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M17.5227 9.75H15.25V17.25C15.25 18.3546 16.1454 19.25 17.25 19.25C18.3546 19.25 19.25 18.3546 19.25 17.25V11.4773C19.25 10.5233 18.4767 9.75 17.5227 9.75Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M7.75 8.75C7.75 8.19772 8.19772 7.75 8.75 7.75H11.25C11.8023 7.75 12.25 8.19772 12.25 8.75V10.25C12.25 10.8023 11.8023 11.25 11.25 11.25H8.75C8.19772 11.25 7.75 10.8023 7.75 10.25V8.75Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M8 13.75H12"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M8 16.25H12"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        {{ else }}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="none"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M12 4.75V13m0-8.25-2.25 2.5M12 4.75l2.25 2.5M12 13l-7.25 6.25M12 13l7.25 6.25m-14.5 0v-2.5m0 2.5h2.5m12 0v-2.5m0 2.5h-2.5"
+          ></path>
+        </svg>
+        {{ /if }} <span>{{ link.category }}</span>
+      </div>
       <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
       <p>{{ link.description }}</p>
     </div>
-    <div class="cluster">
-      {{ for tag of link.tags }}
-      <div class="tag">{{ tag }}</div>
-      {{ /for }}
-    </div>
-    <div class="category small-title">
-      {{ if link.category === 'website'}}
-      <svg
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <path
-          d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V17.25C19.25 18.3546 18.3546 19.25 17.25 19.25H6.75C5.64543 19.25 4.75 18.3546 4.75 17.25V6.75Z"
-          stroke="currentColor"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></path>
-        <path
-          d="M5 8.25H19"
-          stroke="currentColor"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></path>
-      </svg>
-      {{ else if link.category === 'article' }}
-      <svg
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <path
-          d="M17.25 19.25H5.75C5.19772 19.25 4.75 18.8023 4.75 18.25V5.75C4.75 5.19771 5.19772 4.75 5.75 4.75H14.25C14.8023 4.75 15.25 5.19772 15.25 5.75V10"
-          stroke="currentColor"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></path>
-        <path
-          d="M17.5227 9.75H15.25V17.25C15.25 18.3546 16.1454 19.25 17.25 19.25C18.3546 19.25 19.25 18.3546 19.25 17.25V11.4773C19.25 10.5233 18.4767 9.75 17.5227 9.75Z"
-          stroke="currentColor"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></path>
-        <path
-          d="M7.75 8.75C7.75 8.19772 8.19772 7.75 8.75 7.75H11.25C11.8023 7.75 12.25 8.19772 12.25 8.75V10.25C12.25 10.8023 11.8023 11.25 11.25 11.25H8.75C8.19772 11.25 7.75 10.8023 7.75 10.25V8.75Z"
-          stroke="currentColor"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></path>
-        <path
-          d="M8 13.75H12"
-          stroke="currentColor"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></path>
-        <path
-          d="M8 16.25H12"
-          stroke="currentColor"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></path>
-      </svg>
-      {{ else }}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
-        fill="none"
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-      >
-        <path
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="1.5"
-          d="M12 4.75V13m0-8.25-2.25 2.5M12 4.75l2.25 2.5M12 13l-7.25 6.25M12 13l7.25 6.25m-14.5 0v-2.5m0 2.5h2.5m12 0v-2.5m0 2.5h-2.5"
-        ></path>
-      </svg>
-      {{ /if }} <span>{{ link.category }}</span>
-    </div>
+    <details>
+      <summary>More Details</summary>
+      <div class="details-pane">
+        <div>
+          <strong>URL: </strong
+          ><a href="{{ link.url }}" target="_blank">{{ link.url }}</a>
+        </div>
+        <div><strong>Date added: </strong>{{ link.date_added }}</div>
+        <div class="cluster">
+          <strong>Tags: </strong>
+          <div class="cluster">
+            {{ for tag of link.tags }}
+            <div class="tag">{{ tag }}</div>
+            {{ /for }}
+          </div>
+        </div>
+      </div>
+    </details>
   </article>
   {{ /for }} {{ else }}
   <p class="empty">No links found with these filters.</p>
