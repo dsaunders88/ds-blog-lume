@@ -8,7 +8,7 @@ page_css: about.css
     <h1>{{ title }}</h1>
     <div class="rich-content with-intro-text">{{ content }}</div>
   </header>
-  {{ set bookmarkLinks = bookmarks |> sortByNewest }}
+  {{ set bookmarkLinks = bookmarks |> sortByNewest |> formatLinkDates }}
   <div class="grid">
     <div class="sidebar">
       <div class="filters">{{ include "partials/bookmark-filters.vto" }}</div>

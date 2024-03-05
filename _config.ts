@@ -113,6 +113,17 @@ site.filter("sortByNewest", (arr: Bookmark[]) => {
     return dateB.getTime() - dateA.getTime();
   });
 });
+site.filter("formatLinkDates", (arr: Bookmark[]) => {
+  return arr.map((link) => {
+    return {
+      ...link,
+      date_added: new Intl.DateTimeFormat("en-US", {
+        dateStyle: "medium",
+        timeZone: "UTC",
+      }).format(link.date_added),
+    };
+  });
+});
 // site.use(prism({ extensions: [".html", ".vto", ".njk"] }));
 site.helper(
   "isActive",

@@ -133,6 +133,18 @@
             margin-block-start: 0.75rem;
           }
 
+          & a {
+            font-family: var(--font-headings);
+            font-weight: var(--font-headings-weight);
+            display: inline-block;
+            width: fit-content;
+          }
+
+          & p {
+            font-size: var(--step-0);
+            text-wrap: pretty;
+          }
+
           & img {
             width: 1.5rem;
             height: 1.5rem;
@@ -142,20 +154,9 @@
           }
         }
 
-        & a {
-          font-family: var(--font-headings);
-          font-weight: var(--font-headings-weight);
-          display: inline-block;
-          width: fit-content;
-        }
-
-        & p {
-          font-size: var(--step-0);
-          text-wrap: pretty;
-        }
-
         & details {
-          font-size: var(--step--1);
+          font-size: var(--step--2);
+          font-family: var(--font-code);
 
           & summary {
             width: fit-content;

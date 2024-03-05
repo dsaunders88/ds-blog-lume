@@ -55,14 +55,14 @@
   tags: [typography, webdev, blog]
   date_added: 2024-02-27
 - name: Every Layout
-  description: Relearn CSS through algorithmic layouts.
+  description: Relearn CSS through algorithmic layouts, by Heydon Pickering & Andy Bell.
   url: https://every-layout.dev/
   favicon: https://every-layout.dev/images/favicon.png
   category: resource
   tags: [design, webdev, css]
   date_added: 2024-02-28
 - name: Piccalilli
-  description: Level up your front-end development skills.
+  description: Level up your front-end development skills with Andy Bell.
   url: https://piccalil.li/
   favicon: https://piccalil.li/images/favicon.ico
   category: resource

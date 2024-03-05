@@ -169,7 +169,15 @@ export async function render(params: Record<string, string>) {
   );
   const result = await template({
     // bookmarks: filtered.size === 0 ? bookmarks : Array.from(filtered).flat(),
-    bookmarkLinks: sortByMethod(filteredList, sort.method),
+    bookmarkLinks: sortByMethod(filteredList, sort.method).map((link) => {
+      return {
+        ...link,
+        date_added: new Intl.DateTimeFormat("en-US", {
+          dateStyle: "medium",
+          timeZone: "UTC",
+        }).format(link.date_added),
+      };
+    }),
     // filteredByTag.size !== 0
     //   ? Array.from(filteredByTag)
     //   : bookmarkList.length !== 0
