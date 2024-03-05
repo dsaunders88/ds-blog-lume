@@ -1,5 +1,5 @@
 - name: Root Simple
-  description: Blog of Erik Knutzen and Kelly Coyne.
+  description: Gardening, carpentry, and philosophical thought-stylings from Erik Knutzen and Kelly Coyne.
   url: https://www.rootsimple.com/
   favicon: https://www.rootsimple.com/wp-content/themes/rootsimple/favicon.ico
   category: website
@@ -10,6 +10,13 @@
   url: https://robinrendle.com/
   favicon: https://robinrendle.com/images/favicons3/favicon-32x32.png
   category: website
+  tags: [design, webdev, blog]
+  date_added: 2024-02-26
+- name: Why Are Websites Embarrassing?
+  description: An exhortation to make websites worthy of our browsers.
+  url: https://robinrendle.com/notes/why-are-websites-embarrassing/
+  favicon: https://robinrendle.com/images/favicons3/favicon-32x32.png
+  category: article
   tags: [design, webdev, blog]
   date_added: 2024-02-26
 - name: Jon White Studio
@@ -66,5 +73,17 @@
   url: https://joshcollinsworth.com/
   favicon: https://joshcollinsworth.com/2020-icon.svg
   category: website
-  tags: [design, webdev, css, js, blog]
+  tags: [design, webdev, blog]
+  date_added: 2024-03-01
+- name: Matthew Butterick
+  description: Personal site of type designer, writer, and hypertext web publisher extraordinaire, Matthew Butterick.
+  url: https://matthewbutterick.com/
+  category: website
+  tags: [design, blog, webdev]
+  date_added: 2024-03-01
+- name: Butterick's Practical Typography
+  description: One of the best typography resources I've come across, and a joy to read and interact with.
+  url: https://practicaltypography.com/
+  category: resource
+  tags: [design, typography]
   date_added: 2024-03-01
