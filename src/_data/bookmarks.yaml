@@ -33,13 +33,13 @@
   category: article
   tags: [webdev, js]
   date_added: 2024-02-26
-- name: Jonnie Hallman
-  description: Follow along as Jonnie builds the Cushion app for freelancers (which I use).
-  url: https://cushionapp.com/blog
-  favicon: https://cushionapp.com/favicon.ico
-  category: website
-  tags: [webdev, blog, design]
-  date_added: 2024-03-01
+# - name: Jonnie Hallman
+#   description: Follow along as Jonnie builds the Cushion app for freelancers (which I use).
+#   url: https://cushionapp.com/blog
+#   favicon: https://cushionapp.com/favicon.ico
+#   category: website
+#   tags: [webdev, blog, design]
+#   date_added: 2024-03-01
 - name: What Is Utility First CSS?
   description: A spicy take on the "there are no best practices" CSS crowd.
   url: https://heydonworks.com/article/what-is-utility-first-css/
@@ -47,13 +47,13 @@
   category: article
   tags: [webdev, design, css]
   date_added: 2024-02-26
-- name: Neil Panchal
-  description: Aerospace engineer and type designer.
-  url: https://neil.computer/
-  favicon: https://neil.computer/content/images/2019/09/favicon.ico
-  category: website
-  tags: [typography, webdev, blog]
-  date_added: 2024-02-27
+# - name: Neil Panchal
+#   description: Aerospace engineer and type designer.
+#   url: https://neil.computer/
+#   favicon: https://neil.computer/content/images/2019/09/favicon.ico
+#   category: website
+#   tags: [typography, webdev, blog]
+#   date_added: 2024-02-27
 - name: Every Layout
   description: Relearn CSS through algorithmic layouts, by Heydon Pickering & Andy Bell.
   url: https://every-layout.dev/
@@ -68,19 +68,19 @@
   category: resource
   tags: [webdev, css]
   date_added: 2024-03-01
-- name: Josh Collinsworth
-  description: Snappy personal site of designer/front-end developer Josh Collinsworth.
-  url: https://joshcollinsworth.com/
-  favicon: https://joshcollinsworth.com/2020-icon.svg
-  category: website
-  tags: [design, webdev, blog]
-  date_added: 2024-03-01
-- name: Matthew Butterick
-  description: Personal site of type designer, writer, and hypertext web publisher extraordinaire, Matthew Butterick.
-  url: https://matthewbutterick.com/
-  category: website
-  tags: [design, blog, webdev]
-  date_added: 2024-03-01
+# - name: Josh Collinsworth
+#   description: Snappy personal site of designer/front-end developer Josh Collinsworth.
+#   url: https://joshcollinsworth.com/
+#   favicon: https://joshcollinsworth.com/2020-icon.svg
+#   category: website
+#   tags: [design, webdev, blog]
+#   date_added: 2024-03-01
+# - name: Matthew Butterick
+#   description: Personal site of type designer, writer, and hypertext web publisher extraordinaire, Matthew Butterick.
+#   url: https://matthewbutterick.com/
+#   category: website
+#   tags: [design, typography, webdev]
+#   date_added: 2024-03-01
 - name: Butterick’s Practical Typography
   description: One of the best typography resources I've come across, and a joy to read and interact with.
   url: https://practicaltypography.com/
