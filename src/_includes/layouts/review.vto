@@ -60,72 +60,10 @@ page_css: post.css
           </svg>
           <a href="/posts/{{ category }}/">{{ category |> capitalizeFirst }}</a>
         </div>
-        <div class="cluster with-icon">
-          <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-            <circle
-              cx="12"
-              cy="12"
-              r="7.25"
-              stroke="currentColor"
-              stroke-width="1.5"
-            ></circle>
-            <path
-              stroke="currentColor"
-              stroke-width="1.5"
-              d="M12 8V12L14 14"
-            ></path>
-          </svg>
-          <p>{{ content |> readingTime }}</p>
-        </div>
       </div>
-      {{#
-      <p>{{ it.summary }}</p>
-      #}}
     </header>
-    <figure class="featured-img">
-      <img
-        class="feed-image"
-        src="/img/posts/{{ image.src }}-large.webp"
-        alt="{{ image.alt }}"
-        width="1000"
-      />
-      {{ if image.caption }}
-      <figcaption>
-        {{ image.caption }} {{ if image.attribution }}
-        <span class="accent-color" style="padding-inline: 0.25rem">•</span> {{
-        image.attribution }} {{ /if }}
-      </figcaption>
-      {{ /if }}
-    </figure>
-    {{ if toc.length > 0 }}
-    <div class="mobile-toc">
-      <details>
-        <summary class="small-title">Table of Contents</summary>
-        <ul class="flow" role="list">
-          <li><a class="toc-link" href="#content">Prelude</a></li>
-          {{ for heading of toc }}
-          <li>
-            <a class="toc-link" href="#{{ heading.slug }}"
-              >{{ heading.text }}</a
-            >
-            {{ if heading.children.length > 0 }}
-            <ul class="level-3 | flow" role="list">
-              {{ for child of heading.children }}
-              <li>
-                <a class="toc-link" href="#{{ child.slug }}"
-                  >{{ child.text }}</a
-                >
-              </li>
-              {{ /for }}
-            </ul>
-            {{ /if }}
-          </li>
-          {{ /for }}
-        </ul>
-      </details>
-    </div>
-    {{ /if }}
-    <div id="content" class="rich-content with-intro-text">{{ content }}</div>
+    {{ include "partials/review-presentation.vto" }}
+    <div id="content" class="rich-content">{{ content }}</div>
   </div>
   <div class="sidebar | flow">
     <div class="return | cluster">
@@ -172,53 +110,6 @@ page_css: post.css
       </ul>
     </div>
     <div class="sticky">
-      {{ if toc.length > 0 }}
-      <nav class="toc-nav">
-        <div class="cluster with-icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
-              d="M7.25 9.25v-3.5l-1.5.5m1.5 3h-1.5m1.5 0h1m3.5-1.5h6.5m-6.5 8.5h6.5m-10 2h-2.5l2.227-2.038a.841.841 0 0 0-.568-1.462H6.25a.5.5 0 0 0-.5.5"
-            ></path>
-          </svg>
-          <div class="small-title">Table of Contents</div>
-        </div>
-        <toc-observer>
-          <ul class="toc level-2" role="list">
-            <li>
-              <a class="toc-link" href="#content">Prelude</a>
-            </li>
-            {{ for heading of toc }}
-            <li>
-              <a class="toc-link" href="#{{ heading.slug }}"
-                >{{ heading.text }}</a
-              >
-              {{ if heading.children.length > 0 }}
-              <ul class="level-3" role="list">
-                {{ for child of heading.children }}
-                <li>
-                  <a class="toc-link" href="#{{ child.slug }}"
-                    >{{ child.text }}</a
-                  >
-                </li>
-                {{ /for }}
-              </ul>
-              {{ /if }}
-            </li>
-            {{ /for }}
-          </ul>
-        </toc-observer>
-      </nav>
-      {{ /if }}
       <div>
         <post-like data-post-id="{{ url }}">
           <div class="small-title">Like this post</div>
@@ -305,11 +196,5 @@ page_css: post.css
     {{ /if }}
   </div>
 </footer>
-{{#
-<script src="/js/tocObserver.js" inline></script>
-#}} {{#
-<script src="/components/preact-toc.jsx" type="module"></script>
-#}}
-<script src="/components/toc-observer.js" type="module"></script>
 
 <script src="/components/post-like.js" type="module"></script>

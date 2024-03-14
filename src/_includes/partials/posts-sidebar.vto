@@ -28,9 +28,41 @@
           >All</a
         >
       </li>
+      <li>
+        <a
+          class="category"
+          data-selected-page="{{ url === `/posts/notes/` && 'selected' }}"
+          href="/posts/notes"
+          >Notes</a
+        >
+      </li>
+      <li>
+        <a
+          class="category"
+          data-selected-page="{{ url === `/posts/essays/` && 'selected' }}"
+          href="/posts/essays"
+          >Essays</a
+        >
+      </li>
+      <li>
+        <a
+          class="category"
+          data-selected-page="{{ url === `/posts/reviews/` && 'selected' }}"
+          href="/posts/reviews"
+          >Reviews</a
+        >
+      </li>
+      <li>
+        <a
+          class="category"
+          data-selected-page="{{ url === `/posts/lists/` && 'selected' }}"
+          href="/posts/lists"
+          >Lists</a
+        >
+      </li>
       <!-- prettier-ignore -->
-      {{ set allCategories = search.values("category", "type=posts") }} 
-          {{ for category of allCategories }}
+      {{# {{ set allCategories = search.values("category", "type=posts") }} 
+      {{ for category of allCategories }}
       <li>
         <a
           class="category"
@@ -39,7 +71,7 @@
           >{{ category |> capitalizeFirst }}</a
         >
       </li>
-      {{ /for }}
+      {{ /for }} #}}
       <li>
         <a
           class="category"

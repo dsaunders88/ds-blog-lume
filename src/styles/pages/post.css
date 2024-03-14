@@ -315,6 +315,78 @@ article {
   }
 }
 
+.review {
+  background: var(--color-tag-background);
+  padding: var(--space-m);
+  border-radius: var(--rounded-corners);
+  margin-block-start: var(--space-l);
+  margin-block-end: var(--space-m);
+
+  &.grid {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: var(--space-l);
+    align-items: center;
+  }
+
+  & .text {
+    margin-block-end: 1rem;
+
+    & .title {
+      font-size: var(--step-1);
+    }
+
+    & .author {
+      font-style: italic;
+    }
+
+    & .info {
+      font-size: var(--step--1);
+      margin-block-start: 0;
+      color: var(--color-text-body-shade);
+
+      &.cluster {
+        --cluster-space: 0.5rem;
+      }
+    }
+  }
+
+  & .rating {
+    --cluster-space: 0.15rem;
+    color: var(--color-icon);
+
+    &[data-rating="1"] {
+      & svg:first-child {
+        fill: var(--color-icon);
+      }
+    }
+
+    &[data-rating="2"] {
+      & svg:is(:first-child, :nth-child(2)) {
+        fill: var(--color-icon);
+      }
+    }
+
+    &[data-rating="3"] {
+      & svg:is(:first-child, :nth-child(2), :nth-child(3)) {
+        fill: var(--color-icon);
+      }
+    }
+
+    &[data-rating="4"] {
+      & svg:not(:last-child) {
+        fill: var(--color-icon);
+      }
+    }
+
+    &[data-rating="5"] {
+      & svg {
+        fill: var(--color-icon);
+      }
+    }
+  }
+}
+
 /* For post /posts/notes/new-site-design-for-2024 */
 #color-schemes {
   --item-min-width: 6rem;
@@ -395,6 +467,19 @@ article {
 
     & > :last-child {
       padding-block-start: 0;
+    }
+  }
+}
+
+@container contentWrapper (max-width: 499px) {
+  .review {
+    &.grid {
+      gap: var(--space-m);
+      align-items: start;
+    }
+
+    & .text {
+      margin: 0;
     }
   }
 }

@@ -14,6 +14,8 @@ posts:
     path: /posts/notes
   - name: Essays
     path: /posts/essays
+  - name: Reviews
+    path: /posts/reviews
   - name: Lists
     path: /posts/lists
   - name: Archive

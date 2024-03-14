@@ -2,14 +2,23 @@
   {{ for post of postlist }}
   <li>
     <article class="post-item">
-      <a href="{{ post.url }}"
-        ><img
+      <a href="{{ post.url }}">
+        {{ if post.category === "reviews" }}
+        <img
+          src="/img/books/{{ post.image.src }}.webp"
+          alt="{{ post.image.alt }}"
+          width="500"
+          loading="lazy"
+          decoding="async" />
+        {{ else }}
+        <img
           src="/img/posts/{{ post.image.src }}-thumb.webp"
           alt="{{ post.image.alt }}"
           width="500"
           height="360"
           loading="lazy"
           decoding="async" />
+        {{ /if }}
         <div class="link-background"></div
       ></a>
       <div class="flow">

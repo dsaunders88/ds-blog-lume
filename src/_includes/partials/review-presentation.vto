@@ -1,0 +1,24 @@
+<div class="review | grid">
+  {{ if media === 'book' }}
+  <figure class="book-list featured">
+    <a class="img-link" href="{{ link }}">
+      <img
+        class="feed-image"
+        src="/img/books/{{ image.src }}.webp"
+        alt="{{ image.alt }}"
+        width="900"
+        loading="eager"
+      />
+    </a>
+  </figure>
+  <div class="text | flow">
+    {{ include "partials/review-stars.vto" }}
+    <h2 class="title">{{ full_title }}</h2>
+    <p class="author">{{ author }}</p>
+    <div class="info | cluster">
+      <span>{{ book_publisher }}</span><span>•</span
+      ><span>{{ book_published_date }}</span>
+    </div>
+  </div>
+  {{ /if }}
+</div>

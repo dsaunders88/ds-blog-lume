@@ -210,6 +210,10 @@
   --background-element-opacity: 0.7;
 
   --color-icon: var(--color-accent-500);
+  --color-logo-border: var(--color-accent-200);
+  --color-logo-background: var(--color-accent-500);
+  --color-logo-lines: var(--color-accent-300);
+  --color-logo-text: var(--color-accent-50);
 
   /* Home illustration svgs */
   --color-illustration-gradient-accent-1: var(--color-accent-100);
@@ -308,6 +312,10 @@
   --background-element-opacity: 0.3;
 
   --color-icon: var(--color-accent-400);
+  --color-logo-border: var(--color-accent-400);
+  --color-logo-background: var(--color-neutral-950);
+  --color-logo-lines: var(--color-accent-600);
+  --color-logo-text: var(--color-neutral-50);
 
   /* Home illustration svgs */
   --color-illustration-gradient-accent-1: var(--color-neutral-950);

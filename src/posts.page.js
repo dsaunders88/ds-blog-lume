@@ -1,3 +1,5 @@
+// import { list as bookReviews } from "./_data/bookReviews.js";
+
 export const layout = "layouts/posts.vto";
 export const title = "All Posts";
 export const metas = {
@@ -8,6 +10,10 @@ export const metas = {
 
 export default function* ({ search, paginate }) {
   const posts = search.pages("type=posts", "date=desc");
+  // const reviews = bookReviews;
+  // const allPosts = posts.concat(reviews);
+
+  // console.log(posts);
 
   for (const data of paginate(posts, { url, size: 10 })) {
     yield data;
