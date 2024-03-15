@@ -7,8 +7,11 @@ summary: "My review of A World to Win: The Life and Works of Karl Marx by Sven-E
 archiveYear: 2022
 tags:
   - reading
+  - history
+  - politics
+  - theory
 metas:
-  image: /img/posts/a-world-to-win.webp
+  image: /img/books/a-world-to-win.webp
 media: book
 full_title: "A World to Win: The Life and Works of Karl Marx"
 author: Sven-Eric Liedman

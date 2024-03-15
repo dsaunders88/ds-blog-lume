@@ -7,8 +7,10 @@ summary: "My review of The Weird and the Eerie by Mark Fisher."
 archiveYear: 2023
 tags:
   - reading
+  - literature
+  - theory
 metas:
-  image: /img/posts/the-weird-and-eerie.webp
+  image: /img/books/the-weird-and-eerie.webp
 media: book
 full_title: "The Weird and the Eerie"
 author: Mark Fisher

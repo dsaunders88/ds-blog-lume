@@ -7,8 +7,11 @@ summary: My review of The Non-Jewish Jew and Other Essays by Isaac Deutscher.
 archiveYear: 2024
 tags:
   - reading
+  - politics
+  - theory
+  - religion
 metas:
-  image: /img/posts/books/non-jewish-jew-and-other-essays.webp
+  image: /img/books/non-jewish-jew-and-other-essays.webp
 media: book
 full_title: The Non-Jewish Jew and Other Essays
 author: Isaac Deutscher
