@@ -47,6 +47,6 @@ Subscribe to this site’s [RSS feed](/posts.rss) or get in touch at [my email](
 
 - VSCode (Monokai Pro Theme) for programming
 - Figma and [Affinity](https://affinity.serif.com/en-us/) for design
-- [iA Writer](https://ia.net/writer) for writing
+- [iA Writer](https://ia.net/writer) and [Obsidian](https://obsidian.md/) for writing/note-taking
 - YouTube Music for listening
 - Proton for email
