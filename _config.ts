@@ -143,12 +143,14 @@ site.filter("splitUrl", (url) => {
 // site.filter("getDefaultLikes", getDefaultLikes);
 site.use(
   feed({
-    output: ["/posts.rss"],
+    output: ["/feed.xml"],
     query: "type=posts",
     info: {
-      title: "Daniel Saunders | Posts",
-      description: "Essays, notes, and lists by Daniel Saunders.",
+      title: "Daniel Saunders",
+      published: new Date(),
+      description: "Essays, notes, and reviews by Daniel Saunders.",
       lang: "en",
+      generator: true,
     },
     items: {
       title: "=title",
@@ -158,23 +160,23 @@ site.use(
     },
   })
 );
-site.use(
-  feed({
-    output: ["/projects.rss"],
-    query: "type=projects",
-    info: {
-      title: "Daniel Saunders | Projects",
-      description: "Design and development projects by Daniel Saunders.",
-      lang: "en",
-    },
-    items: {
-      title: "=title",
-      description: "=summary",
-      published: "=date",
-      content: "$.feed-content",
-    },
-  })
-);
+// site.use(
+//   feed({
+//     output: ["/projects.xml"],
+//     query: "type=projects",
+//     info: {
+//       title: "Daniel Saunders | Projects",
+//       description: "Design and development projects by Daniel Saunders.",
+//       lang: "en",
+//     },
+//     items: {
+//       title: "=title",
+//       description: "=summary",
+//       published: "=date",
+//       content: "$.feed-content",
+//     },
+//   })
+// );
 site.use(metas());
 // site.use(filter_pages());
 // site.use(imagick());

@@ -28,10 +28,10 @@ more:
   - name: Links
     path: /links
 subfooter:
-  - name: Posts RSS Feed
-    path: "/posts.rss"
-  - name: Projects RSS Feed
-    path: "/projects.rss"
+  - name: Atom/RSS Feed
+    path: "/feed.xml"
+  # - name: Projects RSS Feed
+  #   path: "/projects.rss"
   - name: Sitemap
     path: /sitemap.xml
   - name: Web Studio
