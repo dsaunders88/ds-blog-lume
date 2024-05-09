@@ -26,6 +26,7 @@ Subscribe to this site’s [RSS feed](/posts.rss) or get in touch at [my email](
 - Privacy-focused analytics with [Fathom](https://usefathom.com/)
 - Content authored in Markdown
 - [Iconic](https://iconic.app/) icons
+- Static site search indexing with [Pagefind](https://pagefind.app/)
 - Deployed on [Deno Deploy](https://deno.com/deploy)
 - Average Lighthouse score: 💯 💯 💯 💯
 

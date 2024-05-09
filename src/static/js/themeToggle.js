@@ -2,6 +2,7 @@ const lightThemeToggle = document.querySelector("#lightThemeToggle");
 const darkThemeToggle = document.querySelector("#darkThemeToggle");
 const systemThemeToggle = document.querySelector("#systemThemeToggle");
 const toggles = [lightThemeToggle, darkThemeToggle, systemThemeToggle];
+const themeDisclosure = document.querySelector(".toggles .theme");
 
 // Default button settings
 if (!("theme" in localStorage)) {
@@ -54,5 +55,7 @@ toggles.forEach((button) => {
         }
         break;
     }
+
+    themeDisclosure.removeAttribute("open");
   });
 });

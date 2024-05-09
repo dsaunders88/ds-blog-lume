@@ -93,6 +93,15 @@
     &[data-selected-page="selected"] {
       border-bottom: 1px solid var(--color-border-accent);
     }
+
+    &.cluster {
+      --cluster-space: 0.5rem;
+      display: inline-flex;
+
+      & svg {
+        color: var(--color-icon);
+      }
+    }
   }
 
   .toggles {

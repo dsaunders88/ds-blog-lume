@@ -28,7 +28,7 @@ article {
   & header {
     & > :first-child {
       &.small-title {
-        color: var(--color-text-body-shade);
+        color: var(--color-text-heading);
         /* margin-block-end: var(--space-2xs); */
       }
 

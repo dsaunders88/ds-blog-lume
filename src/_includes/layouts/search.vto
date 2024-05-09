@@ -1,0 +1,16 @@
+---
+layout: layouts/base.vto
+page_css: post-index.css
+page_script: postSearch.js
+---
+
+<div class="content-wrapper">
+  <header>
+    <h1>{{ title }}</h1>
+    <div class="rich-content with-intro-text">{{ content }}</div>
+  </header>
+  <div class="has-sidebar">
+    <div id="search"></div>
+    {{ include "partials/posts-sidebar.vto" }}
+  </div>
+</div>

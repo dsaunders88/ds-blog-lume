@@ -1,3 +1,5 @@
+@import "css/search.css";
+
 h1 {
   margin-block-start: var(--space-2xl);
   margin-block-end: var(--space-xl);
@@ -6,6 +8,18 @@ h1 {
   & > span {
     color: var(--color-text-heading-accent);
   }
+
+  &:has(+ .rich-content) {
+    margin-block-end: 0;
+  }
+
+  & + .rich-content {
+    max-width: var(--paragraph-measure);
+  }
+}
+
+#search {
+  margin-block-start: var(--space-m);
 }
 
 .has-sidebar {

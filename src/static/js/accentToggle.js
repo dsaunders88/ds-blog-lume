@@ -10,6 +10,7 @@ const accentToggles = [
   greenAccentToggle,
   purpleAccentToggle,
 ];
+const accentDisclosure = document.querySelector(".toggles .accent");
 
 // Default button settings
 if (!("accent" in localStorage)) {
@@ -69,5 +70,7 @@ accentToggles.forEach((button) => {
         console.log("new accent", localStorage.getItem("accent"));
         break;
     }
+
+    accentDisclosure.removeAttribute("open");
   });
 });

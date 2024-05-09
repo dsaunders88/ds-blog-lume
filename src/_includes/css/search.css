@@ -1,0 +1,31 @@
+:root {
+  /* Pagefind UI elements */
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: var(--rounded-corners-small);
+  --pagefind-ui-image-border-radius: var(--rounded-corners-small);
+  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-font: var(--font-primary);
+}
+
+:root[data-theme="light"] {
+  /* Pagefind UI colors */
+  --pagefind-ui-primary: var(--color-accent-500);
+  --pagefind-ui-text: var(--color-text-body);
+  --pagefind-ui-background: var(--color-background-body);
+  --pagefind-ui-border: var(--color-border);
+  --pagefind-ui-tag: var(--color-tag-background);
+}
+
+:root[data-theme="dark"] {
+  /* Pagefind UI colors */
+  --pagefind-ui-primary: var(--color-accent-400);
+  --pagefind-ui-text: var(--color-text-body);
+  --pagefind-ui-background: var(--color-background-body);
+  --pagefind-ui-border: var(--color-border);
+  --pagefind-ui-tag: var(--color-tag-background);
+}
+
+.pagefind-ui__search-input.pagefind-ui__search-input {
+  font-weight: 400;
+}

@@ -40,6 +40,10 @@
     <link rel="canonical" href="https://daniel-saunders.com{{ url }}" />
     <link rel="stylesheet" href="/styles/critical.css" inline />
     <link rel="stylesheet" href="/styles/main.css" />
+    <!-- Pagefind UI -->
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <script src="/pagefind/pagefind-ui.js"></script>
+    <!-- Page CSS -->
     {{ if it.page_css }}
     <link rel="stylesheet" href="/styles/pages/{{ page_css }}" />
     {{ /if }}
@@ -52,8 +56,10 @@
       crossorigin="anonymous"
     ></script>
     <meta name="htmx-config" content='{"selfRequestsOnly":"true"}' />
-    {{# {{ /if }} #}} {{ if it.page_script }}
-    <script src="/js/{{ page_script }}" type="module"></script>
+    {{# {{ /if }} #}}
+    <!-- prettier-ignore -->
+    {{ if it.page_script }}
+    <script src="/js/{{ page_script }}" type="module" async></script>
     {{ /if }}
     <script
       src="https://cdn.usefathom.com/script.js"
@@ -67,5 +73,8 @@
     {{ include "partials/site-footer.vto" }}
     <script src="/js/themeToggle.js" async></script>
     <script src="/js/accentToggle.js" async></script>
+    {{#
+    <script src="/js/postSearch.js" async></script>
+    #}}
   </body>
 </html>

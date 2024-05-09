@@ -21,6 +21,7 @@ import {
 } from "./likes.ts";
 import type { Post } from "./likes.ts";
 import { render } from "./bookmarks.ts";
+// import { findPosts } from "./postSearch.ts";
 
 const app = new Application();
 
@@ -53,6 +54,8 @@ const selectedThoughts = new Set();
 const selectedAlbums = new Set();
 const selectedTools = new Set();
 
+// create some additional logic to check Sets so that user
+// doesn't get duplicate item from random array
 function getRandom(array: Array<Thought | Album | Tool>) {
   // first check set to see if value exists
   let random = undefined;
@@ -350,6 +353,16 @@ router.get("/links/show", async (ctx: Context) => {
 
   const html = await render(params);
   ctx.response.body = html;
+});
+
+//// SEARCH
+router.get("/posts/search", async (ctx: Context) => {
+  const params = getQuery(ctx);
+  console.log(params);
+
+  // ctx.response.body = `<section id="postSearchResults">${findPosts(
+  //   params
+  // )}</section>`;
 });
 
 router.redirect("/now", "/about");
