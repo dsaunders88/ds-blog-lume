@@ -13,17 +13,18 @@ async function getBookData() {
 
   const params = new URLSearchParams([
     ["returnFieldsByFieldId", "true"],
-    ["maxRecords", "8"],
-    ["view", "viwQYvgMewlWBBqe2"],
-    ["fields", "fldlmF45gCYW23PLI"],
-    ["fields", "fldIVAy1LGdKLaxbw"],
-    ["fields", "fldKlpKfwoCqCJbVM"],
-    ["fields", "fldIwqgbD7kf7N8qD"],
-    ["fields", "fldCEvxZzmoChJ5Dh"],
-    ["fields", "fldC7XcQ4urRb4fQV"],
-    ["fields", "fldEtqJkG0cSKP8dK"],
-    ["fields", "fldKM2VLezO00lQHI"],
-    ["fields", "fld75vdT7jzbx0ptV"],
+    ["maxRecords", "24"],
+    ["view", "viwQYvgMewlWBBqe2"], // All activity view - will automatically sort based on view
+    ["fields", "fldlmF45gCYW23PLI"], // Linked book record id (arr)
+    ["fields", "fldIVAy1LGdKLaxbw"], // date started
+    ["fields", "fldKlpKfwoCqCJbVM"], // Book title (lookup arr)
+    ["fields", "fldIwqgbD7kf7N8qD"], // date finished
+    ["fields", "fldCEvxZzmoChJ5Dh"], // status
+    ["fields", "fldC7XcQ4urRb4fQV"], // author (lookup arr)
+    ["fields", "fldEtqJkG0cSKP8dK"], // cover (lookup arr)
+    ["fields", "fldKM2VLezO00lQHI"], // percent read
+    ["fields", "fld75vdT7jzbx0ptV"], // last modified
+    ["fields", "fldpzGGsP5bR1hUAW"], // feed date - replaces date started/finished/modified
   ]);
 
   const headers = new Headers();
@@ -73,17 +74,19 @@ const data = await getBookData();
 
 const records = data.records.map(async (record) => {
   const fields = record.fields;
-  const dateStarted =
-    fields.fldIVAy1LGdKLaxbw && new Date(fields.fldIVAy1LGdKLaxbw);
-  const dateFinished =
-    fields.fldIwqgbD7kf7N8qD && new Date(fields.fldIwqgbD7kf7N8qD);
-  const airtableLastUpdated = new Date(fields.fld75vdT7jzbx0ptV);
-  const dateUpdated = dateFinished || dateStarted || airtableLastUpdated;
+  // const dateStarted =
+  //   fields.fldIVAy1LGdKLaxbw && new Date(fields.fldIVAy1LGdKLaxbw);
+  // const dateFinished =
+  //   fields.fldIwqgbD7kf7N8qD && new Date(fields.fldIwqgbD7kf7N8qD);
+  // const airtableLastUpdated = new Date(fields.fld75vdT7jzbx0ptV);
+  // const dateUpdated = dateFinished || dateStarted || airtableLastUpdated;
   const completed =
     fields.fldCEvxZzmoChJ5Dh === "Have Read" && fields.fldKM2VLezO00lQHI === 1;
   const downloadedImage = await downloadAndSaveImage(
     fields.fldEtqJkG0cSKP8dK[0]
   );
+
+  const feedDate = Date.parse(fields.fldpzGGsP5bR1hUAW + "T00:00:00.000-07:00");
 
   return {
     id: fields.fldlmF45gCYW23PLI.toString(),
@@ -92,11 +95,23 @@ const records = data.records.map(async (record) => {
     authors: fields.fldC7XcQ4urRb4fQV,
     completed: completed,
     cover: fields.fldEtqJkG0cSKP8dK[0].thumbnails.large.url,
-    date: dateUpdated,
+    date: fields.fldpzGGsP5bR1hUAW,
+    activityMonth: new Intl.DateTimeFormat("en-US", {
+      month: "long",
+      year: "numeric",
+    }).format(feedDate),
     downloadedImage: downloadedImage,
   };
 });
 
 // console.log(await Promise.all(records));
 
-export const list = await Promise.all(records);
+const resolvedRecords = await Promise.all(records);
+
+export const listSliced = resolvedRecords.slice(0, 8);
+export const listAll = Object.groupBy(
+  resolvedRecords,
+  ({ activityMonth }) => activityMonth
+);
+
+// console.log({ listAll });

@@ -409,7 +409,7 @@ headshot: /img/avatar/ds-headshot-new.webp
             <h2 class="small-title">Recent Reads</h2>
           </header>
           <ul class="book-list | responsive-grid" role="list">
-            {{ for book of books.list |> sortByProperty("date", "desc") }}
+            {{ for book of books.listSliced }}
             <li>
               <a
                 class="img-link"
@@ -490,11 +490,8 @@ headshot: /img/avatar/ds-headshot-new.webp
             {{ /for }}
           </ul>
           <footer class="cluster">
-            <a
-              class="button-link animate-arrow"
-              href="https://long-wasp-15.deno.dev/"
-            >
-              <span>View all books</span>
+            <a class="button-link animate-arrow" href="/books">
+              <span>View more books</span>
               <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
                 <path
                   stroke="currentColor"

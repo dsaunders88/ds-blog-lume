@@ -5,8 +5,10 @@ main:
     path: /projects
   - name: Blog
     path: /posts
-  - name: Links
-    path: /links
+  # - name: Books Read
+  #   path: /books
+  # - name: Links
+  #   path: /links
 posts:
   - name: Latest
     path: /posts
@@ -20,6 +22,11 @@ posts:
     path: /posts/lists
   - name: Archive
     path: /posts/archive
+more:
+  - name: Books
+    path: /books
+  - name: Links
+    path: /links
 subfooter:
   - name: Posts RSS Feed
     path: "/posts.rss"

@@ -1,0 +1,30 @@
+.books {
+  padding-block-start: var(--space-2xl);
+
+  & .rich-content {
+    max-width: var(--paragraph-measure);
+    /* margin-block-end: var(--space-xl); */
+  }
+
+  & .activity-list {
+    margin-block-start: var(--space-xl);
+
+    & > li {
+      margin-block-start: var(--space-2xl);
+      padding-block-start: var(--space-m);
+      border-block-start: 1px solid var(--color-border);
+    }
+
+    & h2 {
+      font-size: var(--step-2);
+    }
+  }
+
+  & .book-list {
+    margin-block-start: var(--space-m);
+
+    &.responsive-grid {
+      --item-max-width: 12rem;
+    }
+  }
+}

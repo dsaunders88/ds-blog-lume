@@ -37,15 +37,101 @@ app.use(async (ctx, next) => {
   }
 });
 
-function getRandom(array) {
-  return array[Math.floor(Math.random() * array.length)];
+type Thought = string;
+type Album = {
+  artist?: string;
+  url?: string;
+  playCount?: number;
+  name?: string;
+};
+type Tool = {
+  name: string;
+  url: string;
+};
+
+const selectedThoughts = new Set();
+const selectedAlbums = new Set();
+const selectedTools = new Set();
+
+function getRandom(array: Array<Thought | Album | Tool>) {
+  // first check set to see if value exists
+  let random = undefined;
+
+  // then get a random element from array excluding value in set
+  // add the new value to the set
+  // return the randomly select element
+  while (!random) {
+    random = array[Math.floor(Math.random() * array.length)];
+
+    if (typeof random === "string") {
+      if (!selectedThoughts.has(random)) {
+        // set doesn't have value, add it to the set
+        selectedThoughts.add(random);
+        console.log({ selectedThoughts });
+        break;
+      } else if (selectedThoughts.size === array.length) {
+        // value is in set and set is full, reset all set values
+        // add it to set
+        selectedThoughts.clear();
+        selectedThoughts.add(random);
+        console.log("reset thoughts", { selectedThoughts });
+        break;
+      } else {
+        // value is in set, keep looking
+        random = undefined;
+        continue;
+      }
+    } else if ("artist" in random) {
+      if (!selectedAlbums.has(random)) {
+        selectedAlbums.add(random);
+        console.log({ selectedAlbums });
+        break;
+      } else if (selectedAlbums.size === array.length) {
+        selectedAlbums.clear();
+        selectedAlbums.add(random);
+        console.log("reset albums", { selectedAlbums });
+        break;
+      } else {
+        random = undefined;
+        continue;
+      }
+    } else {
+      if (!selectedTools.has(random)) {
+        selectedTools.add(random);
+        console.log({ selectedTools });
+        break;
+      } else if (selectedTools.size === array.length) {
+        selectedTools.clear();
+        selectedTools.add(random);
+        console.log("reset tools", { selectedTools });
+        break;
+      } else {
+        random = undefined;
+        continue;
+      }
+    }
+  }
+
+  return random;
 }
 
 function htmxResponse() {
-  const randomThought = getRandom(thoughtsList);
-  const randomAlbum = getRandom(albums);
-  const randomTool = getRandom(toolsList);
-  return `<p id="thoughts" class="animate-response">${randomThought}</p><p id="albums" hx-swap-oob="true" class="animate-response"><span class="cluster"><a class="external-link" href="${randomAlbum.url}" target="_blank">${randomAlbum.name}</a><svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 15.25V6.75H8.75"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 7L6.75 17.25"></path></svg></span>, by ${randomAlbum.artist}</p><p id="tools" hx-swap-oob="true" class="animate-response"><span class="cluster"><a class="external-link" href="${randomTool.url}" target="_blank">${randomTool.name}</a><svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 15.25V6.75H8.75"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 7L6.75 17.25"></path></svg></span></p>`;
+  const randomThought = getRandom(thoughtsList as Array<Thought>);
+  const randomAlbum = getRandom(albums as Array<Album>);
+  const randomTool = getRandom(toolsList as Array<Tool>);
+  return `<p id="thoughts" class="animate-response">${
+    randomThought as string
+  }</p><p id="albums" hx-swap-oob="true" class="animate-response"><span class="cluster"><a class="external-link" href="${
+    (randomAlbum as Album).url
+  }" target="_blank">${
+    (randomAlbum as Album).name
+  }</a><svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 15.25V6.75H8.75"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 7L6.75 17.25"></path></svg></span>, by ${
+    (randomAlbum as Album).artist
+  }</p><p id="tools" hx-swap-oob="true" class="animate-response"><span class="cluster"><a class="external-link" href="${
+    (randomTool as Tool).url
+  }" target="_blank">${
+    (randomTool as Tool).name
+  }</a><svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 15.25V6.75H8.75"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 7L6.75 17.25"></path></svg></span></p>`;
 }
 
 const router = new Router();

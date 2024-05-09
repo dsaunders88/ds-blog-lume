@@ -23,6 +23,16 @@
           {{ /for }}
         </ul>
       </div>
+      <div>
+        <div class="small-title">More</div>
+        <ul class="flow" role="list">
+          {{ for item of navigation.more }}
+          <li>
+            <a class="nav-link" href="{{ item.path }}">{{ item.name }}</a>
+          </li>
+          {{ /for }}
+        </ul>
+      </div>
     </div>
     {{> const currentYear = new Date().getFullYear() }}
     <div class="subfooter | cluster">
