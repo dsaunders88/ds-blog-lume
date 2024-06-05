@@ -20,9 +20,12 @@
   & .sidebar {
     & img {
       position: relative;
-      border-radius: 999px;
-      width: 12rem;
-      height: 12rem;
+      /* border-radius: 999px; */
+      max-width: 18rem;
+      aspect-ratio: 6/9;
+      object-fit: cover;
+      height: auto;
+      border-radius: var(--rounded-corners-small);
 
       &::before {
         content: "";

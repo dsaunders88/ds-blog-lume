@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xml:base="https://daniel-saunders.com"
+>
+  <title>Daniel Saunders</title>
+  <subtitle>Essays, notes, and reviews by Daniel Saunders.</subtitle>
+  <link
+    href="https://daniel-saunders.com/feed.xml"
+    rel="self"
+    type="application/atom+xml"
+  />
+  <link href="https://daniel-saunders.com/" />
+  {{> const feedDate = new Date().toLocaleString('en-US', {timeZone: 'UTC'}) }}
+  <updated>{{ feedDate |> rfc3339 }}</updated>
+  <id>https://daniel-saunders.com/</id>
+  <author>
+    <name>Daniel Saunders</name>
+    <email>daniel.thomas.saunders@gmail.com</email>
+  </author>
+  {{ for post of search.pages("type=posts", "date=desc") }}
+  <entry>
+    <title>{{ post.title |> escape }}</title>
+    <link href="https://daniel-saunders.com{{ post.url }}" />
+    <updated>{{ post.date |> rfc3339 }}</updated>
+    <id>https://daniel-saunders.com{{ post.url }}</id>
+    <!-- prettier-ignore -->
+    <content xml:lang="en" type="html">{{ "<h1>Hello, world!</h1>" |> escape }}</content>
+  </entry>
+  {{ /for }}
+</feed>

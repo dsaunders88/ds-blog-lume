@@ -1,3 +1,7 @@
 transformImages:
-  - resize: [300, 300]
+  - resize: [600]
+    suffix: -thumb
+    format: [webp, jpg]
+  - resize: [1000]
+    suffix: -regular
     format: [webp, jpg]

@@ -2,7 +2,7 @@
 layout: layouts/about.vto
 docTitle: About Daniel Saunders
 title: About
-image: ds-headshot-new
+image: ds-pro-headshot-regular
 metas:
   title: About Daniel Saunders • Designer & Developer in LA
   description: I’m Daniel Saunders, a designer, front-end developer, reader, and writer with a wide range of interests.

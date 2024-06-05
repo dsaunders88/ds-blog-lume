@@ -28,7 +28,12 @@
         <ul class="flow" role="list">
           {{ for item of navigation.more }}
           <li>
-            <a class="nav-link" href="{{ item.path }}">{{ item.name }}</a>
+            <a
+              class="nav-link"
+              href="{{ item.path }}"
+              target="{{ item.external ? '_blank' : '_self' }}"
+              >{{ item.name }}</a
+            >
           </li>
           {{ /for }}
         </ul>

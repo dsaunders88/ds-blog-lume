@@ -10,6 +10,7 @@ import lang_django from "npm:highlight.js/lib/languages/django";
 import lang_yaml from "npm:highlight.js/lib/languages/yaml";
 import lang_json from "npm:highlight.js/lib/languages/json";
 import feed from "lume/plugins/feed.ts";
+// import atomFeed from "./src/customPlugins/atomFeed.ts";
 // import filter_pages from "lume/plugins/filter_pages.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 // import imagick from "lume/plugins/imagick.ts";
@@ -38,6 +39,7 @@ import {
 import type { Bookmark } from "./server/bookmarks.ts";
 import { readingTime } from "./src/utils/readingTime.js";
 import { splitUrl } from "./src/utils/splitUrl.js";
+// import { encode } from "npm:html-entities";
 
 // const search = { returnPageData: true };
 
@@ -136,11 +138,27 @@ site.helper(
   },
   { type: "tag" }
 );
+// site.filter("rfc3339", (date) => {
+//   // Atom uses RFC 3339 dates
+//   // https://tools.ietf.org/html/rfc3339#section-5.8
+//   const s = new Date(date).toISOString();
+
+//   //remove miliseconds
+//   const split = s.split(".");
+//   split.pop();
+
+//   return split.join("") + "Z";
+// });
 site.filter("splitUrl", (url) => {
   const segments = url.split("/").filter(Boolean);
   return segments.pop();
 });
 // site.filter("getDefaultLikes", getDefaultLikes);
+// site.use(
+//   atomFeed({
+//     output: ["/feed.xml"],
+//   })
+// );
 site.use(
   feed({
     output: ["/feed.xml"],
