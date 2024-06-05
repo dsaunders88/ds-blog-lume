@@ -14,7 +14,7 @@ I've been freelancing for around 8 years, during which time I've worked on many 
 
 The throughline of this site is a chronicle of many years of transformations and transitions, whether in my thinking about existence, history, religion, design, or the world wide web. What I've learned from using this site as a real-time, sometimes messy space to work out these ideas is that I am someone who wants to explore boundaries, who disdains rigid orthodoxies, and who is always seeking where to enact that modernist injunction to "make it new". Maybe you'll find something here that sparks a feeling of exploration and discovery.
 
-Subscribe to this site’s [RSS feed](/posts.rss) or get in touch at [my email](mailto:daniel.thomas.saunders@gmail) if you want to say hello!
+Subscribe to this site’s [RSS feed](/feed.xml) or get in touch at [my email](mailto:daniel.thomas.saunders@gmail) if you want to say hello!
 
 ## Site Details
 
