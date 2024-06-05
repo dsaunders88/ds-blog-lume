@@ -22,8 +22,8 @@ posts:
     path: /posts/lists
   - name: Archive
     path: /posts/archive
-  - name: Search Posts
-    path: /search
+  # - name: Search Posts
+  #   path: /search
 more:
   - name: Books
     path: /books
