@@ -6,22 +6,14 @@ import {
 import { list as thoughtsList } from "../src/_data/thoughts.js";
 import { albums } from "../src/_data/music.js";
 import { list as toolsList } from "../src/_data/tools.js";
-// import { htmxLikes } from "./likes.ts";
 import { getQuery } from "https://deno.land/x/oak@v10.2.0/helpers.ts";
 import {
-  // allPostCounts,
-  // countPostsLikes,
-  // createPostLike,
-  // deletePostLike,
-  // updatePostLike,
   addPostLike,
   removePostLike,
   getPostLikes,
   getAllPostLikes,
 } from "./likes.ts";
-import type { Post } from "./likes.ts";
 import { render } from "./bookmarks.ts";
-// import { findPosts } from "./postSearch.ts";
 
 const app = new Application();
 
@@ -139,99 +131,12 @@ function htmxResponse() {
 
 const router = new Router();
 
-// api endpoints from _data
+/* Interests from _data */
 router.get("/api/interests", (ctx: Context) => {
   ctx.response.body = htmxResponse();
 });
 
-// router.put("/posts/:category/:postId/likes", (ctx) => {
-//   // console.log(ctx);
-//   // const res = htmxLikes(ctx.request);
-
-// });
-// router.get("/posts/:category/:postId/likes", async (ctx: Context) => {
-//   const { postId } = getQuery(ctx, { mergeParams: true });
-//   // const data = await getLikes(postId);
-//   ctx.response.body = await getLikes(postId);
-// });
-
-// router.post("/posts/:category/:postId/likes", async (ctx: Context) => {
-//   const { postId } = getQuery(ctx, { mergeParams: true });
-//   // const data = await getLikes(postId);
-//   // console.log(ctx.request.headers);
-//   await createLike(postId, ctx.request.headers);
-//   const likes = await getLikes(postId);
-//   ctx.response.body = `<button id="${ctx.request.headers.get(
-//     "hx-trigger"
-//   )}" hx-post="${ctx.request.headers.get(
-//     "hx-trigger"
-//   )}likes" hx-swap="outerHTML swap:0.2s settle:0.2s" hx-boost="true">${likes} Likes</button>`;
-// });
-
-// let count = 0;
-// router.post("/posts/:category/:postId/likes", async (ctx: Context) => {
-//   // console.log("req context", ctx);
-//   const { category, postId } = getQuery(ctx, { mergeParams: true });
-
-//   let userId = "user_2";
-//   const newLike = await createPostLike(postId, userId);
-//   const allLikes = await countPostsLikes();
-//   let postLikes = allLikes[postId];
-
-//   ctx.response.body = `
-//     <button aria-label="Like" hx-delete="/posts/${category}/${postId}/likes" hx-swap="outerHTML">
-//       <svg width="24" height="24" fill="red" viewBox="0 0 24 24">
-//         <path
-//           fill-rule="evenodd"
-//           stroke="red"
-//           stroke-linecap="round"
-//           stroke-linejoin="round"
-//           stroke-width="1.5"
-//           d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
-//           clip-rule="evenodd"
-//         ></path>
-//       </svg>
-//       <span>${postLikes}</span>
-//     </button>
-//   `;
-// });
-
-// router.put("/posts/:category/:postId/likes", async (ctx: Context) => {
-//   const { category, postId } = getQuery(ctx, { mergeParams: true });
-
-//   let userId = "user_4";
-//   const newPostCount = await updatePostLike(postId, userId);
-
-//   ctx.response.body = `${newPostCount ? newPostCount : 0}`;
-// });
-
-// router.delete("/posts/:category/:postId/likes", async (ctx: Context) => {
-//   // console.log("req context", ctx);
-//   const { category, postId } = getQuery(ctx, { mergeParams: true });
-
-//   let userId = "user_3";
-//   const deleteLike = await deletePostLike(postId, userId);
-//   const allLikes = await countPostsLikes();
-//   let postLikes = allLikes[postId];
-
-//   ctx.response.body = `
-//     <button aria-label="Like" hx-post="/posts/${category}/${postId}/likes" hx-swap="outerHTML">
-//       <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-//         <path
-//           fill-rule="evenodd"
-//           stroke="currentColor"
-//           stroke-linecap="round"
-//           stroke-linejoin="round"
-//           stroke-width="1.5"
-//           d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
-//           clip-rule="evenodd"
-//         ></path>
-//       </svg>
-//       <span>${postLikes}</span>
-//     </button>
-//   `;
-// });
-
+/* Post Likes */
 router.get("/posts/totalLikes", async (ctx: Context) => {
   const params = getQuery(ctx, { mergeParams: true });
   console.log(params);
@@ -265,12 +170,9 @@ router.get("/posts/totalLikes", async (ctx: Context) => {
 
 router.get("/posts/:category/:postId/totalLikes", async (ctx: Context) => {
   const { category, postId } = getQuery(ctx, { mergeParams: true });
-  // console.log("post id", postId);
-  // console.log(allPostCounts);
-  const postLikes = await getPostLikes(postId);
-  // console.log(postLikes);
 
-  // const likes = allPosts[postId];
+  const postLikes = await getPostLikes(postId);
+
   ctx.response.body = `${postLikes}`;
 });
 
@@ -279,7 +181,7 @@ router.put("/posts/:category/:postId/like", async (ctx: Context) => {
 
   const postLikes = await addPostLike(postId);
 
-  // console.log("Hit like endpoint, returning ", postLikes);
+  // console.log("Hit like endpoint, returning", postLikes);
 
   ctx.response.body = `
     <button
@@ -311,7 +213,7 @@ router.put("/posts/:category/:postId/unlike", async (ctx: Context) => {
 
   const postLikes = await removePostLike(postId);
 
-  // console.log("Hit unlike endpoint, returning ", postLikes);
+  // console.log("Hit unlike endpoint, returning", postLikes);
 
   ctx.response.body = `
   <button
@@ -338,16 +240,8 @@ router.put("/posts/:category/:postId/unlike", async (ctx: Context) => {
 `;
 });
 
+/* Bookmark Links */
 router.get("/links/show", async (ctx: Context) => {
-  // const body = ctx.request.body();
-  // if (body.type === "form") {
-  //   const value = body.value;
-  //   const formData = await value;
-
-  //   for (const [key, value] of formData.entries()) {
-  //     console.log(`${key}: ${value}`);
-  //   }
-  // }
   const params = getQuery(ctx);
   console.log(params);
 
@@ -355,16 +249,7 @@ router.get("/links/show", async (ctx: Context) => {
   ctx.response.body = html;
 });
 
-//// SEARCH
-router.get("/posts/search", async (ctx: Context) => {
-  const params = getQuery(ctx);
-  console.log(params);
-
-  // ctx.response.body = `<section id="postSearchResults">${findPosts(
-  //   params
-  // )}</section>`;
-});
-
+/* Redirects */
 router.redirect("/now", "/about");
 router.redirect("/writing", "/posts");
 router.redirect("/posts/1", "/posts");
@@ -391,15 +276,6 @@ router.redirect("/tag/2020", "/posts/archive");
 router.redirect("/tag/2021", "/posts/archive");
 router.redirect("/tag/2022", "/posts/archive");
 router.redirect("/tag/2023", "/posts/archive");
-// router.get("/api/thoughts", (ctx) => {
-//   ctx.response.body = thoughtResponse(thoughtsList);
-// });
-// router.get("/api/music", (ctx) => {
-//   ctx.response.body = JSON.stringify(albums);
-// });
-// router.get("/api/tools", (ctx) => {
-//   ctx.response.body = JSON.stringify(toolsList);
-// });
 
 // After creating the router, we can add it to the app.
 app.use(router.routes());

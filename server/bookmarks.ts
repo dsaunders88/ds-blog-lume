@@ -22,13 +22,7 @@ const bookmarks = parse(file) as Bookmark[];
 
 export async function render(params: Record<string, string>) {
   env.cache.clear();
-  //   const result = await env.runString(
-  //     "<h1>{{ title }}</h1><p>This is a paragraph with {{ input }}.</p>",
-  //     {
-  //       title: "Hello, world!",
-  //       input: "dynamic input field",
-  //     }
-  //   );
+
   const paramList = new Set() as Set<string>;
   const tagList = new Set() as Set<string>;
   const filteredByCategory = [];
@@ -37,7 +31,7 @@ export async function render(params: Record<string, string>) {
     method: undefined,
     order: undefined,
   };
-  // const filtered = bookmarks.filter((item) => item.category === "website");
+
   for (const [key, value] of Object.entries(params)) {
     if (key === "sort") {
       sort.method = value as Sort["method"];
@@ -86,10 +80,6 @@ export async function render(params: Record<string, string>) {
       if (includesAll(item.tags as string[], Array.from(tagList))) {
         filteredByTag.add(item);
       }
-
-      // if (item.tags?.includes(tag)) {
-      //   filteredByTag.add(item);
-      // }
     });
   }
 
@@ -128,13 +118,6 @@ export async function render(params: Record<string, string>) {
       continue;
     } else {
       tagList.add(key);
-      // Filter tags from bookmarkList
-      // console.log(`key '${key}' was captured`);
-      // bookmarkList.forEach((item) => {
-      //   if (item.tags?.includes(key)) {
-      //     filteredByTag.add(item);
-      //   }
-      // });
     }
   }
 
@@ -152,23 +135,10 @@ export async function render(params: Record<string, string>) {
     sortByMethod(filteredList, sort.method)
   );
 
-  // Object.entries(params).forEach((param) => {
-  //   console.log("param from object entries ", param);
-  //   console.log(param[0]);
-  //   if (param[0] === "article" || param[0] === "website") {
-  //     filtered.add(bookmarks.filter((item) => item.category === param[0]));
-  //   } else {
-  //     filtered.add(bookmarks.filter((item) => item.tags.includes(param[0])));
-  //   }
-  // });
-
-  // console.log("filtered by category ", bookmarkList);
-
   const template = await env.load(
     "./src/_includes/partials/bookmark-links.vto"
   );
   const result = await template({
-    // bookmarks: filtered.size === 0 ? bookmarks : Array.from(filtered).flat(),
     bookmarkLinks: sortByMethod(filteredList, sort.method).map((link) => {
       return {
         ...link,
@@ -178,11 +148,6 @@ export async function render(params: Record<string, string>) {
         }).format(link.date_added),
       };
     }),
-    // filteredByTag.size !== 0
-    //   ? Array.from(filteredByTag)
-    //   : bookmarkList.length !== 0
-    //   ? bookmarkList
-    //   : bookmarks,
   });
 
   return result.content;
