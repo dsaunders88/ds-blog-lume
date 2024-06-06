@@ -204,7 +204,9 @@ main {
   }*/
 
   & .has-sidebar {
-    --sidebar-gap: var(--l);
+    --main-min-width: 46%;
+    --sidebar-min-width: 20rem;
+    --sidebar-gap: var(--space-xl);
 
     & > :last-child {
       position: relative;

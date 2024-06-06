@@ -1,6 +1,5 @@
 import lume from "lume/mod.ts";
 import jsx from "lume/plugins/jsx.ts";
-// import vento from "lume/plugins/vento.ts";
 import attributes from "lume/plugins/attributes.ts";
 import base_path from "lume/plugins/base_path.ts";
 import code_highlight from "lume/plugins/code_highlight.ts";
@@ -10,22 +9,15 @@ import lang_django from "npm:highlight.js/lib/languages/django";
 import lang_yaml from "npm:highlight.js/lib/languages/yaml";
 import lang_json from "npm:highlight.js/lib/languages/json";
 import feed from "lume/plugins/feed.ts";
-// import atomFeed from "./src/customPlugins/atomFeed.ts";
-// import filter_pages from "lume/plugins/filter_pages.ts";
 import transformImages from "lume/plugins/transform_images.ts";
-// import imagick from "lume/plugins/imagick.ts";
 import inline from "lume/plugins/inline.ts";
 import lightningCss from "lume/plugins/lightningcss.ts";
-// import postcss from "lume/plugins/postcss.ts";
-// import nano from "npm:cssnano";
 import mdx from "lume/plugins/mdx.ts";
-// import prism from "lume/plugins/prism.ts";
 import minify_html from "lume/plugins/minify_html.ts";
 import nav from "lume/plugins/nav.ts";
 import metas from "lume/plugins/metas.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import sourceMaps from "lume/plugins/source_maps.ts";
-// import relative_urls from "lume/plugins/relative_urls.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import slugify_urls from "lume/plugins/slugify_urls.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.5.1/toc.ts";
@@ -38,10 +30,6 @@ import {
 } from "./src/utils/groupTypes.js";
 import type { Bookmark } from "./server/bookmarks.ts";
 import { readingTime } from "./src/utils/readingTime.js";
-import { splitUrl } from "./src/utils/splitUrl.js";
-// import { encode } from "npm:html-entities";
-
-// const search = { returnPageData: true };
 
 const markdown = {
   options: {
@@ -61,7 +49,6 @@ site.copy("static", ".");
 site.use(toc()); // Markdown plugin
 site.use(footnotes()); // Markdown plugin
 site.use(jsx()); // Required for MDX
-// site.use(vento());
 site.use(esbuild());
 site.use(attributes());
 site.use(base_path());
@@ -126,11 +113,9 @@ site.filter("formatLinkDates", (arr: Bookmark[]) => {
     };
   });
 });
-// site.use(prism({ extensions: [".html", ".vto", ".njk"] }));
 site.helper(
   "isActive",
   (href, url) => {
-    // console.log(`url: ${url}`, `href: ${href}`);
     const urlParts = url.split("/");
     if (urlParts.includes(href.slice(1))) {
       return "selected";
@@ -138,31 +123,15 @@ site.helper(
   },
   { type: "tag" }
 );
-// site.filter("rfc3339", (date) => {
-//   // Atom uses RFC 3339 dates
-//   // https://tools.ietf.org/html/rfc3339#section-5.8
-//   const s = new Date(date).toISOString();
-
-//   //remove miliseconds
-//   const split = s.split(".");
-//   split.pop();
-
-//   return split.join("") + "Z";
-// });
 site.filter("splitUrl", (url) => {
   const segments = url.split("/").filter(Boolean);
   return segments.pop();
 });
-// site.filter("getDefaultLikes", getDefaultLikes);
-// site.use(
-//   atomFeed({
-//     output: ["/feed.xml"],
-//   })
-// );
 site.use(
   feed({
     output: ["/feed.xml"],
     query: "type=posts",
+    limit: 50,
     info: {
       title: "Daniel Saunders",
       published: new Date(),
@@ -175,6 +144,7 @@ site.use(
       description: "=summary",
       published: "=date",
       content: "$.feed-content",
+      lang: "en",
     },
   })
 );
@@ -196,16 +166,12 @@ site.use(
 //   })
 // );
 site.use(metas());
-// site.use(filter_pages());
-// site.use(imagick());
 site.use(transformImages());
 site.use(lightningCss());
-// site.use(postcss());
 site.use(mdx());
 site.use(inline());
 site.use(minify_html());
 site.use(nav());
-// site.use(relative_urls());
 site.use(sitemap());
 site.use(sourceMaps());
 site.use(
@@ -213,6 +179,5 @@ site.use(
     extensions: [".html"], // To slugify only HTML pages
   })
 );
-// site.hooks.addPostcssPlugin(nano);
 
 export default site;
