@@ -1,9 +1,8 @@
 import * as path from "https://deno.land/std@0.202.0/path/mod.ts";
 import { load } from "https://deno.land/std@0.202.0/dotenv/mod.ts";
 await load({ export: true });
-// const apiToken = env["AIRTABLE_ACCESS_TOKEN"];
+
 const apiToken = Deno.env.get("AIRTABLE_ACCESS_TOKEN");
-// console.log("AIRTABLE TOKEN", apiToken);
 
 const airtableBase = "appYm5Ud471pJY0w8";
 const readingActivityTable = "tblr6UI7PA9ETQlOg";
@@ -69,17 +68,10 @@ async function downloadAndSaveImage(airtableImage) {
 }
 
 const data = await getBookData();
-// const downloadedImages = await downloadAndSaveImages(data.records.)
 // console.log(data);
 
 const records = data.records.map(async (record) => {
   const fields = record.fields;
-  // const dateStarted =
-  //   fields.fldIVAy1LGdKLaxbw && new Date(fields.fldIVAy1LGdKLaxbw);
-  // const dateFinished =
-  //   fields.fldIwqgbD7kf7N8qD && new Date(fields.fldIwqgbD7kf7N8qD);
-  // const airtableLastUpdated = new Date(fields.fld75vdT7jzbx0ptV);
-  // const dateUpdated = dateFinished || dateStarted || airtableLastUpdated;
   const completed =
     fields.fldCEvxZzmoChJ5Dh === "Have Read" && fields.fldKM2VLezO00lQHI === 1;
   const downloadedImage = await downloadAndSaveImage(

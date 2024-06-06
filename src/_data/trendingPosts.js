@@ -1,6 +1,6 @@
 import { load } from "https://deno.land/std@0.202.0/dotenv/mod.ts";
 await load({ export: true });
-// const apiToken = env["FATHOM_ACCESS_TOKEN"];
+
 const apiToken = Deno.env.get("FATHOM_ACCESS_TOKEN");
 
 function threeMonthsAgo() {

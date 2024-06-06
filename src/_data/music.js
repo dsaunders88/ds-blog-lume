@@ -1,6 +1,6 @@
 import { load } from "https://deno.land/std@0.202.0/dotenv/mod.ts";
 await load({ export: true });
-// const apiKey = env["LASTFM_API_KEY"];
+
 const apiKey = Deno.env.get("LASTFM_API_KEY");
 
 async function getLastfmData() {

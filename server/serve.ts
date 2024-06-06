@@ -42,74 +42,75 @@ type Tool = {
   url: string;
 };
 
+// some additional logic to check Sets so that user
+// doesn't get duplicate item from random array
 const selectedThoughts = new Set();
 const selectedAlbums = new Set();
 const selectedTools = new Set();
 
-// create some additional logic to check Sets so that user
-// doesn't get duplicate item from random array
+// Add values from an array into Set and check for a random
+// value in the set
+function checkSetForValue(
+  set: Set<unknown>,
+  value: string | Album | Tool,
+  values: Array<Thought | Album | Tool>
+): boolean {
+  if (!set.has(value)) {
+    // set doesn't have the value, add it to set
+    set.add(value);
+    console.log({ set });
+    return true;
+  } else if (set.size === values.length) {
+    // value is in set and set is full, reset all set values
+    // add it to set
+    set.clear();
+    set.add(value);
+    console.log("reset set", { set });
+    return true;
+  } else {
+    // value is in set, keep looking for random
+    return false;
+  }
+}
+
 function getRandom(array: Array<Thought | Album | Tool>) {
-  // first check set to see if value exists
   let random = undefined;
 
-  // then get a random element from array excluding value in set
-  // add the new value to the set
-  // return the randomly select element
+  // get a random element from the array
+  // check to see if it exists in the set
+  // if not in the set, add it and return
+  // if is in set, keep looking for random
   while (!random) {
     random = array[Math.floor(Math.random() * array.length)];
 
     if (typeof random === "string") {
-      if (!selectedThoughts.has(random)) {
-        // set doesn't have value, add it to the set
-        selectedThoughts.add(random);
-        console.log({ selectedThoughts });
-        break;
-      } else if (selectedThoughts.size === array.length) {
-        // value is in set and set is full, reset all set values
-        // add it to set
-        selectedThoughts.clear();
-        selectedThoughts.add(random);
-        console.log("reset thoughts", { selectedThoughts });
-        break;
-      } else {
-        // value is in set, keep looking
+      // narrow type to Thought
+      const isInSet = checkSetForValue(selectedThoughts, random, array);
+      if (!isInSet) {
+        // value is in set, keep looking for random
         random = undefined;
         continue;
       }
     } else if ("artist" in random) {
-      if (!selectedAlbums.has(random)) {
-        selectedAlbums.add(random);
-        console.log({ selectedAlbums });
-        break;
-      } else if (selectedAlbums.size === array.length) {
-        selectedAlbums.clear();
-        selectedAlbums.add(random);
-        console.log("reset albums", { selectedAlbums });
-        break;
-      } else {
+      // narrow type to Album
+      const isInSet = checkSetForValue(selectedAlbums, random, array);
+      if (!isInSet) {
         random = undefined;
         continue;
       }
     } else {
-      if (!selectedTools.has(random)) {
-        selectedTools.add(random);
-        console.log({ selectedTools });
-        break;
-      } else if (selectedTools.size === array.length) {
-        selectedTools.clear();
-        selectedTools.add(random);
-        console.log("reset tools", { selectedTools });
-        break;
-      } else {
+      // narrow type to Tool
+      const isInSet = checkSetForValue(selectedTools, random, array);
+      if (!isInSet) {
         random = undefined;
         continue;
       }
     }
   }
-
   return random;
 }
 
+/* Interests html response */
 function htmxResponse() {
   const randomThought = getRandom(thoughtsList as Array<Thought>);
   const randomAlbum = getRandom(albums as Array<Album>);
@@ -129,6 +130,7 @@ function htmxResponse() {
   }</a><svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 15.25V6.75H8.75"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 7L6.75 17.25"></path></svg></span></p>`;
 }
 
+/* Initialize router */
 const router = new Router();
 
 /* Interests from _data */
@@ -136,7 +138,7 @@ router.get("/api/interests", (ctx: Context) => {
   ctx.response.body = htmxResponse();
 });
 
-/* Post Likes */
+/* Post Likes API */
 router.get("/posts/totalLikes", async (ctx: Context) => {
   const params = getQuery(ctx, { mergeParams: true });
   console.log(params);
