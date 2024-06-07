@@ -337,7 +337,7 @@ figure {
 
 .book-list {
   &.responsive-grid {
-    --item-min-width: 12rem;
+    --item-min-width: 11rem;
     --column-gap: 1.5rem;
     --row-gap: var(--space-l);
   }

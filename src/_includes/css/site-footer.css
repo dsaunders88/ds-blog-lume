@@ -27,9 +27,9 @@
     grid-template-columns: 2fr repeat(3, 1fr);
     margin-block-end: var(--space-2xl);
 
-    & > :first-child {
+    /* & > :first-child {
       justify-self: center;
-    }
+    } */
   }
 
   & .subfooter {
@@ -40,7 +40,8 @@
     }
   }
 
-  & .background {
+  /* svg background wrapper */
+  & .background[aria-hidden="true"] {
     display: flex;
     position: absolute;
     z-index: -1;
@@ -51,6 +52,38 @@
     & svg {
       width: 100%;
       opacity: var(--background-element-opacity);
+    }
+  }
+
+  /* class on svg */
+  & .logo {
+    & .background {
+      fill: var(--color-logo-background);
+    }
+
+    & .lines {
+      stroke: var(--color-logo-lines);
+    }
+
+    & .text {
+      fill: var(--color-logo-text);
+    }
+  }
+
+  /* class on wrapper */
+  & .footer-logo {
+    display: block;
+    border-radius: 9999px;
+    width: 3rem;
+    height: 3rem;
+    margin-block: 1rem;
+    outline: 1px solid var(--color-logo-border);
+    transition: all 0.2s ease;
+
+    &:hover {
+      outline-width: 2px;
+      outline-offset: 3px;
+      opacity: 0.85;
     }
   }
 }

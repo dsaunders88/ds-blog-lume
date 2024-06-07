@@ -1,8 +1,8 @@
-.about {
+/* .about {
   &.content-wrapper {
     --wrapper-max-width: 1280px;
   }
-}
+} */
 
 :is(.about, .links) {
   & .has-sidebar {
@@ -98,12 +98,13 @@
         border: 1px solid transparent;
         padding: var(--space-s);
         max-width: 48ch;
+        background-color: var(--color-link-article-background);
         transition: all 0.2s ease;
         animation: 0.3s ease fade-in;
 
-        &:hover {
+        /* &:hover {
           border-color: var(--color-border-accent-light);
-        }
+        } */
 
         & .category {
           display: flex;

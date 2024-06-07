@@ -128,7 +128,7 @@
 
   /* Layouts */
   --gutter: var(--space-s-m, 1rem);
-  --wrapper-max-width: 1366px;
+  --wrapper-max-width: 1280px; /* 1366 */
 
   /* Animations */
   --bezier-transition-1: cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -191,6 +191,7 @@
   --color-link-filter-border: var(--color-neutral-100);
   --color-link-filter-border-hover: var(--color-neutral-100);
   --color-link-filter-border-active: var(--color-accent-200);
+  --color-link-article-background: var(--color-neutral-50);
 
   --color-selection-active: color-mix(
     in lch,
@@ -293,6 +294,7 @@
   --color-link-filter-border: var(--color-neutral-1000);
   --color-link-filter-border-hover: var(--color-neutral-950);
   --color-link-filter-border-active: var(--color-accent-800);
+  --color-link-article-background: var(--color-neutral-950);
 
   --color-selection-active: color-mix(
     in srgb,
