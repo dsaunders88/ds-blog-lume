@@ -83,14 +83,6 @@
   font-display: swap;
 }
 
-/* @font-face {
-  font-family: "Gimlet Sans";
-  src: url("/fonts/GimletSansDisplay-Black.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-} */
-
 @font-face {
   font-family: "Fjalla One";
   src: url("/fonts/FjallaOne-Regular.woff2") format("woff2");

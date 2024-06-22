@@ -47,6 +47,7 @@
     }
   }
 
+  /* class on svg */
   & .logo {
     & .background {
       fill: var(--color-logo-background);
@@ -61,6 +62,7 @@
     }
   }
 
+  /* class on wrapper */
   & .header-logo {
     border-radius: 9999px;
     width: 3rem;
