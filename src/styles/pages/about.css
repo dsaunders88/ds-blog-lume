@@ -306,7 +306,6 @@
       & img {
         filter: saturate(0);
         opacity: 0.8;
-        mix-blend-mode: multiply;
 
         &::before {
           visibility: visible;
