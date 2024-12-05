@@ -24,7 +24,7 @@ jobs:
       - name: Setup Deno environment
         uses: denoland/setup-deno@v1
         with:
-          deno-version: v1.39
+          deno-version: v1.46
 
       - name: Build site
         run: deno task build
