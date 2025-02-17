@@ -284,6 +284,19 @@ a.button-link {
   }
 }
 
+.percent {
+  font-size: var(--step--1);
+  font-weight: 700;
+
+  &.positive {
+    color: #22c55e;
+  }
+
+  &.negative {
+    color: #c53622;
+  }
+}
+
 @container contentWrapper (max-width: 768px) {
   .rich-content {
     & blockquote {
